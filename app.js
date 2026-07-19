@@ -252,8 +252,12 @@
       let got = 0;
       for (const q of pool) {
         if (got >= target) break;
-        picked.push({ topic: t.id, q });
-        got += qMarks(q);
+        // only take a question if it brings the topic total closer to target
+        const qm = qMarks(q);
+        if (Math.abs(got + qm - target) <= Math.abs(got - target)) {
+          picked.push({ topic: t.id, q });
+          got += qm;
+        }
       }
     }
     return picked;
