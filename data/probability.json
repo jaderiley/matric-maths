@@ -1,0 +1,214 @@
+{
+  "id": "probability",
+  "paper": 1,
+  "title": "Probability & Counting",
+  "blurb": "Probability rules, Venn diagrams, tree diagrams, contingency tables, the fundamental counting principle and arrangements with restrictions.",
+  "questions": [
+    {
+      "id": "probability-01",
+      "difficulty": 1,
+      "context": "For two events $A$ and $B$ it is given that $P(A)=0{,}35$, $P(B)=0{,}5$ and $P(A\\text{ or }B)=0{,}675$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine $P(A\\text{ and }B)$.",
+          "marks": 2,
+          "solution": [
+            "$P(A\\text{ or }B)=P(A)+P(B)-P(A\\text{ and }B)$",
+            "$0{,}675=0{,}35+0{,}5-P(A\\text{ and }B)$",
+            "$P(A\\text{ and }B)=0{,}175$"
+          ],
+          "answer": "$0{,}175$"
+        },
+        {
+          "q": "Are the events $A$ and $B$ independent? Motivate your answer with a calculation.",
+          "marks": 2,
+          "solution": [
+            "$P(A)\\times P(B)=0{,}35\\times 0{,}5=0{,}175$",
+            "Since $P(A)\\times P(B)=P(A\\text{ and }B)=0{,}175$, the events ARE independent"
+          ],
+          "answer": "Yes: $P(A)\\times P(B)=0{,}175=P(A\\text{ and }B)$"
+        },
+        {
+          "q": "Determine the probability that neither $A$ nor $B$ occurs.",
+          "marks": 2,
+          "solution": [
+            "$P(\\text{not }A\\text{ and not }B)=1-P(A\\text{ or }B)$",
+            "$=1-0{,}675=0{,}325$"
+          ],
+          "answer": "$0{,}325$"
+        }
+      ]
+    },
+    {
+      "id": "probability-02",
+      "difficulty": 2,
+      "context": "In a group of $120$ Grade 12 learners at a school in Tshwane, $65$ take Mathematics (M), $50$ take Physical Sciences (P) and $25$ take both subjects. The rest take neither subject.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Draw a Venn diagram to represent this information, showing the number of learners in each region.",
+          "marks": 3,
+          "solution": [
+            "Only Mathematics: $65-25=40$",
+            "Only Physical Sciences: $50-25=25$; intersection (both): $25$",
+            "Neither: $120-(40+25+25)=30$"
+          ],
+          "answer": "Regions: only M $=40$, both $=25$, only P $=25$, neither $=30$"
+        },
+        {
+          "q": "Determine the probability that a randomly chosen learner takes neither of the two subjects.",
+          "marks": 2,
+          "solution": [
+            "$P(\\text{neither})=\\dfrac{30}{120}$",
+            "$=0{,}25$"
+          ],
+          "answer": "$\\dfrac{30}{120}=0{,}25$"
+        },
+        {
+          "q": "Determine $P(M\\text{ or }P)$.",
+          "marks": 2,
+          "solution": [
+            "$n(M\\text{ or }P)=40+25+25=90$",
+            "$P(M\\text{ or }P)=\\dfrac{90}{120}=0{,}75$"
+          ],
+          "answer": "$0{,}75$"
+        },
+        {
+          "q": "Are the events M and P mutually exclusive? Give a reason for your answer.",
+          "marks": 2,
+          "solution": [
+            "$P(M\\text{ and }P)=\\dfrac{25}{120}\\ne 0$",
+            "Since learners CAN take both subjects, the events are NOT mutually exclusive"
+          ],
+          "answer": "No: $P(M\\text{ and }P)\\ne 0$"
+        }
+      ]
+    },
+    {
+      "id": "probability-03",
+      "difficulty": 2,
+      "context": "Lerato travels to school either by taxi or on foot. The probability that she takes a taxi is $0{,}6$. If she takes a taxi, the probability that she is late is $0{,}1$. If she walks, the probability that she is late is $0{,}3$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Draw a tree diagram to represent this situation. Show the probability on each branch.",
+          "marks": 3,
+          "solution": [
+            "First branches: Taxi ($0{,}6$) and Walk ($0{,}4$)",
+            "From Taxi: Late ($0{,}1$) and Not late ($0{,}9$)",
+            "From Walk: Late ($0{,}3$) and Not late ($0{,}7$)"
+          ],
+          "answer": "Taxi $0{,}6$ / Walk $0{,}4$; then Late/Not late: $0{,}1$; $0{,}9$ (taxi) and $0{,}3$; $0{,}7$ (walk)"
+        },
+        {
+          "q": "Calculate the probability that Lerato is late for school on a given day.",
+          "marks": 3,
+          "solution": [
+            "$P(\\text{late})=P(\\text{taxi and late})+P(\\text{walk and late})$",
+            "$=(0{,}6)(0{,}1)+(0{,}4)(0{,}3)$",
+            "$=0{,}06+0{,}12=0{,}18$"
+          ],
+          "answer": "$0{,}18$"
+        },
+        {
+          "q": "Calculate the probability that Lerato is NOT late for school.",
+          "marks": 2,
+          "solution": [
+            "$P(\\text{not late})=1-P(\\text{late})$",
+            "$=1-0{,}18=0{,}82$"
+          ],
+          "answer": "$0{,}82$"
+        }
+      ]
+    },
+    {
+      "id": "probability-04",
+      "difficulty": 2,
+      "context": "A spaza shop owner in Soweto recorded how $150$ customers paid and whether they bought airtime. Of the $90$ customers who paid cash, $45$ bought airtime. Of the $60$ customers who paid by card, $25$ bought airtime. (Contingency table totals: cash $=90$, card $=60$; airtime $=70$, no airtime $=80$.)",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the probability that a randomly selected customer paid cash.",
+          "marks": 1,
+          "solution": [
+            "$P(\\text{cash})=\\dfrac{90}{150}=0{,}6$"
+          ],
+          "answer": "$0{,}6$"
+        },
+        {
+          "q": "Determine the probability that a randomly selected customer paid cash AND bought airtime.",
+          "marks": 1,
+          "solution": [
+            "$P(\\text{cash and airtime})=\\dfrac{45}{150}=0{,}3$"
+          ],
+          "answer": "$0{,}3$"
+        },
+        {
+          "q": "Are the events 'paid cash' and 'bought airtime' independent? Motivate your answer with calculations.",
+          "marks": 3,
+          "solution": [
+            "$P(\\text{cash})\\times P(\\text{airtime})=\\dfrac{90}{150}\\times\\dfrac{70}{150}=0{,}6\\times 0{,}4\\overline{6}=0{,}28$",
+            "$P(\\text{cash and airtime})=0{,}3$",
+            "$0{,}28\\ne 0{,}3$, so the events are NOT independent"
+          ],
+          "answer": "No: $P(\\text{cash})\\times P(\\text{airtime})=0{,}28\\ne P(\\text{cash and airtime})=0{,}3$"
+        },
+        {
+          "q": "Determine the probability that a randomly selected customer paid cash OR bought airtime.",
+          "marks": 2,
+          "solution": [
+            "$P(\\text{cash or airtime})=\\dfrac{90}{150}+\\dfrac{70}{150}-\\dfrac{45}{150}$",
+            "$=\\dfrac{115}{150}=\\dfrac{23}{30}\\approx 0{,}77$"
+          ],
+          "answer": "$\\dfrac{23}{30}\\approx 0{,}77$"
+        }
+      ]
+    },
+    {
+      "id": "probability-05",
+      "difficulty": 3,
+      "context": "Consider the letters of the word MOSSEL (as in Mossel Bay). Note that the letter S appears twice.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "In how many different ways can all six letters be arranged in a row?",
+          "marks": 2,
+          "solution": [
+            "$\\dfrac{6!}{2!}$ (divide by $2!$ for the repeated S)",
+            "$=\\dfrac{720}{2}=360$"
+          ],
+          "answer": "$360$"
+        },
+        {
+          "q": "In how many of these arrangements does the word begin AND end with the letter S?",
+          "marks": 2,
+          "solution": [
+            "Place the two S's in the first and last positions (identical letters: 1 way)",
+            "Arrange the remaining 4 different letters in the middle: $4!=24$"
+          ],
+          "answer": "$24$"
+        },
+        {
+          "q": "If one of the $360$ arrangements is chosen at random, determine the probability that it begins and ends with the letter S.",
+          "marks": 2,
+          "solution": [
+            "$P=\\dfrac{24}{360}$",
+            "$=\\dfrac{1}{15}$"
+          ],
+          "answer": "$\\dfrac{1}{15}$"
+        },
+        {
+          "q": "A security gate code consists of $3$ different letters of the alphabet followed by $2$ digits (digits MAY repeat). Using the fundamental counting principle, determine how many different codes are possible.",
+          "marks": 2,
+          "solution": [
+            "Letters (no repetition): $26\\times 25\\times 24$",
+            "Digits (repetition allowed): $10\\times 10$",
+            "Total $=26\\times 25\\times 24\\times 10\\times 10=1\\,560\\,000$"
+          ],
+          "answer": "$1\\,560\\,000$"
+        }
+      ]
+    }
+  ]
+}

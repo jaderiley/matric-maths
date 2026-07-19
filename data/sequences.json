@@ -1,0 +1,205 @@
+{
+  "id": "sequences",
+  "paper": 1,
+  "title": "Patterns, Sequences & Series",
+  "blurb": "Arithmetic and geometric sequences and series, quadratic number patterns, sigma notation and sum to infinity.",
+  "questions": [
+    {
+      "id": "sequences-01",
+      "difficulty": 1,
+      "context": "Consider the arithmetic sequence $5;\\ 9;\\ 13;\\ \\ldots$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine a formula for $T_n$, the $n$-th term of the sequence.",
+          "marks": 2,
+          "solution": [
+            "$a=5$, $d=4$",
+            "$T_n=a+(n-1)d=5+4(n-1)=4n+1$"
+          ],
+          "answer": "$T_n=4n+1$"
+        },
+        {
+          "q": "Which term of the sequence is equal to $85$?",
+          "marks": 2,
+          "solution": [
+            "$4n+1=85$",
+            "$4n=84$, so $n=21$"
+          ],
+          "answer": "The $21$st term"
+        },
+        {
+          "q": "Calculate the sum of the first $20$ terms of the sequence.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{20}=\\dfrac{20}{2}\\left[2(5)+19(4)\\right]=10(10+76)$",
+            "$S_{20}=860$"
+          ],
+          "answer": "$S_{20}=860$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-02",
+      "difficulty": 2,
+      "context": "The quadratic number pattern $6;\\ 17;\\ 34;\\ 57;\\ \\ldots$ has a constant second difference.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the next term of the pattern.",
+          "marks": 1,
+          "solution": [
+            "First differences: $11;\\ 17;\\ 23$, second difference $6$, so the next first difference is $29$",
+            "$T_5=57+29=86$"
+          ],
+          "answer": "$86$"
+        },
+        {
+          "q": "Determine a formula for the $n$-th term of the pattern in the form $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "$2a=6$, so $a=3$",
+            "$T_1$: $3+b+c=6$, so $b+c=3$",
+            "$T_2$: $12+2b+c=17$, so $2b+c=5$",
+            "Subtracting: $b=2$ and $c=1$",
+            "$T_n=3n^2+2n+1$"
+          ],
+          "answer": "$T_n=3n^2+2n+1$"
+        },
+        {
+          "q": "Determine which term of the pattern is the FIRST term greater than $500$.",
+          "marks": 3,
+          "solution": [
+            "Solve $3n^2+2n+1>500$, i.e. $3n^2+2n-499>0$",
+            "$n=\\dfrac{-2+\\sqrt{4+4(3)(499)}}{6}=\\dfrac{-2+\\sqrt{5992}}{6}\\approx 12{,}57$",
+            "So $n=13$ is the first natural number that works: $T_{13}=3(169)+26+1=534>500$ (and $T_{12}=457<500$)"
+          ],
+          "answer": "The $13$th term ($T_{13}=534$)"
+        }
+      ]
+    },
+    {
+      "id": "sequences-03",
+      "difficulty": 2,
+      "context": "In a geometric sequence, the second term is $6$ and the fifth term is $48$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the first term $a$ and the common ratio $r$ of the sequence.",
+          "marks": 4,
+          "solution": [
+            "$ar=6$ and $ar^4=48$",
+            "Dividing: $r^3=\\dfrac{48}{6}=8$",
+            "$r=2$",
+            "$a=\\dfrac{6}{r}=3$"
+          ],
+          "answer": "$a=3$ and $r=2$"
+        },
+        {
+          "q": "Calculate the sum of the first $10$ terms of the sequence.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{a(r^n-1)}{r-1}$",
+            "$S_{10}=\\dfrac{3(2^{10}-1)}{2-1}=3(1023)$",
+            "$S_{10}=3069$"
+          ],
+          "answer": "$S_{10}=3069$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-04",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Calculate: $\\sum_{k=1}^{15}(3k-5)$.",
+          "marks": 3,
+          "solution": [
+            "The terms form an arithmetic series: first term $3(1)-5=-2$, last term $3(15)-5=40$, with $15$ terms",
+            "$S_{15}=\\dfrac{15}{2}(-2+40)$",
+            "$S_{15}=\\dfrac{15}{2}(38)=285$"
+          ],
+          "answer": "$285$"
+        },
+        {
+          "q": "Write the series $3+6+12+\\ldots+384$ in sigma notation.",
+          "marks": 3,
+          "solution": [
+            "Geometric series with $a=3$ and $r=2$, so $T_k=3\\cdot 2^{k-1}$",
+            "Last term: $3\\cdot 2^{k-1}=384$ gives $2^{k-1}=128=2^7$, so $k=8$",
+            "$\\sum_{k=1}^{8}3\\cdot 2^{k-1}$"
+          ],
+          "answer": "$\\sum_{k=1}^{8}3\\cdot 2^{k-1}$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-05",
+      "difficulty": 2,
+      "context": "Consider the geometric series $(x-2)+(x-2)^2+(x-2)^3+\\ldots$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the values of $x$ for which the series converges.",
+          "marks": 3,
+          "solution": [
+            "The common ratio is $r=x-2$",
+            "For convergence: $-1<r<1$, i.e. $-1<x-2<1$",
+            "$1<x<3$, with $x\\neq 2$ (at $x=2$ every term is $0$, so the series is not geometric)"
+          ],
+          "answer": "$1<x<3$, $x\\neq 2$"
+        },
+        {
+          "q": "Calculate the sum to infinity of the series if $x=2{,}5$.",
+          "marks": 2,
+          "solution": [
+            "$a=r=0{,}5$, so $S_\\infty=\\dfrac{a}{1-r}=\\dfrac{0{,}5}{1-0{,}5}$",
+            "$S_\\infty=1$"
+          ],
+          "answer": "$S_\\infty=1$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-06",
+      "difficulty": 3,
+      "context": "The numbers $x;\\ x+4;\\ 2x+2$ are the first three terms of a geometric sequence.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the possible value(s) of $x$.",
+          "marks": 4,
+          "solution": [
+            "Equal ratios: $\\dfrac{x+4}{x}=\\dfrac{2x+2}{x+4}$",
+            "$(x+4)^2=x(2x+2)$",
+            "$x^2+8x+16=2x^2+2x$, so $x^2-6x-16=0$",
+            "$(x-8)(x+2)=0$, giving $x=8$ or $x=-2$"
+          ],
+          "answer": "$x=8$ or $x=-2$"
+        },
+        {
+          "q": "If $x=8$, determine the $10$th term of the sequence.",
+          "marks": 3,
+          "solution": [
+            "The sequence is $8;\\ 12;\\ 18;\\ \\ldots$ with $r=\\dfrac{12}{8}=\\dfrac{3}{2}$",
+            "$T_{10}=ar^9=8\\left(\\dfrac{3}{2}\\right)^9=\\dfrac{3^9}{2^6}=\\dfrac{19683}{64}$",
+            "$T_{10}=307{,}546875\\approx 307{,}55$"
+          ],
+          "answer": "$T_{10}=\\dfrac{19683}{64}\\approx 307{,}55$"
+        },
+        {
+          "q": "If $x=-2$, explain why the sum to infinity of the sequence does NOT exist.",
+          "marks": 2,
+          "solution": [
+            "The sequence is $-2;\\ 2;\\ -2;\\ \\ldots$ with $r=-1$",
+            "$S_\\infty$ exists only when $-1<r<1$; since $r=-1$ the series does not converge"
+          ],
+          "answer": "$r=-1$, which does not satisfy $-1<r<1$, so the series does not converge"
+        }
+      ]
+    }
+  ]
+}

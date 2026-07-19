@@ -1,0 +1,239 @@
+{
+  "id": "statistics",
+  "paper": 2,
+  "title": "Statistics & Regression",
+  "blurb": "Mean, standard deviation, five-number summaries, ogives, least-squares regression and correlation.",
+  "questions": [
+    {
+      "id": "statistics-01",
+      "difficulty": 1,
+      "context": "The daily taxi commute times (in minutes) of 10 workers travelling from Soweto to Johannesburg CBD are recorded: $32; 45; 28; 51; 39; 47; 35; 42; 56; 40$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Calculate the mean commute time.",
+          "marks": 2,
+          "solution": [
+            "Sum of the data: $32+45+28+51+39+47+35+42+56+40=415$",
+            "$\\bar{x}=\\frac{415}{10}=41{,}5$ minutes"
+          ],
+          "answer": "$\\bar{x}=41{,}5$ minutes"
+        },
+        {
+          "q": "Calculate the standard deviation of the commute times.",
+          "marks": 2,
+          "solution": [
+            "By calculator (population standard deviation $\\sigma_n$):",
+            "$\\sigma=\\sqrt{\\frac{\\sum(x_i-\\bar{x})^2}{n}}\\approx 8{,}16$ minutes (rounded to 2 decimal places)"
+          ],
+          "answer": "$\\sigma\\approx 8{,}16$ minutes"
+        },
+        {
+          "q": "How many workers have a commute time within one standard deviation of the mean?",
+          "marks": 3,
+          "solution": [
+            "Interval: $(\\bar{x}-\\sigma;\\ \\bar{x}+\\sigma)=(41{,}5-8{,}16;\\ 41{,}5+8{,}16)=(33{,}34;\\ 49{,}66)$",
+            "Data values in this interval: $35; 39; 40; 42; 45; 47$",
+            "$\\therefore$ 6 workers lie within one standard deviation of the mean."
+          ],
+          "answer": "6 workers"
+        }
+      ]
+    },
+    {
+      "id": "statistics-02",
+      "difficulty": 2,
+      "context": "A takeaway in Durban records the number of bunny chows sold per day over 11 days. The sorted data is: $12; 15; 18; 21; 24; 27; 33; 39; 46; 52; 60$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the five-number summary of the data.",
+          "marks": 4,
+          "solution": [
+            "Minimum $=12$ and Maximum $=60$",
+            "Median: $n=11$, so the median is the 6th value: $M=27$",
+            "$Q_1$ is the median of the lower 5 values (3rd value): $Q_1=18$",
+            "$Q_3$ is the median of the upper 5 values (9th value): $Q_3=46$",
+            "Five-number summary: $(12;\\ 18;\\ 27;\\ 46;\\ 60)$"
+          ],
+          "answer": "$(12;\\ 18;\\ 27;\\ 46;\\ 60)$"
+        },
+        {
+          "q": "Calculate the interquartile range (IQR).",
+          "marks": 2,
+          "solution": [
+            "$IQR=Q_3-Q_1=46-18=28$"
+          ],
+          "answer": "$IQR=28$"
+        },
+        {
+          "q": "The data is represented on a box-and-whisker diagram. Comment on the skewness of the data, giving a reason based on the quartiles.",
+          "marks": 2,
+          "solution": [
+            "$Q_3-M=46-27=19$ and $M-Q_1=27-18=9$",
+            "Since $Q_3-M>M-Q_1$, the data is skewed to the right (positively skewed)."
+          ],
+          "answer": "Skewed to the right (positively skewed), since $Q_3-M=19>M-Q_1=9$"
+        },
+        {
+          "q": "By using the rule that an outlier lies more than $1{,}5\\times IQR$ beyond a quartile, show that the value $60$ is NOT an outlier.",
+          "marks": 2,
+          "solution": [
+            "Upper fence: $Q_3+1{,}5\\times IQR=46+1{,}5(28)=46+42=88$",
+            "Since $60<88$, the value $60$ is not an outlier."
+          ],
+          "answer": "$60<Q_3+1{,}5\\times IQR=88$, so $60$ is not an outlier"
+        }
+      ]
+    },
+    {
+      "id": "statistics-03",
+      "difficulty": 2,
+      "context": "The finishing times of 80 runners in a 10 km fun run in Cape Town are grouped in the table below (time $t$ in minutes): $30\\le t<40$: 6 runners; $40\\le t<50$: 14 runners; $50\\le t<60$: 26 runners; $60\\le t<70$: 20 runners; $70\\le t<80$: 10 runners; $80\\le t<90$: 4 runners. A cumulative frequency graph (ogive) is drawn for this data.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the cumulative frequencies for the six intervals.",
+          "marks": 2,
+          "solution": [
+            "Cumulative frequencies: $6;\\ 20;\\ 46;\\ 66;\\ 76;\\ 80$",
+            "(Each value is plotted at the upper boundary of its interval on the ogive.)"
+          ],
+          "answer": "$6;\\ 20;\\ 46;\\ 66;\\ 76;\\ 80$"
+        },
+        {
+          "q": "Write down the modal class of the data.",
+          "marks": 1,
+          "solution": [
+            "The class with the highest frequency (26 runners) is $50\\le t<60$."
+          ],
+          "answer": "$50\\le t<60$"
+        },
+        {
+          "q": "Use the ogive to estimate the median finishing time.",
+          "marks": 2,
+          "solution": [
+            "The median is at the $\\frac{80}{2}=40$th runner, which lies in the interval $50\\le t<60$.",
+            "Reading across from 40 on the cumulative frequency axis: $M\\approx 50+\\frac{40-20}{26}\\times 10\\approx 57{,}7$ minutes"
+          ],
+          "answer": "$M\\approx 57{,}7$ minutes (accept $57$–$58$ minutes read from the ogive)"
+        },
+        {
+          "q": "Estimate how many runners finished in under 65 minutes.",
+          "marks": 2,
+          "solution": [
+            "At $t=65$ (halfway through the interval $60\\le t<70$): cumulative frequency $\\approx 46+\\frac{5}{10}\\times 20=46+10=56$",
+            "$\\therefore$ approximately 56 runners finished in under 65 minutes."
+          ],
+          "answer": "$\\approx 56$ runners"
+        },
+        {
+          "q": "What percentage of the runners took 70 minutes or longer?",
+          "marks": 2,
+          "solution": [
+            "Runners with $t\\ge 70$: $10+4=14$",
+            "Percentage: $\\frac{14}{80}\\times 100=17{,}5\\%$"
+          ],
+          "answer": "$17{,}5\\%$"
+        }
+      ]
+    },
+    {
+      "id": "statistics-04",
+      "difficulty": 2,
+      "context": "A spaza shop owner in Polokwane records the maximum daily temperature ($x$, in °C) and the number of cold drinks sold ($y$) on 8 days: $(18; 40),\\ (21; 44),\\ (24; 52),\\ (26; 57),\\ (29; 66),\\ (31; 68),\\ (33; 75),\\ (35; 80)$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the equation of the least-squares regression line $\\hat{y}=a+bx$. Round $a$ and $b$ to four decimal places.",
+          "marks": 3,
+          "solution": [
+            "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=217$, $\\sum y=482$, $\\sum xy=13671$, $\\sum x^2=6133$):",
+            "$b=\\frac{8(13671)-(217)(482)}{8(6133)-(217)^2}\\approx 2{,}4172$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{482}{8}-2{,}4172\\times\\frac{217}{8}\\approx -5{,}3170$",
+            "$\\therefore\\ \\hat{y}=-5{,}3170+2{,}4172x$ (values rounded to 4 decimal places)"
+          ],
+          "answer": "$\\hat{y}=-5{,}3170+2{,}4172x$"
+        },
+        {
+          "q": "Use the regression line to predict the number of cold drinks sold on a day when the maximum temperature is 28 °C.",
+          "marks": 2,
+          "solution": [
+            "$\\hat{y}=-5{,}3170+2{,}4172(28)\\approx 62{,}36$",
+            "$\\therefore$ approximately 62 cold drinks."
+          ],
+          "answer": "$\\approx 62$ cold drinks ($\\hat{y}\\approx 62{,}36$)"
+        },
+        {
+          "q": "Calculate the correlation coefficient $r$, rounded to four decimal places.",
+          "marks": 2,
+          "solution": [
+            "By calculator: $r\\approx 0{,}9962$"
+          ],
+          "answer": "$r\\approx 0{,}9962$"
+        },
+        {
+          "q": "Interpret the value of $r$ in the context of this data.",
+          "marks": 1,
+          "solution": [
+            "There is a very strong positive linear relationship between the maximum daily temperature and the number of cold drinks sold: as temperature increases, sales increase."
+          ],
+          "answer": "Very strong positive linear correlation between temperature and cold drink sales"
+        },
+        {
+          "q": "The owner wants to use the regression line to predict sales on a day with a maximum temperature of 45 °C. Explain why this prediction would be unreliable.",
+          "marks": 2,
+          "solution": [
+            "$45$ °C lies well outside the range of the observed data ($18$ °C to $35$ °C).",
+            "This is extrapolation — the linear trend cannot be assumed to continue beyond the data range, so the prediction is unreliable."
+          ],
+          "answer": "It is extrapolation: 45 °C is outside the observed range (18 °C to 35 °C), so the linear model may not hold"
+        }
+      ]
+    },
+    {
+      "id": "statistics-05",
+      "difficulty": 3,
+      "context": "A club cricketer's runs in 8 innings are: $34; 12; 45; x; 28; 51; 9; 41$. The mean of the 8 innings is 32 runs.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Show that $x=36$.",
+          "marks": 3,
+          "solution": [
+            "$\\frac{34+12+45+x+28+51+9+41}{8}=32$",
+            "$220+x=256$",
+            "$\\therefore x=36$"
+          ],
+          "answer": "$x=36$"
+        },
+        {
+          "q": "Calculate the standard deviation of the 8 innings.",
+          "marks": 2,
+          "solution": [
+            "Data set: $9; 12; 28; 34; 36; 41; 45; 51$",
+            "By calculator: $\\sigma\\approx 14{,}04$ runs (rounded to 2 decimal places)"
+          ],
+          "answer": "$\\sigma\\approx 14{,}04$ runs"
+        },
+        {
+          "q": "In a 9th innings the cricketer scores 130 runs. Without full recalculation, explain the effect of this score on (i) the mean and (ii) the standard deviation of the data.",
+          "marks": 2,
+          "solution": [
+            "(i) $130$ is far above every other value, so the mean increases substantially (from $32$ to $\\frac{288+130}{9}\\approx 42{,}89$).",
+            "(ii) The outlier lies far from the mean, so the spread of the data increases — the standard deviation increases (to $\\approx 33{,}52$)."
+          ],
+          "answer": "Both increase: the mean rises to $\\approx 42{,}89$ and the standard deviation increases sharply"
+        },
+        {
+          "q": "After the 9th innings, which measure of central tendency — the mean or the median — better represents the cricketer's typical score? Justify your answer.",
+          "marks": 1,
+          "solution": [
+            "The median (which only moves from $35$ to $36$) better represents the typical score, because the median is resistant to the outlier of $130$, whereas the mean is pulled up to $\\approx 42{,}89$ — higher than 7 of the 9 scores."
+          ],
+          "answer": "The median, because it is not distorted by the outlier of 130"
+        }
+      ]
+    }
+  ]
+}

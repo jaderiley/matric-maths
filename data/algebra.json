@@ -1,0 +1,214 @@
+{
+  "id": "algebra",
+  "paper": 1,
+  "title": "Algebra, Equations & Inequalities",
+  "blurb": "Quadratic equations and inequalities, simultaneous equations, exponents and surds, and the nature of roots.",
+  "questions": [
+    {
+      "id": "algebra-01",
+      "difficulty": 1,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Solve for $x$: $x^2-7x+10=0$.",
+          "marks": 3,
+          "solution": [
+            "$(x-2)(x-5)=0$",
+            "$x=2$ or $x=5$"
+          ],
+          "answer": "$x=2$ or $x=5$"
+        },
+        {
+          "q": "Solve for $x$, correct to TWO decimal places: $3x^2+2x-4=0$.",
+          "marks": 4,
+          "solution": [
+            "$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ with $a=3$, $b=2$, $c=-4$",
+            "$x=\\dfrac{-2\\pm\\sqrt{(2)^2-4(3)(-4)}}{2(3)}=\\dfrac{-2\\pm\\sqrt{52}}{6}$",
+            "$x=0{,}87$ or $x=-1{,}54$"
+          ],
+          "answer": "$x=0{,}87$ or $x=-1{,}54$"
+        },
+        {
+          "q": "Solve for $x$: $x(x-5)<6$.",
+          "marks": 3,
+          "solution": [
+            "$x^2-5x-6<0$",
+            "$(x-6)(x+1)<0$",
+            "Critical values $x=-1$ and $x=6$; the parabola is below zero between the roots",
+            "$-1<x<6$"
+          ],
+          "answer": "$-1<x<6$"
+        }
+      ]
+    },
+    {
+      "id": "algebra-02",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Solve simultaneously for $x$ and $y$: $y=x+1$ and $x^2+y^2=25$.",
+          "marks": 6,
+          "solution": [
+            "Substitute $y=x+1$ into $x^2+y^2=25$: $x^2+(x+1)^2=25$",
+            "$x^2+x^2+2x+1=25$",
+            "$2x^2+2x-24=0$, so $x^2+x-12=0$",
+            "$(x+4)(x-3)=0$",
+            "$x=-4$ or $x=3$",
+            "If $x=-4$ then $y=-3$; if $x=3$ then $y=4$"
+          ],
+          "answer": "$(x;y)=(-4;-3)$ or $(x;y)=(3;4)$"
+        }
+      ]
+    },
+    {
+      "id": "algebra-03",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Solve for $x$: $3^{x+1}+3^x=36$.",
+          "marks": 3,
+          "solution": [
+            "$3^x(3+1)=36$",
+            "$3^x=9=3^2$",
+            "$x=2$"
+          ],
+          "answer": "$x=2$"
+        },
+        {
+          "q": "Solve for $x$: $\\sqrt{x+5}=x-1$.",
+          "marks": 4,
+          "solution": [
+            "Square both sides: $x+5=(x-1)^2=x^2-2x+1$",
+            "$x^2-3x-4=0$",
+            "$(x-4)(x+1)=0$, so $x=4$ or $x=-1$",
+            "Check $x=-1$: LHS $=\\sqrt{4}=2$ but RHS $=-2$, so $x=-1$ is not valid",
+            "$x=4$ only"
+          ],
+          "answer": "$x=4$ (the solution $x=-1$ is extraneous)"
+        }
+      ]
+    },
+    {
+      "id": "algebra-04",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Solve for $x$ by completing the square: $x^2+6x-2=0$. Leave your answer in simplest surd form.",
+          "marks": 4,
+          "solution": [
+            "$x^2+6x=2$",
+            "$x^2+6x+9=2+9$",
+            "$(x+3)^2=11$",
+            "$x+3=\\pm\\sqrt{11}$",
+            "$x=-3\\pm\\sqrt{11}$"
+          ],
+          "answer": "$x=-3+\\sqrt{11}$ or $x=-3-\\sqrt{11}$"
+        },
+        {
+          "q": "Hence write down the minimum value of $f(x)=x^2+6x-2$.",
+          "marks": 2,
+          "solution": [
+            "From the completed square, $f(x)=(x+3)^2-11$",
+            "Minimum value is $-11$ (at $x=-3$)"
+          ],
+          "answer": "$-11$"
+        }
+      ]
+    },
+    {
+      "id": "algebra-05",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "For which values of $k$ will the equation $x^2-6x+k=0$ have two unequal real roots?",
+          "marks": 3,
+          "solution": [
+            "$\\Delta=b^2-4ac=(-6)^2-4(1)(k)$",
+            "For two unequal real roots: $36-4k>0$",
+            "$k<9$"
+          ],
+          "answer": "$k<9$"
+        },
+        {
+          "q": "Determine the value(s) of $p$ for which $2x^2+px+8=0$ has equal roots.",
+          "marks": 3,
+          "solution": [
+            "$\\Delta=p^2-4(2)(8)=0$",
+            "$p^2=64$",
+            "$p=8$ or $p=-8$"
+          ],
+          "answer": "$p=\\pm 8$"
+        },
+        {
+          "q": "Show that the roots of $x^2+(k+1)x+k=0$ are real and rational for ALL real values of $k$.",
+          "marks": 4,
+          "solution": [
+            "$\\Delta=(k+1)^2-4(1)(k)$",
+            "$=k^2+2k+1-4k$",
+            "$=k^2-2k+1=(k-1)^2$",
+            "$(k-1)^2\\geq 0$ for all $k$, and it is a perfect square, so the roots are real and rational for all real $k$"
+          ],
+          "answer": "$\\Delta=(k-1)^2\\geq 0$, a perfect square, so the roots are always real and rational"
+        }
+      ]
+    },
+    {
+      "id": "algebra-06",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Solve for $x$: $2^{2x}-6\\cdot 2^x+8=0$.",
+          "marks": 4,
+          "solution": [
+            "Let $u=2^x$: $u^2-6u+8=0$",
+            "$(u-2)(u-4)=0$, so $u=2$ or $u=4$",
+            "$2^x=2^1$ gives $x=1$",
+            "$2^x=2^2$ gives $x=2$"
+          ],
+          "answer": "$x=1$ or $x=2$"
+        },
+        {
+          "q": "Solve for $x$: $x^{\\frac{2}{3}}=4$.",
+          "marks": 3,
+          "solution": [
+            "$\\left(x^{\\frac{1}{3}}\\right)^2=4$",
+            "$x^{\\frac{1}{3}}=\\pm 2$",
+            "$x=(\\pm 2)^3$, so $x=8$ or $x=-8$"
+          ],
+          "answer": "$x=8$ or $x=-8$"
+        }
+      ]
+    },
+    {
+      "id": "algebra-07",
+      "difficulty": 3,
+      "context": "The roots of the equation $x^2-px+12=0$ differ by exactly $1$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the possible value(s) of $p$.",
+          "marks": 5,
+          "solution": [
+            "Let the roots be $r$ and $r+1$",
+            "Product of roots: $r(r+1)=12$",
+            "$r^2+r-12=0$, so $(r+4)(r-3)=0$, giving $r=3$ or $r=-4$",
+            "Sum of roots: $p=r+(r+1)=2r+1$",
+            "If $r=3$: roots are $3$ and $4$, so $p=7$; if $r=-4$: roots are $-4$ and $-3$, so $p=-7$"
+          ],
+          "answer": "$p=7$ or $p=-7$"
+        }
+      ]
+    }
+  ]
+}

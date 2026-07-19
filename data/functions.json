@@ -1,0 +1,283 @@
+{
+  "id": "functions",
+  "paper": 1,
+  "title": "Functions & Graphs",
+  "blurb": "Parabolas, hyperbolas and exponential graphs: equations, turning points, asymptotes, domain and range, transformations, inverses and interpreting sketches.",
+  "questions": [
+    {
+      "id": "functions-01",
+      "difficulty": 1,
+      "context": "The graphs of $f(x)=x^2-4x-5$ and $g(x)=x+1$ are drawn on the same set of axes.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the coordinates of the $x$-intercepts of $f$.",
+          "marks": 2,
+          "solution": [
+            "$x^2-4x-5=0$",
+            "$(x-5)(x+1)=0$",
+            "$x=5$ or $x=-1$, so the $x$-intercepts are $(5;0)$ and $(-1;0)$"
+          ],
+          "answer": "$(5;0)$ and $(-1;0)$"
+        },
+        {
+          "q": "Determine the coordinates of the turning point of $f$.",
+          "marks": 2,
+          "solution": [
+            "$x=-\\dfrac{b}{2a}=-\\dfrac{-4}{2(1)}=2$",
+            "$f(2)=(2)^2-4(2)-5=-9$",
+            "Turning point: $(2;-9)$"
+          ],
+          "answer": "$(2;-9)$"
+        },
+        {
+          "q": "Determine the coordinates of the points of intersection of $f$ and $g$.",
+          "marks": 4,
+          "solution": [
+            "$x^2-4x-5=x+1$",
+            "$x^2-5x-6=0$",
+            "$(x-6)(x+1)=0$",
+            "$x=6$ or $x=-1$",
+            "$g(6)=7$ and $g(-1)=0$",
+            "Points of intersection: $(6;7)$ and $(-1;0)$"
+          ],
+          "answer": "$(6;7)$ and $(-1;0)$"
+        },
+        {
+          "q": "For which values of $x$ is $f(x)<g(x)$?",
+          "marks": 2,
+          "solution": [
+            "$f(x)<g(x)$ between the points of intersection (the parabola lies below the line there)",
+            "$-1<x<6$"
+          ],
+          "answer": "$-1<x<6$"
+        }
+      ]
+    },
+    {
+      "id": "functions-02",
+      "difficulty": 2,
+      "context": "Given: $g(x)=\\dfrac{3}{x-2}-1$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the equations of the asymptotes of $g$.",
+          "marks": 2,
+          "solution": [
+            "Vertical asymptote: $x=2$",
+            "Horizontal asymptote: $y=-1$"
+          ],
+          "answer": "$x=2$ and $y=-1$"
+        },
+        {
+          "q": "Determine the coordinates of the $x$- and $y$-intercepts of $g$.",
+          "marks": 3,
+          "solution": [
+            "$y$-intercept: $g(0)=\\dfrac{3}{0-2}-1=-\\dfrac{3}{2}-1=-\\dfrac{5}{2}$, so $\\left(0;-\\dfrac{5}{2}\\right)$",
+            "$x$-intercept: $\\dfrac{3}{x-2}-1=0$",
+            "$\\dfrac{3}{x-2}=1$, so $x-2=3$",
+            "$x=5$, so $(5;0)$"
+          ],
+          "answer": "$x$-intercept $(5;0)$; $y$-intercept $\\left(0;-\\dfrac{5}{2}\\right)$"
+        },
+        {
+          "q": "For which values of $x$ is $g(x)\\ge 0$?",
+          "marks": 2,
+          "solution": [
+            "For $x<2$ the fraction $\\dfrac{3}{x-2}$ is negative, so $g(x)<0$ there",
+            "For $x>2$: $\\dfrac{3}{x-2}\\ge 1$ gives $x-2\\le 3$, i.e. $x\\le 5$",
+            "$2<x\\le 5$"
+          ],
+          "answer": "$2<x\\le 5$"
+        }
+      ]
+    },
+    {
+      "id": "functions-03",
+      "difficulty": 2,
+      "context": "Given: $f(x)=3^{x}$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the equation of $f^{-1}$ in the form $y=\\ldots$",
+          "marks": 2,
+          "solution": [
+            "Swap $x$ and $y$: $x=3^{y}$",
+            "$y=\\log_{3}x$"
+          ],
+          "answer": "$y=\\log_{3}x$"
+        },
+        {
+          "q": "The point $(2;9)$ lies on $f$. Write down the coordinates of the corresponding point on $f^{-1}$.",
+          "marks": 1,
+          "solution": [
+            "Reflect in the line $y=x$: $(9;2)$"
+          ],
+          "answer": "$(9;2)$"
+        },
+        {
+          "q": "Write down the domain of $f^{-1}$.",
+          "marks": 1,
+          "solution": [
+            "The range of $f$ is $y>0$, so the domain of $f^{-1}$ is $x>0$"
+          ],
+          "answer": "$x>0$"
+        },
+        {
+          "q": "The graph of $f$ is shifted $1$ unit to the right and $2$ units up to form $h$. Write down the equation of $h$.",
+          "marks": 2,
+          "solution": [
+            "Right 1 unit: replace $x$ with $x-1$",
+            "Up 2 units: add 2",
+            "$h(x)=3^{x-1}+2$"
+          ],
+          "answer": "$h(x)=3^{x-1}+2$"
+        },
+        {
+          "q": "For which values of $x$ is $f^{-1}(x)<1$?",
+          "marks": 2,
+          "solution": [
+            "$\\log_{3}x<1$",
+            "$x<3^{1}$, but $x$ must be in the domain of $f^{-1}$ ($x>0$)",
+            "$0<x<3$"
+          ],
+          "answer": "$0<x<3$"
+        }
+      ]
+    },
+    {
+      "id": "functions-04",
+      "difficulty": 2,
+      "context": "The sketch shows the parabola $f$ with turning point $(1;8)$. The graph passes through the point $(3;0)$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"300\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 74 170 Q 140 -62 206 170\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"140\" cy=\"54\" r=\"3\" fill=\"currentColor\"/><circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><text x=\"148\" y=\"50\" font-size=\"13\" fill=\"currentColor\">(1;8)</text><text x=\"204\" y=\"168\" font-size=\"13\" fill=\"currentColor\">(3;0)</text><text x=\"290\" y=\"145\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"116\" y=\"26\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"60\" y=\"70\" font-size=\"13\" fill=\"currentColor\">f</text></svg>",
+      "parts": [
+        {
+          "q": "Show that $f(x)=-2(x-1)^2+8$.",
+          "marks": 3,
+          "solution": [
+            "Turning-point form: $f(x)=a(x-1)^2+8$",
+            "Substitute $(3;0)$: $0=a(3-1)^2+8$",
+            "$4a=-8$, so $a=-2$",
+            "$f(x)=-2(x-1)^2+8$"
+          ],
+          "answer": "$a=-2$, so $f(x)=-2(x-1)^2+8$"
+        },
+        {
+          "q": "Write down the $y$-intercept of $f$.",
+          "marks": 1,
+          "solution": [
+            "$f(0)=-2(0-1)^2+8=-2+8=6$, so $(0;6)$"
+          ],
+          "answer": "$(0;6)$"
+        },
+        {
+          "q": "Determine the other $x$-intercept of $f$.",
+          "marks": 2,
+          "solution": [
+            "$-2(x-1)^2+8=0$",
+            "$(x-1)^2=4$, so $x-1=\\pm 2$",
+            "$x=3$ or $x=-1$; the other $x$-intercept is $(-1;0)$"
+          ],
+          "answer": "$(-1;0)$"
+        },
+        {
+          "q": "Determine the average gradient of $f$ between $x=-1$ and $x=2$.",
+          "marks": 3,
+          "solution": [
+            "$f(-1)=-2(-2)^2+8=0$",
+            "$f(2)=-2(1)^2+8=6$",
+            "Average gradient $=\\dfrac{f(2)-f(-1)}{2-(-1)}=\\dfrac{6-0}{3}=2$"
+          ],
+          "answer": "$2$"
+        }
+      ]
+    },
+    {
+      "id": "functions-05",
+      "difficulty": 2,
+      "context": "The graph of $g(x)=a\\cdot b^{x}+q$ (with $b>1$) has a horizontal asymptote $y=-4$ and passes through the points $(0;-2)$ and $(1;2)$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the value of $q$.",
+          "marks": 1,
+          "solution": [
+            "The horizontal asymptote of $g$ is $y=q$, so $q=-4$"
+          ],
+          "answer": "$q=-4$"
+        },
+        {
+          "q": "Determine the values of $a$ and $b$.",
+          "marks": 4,
+          "solution": [
+            "Substitute $(0;-2)$: $a\\cdot b^{0}-4=-2$",
+            "$a=2$",
+            "Substitute $(1;2)$: $2b-4=2$",
+            "$b=3$, so $g(x)=2\\cdot 3^{x}-4$"
+          ],
+          "answer": "$a=2$ and $b=3$"
+        },
+        {
+          "q": "Determine the $x$-intercept of $g$, correct to two decimal places.",
+          "marks": 3,
+          "solution": [
+            "$2\\cdot 3^{x}-4=0$",
+            "$3^{x}=2$",
+            "$x=\\log_{3}2=\\dfrac{\\log 2}{\\log 3}\\approx 0{,}63$"
+          ],
+          "answer": "$x\\approx 0{,}63$"
+        },
+        {
+          "q": "Write down the range of $g$.",
+          "marks": 1,
+          "solution": [
+            "$y>-4$"
+          ],
+          "answer": "$y>-4$"
+        }
+      ]
+    },
+    {
+      "id": "functions-06",
+      "difficulty": 3,
+      "context": "The graphs of $f(x)=-x^2+2x+3$ and the straight line $g(x)=x+1$ intersect at points $A$ and $B$, where $A$ lies on the $x$-axis. $P$ is a point on $f$ and $Q$ is a point on $g$ such that $PQ$ is vertical and lies between $A$ and $B$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the coordinates of $A$ and $B$.",
+          "marks": 4,
+          "solution": [
+            "$-x^2+2x+3=x+1$",
+            "$x^2-x-2=0$",
+            "$(x-2)(x+1)=0$, so $x=2$ or $x=-1$",
+            "$g(-1)=0$ and $g(2)=3$",
+            "$A(-1;0)$ (on the $x$-axis) and $B(2;3)$"
+          ],
+          "answer": "$A(-1;0)$ and $B(2;3)$"
+        },
+        {
+          "q": "Determine the maximum length of $PQ$.",
+          "marks": 4,
+          "solution": [
+            "$PQ(x)=f(x)-g(x)=-x^2+2x+3-(x+1)=-x^2+x+2$",
+            "Maximum where $\\dfrac{d(PQ)}{dx}=-2x+1=0$, i.e. $x=\\dfrac{1}{2}$ (or use $x=-\\dfrac{b}{2a}$)",
+            "$PQ\\left(\\dfrac{1}{2}\\right)=-\\dfrac{1}{4}+\\dfrac{1}{2}+2=\\dfrac{9}{4}$",
+            "Maximum length of $PQ=\\dfrac{9}{4}=2{,}25$ units"
+          ],
+          "answer": "$\\dfrac{9}{4}$ units"
+        },
+        {
+          "q": "Determine the value of $k$ for which the line $y=x+k$ is a tangent to $f$.",
+          "marks": 3,
+          "solution": [
+            "$-x^2+2x+3=x+k$",
+            "$x^2-x+(k-3)=0$",
+            "Tangent: equal roots, so $\\Delta=(-1)^2-4(1)(k-3)=0$",
+            "$1-4k+12=0$, so $k=\\dfrac{13}{4}$"
+          ],
+          "answer": "$k=\\dfrac{13}{4}$"
+        }
+      ]
+    }
+  ]
+}

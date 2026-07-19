@@ -1,0 +1,250 @@
+{
+  "id": "calculus",
+  "paper": 1,
+  "title": "Differential Calculus",
+  "blurb": "First principles, rules of differentiation, tangents, cubic graphs, interpreting derivative graphs, optimisation and rates of change.",
+  "questions": [
+    {
+      "id": "calculus-01",
+      "difficulty": 1,
+      "context": "",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine $f'(x)$ from first principles if $f(x)=2x^2-x$.",
+          "marks": 5,
+          "solution": [
+            "$f(x+h)=2(x+h)^2-(x+h)=2x^2+4xh+2h^2-x-h$",
+            "$f(x+h)-f(x)=4xh+2h^2-h$",
+            "$f'(x)=\\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\to 0}\\dfrac{4xh+2h^2-h}{h}$",
+            "$=\\lim_{h\\to 0}(4x+2h-1)$",
+            "$=4x-1$"
+          ],
+          "answer": "$f'(x)=4x-1$"
+        },
+        {
+          "q": "Determine $\\dfrac{dy}{dx}$ if $y=5x^3-\\dfrac{3}{x^2}+\\sqrt{x}$.",
+          "marks": 4,
+          "solution": [
+            "Rewrite: $y=5x^3-3x^{-2}+x^{\\frac{1}{2}}$",
+            "$\\dfrac{dy}{dx}=15x^2+6x^{-3}+\\dfrac{1}{2}x^{-\\frac{1}{2}}$",
+            "$=15x^2+\\dfrac{6}{x^3}+\\dfrac{1}{2\\sqrt{x}}$"
+          ],
+          "answer": "$\\dfrac{dy}{dx}=15x^2+\\dfrac{6}{x^3}+\\dfrac{1}{2\\sqrt{x}}$"
+        },
+        {
+          "q": "Determine $D_x\\left[\\dfrac{x^3+8}{x+2}\\right]$.",
+          "marks": 3,
+          "solution": [
+            "Factorise the sum of cubes: $x^3+8=(x+2)(x^2-2x+4)$",
+            "$\\dfrac{x^3+8}{x+2}=x^2-2x+4$ (for $x\\ne -2$)",
+            "$D_x[x^2-2x+4]=2x-2$"
+          ],
+          "answer": "$2x-2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-02",
+      "difficulty": 2,
+      "context": "Given: $f(x)=x^3-4x^2+3x$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine $f'(x)$.",
+          "marks": 2,
+          "solution": [
+            "$f'(x)=3x^2-8x+3$"
+          ],
+          "answer": "$f'(x)=3x^2-8x+3$"
+        },
+        {
+          "q": "Determine the equation of the tangent to $f$ at the point where $x=2$.",
+          "marks": 4,
+          "solution": [
+            "$f(2)=(2)^3-4(2)^2+3(2)=8-16+6=-2$, so the point of contact is $(2;-2)$",
+            "Gradient: $f'(2)=3(4)-8(2)+3=-1$",
+            "$y-(-2)=-1(x-2)$",
+            "$y=-x$"
+          ],
+          "answer": "$y=-x$"
+        },
+        {
+          "q": "Determine the values of $x$ at which the tangent to $f$ is parallel to the line $y=3x-1$.",
+          "marks": 3,
+          "solution": [
+            "Parallel lines have equal gradients, so $f'(x)=3$",
+            "$3x^2-8x+3=3$",
+            "$3x^2-8x=0$, so $x(3x-8)=0$",
+            "$x=0$ or $x=\\dfrac{8}{3}$"
+          ],
+          "answer": "$x=0$ or $x=\\dfrac{8}{3}$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-03",
+      "difficulty": 2,
+      "context": "Given: $f(x)=x^3-3x^2-9x+27$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Show that $(x-3)$ is a factor of $f(x)$ and hence determine the $x$-intercepts of $f$.",
+          "marks": 3,
+          "solution": [
+            "$f(3)=27-27-27+27=0$, so $(x-3)$ is a factor",
+            "$f(x)=(x-3)(x^2-9)=(x-3)^2(x+3)$",
+            "$x$-intercepts: $x=3$ (repeated) and $x=-3$"
+          ],
+          "answer": "$x=3$ and $x=-3$"
+        },
+        {
+          "q": "Determine the coordinates of the turning points of $f$.",
+          "marks": 4,
+          "solution": [
+            "$f'(x)=3x^2-6x-9=0$",
+            "$3(x-3)(x+1)=0$, so $x=3$ or $x=-1$",
+            "$f(-1)=-1-3+9+27=32$",
+            "$f(3)=0$",
+            "Turning points: $(-1;32)$ (local maximum) and $(3;0)$ (local minimum)"
+          ],
+          "answer": "$(-1;32)$ and $(3;0)$"
+        },
+        {
+          "q": "Sketch the graph of $f$, clearly showing all intercepts with the axes and the turning points.",
+          "marks": 3,
+          "solution": [
+            "$y$-intercept: $f(0)=27$, so $(0;27)$",
+            "Cubic with positive leading coefficient: rises to the local maximum $(-1;32)$, falls to the local minimum $(3;0)$, then rises",
+            "Curve cuts the $x$-axis at $(-3;0)$ and touches it at $(3;0)$"
+          ],
+          "answer": "Increasing cubic shape through $(-3;0)$, $(0;27)$, max $(-1;32)$, touching the $x$-axis at min $(3;0)$"
+        },
+        {
+          "q": "Determine the coordinates of the point of inflection of $f$.",
+          "marks": 2,
+          "solution": [
+            "$f''(x)=6x-6=0$, so $x=1$",
+            "$f(1)=1-3-9+27=16$, so the point of inflection is $(1;16)$"
+          ],
+          "answer": "$(1;16)$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-04",
+      "difficulty": 3,
+      "context": "The sketch shows the graph of $y=f'(x)$, the DERIVATIVE of a cubic function $f$. The graph of $f'$ is a parabola that opens upwards with $x$-intercepts at $x=-1$ and $x=5$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 40 68 Q 140 260 240 68\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"65\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><circle cx=\"215\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"48\" y=\"103\" font-size=\"13\" fill=\"currentColor\">-1</text><text x=\"219\" y=\"103\" font-size=\"13\" fill=\"currentColor\">5</text><text x=\"244\" y=\"62\" font-size=\"13\" fill=\"currentColor\">y = f'(x)</text><text x=\"290\" y=\"105\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"96\" y=\"26\" font-size=\"13\" fill=\"currentColor\">y</text></svg>",
+      "parts": [
+        {
+          "q": "Write down the $x$-coordinates of the turning points of $f$.",
+          "marks": 2,
+          "solution": [
+            "Turning points of $f$ occur where $f'(x)=0$",
+            "$x=-1$ and $x=5$"
+          ],
+          "answer": "$x=-1$ and $x=5$"
+        },
+        {
+          "q": "At which of these $x$-values does $f$ have a local maximum? Motivate your answer.",
+          "marks": 2,
+          "solution": [
+            "At $x=-1$, $f'$ changes from positive to negative",
+            "So $f$ changes from increasing to decreasing: local maximum at $x=-1$"
+          ],
+          "answer": "$x=-1$ (since $f'$ changes sign from $+$ to $-$ there)"
+        },
+        {
+          "q": "For which values of $x$ is $f$ decreasing?",
+          "marks": 2,
+          "solution": [
+            "$f$ is decreasing where $f'(x)<0$, i.e. where the parabola lies below the $x$-axis",
+            "$-1<x<5$"
+          ],
+          "answer": "$-1<x<5$"
+        },
+        {
+          "q": "Determine the $x$-coordinate of the point of inflection of $f$.",
+          "marks": 2,
+          "solution": [
+            "The point of inflection of $f$ is where $f'$ has its turning point (minimum)",
+            "By symmetry of the parabola: $x=\\dfrac{-1+5}{2}=2$"
+          ],
+          "answer": "$x=2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-05",
+      "difficulty": 2,
+      "context": "A farmer in Limpopo has $60$ m of fencing to build a rectangular camp against an existing straight wall. The wall forms one of the long sides, so only THREE sides need fencing. Let the width (each side perpendicular to the wall) be $x$ metres.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Show that the area of the camp is given by $A(x)=60x-2x^2$.",
+          "marks": 2,
+          "solution": [
+            "Length of the side parallel to the wall: $60-2x$",
+            "$A(x)=x(60-2x)=60x-2x^2$"
+          ],
+          "answer": "$A(x)=x(60-2x)=60x-2x^2$"
+        },
+        {
+          "q": "Determine the value of $x$ for which the area is a maximum.",
+          "marks": 3,
+          "solution": [
+            "$A'(x)=60-4x$",
+            "For a maximum: $A'(x)=0$, so $60-4x=0$",
+            "$x=15$ m"
+          ],
+          "answer": "$x=15$ m"
+        },
+        {
+          "q": "Calculate the maximum area of the camp.",
+          "marks": 1,
+          "solution": [
+            "$A(15)=15(60-30)=450$ m$^2$"
+          ],
+          "answer": "$450$ m$^2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-06",
+      "difficulty": 2,
+      "context": "A cricket ball is hit vertically upwards. Its height (in metres) above the ground after $t$ seconds is given by $s(t)=40t-5t^2$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Determine the velocity of the ball after $2$ seconds.",
+          "marks": 2,
+          "solution": [
+            "$v(t)=s'(t)=40-10t$",
+            "$v(2)=40-10(2)=20$ m/s"
+          ],
+          "answer": "$20$ m/s"
+        },
+        {
+          "q": "Determine the maximum height reached by the ball.",
+          "marks": 3,
+          "solution": [
+            "Maximum height when $v(t)=0$: $40-10t=0$",
+            "$t=4$ s",
+            "$s(4)=40(4)-5(16)=160-80=80$ m"
+          ],
+          "answer": "$80$ m"
+        },
+        {
+          "q": "Determine the acceleration of the ball.",
+          "marks": 2,
+          "solution": [
+            "$a(t)=v'(t)=s''(t)$",
+            "$a(t)=-10$ m/s$^2$ (constant, directed downwards)"
+          ],
+          "answer": "$-10$ m/s$^2$"
+        }
+      ]
+    }
+  ]
+}
