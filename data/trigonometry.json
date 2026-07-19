@@ -1,0 +1,267 @@
+{
+  "id": "trigonometry",
+  "paper": 2,
+  "title": "Trigonometry",
+  "blurb": "Reduction formulae, identities, compound and double angles, general solutions, trig graphs, and sine/cosine/area rule problems in 2D and 3D.",
+  "questions": [
+    {
+      "id": "trigonometry-01",
+      "difficulty": 1,
+      "context": "Answer this question WITHOUT using a calculator. Show ALL working.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Simplify fully: $\\frac{\\sin(180^\\circ-x)\\cos(360^\\circ-x)\\tan(-x)}{\\cos(90^\\circ+x)\\sin(180^\\circ+x)}$",
+          "marks": 4,
+          "solution": [
+            "$\\sin(180^\\circ-x)=\\sin x$, $\\cos(360^\\circ-x)=\\cos x$ and $\\tan(-x)=-\\tan x$",
+            "Numerator $=\\sin x\\cdot\\cos x\\cdot\\left(-\\frac{\\sin x}{\\cos x}\\right)=-\\sin^2 x$",
+            "$\\cos(90^\\circ+x)=-\\sin x$ and $\\sin(180^\\circ+x)=-\\sin x$, so denominator $=(-\\sin x)(-\\sin x)=\\sin^2 x$",
+            "Expression $=\\frac{-\\sin^2 x}{\\sin^2 x}=-1$"
+          ],
+          "answer": "$-1$"
+        },
+        {
+          "q": "Evaluate: $\\cos 420^\\circ\\cdot\\sin(-330^\\circ)+\\tan^2 210^\\circ$",
+          "marks": 4,
+          "solution": [
+            "$\\cos 420^\\circ=\\cos 60^\\circ=\\frac{1}{2}$",
+            "$\\sin(-330^\\circ)=\\sin(-330^\\circ+360^\\circ)=\\sin 30^\\circ=\\frac{1}{2}$",
+            "$\\tan 210^\\circ=\\tan(180^\\circ+30^\\circ)=\\tan 30^\\circ=\\frac{1}{\\sqrt{3}}$, so $\\tan^2 210^\\circ=\\frac{1}{3}$",
+            "$\\frac{1}{2}\\cdot\\frac{1}{2}+\\frac{1}{3}=\\frac{1}{4}+\\frac{1}{3}=\\frac{7}{12}$"
+          ],
+          "answer": "$\\frac{7}{12}$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-02",
+      "difficulty": 2,
+      "context": "Given that $\\cos\\theta=-\\frac{8}{17}$ with $\\theta\\in(180^\\circ;270^\\circ)$. Determine, WITHOUT using a calculator, the value of each of the following.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "$\\sin\\theta$",
+          "marks": 2,
+          "solution": [
+            "$\\theta$ is in the third quadrant, so $\\sin\\theta<0$",
+            "$\\sin\\theta=-\\sqrt{1-\\cos^2\\theta}=-\\sqrt{1-\\frac{64}{289}}=-\\frac{15}{17}$"
+          ],
+          "answer": "$\\sin\\theta=-\\frac{15}{17}$"
+        },
+        {
+          "q": "$\\cos 2\\theta$",
+          "marks": 3,
+          "solution": [
+            "$\\cos 2\\theta=2\\cos^2\\theta-1$",
+            "$=2\\left(-\\frac{8}{17}\\right)^2-1=\\frac{128}{289}-\\frac{289}{289}$",
+            "$=-\\frac{161}{289}$"
+          ],
+          "answer": "$\\cos 2\\theta=-\\frac{161}{289}$"
+        },
+        {
+          "q": "$\\sin(\\theta-45^\\circ)$",
+          "marks": 3,
+          "solution": [
+            "$\\sin(\\theta-45^\\circ)=\\sin\\theta\\cos 45^\\circ-\\cos\\theta\\sin 45^\\circ$",
+            "$=\\left(-\\frac{15}{17}\\right)\\cdot\\frac{\\sqrt{2}}{2}-\\left(-\\frac{8}{17}\\right)\\cdot\\frac{\\sqrt{2}}{2}$",
+            "$=\\frac{\\sqrt{2}}{2}\\cdot\\frac{-15+8}{17}=-\\frac{7\\sqrt{2}}{34}$"
+          ],
+          "answer": "$\\sin(\\theta-45^\\circ)=-\\frac{7\\sqrt{2}}{34}$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-03",
+      "difficulty": 2,
+      "context": "Consider the identity: $\\frac{\\cos 2A+\\cos A+1}{\\sin 2A+\\sin A}=\\frac{1}{\\tan A}$",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Prove the identity.",
+          "marks": 5,
+          "solution": [
+            "LHS $=\\frac{\\cos 2A+\\cos A+1}{\\sin 2A+\\sin A}$",
+            "$\\cos 2A+1=2\\cos^2 A$, so numerator $=2\\cos^2 A+\\cos A=\\cos A(2\\cos A+1)$",
+            "$\\sin 2A=2\\sin A\\cos A$, so denominator $=2\\sin A\\cos A+\\sin A=\\sin A(2\\cos A+1)$",
+            "LHS $=\\frac{\\cos A(2\\cos A+1)}{\\sin A(2\\cos A+1)}=\\frac{\\cos A}{\\sin A}$",
+            "$=\\frac{1}{\\tan A}=$ RHS"
+          ],
+          "answer": "Proven: both sides equal $\\frac{\\cos A}{\\sin A}$."
+        },
+        {
+          "q": "Determine the values of $A\\in[0^\\circ;360^\\circ]$ for which the left-hand side of the identity is undefined.",
+          "marks": 3,
+          "solution": [
+            "Undefined where the denominator $\\sin A(2\\cos A+1)=0$",
+            "$\\sin A=0$ gives $A=0^\\circ$, $A=180^\\circ$ or $A=360^\\circ$",
+            "$2\\cos A+1=0$ gives $\\cos A=-\\frac{1}{2}$, so $A=120^\\circ$ or $A=240^\\circ$"
+          ],
+          "answer": "$A\\in\\{0^\\circ;120^\\circ;180^\\circ;240^\\circ;360^\\circ\\}$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-04",
+      "difficulty": 2,
+      "context": "Answer this question WITHOUT using a calculator.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Express $\\cos 75^\\circ$ in simplest surd form.",
+          "marks": 4,
+          "solution": [
+            "$\\cos 75^\\circ=\\cos(45^\\circ+30^\\circ)$",
+            "$=\\cos 45^\\circ\\cos 30^\\circ-\\sin 45^\\circ\\sin 30^\\circ$",
+            "$=\\frac{\\sqrt{2}}{2}\\cdot\\frac{\\sqrt{3}}{2}-\\frac{\\sqrt{2}}{2}\\cdot\\frac{1}{2}$",
+            "$=\\frac{\\sqrt{6}-\\sqrt{2}}{4}$"
+          ],
+          "answer": "$\\cos 75^\\circ=\\frac{\\sqrt{6}-\\sqrt{2}}{4}$"
+        },
+        {
+          "q": "Given that $\\sin 22^\\circ=p$, express $\\cos 44^\\circ$ in terms of $p$.",
+          "marks": 3,
+          "solution": [
+            "$\\cos 44^\\circ=\\cos(2\\times 22^\\circ)$",
+            "$=1-2\\sin^2 22^\\circ$",
+            "$=1-2p^2$"
+          ],
+          "answer": "$\\cos 44^\\circ=1-2p^2$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-05",
+      "difficulty": 2,
+      "context": "Determine the general solution of each of the following equations.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "$2\\cos^2 x+3\\sin x=0$",
+          "marks": 4,
+          "solution": [
+            "$2(1-\\sin^2 x)+3\\sin x=0$",
+            "$2\\sin^2 x-3\\sin x-2=0$",
+            "$(2\\sin x+1)(\\sin x-2)=0$",
+            "$\\sin x=-\\frac{1}{2}$ (since $\\sin x=2$ has no solution)",
+            "$x=210^\\circ+k\\cdot 360^\\circ$ or $x=330^\\circ+k\\cdot 360^\\circ$, $k\\in\\mathbb{Z}$"
+          ],
+          "answer": "$x=210^\\circ+k\\cdot 360^\\circ$ or $x=330^\\circ+k\\cdot 360^\\circ$, $k\\in\\mathbb{Z}$"
+        },
+        {
+          "q": "$\\cos(2x-30^\\circ)=\\sin x$",
+          "marks": 4,
+          "solution": [
+            "$\\sin x=\\cos(90^\\circ-x)$, so $\\cos(2x-30^\\circ)=\\cos(90^\\circ-x)$",
+            "$2x-30^\\circ=90^\\circ-x+k\\cdot 360^\\circ$ or $2x-30^\\circ=-(90^\\circ-x)+k\\cdot 360^\\circ$, $k\\in\\mathbb{Z}$",
+            "Case 1: $3x=120^\\circ+k\\cdot 360^\\circ$, so $x=40^\\circ+k\\cdot 120^\\circ$",
+            "Case 2: $x=-60^\\circ+k\\cdot 360^\\circ$"
+          ],
+          "answer": "$x=40^\\circ+k\\cdot 120^\\circ$ or $x=-60^\\circ+k\\cdot 360^\\circ$, $k\\in\\mathbb{Z}$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-06",
+      "difficulty": 1,
+      "context": "Given the function $f(x)=3\\cos 2x$ for $x\\in[0^\\circ;180^\\circ]$.",
+      "svg": null,
+      "parts": [
+        {
+          "q": "Write down the amplitude of $f$.",
+          "marks": 1,
+          "solution": ["Amplitude $=3$"],
+          "answer": "$3$"
+        },
+        {
+          "q": "Write down the period of $f$.",
+          "marks": 1,
+          "solution": ["Period $=\\frac{360^\\circ}{2}=180^\\circ$"],
+          "answer": "$180^\\circ$"
+        },
+        {
+          "q": "The graph of $g$ is defined by $g(x)=f(x)-1$. Write down the range of $g$.",
+          "marks": 2,
+          "solution": [
+            "Range of $f$ is $-3\\le y\\le 3$",
+            "Shifting down 1 unit: range of $g$ is $-4\\le y\\le 2$"
+          ],
+          "answer": "$-4\\le y\\le 2$"
+        },
+        {
+          "q": "The graph of $f$ is shifted $30^\\circ$ to the right to obtain the graph of $h$. Write down the equation of $h$ in its simplest form.",
+          "marks": 2,
+          "solution": [
+            "$h(x)=3\\cos 2(x-30^\\circ)$",
+            "$h(x)=3\\cos(2x-60^\\circ)$"
+          ],
+          "answer": "$h(x)=3\\cos(2x-60^\\circ)$"
+        },
+        {
+          "q": "For which values of $x\\in[0^\\circ;180^\\circ]$ is $f$ increasing?",
+          "marks": 2,
+          "solution": [
+            "$f$ increases where $\\cos 2x$ increases, i.e. for $2x\\in(180^\\circ;360^\\circ)$",
+            "$90^\\circ<x<180^\\circ$"
+          ],
+          "answer": "$90^\\circ<x<180^\\circ$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-07",
+      "difficulty": 3,
+      "context": "In the figure, AB is a vertical mast with its base B in the same horizontal plane as points C and D. The angle of elevation of A, the top of the mast, from C is $52^\\circ$. $B\\hat{C}D=105^\\circ$, $B\\hat{D}C=40^\\circ$ and $CD=40$ m. Let $AB=h$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M70 20L70 120M70 20L150 190M70 120L150 190M70 120L280 140M150 190L280 140\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M70 110L80 110L80 120\" stroke=\"currentColor\" fill=\"none\"/><text x=\"58\" y=\"18\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"50\" y=\"124\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"144\" y=\"206\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"288\" y=\"144\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"54\" y=\"74\" font-size=\"12\" fill=\"currentColor\">h</text><text x=\"126\" y=\"162\" font-size=\"11\" fill=\"currentColor\">52°</text><text x=\"160\" y=\"180\" font-size=\"11\" fill=\"currentColor\">105°</text><text x=\"246\" y=\"138\" font-size=\"11\" fill=\"currentColor\">40°</text><text x=\"200\" y=\"178\" font-size=\"11\" fill=\"currentColor\">40 m</text></svg>",
+      "parts": [
+        {
+          "q": "Write down, with a reason, the size of $C\\hat{B}D$.",
+          "marks": 2,
+          "solution": [
+            "$C\\hat{B}D=180^\\circ-105^\\circ-40^\\circ=35^\\circ$ (angle sum of $\\triangle BCD$)"
+          ],
+          "answer": "$C\\hat{B}D=35^\\circ$"
+        },
+        {
+          "q": "Calculate the length of BC, correct to TWO decimal places.",
+          "marks": 3,
+          "solution": [
+            "In $\\triangle BCD$: $\\frac{BC}{\\sin B\\hat{D}C}=\\frac{CD}{\\sin C\\hat{B}D}$ (sine rule)",
+            "$BC=\\frac{40\\sin 40^\\circ}{\\sin 35^\\circ}$",
+            "$BC\\approx 44.83$ m"
+          ],
+          "answer": "$BC\\approx 44.83$ m"
+        },
+        {
+          "q": "Hence calculate $h$, the height of the mast, correct to TWO decimal places.",
+          "marks": 2,
+          "solution": [
+            "In right-angled $\\triangle ABC$: $\\tan 52^\\circ=\\frac{h}{BC}$",
+            "$h=44.83\\tan 52^\\circ\\approx 57.38$ m"
+          ],
+          "answer": "$h\\approx 57.38$ m"
+        },
+        {
+          "q": "Calculate the area of $\\triangle BCD$, correct to TWO decimal places.",
+          "marks": 3,
+          "solution": [
+            "Area $=\\frac{1}{2}\\cdot BC\\cdot CD\\cdot\\sin B\\hat{C}D$ (area rule)",
+            "$=\\frac{1}{2}(44.83)(40)\\sin 105^\\circ$",
+            "$\\approx 865.98$ m$^2$"
+          ],
+          "answer": "Area $\\approx 865.98$ m$^2$"
+        },
+        {
+          "q": "Calculate the length of BD, correct to TWO decimal places.",
+          "marks": 3,
+          "solution": [
+            "$BD^2=BC^2+CD^2-2\\cdot BC\\cdot CD\\cdot\\cos B\\hat{C}D$ (cosine rule)",
+            "$BD^2=(44.83)^2+(40)^2-2(44.83)(40)\\cos 105^\\circ$",
+            "$BD\\approx 67.36$ m"
+          ],
+          "answer": "$BD\\approx 67.36$ m"
+        }
+      ]
+    }
+  ]
+}

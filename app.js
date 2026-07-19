@@ -28,16 +28,26 @@
   let manifest = null;
   const topics = {};   // id -> topic data
   async function getManifest() {
-    if (!manifest) manifest = await (await fetch("data/index.json")).json();
+    if (!manifest) {
+      const r = await fetch("data/index.json");
+      if (!r.ok) throw new Error("manifest " + r.status);
+      manifest = await r.json();
+    }
     return manifest;
   }
   async function getTopic(id) {
-    if (!topics[id]) topics[id] = await (await fetch(`data/${id}.json`)).json();
+    if (!topics[id]) {
+      const r = await fetch(`data/${id}.json`);
+      if (!r.ok) throw new Error(id + " " + r.status);
+      topics[id] = await r.json();
+    }
     return topics[id];
   }
+  /* resolves to the topics that loaded; a missing bank never blanks a view */
   async function getPaperTopics(p) {
     const m = await getManifest();
-    return Promise.all(m.papers[p].topics.map(getTopic));
+    const results = await Promise.allSettled(m.papers[p].topics.map(getTopic));
+    return results.filter(r => r.status === "fulfilled").map(r => r.value);
   }
 
   const qMarks = (q) => q.parts.reduce((s, p) => s + p.marks, 0);
