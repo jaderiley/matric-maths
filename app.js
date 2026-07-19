@@ -89,6 +89,7 @@
     <article class="card question" data-qid="${q.id}">
       <div class="qhead">
         <span>Question ${num}</span>
+        ${q.archetype ? `<span class="arch" title="Exam pattern">${esc(q.archetype)}</span>` : ""}
         <span class="diff" title="Difficulty ${q.difficulty}/3" aria-label="Difficulty ${q.difficulty} of 3">${dots}</span>
         <span class="marks">[${qMarks(q)}]</span>
       </div>
@@ -172,6 +173,8 @@
       ${cards.join("")}
       <div class="btnrow">
         <a class="btn btn--red" href="#/exam/1">Sit a timed mock</a>
+        <a class="btn" href="#/map">Exam map</a>
+        <a class="btn btn--quiet" href="#/papers">Past papers</a>
         <a class="btn btn--quiet" href="#/progress">My progress${s > 1 ? ` · ${s}-day streak` : ""}</a>
       </div>`, null);
   }
@@ -219,6 +222,7 @@
       <p class="exam-rule">Paper ${t.paper} — topic practice</p>
       <h1 class="display">${esc(t.title)}</h1>
       <p class="lede">${esc(t.blurb)}. Work each part on paper first, then open the memo and award yourself marks honestly — like a marker with a red pen.</p>
+      <div class="btnrow"><a class="btn" href="#/learn/${t.id}">Learn this topic first</a></div>
       ${html}
       <div class="tally"><span>Topic record: <span id="tally-note">${tried ? pct + "% on " + tried + " tried" : "nothing marked yet"}</span></span>
       <span class="score" id="tally-score"></span></div>`, "p" + t.paper);
@@ -516,6 +520,113 @@
       ])}`, "formulas");
   }
 
+  /* ── learn / exam map / past papers ────────────────────── */
+
+  async function learnView(id) {
+    let notes = null, t = null;
+    try { t = await getTopic(id); } catch {}
+    try {
+      const r = await fetch("data/notes.json");
+      if (r.ok) notes = (await r.json())[id];
+    } catch {}
+    if (!notes) {
+      setView(`
+        <p class="exam-rule">Learn</p>
+        <h1 class="display">${esc(t ? t.title : id)}</h1>
+        <p class="empty">Notes for this topic aren't loaded yet.</p>
+        <div class="btnrow"><a class="btn btn--red" href="#/topic/${id}">Practise the topic</a></div>`, t ? "p" + t.paper : null);
+      return;
+    }
+    const secs = notes.sections.map(s => `
+      <p class="exam-rule">${esc(s.h)}</p>
+      <div class="card learn-card"><ul>${s.points.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>`).join("");
+    setView(`
+      <p class="exam-rule">Learn — Paper ${t ? t.paper : ""}</p>
+      <h1 class="display">${esc(notes.title)}</h1>
+      ${secs}
+      <div class="btnrow"><a class="btn btn--red" href="#/topic/${id}">Now practise it</a></div>`, t ? "p" + t.paper : null);
+  }
+
+  async function mapView() {
+    const maps = [];
+    for (const p of ["1", "2"]) {
+      try {
+        const r = await fetch(`data/map-${p}.json`);
+        if (r.ok) maps.push(await r.json());
+      } catch {}
+    }
+    if (!maps.length) {
+      setView(`<p class="exam-rule">Exam map</p><h1 class="display">Exam map</h1>
+        <p class="empty">The exam map isn't loaded yet.</p>`, "map");
+      return;
+    }
+    const m = await getManifest();
+    const sections = maps.map(map => {
+      const byTopic = {};
+      map.archetypes.forEach(a => (byTopic[a.topic] = byTopic[a.topic] || []).push(a));
+      const topicBlocks = m.papers[map.paper].topics.map(tid => {
+        const list = byTopic[tid] || [];
+        if (!list.length) return "";
+        const title = topics[tid]?.title || tid;
+        return `
+        <p class="exam-rule">${esc(title)} — ${m.papers[map.paper].blueprint[tid]} marks</p>
+        ${list.map(a => `
+          <div class="card arch-card">
+            <div class="arch-card__head">
+              <strong>${esc(a.name)}</strong>
+              <span class="arch-card__meta">${esc(a.typical_marks)} marks · ${esc(a.frequency)}</span>
+            </div>
+            <p class="arch-card__how">${esc(a.how_asked)}</p>
+            ${a.notes ? `<p class="arch-card__notes">${esc(a.notes)}</p>` : ""}
+            <a class="btn btn--quiet" href="#/topic/${a.topic}">Practise ${esc(title)}</a>
+          </div>`).join("")}`;
+      }).join("");
+      return `
+        <h2 class="display" style="font-size:1.6rem;margin-top:2rem">Paper ${map.paper} — how it's built</h2>
+        <div class="card"><ul>${(map.structure_notes || []).map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>
+        ${topicBlocks}`;
+    }).join("");
+    // preload topic titles for headers
+    await Promise.allSettled([...m.papers["1"].topics, ...m.papers["2"].topics].map(getTopic));
+    setView(`
+      <p class="exam-rule">Intelligence — what the DBE actually asks</p>
+      <h1 class="display">The exam, <em>mapped</em>.</h1>
+      <p class="lede">Built from real recent NSC papers: the question shapes that come up year after year, what they're worth, and how they're phrased. If you can do everything on this page, you can do the paper.</p>
+      ${sections}`, "map");
+  }
+
+  async function papersView() {
+    let data = null;
+    try {
+      const r = await fetch("data/papers.json");
+      if (r.ok) data = await r.json();
+    } catch {}
+    if (!data) {
+      setView(`<p class="exam-rule">Past papers</p><h1 class="display">Past papers</h1>
+        <p class="empty">The paper index isn't loaded yet.</p>`, "papers");
+      return;
+    }
+    const years = data.years.map(y => `
+      <p class="exam-rule">${y.year}</p>
+      ${y.sessions.map(s => `
+        <div class="card">
+          <strong style="font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em">${esc(s.session)}</strong>
+          <div class="paper-links">
+            ${s.items.map(it => `
+              <span class="paper-links__row">
+                <a class="btn btn--quiet" href="${it.url}" target="_blank" rel="noopener">${esc(it.name)}</a>
+                ${it.memo ? `<a class="btn btn--quiet" href="${it.memo}" target="_blank" rel="noopener">${esc(it.name)} memo</a>` : ""}
+              </span>`).join("")}
+          </div>
+        </div>`).join("")}`).join("");
+    setView(`
+      <p class="exam-rule">The real thing</p>
+      <h1 class="display">Official past papers</h1>
+      <p class="lede">Every paper below opens the official Department of Basic Education PDF. The winning routine: learn a topic here, practise it here, then sit the real paper under time — and mark yourself with the official memo.</p>
+      ${data.guidelines?.url ? `<div class="btnrow"><a class="btn" href="${data.guidelines.url}" target="_blank" rel="noopener">${esc(data.guidelines.name)}</a></div>` : ""}
+      ${years}`, "papers");
+  }
+
   function aboutView() {
     setView(`
       <p class="exam-rule">About</p>
@@ -541,6 +652,9 @@
     if (a === "results" && b != null) return resultsView(b);
     if (a === "progress") return progressView();
     if (a === "formulas") return formulasView();
+    if (a === "learn" && b) return learnView(b);
+    if (a === "map") return mapView();
+    if (a === "papers") return papersView();
     if (a === "about") return aboutView();
     return homeView();
   }

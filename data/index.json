@@ -4,13 +4,13 @@
       "title": "Paper 1",
       "subtitle": "Algebra · Functions · Calculus",
       "topics": ["algebra", "sequences", "functions", "finance", "calculus", "probability"],
-      "blueprint": { "algebra": 25, "sequences": 25, "functions": 30, "finance": 15, "calculus": 35, "probability": 20 }
+      "blueprint": { "algebra": 25, "sequences": 25, "functions": 35, "finance": 15, "calculus": 35, "probability": 15 }
     },
     "2": {
       "title": "Paper 2",
       "subtitle": "Trig · Geometry · Statistics",
       "topics": ["statistics", "analytical-geometry", "trigonometry", "euclidean-geometry"],
-      "blueprint": { "statistics": 20, "analytical-geometry": 30, "trigonometry": 50, "euclidean-geometry": 50 }
+      "blueprint": { "statistics": 20, "analytical-geometry": 40, "trigonometry": 50, "euclidean-geometry": 40 }
     }
   }
 }

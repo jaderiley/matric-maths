@@ -1,0 +1,311 @@
+{
+  "algebra": {
+    "title": "Algebra, Equations & Inequalities",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Solve quadratics by factorising, by the formula $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ (to 2 decimal places when asked), and by completing the square (answers in surd form).",
+        "Solve quadratic inequalities and give the answer in interval or inequality notation.",
+        "Solve simultaneous equations where one is linear and one is quadratic (or contains $xy$ or fractions).",
+        "Solve exponential equations (common factor, or quadratic in $2^x$) and surd equations (isolate, square, CHECK).",
+        "Use the discriminant $\\Delta=b^2-4ac$ to reason about the nature of roots and find values of $k$."
+      ]},
+      { "h": "Core methods", "points": [
+        "Always rearrange to $=0$ (or $>0/<0$) before factorising or using the formula.",
+        "Inequalities: find the roots, sketch the parabola, read off where it is above/below the axis. Never divide by a variable expression.",
+        "Simultaneous: make one variable the subject of the LINEAR equation, substitute into the quadratic, solve, then back-substitute for both pairs.",
+        "Exponential equations like $2^{2x}-2^{x+2}-32=0$: substitute $k=2^x$ to get a quadratic in $k$; reject $k\\le0$.",
+        "Surd equations: after squaring, test EVERY answer in the original equation — squaring creates extraneous roots.",
+        "Nature of roots: real $\\Leftrightarrow\\Delta\\ge0$; equal $\\Leftrightarrow\\Delta=0$; non-real $\\Leftrightarrow\\Delta<0$; rational $\\Leftrightarrow\\Delta$ a perfect square."
+      ]},
+      { "h": "Common traps", "points": [
+        "Rounding too early in the formula — keep 4 decimals, round at the end.",
+        "Forgetting the negative root when solving $x^2=c$ (answer: $x=\\pm\\sqrt{c}$).",
+        "Inequality answers written as a single interval when the parabola opens up and the solution is OUTSIDE the roots ($x<a$ or $x>b$).",
+        "Not checking surd-equation answers — usually exactly one is valid.",
+        "In $k$-questions, solving $\\Delta=0$ when the question asked for real UNEQUAL roots ($\\Delta>0$)."
+      ]},
+      { "h": "How the exam asks it (Q1, ±25 marks)", "points": [
+        "Q1.1 is a ladder: factorise (2-3), formula to 2 d.p. (3-4), inequality (3-4), then an exponential and/or surd equation (4-5 each).",
+        "Q1.2 is the simultaneous pair for 5-6 marks.",
+        "The last part is a level-4 twist for 3-4 marks: telescoping products, integer exponent equations like $2^{m+1}+2^m=3^{n+2}-3^n$, or reasoning about all possible values. Factor out common powers and write things out — do not skip it, part marks are real."
+      ]}
+    ]
+  },
+  "sequences": {
+    "title": "Patterns, Sequences & Series",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Arithmetic: $T_n=a+(n-1)d$, $S_n=\\frac{n}{2}[2a+(n-1)d]$ — find terms, positions and sums.",
+        "Geometric: $T_n=ar^{n-1}$, $S_n=\\frac{a(r^n-1)}{r-1}$, $S_\\infty=\\frac{a}{1-r}$ for $-1<r<1$.",
+        "Quadratic patterns: $T_n=an^2+bn+c$ where the SECOND difference $=2a$.",
+        "Sigma notation: evaluate $\\sum$ expressions and write given sums in sigma notation.",
+        "Mixed problems where consecutive expressions in $x$ form an AP or GP."
+      ]},
+      { "h": "Core methods", "points": [
+        "Number of terms from $k=m$ to $n$ is $n-m+1$ — the classic sigma slip.",
+        "Quadratic pattern: first differences form an AP. Questions like 'given $T_{99}$, find $T_{98}$' only need the 98th first difference: $T_{99}-T_{98}=d_{98}$.",
+        "To find which term equals a value in a GP, solve $ar^{n-1}=\\text{value}$ using prime factorising or logs.",
+        "Convergence questions: set up $-1<r<1$ where $r$ is an expression in $x$, and solve the double inequality.",
+        "AP condition: $T_2-T_1=T_3-T_2$. GP condition: $\\frac{T_2}{T_1}=\\frac{T_3}{T_2}$. Always check answers back in the sequence."
+      ]},
+      { "h": "Common traps", "points": [
+        "Using $n$ where the question wants the TERM and vice versa — answer the actual question.",
+        "Sum vs term: $S_n$ questions answered with $T_n$ formulas.",
+        "Forgetting $r\\neq0$ and rejecting values of $x$ that make consecutive terms zero.",
+        "In context problems (areas, lengths), forgetting units or squaring the ratio for areas."
+      ]},
+      { "h": "How the exam asks it (Q2–Q3, ±25 marks)", "points": [
+        "One routine AP/sigma question, one quadratic-pattern question with a clever twist, and one GP question often in a real context (e.g. circles shrinking by a factor — find the radius pattern, sum of areas, which circle has a given size).",
+        "Sum-to-infinity appears most years, either 'calculate $S_\\infty$' or 'for which $x$ does the series converge'."
+      ]}
+    ]
+  },
+  "functions": {
+    "title": "Functions & Graphs",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Parabola $y=a(x+p)^2+q$ / $y=ax^2+bx+c$: intercepts, turning point $x=-\\frac{b}{2a}$, axis of symmetry, sketch.",
+        "Hyperbola $y=\\frac{a}{x+p}+q$: asymptotes $x=-p$, $y=q$, intercepts, axes of symmetry $y=\\pm(x+p)+q$.",
+        "Exponential $y=a\\cdot b^{x+p}+q$ and its inverse $y=\\log_b x$; sketch both and state domain/range.",
+        "Inverses: swap $x$ and $y$, solve for $y$; restrict a parabola's domain so $f^{-1}$ is a function.",
+        "Read solutions off graphs: $f(x)\\ge0$, $f(x)>g(x)$, $f(x)\\cdot g(x)\\le0$, lengths between graphs, average gradient."
+      ]},
+      { "h": "Core methods", "points": [
+        "Finding equations from a sketch: substitute the clearly-labelled points (intercepts, turning point, asymptote info) into the right general form.",
+        "Vertical distance between $f$ and $g$ at $x$: $|f(x)-g(x)|$. MAXIMUM vertical distance on an interval: maximise $f(x)-g(x)$ (complete the square or differentiate).",
+        "Inverse of exponential: $y=a^x\\Rightarrow f^{-1}: y=\\log_a x$. A point $(m;n)$ on $f$ reflects to $(n;m)$.",
+        "Tangency of a line to a parabola: set them equal and force $\\Delta=0$.",
+        "Transformations: $f(x)+q$ shifts up, $f(x+p)$ shifts left, $f(-x)$ reflects in the $y$-axis, $-f(x)$ in the $x$-axis — track what happens to asymptotes and turning points."
+      ]},
+      { "h": "Common traps", "points": [
+        "Domain/range written with the wrong variable or bracket type — range of $y=a^x-4$ is $y>-4$, not $y\\ge-4$.",
+        "Asymptote signs: $y=\\frac{a}{x+p}+q$ has vertical asymptote at $x=-p$ (not $+p$).",
+        "For $f(x)\\ge0$ on a hyperbola, remember the piece beyond the vertical asymptote.",
+        "Inverse notation: $f^{-1}(x)$ is NOT $\\frac{1}{f(x)}$."
+      ]},
+      { "h": "How the exam asks it (Q4–Q6, ±35 marks)", "points": [
+        "Three questions: an exponential(+inverse/log) one, a hyperbola one, and a parabola-with-line one.",
+        "Fixtures: 'write down the asymptote/range' (1-2 free marks), 'determine the equation of...' (3-4), 'for which values of $x$ is...' (2-3), and a final level-4 part: maximum vertical distance or a tangent/shift with an unknown $m$ solved via the discriminant.",
+        "2024 example: given $k(x)=f(x+m)$, find $m$ so a line is tangent to $k$ — substitute, set equal, $\\Delta=0$, solve for $m$."
+      ]}
+    ]
+  },
+  "finance": {
+    "title": "Financial Mathematics",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Compound growth/decay: $A=P(1\\pm i)^n$; straight-line: $A=P(1\\pm ni)$.",
+        "Convert nominal to effective: $1+i_{eff}=(1+\\frac{i_{nom}}{m})^m$.",
+        "Future value of an annuity $F=\\frac{x[(1+i)^n-1]}{i}$ (savings, sinking funds).",
+        "Present value $P=\\frac{x[1-(1+i)^{-n}]}{i}$ (loans, 'how many withdrawals').",
+        "Solve for $n$ with logarithms; find outstanding balances; handle timeline changes (extra payments, gaps, rate changes)."
+      ]},
+      { "h": "Core methods", "points": [
+        "Match $i$ and $n$ to the compounding period FIRST (monthly rate = nominal ÷ 12; months not years).",
+        "Draw a timeline for anything beyond one step. Mark deposits, withdrawals, rate changes and 'now'.",
+        "Outstanding balance after $k$ payments = PV of the remaining $n-k$ payments (fastest), or grow the loan $k$ months and subtract the grown payments.",
+        "'How many months earlier / how many withdrawals': set up the annuity equation with $n$ unknown, isolate $(1+i)^n$ (or $(1+i)^{-n}$), take logs.",
+        "Total interest = (all money paid) − (loan amount)."
+      ]},
+      { "h": "Common traps", "points": [
+        "Using years for $n$ with a monthly rate (or vice versa).",
+        "Annuity term counts: first payment 'one month from now' vs 'immediately' changes $n$ or adds a factor $(1+i)$.",
+        "Depreciation: reducing balance uses $(1-i)^n$; straight line SUBTRACTS the same amount each year and can reach zero.",
+        "Rounding money before the final answer — keep full precision, round to cents at the end."
+      ]},
+      { "h": "How the exam asks it (Q7-ish, ±15 marks)", "points": [
+        "A short compound/decay part (2-4), often a nominal/effective or rate/time solve (2-3), then a loan or annuity main course (6-9).",
+        "The final part is a level-4 timeline twist: lump-sum paid mid-loan → how many months earlier does it end (2024, 7 marks); jackpot invested → how many R20 000 withdrawals possible (2023, 5 marks). These always end in a log solve — practise that move until it's automatic."
+      ]}
+    ]
+  },
+  "calculus": {
+    "title": "Differential Calculus",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "First principles: $f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$ for $ax^2+bx+c$, $ax^3$, $\\frac{a}{x}$.",
+        "Differentiate after rewriting: surds to powers ($\\sqrt[3]{x^7}=x^{7/3}$), fractions to negative powers, expand products.",
+        "Tangents: gradient $=f'(a)$, then a line through $(a;f(a))$.",
+        "Cubic graphs: intercepts, turning points ($f'(x)=0$), point of inflection, sketch and interpret.",
+        "Optimisation and rates of change in context (area, volume, motion)."
+      ]},
+      { "h": "Core methods", "points": [
+        "Write the first-principles limit definition every time — the structure earns marks even if algebra slips.",
+        "Turning points: solve $f'(x)=0$; concavity via $f''$ ($f''>0$ concave up); inflection at $f''(x)=0$.",
+        "For 'values of $k$ so $f(x)+k$ has three (positive) roots': slide the graph vertically and trap the $x$-axis strictly between the turning-point $y$-values.",
+        "Given the graph of $f'$ (a parabola): $f$ increases where $f'>0$; $f$ has turning points at the ZEROS of $f'$; $f$ has its inflection at the turning point of $f'$.",
+        "Optimisation recipe: write the constraint, express the target in ONE variable, differentiate, set $=0$, check it's a max/min, answer the actual question."
+      ]},
+      { "h": "Common traps", "points": [
+        "Differentiating $\\frac{2}{x^2}$ as if it were $2x^2$ — rewrite as $2x^{-2}$ first ($\\Rightarrow-4x^{-3}$).",
+        "Notation marks: $\\frac{dy}{dx}$, $f'(x)$, $D_x$ — answer in the notation asked.",
+        "Forgetting to give BOTH coordinates of turning points when sketching.",
+        "In motion problems, mixing up $s$ (distance), $s'$ (speed) and $s''$ (acceleration)."
+      ]},
+      { "h": "How the exam asks it (Q8–Q10, ±35 marks)", "points": [
+        "Q8-type: first principles (5) + two rewrite-and-differentiate parts (2-4 each) + a tangent or inverse-link part.",
+        "Q9-type: a cubic — either sketch it fully, or interpret a given sketch (decreasing interval, concavity, $k$-shift root counting, $x$-intercepts of $f'$).",
+        "Q10-type: optimisation/rates in context worth 6-8 (fence against a wall, box volume, cyclist speed $s'(t)=-3t^2+18t$ → max speed and distance).",
+        "The $f'$-graph interpretation question is the most commonly botched — drill the translation table between $f$ and $f'$."
+      ]}
+    ]
+  },
+  "probability": {
+    "title": "Probability & Counting",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Rules: $P(A\\text{ or }B)=P(A)+P(B)-P(A\\text{ and }B)$; complementary $P(\\text{not }A)=1-P(A)$.",
+        "Independent events: $P(A\\text{ and }B)=P(A)\\cdot P(B)$; mutually exclusive: $P(A\\text{ and }B)=0$ — and TEST for these with numbers.",
+        "Venn diagrams (2 or 3 sets) with an unknown region $x$; tree diagrams for two-stage events.",
+        "Counting: fundamental counting principle, arrangements with restrictions, repeated letters (divide by $k!$), and probability = favourable/total arrangements."
+      ]},
+      { "h": "Core methods", "points": [
+        "Venn: fill from the innermost overlap outward; sum all regions to the total to solve for $x$.",
+        "'At least one' $=1-P(\\text{none})$ — almost always the fastest route.",
+        "Independence test: compute $P(A\\text{ and }B)$ and $P(A)\\cdot P(B)$ separately and compare — show both numbers.",
+        "Restrictions first: place the constrained position/letter, then multiply the remaining choices.",
+        "Letter arrangements with repeats: $\\frac{n!}{k_1!\\,k_2!\\cdots}$.",
+        "Arrangement probability: count the favourable line-ups (positions for the special pair × their internal order × arrangements of the rest) over $n!$."
+      ]},
+      { "h": "Common traps", "points": [
+        "Confusing mutually exclusive with independent — they are almost opposites.",
+        "Tree diagrams where second-stage probabilities don't change when they should (or branches don't sum to 1).",
+        "Counting codes: 'may not be repeated' changes each slot's count (26, then 25...).",
+        "Forgetting that 'divisible by 5 / odd digit' pins the LAST slot — fill it first."
+      ]},
+      { "h": "How the exam asks it (Q11–Q12, ±15 marks)", "points": [
+        "One question on rules + a Venn or tree (2024: draw the Venn for three exam subjects, P(at least two), test independence with calculations — 9 marks).",
+        "One counting question: codes/plates/photos with escalating restrictions, ending with a 2-4 mark twist like a percentage increase or an arrangement probability ('probability that exactly 5 learners stand between the two youngest').",
+        "Show the multiplication line (e.g. $26\\times10\\times25\\times5$) — method marks live there."
+      ]}
+    ]
+  },
+  "statistics": {
+    "title": "Statistics & Regression",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Mean, median, mode, range, IQR, five-number summary, box-and-whisker plots and skewness.",
+        "Population standard deviation $\\sigma$ (calculator) and 'within one standard deviation' counts.",
+        "Ogives: read median/quartiles, counts above/below a value, identify the modal class.",
+        "Least-squares regression $\\hat{y}=a+bx$ and correlation $r$ by calculator; predict and interpret.",
+        "Effects on mean/median/σ of adding a constant, scaling, or an outlier; the $1{,}5\\times$IQR outlier test."
+      ]},
+      { "h": "Core methods", "points": [
+        "Five-number summary: order the data first; for $n$ values the median is at position $\\frac{n+1}{2}$.",
+        "Ogive reading: go to $\\frac{n}{2}$ (or $\\frac{n}{4}$, $\\frac{3n}{4}$) on the cumulative axis, across to the curve, down to the value.",
+        "Regression by calculator: two-variable STAT mode, record $a$, $b$, $r$ to at least two decimals, keep them stored for predictions.",
+        "Interpolation (inside the data range) is trustworthy; extrapolation (outside) is not — say so when asked.",
+        "Adding a constant $c$ to every value: mean/median shift by $c$, $\\sigma$ UNCHANGED. Multiplying by $c$: everything scales."
+      ]},
+      { "h": "Common traps", "points": [
+        "Using the sample ($n-1$) standard deviation — NSC uses population $\\sigma_n$.",
+        "Skewness direction: right/positive skew has the LONG tail to the right (mean > median).",
+        "Predicting with rounded $a$, $b$ then over-rounding the answer — state the rounding you used.",
+        "Answering 'how does σ change' with a number when only the direction/no-change is asked."
+      ]},
+      { "h": "How the exam asks it (Q1–Q2, ±20 marks)", "points": [
+        "One raw-data/summary question (five-number summary, box plot, σ, outlier test) and one grouped/ogive or regression question.",
+        "2024: regression on rugby players (find $\\hat{y}$, $r$, predict, mean, effect of +5 on σ, max increase to meet a target) + an ogive with a work-from-home rule interpretation.",
+        "Expect one 'interpret in context' sentence answer — write a short, specific sentence, not an essay."
+      ]}
+    ]
+  },
+  "analytical-geometry": {
+    "title": "Analytical Geometry",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Distance, midpoint, gradient; equations of lines $y=mx+c$ / $y-y_1=m(x-x_1)$.",
+        "Parallel ($m_1=m_2$) and perpendicular ($m_1m_2=-1$) conditions; collinearity.",
+        "Inclination: $\\tan\\theta=m$, with $\\theta\\in[0°;180°)$; angles between lines from inclinations.",
+        "Circles $(x-a)^2+(y-b)^2=r^2$: find centre/radius by completing the square; tangents (⊥ radius) at a point.",
+        "Properties of triangles and quadrilaterals on the plane; ratios and areas."
+      ]},
+      { "h": "Core methods", "points": [
+        "Negative gradient → obtuse inclination: $\\theta=180°-\\tan^{-1}|m|$.",
+        "'Show that the equation of the circle is...': complete the square in full — every balancing step visible.",
+        "Tangent at $P$: gradient of radius $MP$ first, then $m_{tan}=-\\frac{1}{m_{MP}}$, then the line through $P$.",
+        "Ratio of segments on a line: use the x- (or y-) differences — for B on DC, $\\frac{DB}{DC}=\\frac{x_B-x_D}{x_C-x_D}$.",
+        "Area ratios with a parallel line: the triangles are similar, so areas scale by the SQUARE of the side ratio.",
+        "Unknown point from gradient + length: two equations (gradient gives a linear relation, distance a quadratic) — solve and pick the quadrant that matches the diagram."
+      ]},
+      { "h": "Common traps", "points": [
+        "Radius vs diameter mix-ups, and $r^2$ left as $r$.",
+        "Perpendicular gradient sign errors — flip AND negate.",
+        "Assuming a diagram property (like a right angle) that must be PROVEN.",
+        "Chained questions: check each early answer (gradient, then equation, then length) because later parts reuse them."
+      ]},
+      { "h": "How the exam asks it (Q3–Q4, ±40 marks)", "points": [
+        "Q3: a triangle/quad vertex chain — gradient → equation → show a coordinate → length → ratio → area ratio → find the unknown vertex from gradient + length (2024's 6-mark finale).",
+        "Q4: THE circle question — tangent equation, show the circle's equation, a 'show that $d=...$' point-on-circle part, an angle via inclinations, and a perpendicularity/tangent proof to finish.",
+        "Both questions print the diagram — redraw key parts and mark known values as you go."
+      ]}
+    ]
+  },
+  "trigonometry": {
+    "title": "Trigonometry",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "Exact values from a point $P(x;y)$ on the terminal arm, and from given ratios with quadrant restrictions — no calculator.",
+        "Reduction formulae ($180°\\pm x$, $360°\\pm x$, $-x$, co-functions $90°\\pm x$) and special angles.",
+        "Compound and double angles: $\\sin(\\alpha\\pm\\beta)$, $\\cos(\\alpha\\pm\\beta)$, $\\sin2\\alpha$, all three forms of $\\cos2\\alpha$.",
+        "Prove identities and state where they're undefined; solve general solutions and interval equations.",
+        "Sketch/read $\\sin$, $\\cos$, $\\tan$ graphs with amplitude/period/shifts; solve equations FROM graphs.",
+        "Sine rule, cosine rule, area rule in 2D and 3D problems."
+      ]},
+      { "h": "Core methods", "points": [
+        "Point on terminal arm: compute $r=\\sqrt{x^2+y^2}$, then read ratios with correct signs (CAST diagram).",
+        "$\\cos2A$ from $\\cos A$: use $2\\cos^2A-1$; from $\\sin A$: use $1-2\\sin^2A$ — pick the form that matches what you have.",
+        "Identities: factorise using the $\\cos2A$ form that pairs with its neighbours (e.g. $\\cos2A+\\cos A+1=2\\cos^2A+\\cos A$).",
+        "General solutions: $\\sin x=\\sin\\alpha\\Rightarrow x=\\alpha+k360°$ or $x=180°-\\alpha+k360°$; $\\cos x=\\cos\\alpha\\Rightarrow x=\\pm\\alpha+k360°$; $\\tan x=\\tan\\alpha\\Rightarrow x=\\alpha+k180°$, $k\\in\\mathbb{Z}$.",
+        "Co-function equations like $\\sin(x+20°)=\\cos2x$: rewrite $\\cos2x=\\sin(90°-2x)$ and equate both families.",
+        "3D problems: work triangle by triangle; the shared side bridges them. Right angles come from 'vertical' meets 'horizontal'.",
+        "Max/min: rewrite in terms of a single $\\sin/\\cos$ (range $[-1;1]$) and reason — no calculus."
+      ]},
+      { "h": "Common traps", "points": [
+        "Dropping the second solution family in general solutions.",
+        "Sign errors in quadrants II–IV when working without a calculator — draw the sketch triangle every time.",
+        "Dividing an equation by $\\cos x$ (losing solutions) instead of factorising.",
+        "Forgetting $k\\in\\mathbb{Z}$ (loses a mark) or leaving answers outside a stated interval.",
+        "Using degrees-mode maths on a calculator set to radians."
+      ]},
+      { "h": "How the exam asks it (Q5–Q8, ±50 marks)", "points": [
+        "Q5: no-calculator values from a point + a compound-angle evaluation + an 'express in terms of $p$' part.",
+        "Q6: derive a compound identity, prove a reduction-heavy identity (6 marks), solve an equation in an interval, max/min of a trig expression.",
+        "Q7: graphs — asymptotes, periods, draw one graph, then 'use the graphs to determine the general solution' of a combined equation (spot that it means: where the drawn graphs intersect).",
+        "Q8: the 2D/3D problem (±9-13 marks): building/mast with angles of elevation across 2-3 triangles — sine rule for the bridge side, cosine/area rule to finish."
+      ]}
+    ]
+  },
+  "euclidean-geometry": {
+    "title": "Euclidean Geometry",
+    "sections": [
+      { "h": "What you must be able to do", "points": [
+        "All circle theorems with their reason names: line from centre ⊥ chord; angle at centre $=2\\times$ angle at circumference; angles in same segment; angle in semi-circle; cyclic quad (opposite angles supplementary, exterior = interior opposite); tangents from a point; tan-chord.",
+        "Proportionality: a line parallel to one side of a triangle divides the other two proportionally (and its converse); the midpoint theorem.",
+        "Similarity: equiangular triangles ⇒ sides in proportion, building to product-of-sides results.",
+        "PROVE the examinable theorems from scratch — they are asked for real marks (2024: proportionality theorem, 6 marks)."
+      ]},
+      { "h": "Core methods", "points": [
+        "Statement (reason) format ALWAYS — e.g. $\\hat{B}_1=\\hat{D}$ (tan-chord). No reason, no mark.",
+        "Angle chase: transfer the given angles onto the diagram, then hunt tangent pairs, diameters, cyclic quads and isosceles radii triangles.",
+        "To prove sides equal: find equal angles in the same triangle (isosceles) or congruent/similar triangles.",
+        "To prove a product like $AG\\cdot AD=AC\\cdot AF$: find the two similar triangles whose ratio statement cross-multiplies into it — write vertices in corresponding order.",
+        "Composite finals like $GF^2=\\frac{BC\\cdot FC\\cdot AF}{AD}$: multiply/divide the results of the previous parts — the exam builds them in sequence.",
+        "Ratios with the centre: perpendicular from centre bisects the chord; combine with the midpoint theorem for 1:2 relationships."
+      ]},
+      { "h": "Common traps", "points": [
+        "Wrong or vague reasons ('angles in circle') — learn the exact accepted phrasing list.",
+        "Using what you must still prove (circular logic) — especially in 'hence' questions.",
+        "Similar triangles written in non-corresponding order, wrecking the ratio.",
+        "Assuming a line is a diameter or tangent when it isn't given.",
+        "Skipping the theorem proofs when studying — they are the most predictable 5-6 marks in the paper."
+      ]},
+      { "h": "How the exam asks it (Q9–Q11, ±40 marks)", "points": [
+        "Q9: a one-circle rider — calculate an angle with reasons, then 'hence prove' equal chords / cyclic quad (±6 marks).",
+        "Q10: a theorem PROOF (bookwork) + a proportionality/midpoint application with a numeric length to finish (±15 marks).",
+        "Q11: the grand rider (±20 marks): often two circles with a common tangent — find 4 angles equal to $x$ (6), prove a side-product (4), prove similarity (4), then the composite product finale (6).",
+        "The instruction 'Provide reasons for your statements' is printed above these questions — treat every line without a reason as a lost mark."
+      ]}
+    ]
+  }
+}

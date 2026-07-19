@@ -1,0 +1,74 @@
+{
+  "updated": "2026-07-19",
+  "note": "Official NSC Mathematics papers hosted by the Eastern Cape Department of Education (national DBE papers). Each ZIP contains the paper(s) and memo in English and Afrikaans.",
+  "guidelines": { "name": "DBE NSC exams portal (all subjects, all years)", "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx" },
+  "years": [
+    {
+      "year": 2024,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "Paper 1 (ZIP)", "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024.zip", "memo": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024%20MG%20Afr%20&%20Eng.zip" },
+          { "name": "Paper 2 (ZIP)", "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024.zip", "memo": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024%20MG%20Afr%20&%20Eng.zip" }
+        ]},
+        { "session": "May/June", "items": [
+          { "name": "Paper 1 (ZIP)", "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024.zip", "memo": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024%20MG%20Afr%20&%20Eng.zip" },
+          { "name": "Paper 2 (ZIP)", "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20May-June%202024.zip", "memo": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20May-June%202024%20MG%20Afr%20&%20Eng.zip" }
+        ]}
+      ]
+    },
+    {
+      "year": 2023,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "Paper 1 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P1%20Nov%202023.zip" },
+          { "name": "Paper 2 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P2%20Nov%202023.zip" }
+        ]},
+        { "session": "May/June", "items": [
+          { "name": "Paper 1 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023%20MayJune%20Grade%2012%20NSC%20DBE%20Examinations/Mathematics%20P1%20MayJun%202023%20DG.zip" },
+          { "name": "Paper 2 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023%20MayJune%20Grade%2012%20NSC%20DBE%20Examinations/Mathematics%20P2%20MayJun%202023%20DG.zip" }
+        ]}
+      ]
+    },
+    {
+      "year": 2022,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2022_November_NSC_Exams/Mathematics%20Nov%202022.zip" }
+        ]},
+        { "session": "May/June", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2022_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20May-June%202022.zip" }
+        ]}
+      ]
+    },
+    {
+      "year": 2021,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2021_November_NSC_Exams/Mathematics%20Nov%202021.zip" }
+        ]},
+        { "session": "June", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2021_June_NSC_Exams/Mathematics%20June%202021.zip" }
+        ]}
+      ]
+    },
+    {
+      "year": 2020,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2020_November_NSC_Exams/Mathematics.zip" }
+        ]}
+      ]
+    },
+    {
+      "year": 2019,
+      "sessions": [
+        { "session": "November", "items": [
+          { "name": "Question papers (ZIP)", "url": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20QP.zip", "memo": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20..zip" }
+        ]},
+        { "session": "May/June", "items": [
+          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2019%20MayJune%20NSC%20Exams%20Gr%2012/Mathematics%20May-June%202019.zip" }
+        ]}
+      ]
+    }
+  ]
+}

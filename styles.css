@@ -200,6 +200,23 @@ h1.display em {
 }
 .qhead .marks { color: var(--ink-soft); font-weight: 500; }
 .qhead .diff { color: var(--red); letter-spacing: .2em; }
+.qhead .arch {
+  font-weight: 500; font-size: .62rem; letter-spacing: .06em;
+  color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 5px;
+  padding: .1rem .4rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-width: 40%;
+}
+
+/* learn / exam-map / papers */
+.learn-card ul, .arch-card ul { margin: 0; padding-left: 1.2rem; }
+.learn-card li { margin: .35rem 0; }
+.arch-card__head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+.arch-card__meta { font-family: var(--mono); font-size: .72rem; color: var(--red); white-space: nowrap; }
+.arch-card__how { margin: .45rem 0; }
+.arch-card__notes { margin: .45rem 0; color: var(--ink-soft); font-size: .88rem; }
+.arch-card .btn { margin-top: .3rem; }
+.paper-links { display: flex; flex-direction: column; gap: .45rem; margin-top: .7rem; }
+.paper-links__row { display: flex; gap: .45rem; flex-wrap: wrap; }
 
 .qcontext { margin: 0 0 .8rem; }
 

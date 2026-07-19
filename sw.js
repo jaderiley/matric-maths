@@ -1,5 +1,5 @@
 /* Matric Maths service worker — cache-first PWA */
-const VERSION = "mm-v1";
+const VERSION = "mm-v2";
 const CORE = [
   "./",
   "./index.html",
@@ -7,6 +7,10 @@ const CORE = [
   "./app.js",
   "./manifest.webmanifest",
   "./data/index.json",
+  "./data/papers.json",
+  "./data/notes.json",
+  "./data/map-1.json",
+  "./data/map-2.json",
   "./data/algebra.json",
   "./data/sequences.json",
   "./data/functions.json",
