@@ -1,73 +1,206 @@
 {
   "updated": "2026-07-19",
-  "note": "Official NSC Mathematics papers hosted by the Eastern Cape Department of Education (national DBE papers). Each ZIP contains the paper(s) and memo in English and Afrikaans.",
-  "guidelines": { "name": "DBE NSC exams portal (all subjects, all years)", "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx" },
+  "note": "Official National Senior Certificate papers, downloaded directly from the national Department of Basic Education (education.gov.za). The NSC is a NATIONAL exam - Gauteng and every other province write these exact papers. Mirror ZIPs are hosted by the Eastern Cape DoE (same DBE papers).",
+  "guidelines": {
+    "name": "DBE NSC past-papers portal (all subjects, all years)",
+    "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations/NSCPastExaminationpapers.aspx"
+  },
   "years": [
     {
       "year": 2024,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "Paper 1 (ZIP)", "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024.zip", "memo": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024%20MG%20Afr%20&%20Eng.zip" },
-          { "name": "Paper 2 (ZIP)", "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024.zip", "memo": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024%20MG%20Afr%20&%20Eng.zip" }
-        ]},
-        { "session": "May/June", "items": [
-          { "name": "Paper 1 (ZIP)", "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024.zip", "memo": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024%20MG%20Afr%20&%20Eng.zip" },
-          { "name": "Paper 2 (ZIP)", "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20May-June%202024.zip", "memo": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20May-June%202024%20MG%20Afr%20&%20Eng.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=8W2dAxBUTQA%3d&tabid=5193&portalid=0&mid=13724",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=D_T4clPBpkk%3d&tabid=5193&portalid=0&mid=13724"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=ycHWvBVvV2M%3d&tabid=5193&portalid=0&mid=13724",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0DIM92_2Vu8%3d&tabid=5193&portalid=0&mid=13724"
+            },
+            {
+              "name": "Paper 1 + memo (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024.zip"
+            },
+            {
+              "name": "Paper 2 + memo (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024.zip"
+            }
+          ]
+        },
+        {
+          "session": "May/June",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=CsNcmi8-trM%3d&tabid=4933&portalid=0&mid=13146",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=LhWLj4xwFNo%3d&tabid=4933&portalid=0&mid=13146"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=RNNEcymfibQ%3d&tabid=4933&portalid=0&mid=13146",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=hmseEn24qZI%3d&tabid=4933&portalid=0&mid=13146"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024.zip"
+            }
+          ]
+        }
       ]
     },
     {
       "year": 2023,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "Paper 1 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P1%20Nov%202023.zip" },
-          { "name": "Paper 2 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P2%20Nov%202023.zip" }
-        ]},
-        { "session": "May/June", "items": [
-          { "name": "Paper 1 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023%20MayJune%20Grade%2012%20NSC%20DBE%20Examinations/Mathematics%20P1%20MayJun%202023%20DG.zip" },
-          { "name": "Paper 2 + memo (ZIP)", "url": "https://www.ecexams.co.za/2023%20MayJune%20Grade%2012%20NSC%20DBE%20Examinations/Mathematics%20P2%20MayJun%202023%20DG.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=M_7mZq2zE5o%3d&tabid=4682&portalid=0&mid=12681",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=ViEtlf4659c%3d&tabid=4682&portalid=0&mid=12681"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=Zoios-rCurI%3d&tabid=4682&portalid=0&mid=12681",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0RJSBcYBmhA%3d&tabid=4682&portalid=0&mid=12681"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P1%20Nov%202023.zip"
+            }
+          ]
+        },
+        {
+          "session": "May/June",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=G2Yz_FbwMjk%3d&tabid=4504&portalid=0&mid=12317",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=lKqjE45EcJE%3d&tabid=4504&portalid=0&mid=12317"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=-Jidqi5J8YU%3d&tabid=4504&portalid=0&mid=12317",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=QglalUTQMaw%3d&tabid=4504&portalid=0&mid=12317"
+            }
+          ]
+        }
       ]
     },
     {
       "year": 2022,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2022_November_NSC_Exams/Mathematics%20Nov%202022.zip" }
-        ]},
-        { "session": "May/June", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2022_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20May-June%202022.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=Juy5nA5N3fM%3d&tabid=3294&portalid=0&mid=10986",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=gytAGGPYSc8%3d&tabid=3294&portalid=0&mid=10986"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=DqfP-i10rEE%3d&tabid=3294&portalid=0&mid=10986",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=var8F7VpOmU%3d&tabid=3294&portalid=0&mid=10986"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2022_November_NSC_Exams/Mathematics%20Nov%202022.zip"
+            }
+          ]
+        },
+        {
+          "session": "May/June",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=TYv9teRDIwc%3d&tabid=3138&portalid=0&mid=10574",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=ias3gDQea2c%3d&tabid=3138&portalid=0&mid=10574"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=9vgMSe2r52w%3d&tabid=3138&portalid=0&mid=10574",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=iMIvxdxJCEs%3d&tabid=3138&portalid=0&mid=10574"
+            }
+          ]
+        }
       ]
     },
     {
       "year": 2021,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2021_November_NSC_Exams/Mathematics%20Nov%202021.zip" }
-        ]},
-        { "session": "June", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2021_June_NSC_Exams/Mathematics%20June%202021.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=sGgq9FNv0lQ%3d&tabid=2922&portalid=0&mid=10135",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=LJo4MZ4DRZM%3d&tabid=2922&portalid=0&mid=10135"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=jgMJbW3Aa0o%3d&tabid=2922&portalid=0&mid=10135",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=s7hK0H8bqPM%3d&tabid=2922&portalid=0&mid=10135"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2021_November_NSC_Exams/Mathematics%20Nov%202021.zip"
+            }
+          ]
+        }
       ]
     },
     {
       "year": 2020,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2020_November_NSC_Exams/Mathematics.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=FU-0n3tYUzs%3d&tabid=2702&portalid=0&mid=9632",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=P7kQcnNxRHY%3d&tabid=2702&portalid=0&mid=9632"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=f-OMZa2HZ5U%3d&tabid=2702&portalid=0&mid=9632",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=R9cpC35sw60%3d&tabid=2702&portalid=0&mid=9632"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2020_November_NSC_Exams/Mathematics.zip"
+            }
+          ]
+        }
       ]
     },
     {
       "year": 2019,
       "sessions": [
-        { "session": "November", "items": [
-          { "name": "Question papers (ZIP)", "url": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20QP.zip", "memo": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20..zip" }
-        ]},
-        { "session": "May/June", "items": [
-          { "name": "P1 + P2 + memos (ZIP)", "url": "https://www.ecexams.co.za/2019%20MayJune%20NSC%20Exams%20Gr%2012/Mathematics%20May-June%202019.zip" }
-        ]}
+        {
+          "session": "November",
+          "items": [
+            {
+              "name": "Paper 1",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=s6HzylxEHVo%3d&tabid=2556&portalid=0&mid=8994",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=DtEIXt8fp_E%3d&tabid=2556&portalid=0&mid=8994"
+            },
+            {
+              "name": "Paper 2",
+              "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=Tno439ZyBcU%3d&tabid=2556&portalid=0&mid=8994",
+              "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=n-F98_w5Zig%3d&tabid=2556&portalid=0&mid=8994"
+            },
+            {
+              "name": "All papers (mirror ZIP)",
+              "url": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20QP.zip"
+            }
+          ]
+        }
       ]
     }
   ]
