@@ -622,7 +622,7 @@
     setView(`
       <p class="exam-rule">The real thing</p>
       <h1 class="display">Official past papers</h1>
-      <p class="lede">Every paper below opens the official Department of Basic Education PDF. The winning routine: learn a topic here, practise it here, then sit the real paper under time — and mark yourself with the official memo.</p>
+      <p class="lede">Every link below downloads the official DBE paper + memo (hosted by the Eastern Cape Education Department). The winning routine: learn a topic here, practise it here, then sit the real paper under time — and mark yourself with the official memo.</p>
       ${data.guidelines?.url ? `<div class="btnrow"><a class="btn" href="${data.guidelines.url}" target="_blank" rel="noopener">${esc(data.guidelines.name)}</a></div>` : ""}
       ${years}`, "papers");
   }
