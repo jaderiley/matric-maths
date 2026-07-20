@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "Consider the arithmetic sequence $5;\\ 9;\\ 13;\\ \\ldots$",
       "svg": null,
+      "archetype": "seq-arith",
       "parts": [
         {
           "q": "Determine a formula for $T_n$, the $n$-th term of the sequence.",
@@ -45,6 +46,7 @@
       "difficulty": 2,
       "context": "The quadratic number pattern $6;\\ 17;\\ 34;\\ 57;\\ \\ldots$ has a constant second difference.",
       "svg": null,
+      "archetype": "seq-quadratic",
       "parts": [
         {
           "q": "Write down the next term of the pattern.",
@@ -84,6 +86,7 @@
       "difficulty": 2,
       "context": "In a geometric sequence, the second term is $6$ and the fifth term is $48$.",
       "svg": null,
+      "archetype": "seq-geometric",
       "parts": [
         {
           "q": "Determine the first term $a$ and the common ratio $r$ of the sequence.",
@@ -113,6 +116,7 @@
       "difficulty": 2,
       "context": "",
       "svg": null,
+      "archetype": "seq-sigma",
       "parts": [
         {
           "q": "Calculate: $\\sum_{k=1}^{15}(3k-5)$.",
@@ -141,6 +145,7 @@
       "difficulty": 2,
       "context": "Consider the geometric series $(x-2)+(x-2)^2+(x-2)^3+\\ldots$",
       "svg": null,
+      "archetype": "seq-geometric",
       "parts": [
         {
           "q": "Determine the values of $x$ for which the series converges.",
@@ -168,6 +173,7 @@
       "difficulty": 3,
       "context": "The numbers $x;\\ x+4;\\ 2x+2$ are the first three terms of a geometric sequence.",
       "svg": null,
+      "archetype": "seq-combined",
       "parts": [
         {
           "q": "Determine the possible value(s) of $x$.",
@@ -198,6 +204,183 @@
             "$S_\\infty$ exists only when $-1<r<1$; since $r=-1$ the series does not converge"
           ],
           "answer": "$r=-1$, which does not satisfy $-1<r<1$, so the series does not converge"
+        }
+      ]
+    },
+    {
+      "id": "sequences-07",
+      "difficulty": 1,
+      "context": "In an arithmetic sequence, the third term is $11$ and the eighth term is $31$.",
+      "svg": null,
+      "archetype": "seq-arith",
+      "parts": [
+        {
+          "q": "Determine the first term and the common difference of the sequence.",
+          "marks": 4,
+          "solution": [
+            "$T_3=a+2d=11$ and $T_8=a+7d=31$",
+            "Subtracting: $5d=20$, so $d=4$",
+            "$a=11-2(4)=3$"
+          ],
+          "answer": "$a=3$ and $d=4$"
+        },
+        {
+          "q": "Which term of the sequence is equal to $99$?",
+          "marks": 2,
+          "solution": [
+            "$T_n=3+(n-1)(4)=4n-1$",
+            "$4n-1=99$, so $n=25$"
+          ],
+          "answer": "The $25$th term"
+        },
+        {
+          "q": "Calculate the sum of the first $25$ terms of the sequence.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{25}=\\dfrac{25}{2}\\left[2(3)+24(4)\\right]=\\dfrac{25}{2}(102)$",
+            "$S_{25}=1275$"
+          ],
+          "answer": "$S_{25}=1275$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-08",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "seq-sigma",
+      "parts": [
+        {
+          "q": "Calculate: $\\sum_{k=3}^{20}(5k+2)$.",
+          "marks": 3,
+          "solution": [
+            "Arithmetic series: first term $5(3)+2=17$, last term $5(20)+2=102$",
+            "Number of terms: $20-3+1=18$",
+            "$S=\\dfrac{18}{2}(17+102)=9(119)=1071$"
+          ],
+          "answer": "$1071$"
+        },
+        {
+          "q": "Write the series $2+9+16+\\ldots+142$ in sigma notation.",
+          "marks": 3,
+          "solution": [
+            "Arithmetic series with $a=2$ and $d=7$, so $T_k=2+7(k-1)=7k-5$",
+            "Last term: $7k-5=142$ gives $k=21$",
+            "$\\sum_{k=1}^{21}(7k-5)$"
+          ],
+          "answer": "$\\sum_{k=1}^{21}(7k-5)$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-09",
+      "difficulty": 2,
+      "context": "A quadratic number pattern has first term $T_1=2$. The FIRST differences of the pattern form the arithmetic sequence $5;\\ 9;\\ 13;\\ \\ldots$",
+      "svg": null,
+      "archetype": "seq-quadratic",
+      "parts": [
+        {
+          "q": "Write down the values of $T_2$, $T_3$ and $T_4$.",
+          "marks": 2,
+          "solution": [
+            "$T_2=2+5=7$ and $T_3=7+9=16$",
+            "$T_4=16+13=29$"
+          ],
+          "answer": "$T_2=7$; $T_3=16$; $T_4=29$"
+        },
+        {
+          "q": "Determine a formula for the $n$-th term of the pattern in the form $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "Second difference is $4$, so $2a=4$ and $a=2$",
+            "$T_1$: $2+b+c=2$, so $b+c=0$",
+            "$T_2$: $8+2b+c=7$, so $2b+c=-1$",
+            "Subtracting: $b=-1$ and $c=1$, so $T_n=2n^2-n+1$"
+          ],
+          "answer": "$T_n=2n^2-n+1$"
+        },
+        {
+          "q": "Calculate $T_{40}-T_{39}$ WITHOUT calculating $T_{40}$ or $T_{39}$ themselves.",
+          "marks": 3,
+          "solution": [
+            "$T_{40}-T_{39}$ is the $39$th first difference of the pattern",
+            "The first differences are arithmetic with first term $5$ and common difference $4$: the $k$th first difference is $5+4(k-1)=4k+1$",
+            "$T_{40}-T_{39}=4(39)+1=157$"
+          ],
+          "answer": "$157$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-10",
+      "difficulty": 3,
+      "context": "The numbers $4;\\ x;\\ y$ are the first three terms of an arithmetic sequence, and $x;\\ y;\\ 18$ are the first three terms of a geometric sequence.",
+      "svg": null,
+      "archetype": "seq-combined",
+      "parts": [
+        {
+          "q": "Determine the value(s) of $x$ and $y$.",
+          "marks": 6,
+          "solution": [
+            "Arithmetic: $x-4=y-x$, so $y=2x-4$",
+            "Geometric: $\\dfrac{y}{x}=\\dfrac{18}{y}$, so $y^2=18x$",
+            "Substitute: $(2x-4)^2=18x$",
+            "$4x^2-16x+16=18x$, so $4x^2-34x+16=0$, i.e. $2x^2-17x+8=0$",
+            "$(2x-1)(x-8)=0$, so $x=8$ or $x=\\dfrac{1}{2}$",
+            "If $x=8$ then $y=12$ (geometric: $8;\\ 12;\\ 18$ with $r=\\dfrac{3}{2}$); if $x=\\dfrac{1}{2}$ then $y=-3$ (geometric: $\\dfrac{1}{2};\\ -3;\\ 18$ with $r=-6$) — both are valid"
+          ],
+          "answer": "$x=8$ and $y=12$, or $x=\\dfrac{1}{2}$ and $y=-3$"
+        },
+        {
+          "q": "If $x=8$, calculate the sum of the first $12$ terms of the ARITHMETIC sequence.",
+          "marks": 3,
+          "solution": [
+            "The arithmetic sequence is $4;\\ 8;\\ 12;\\ \\ldots$ with $a=4$ and $d=4$",
+            "$S_{12}=\\dfrac{12}{2}\\left[2(4)+11(4)\\right]=6(52)$",
+            "$S_{12}=312$"
+          ],
+          "answer": "$S_{12}=312$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-11",
+      "difficulty": 2,
+      "context": "A pendulum at a science centre in Johannesburg is released. Its first swing has an arc length of $60$ cm, and each swing after that has an arc length that is $85\\%$ of the previous swing.",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Calculate the arc length of the fifth swing.",
+          "marks": 2,
+          "solution": [
+            "Geometric with $a=60$ and $r=0{,}85$: $T_5=ar^4=60(0{,}85)^4$",
+            "$T_5=31{,}32$ cm"
+          ],
+          "answer": "$31{,}32$ cm"
+        },
+        {
+          "q": "Determine which swing is the FIRST one with an arc length of less than $10$ cm.",
+          "marks": 4,
+          "solution": [
+            "$60(0{,}85)^{n-1}<10$",
+            "$(0{,}85)^{n-1}<\\dfrac{1}{6}$",
+            "$n-1>\\dfrac{\\log\\frac{1}{6}}{\\log 0{,}85}=11{,}02\\ldots$ (the inequality reverses because $\\log 0{,}85<0$)",
+            "So $n-1=12$, i.e. $n=13$: the $13$th swing ($T_{13}=8{,}53$ cm, while $T_{12}=10{,}04$ cm)"
+          ],
+          "answer": "The $13$th swing"
+        },
+        {
+          "q": "Calculate the TOTAL distance the pendulum's tip travels if it is left to swing indefinitely.",
+          "marks": 3,
+          "solution": [
+            "$r=0{,}85$ satisfies $-1<r<1$, so the sum to infinity exists",
+            "$S_\\infty=\\dfrac{a}{1-r}=\\dfrac{60}{1-0{,}85}$",
+            "$S_\\infty=400$ cm"
+          ],
+          "answer": "$400$ cm"
         }
       ]
     }

@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "In the figure, O is the centre of the circle. A, B, C and D are points on the circle with $A\\hat{O}C=130^\\circ$. B lies on the major arc AC and D lies on the minor arc AC. OA, OC, AB, BC, AD and DC are drawn.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"110\" r=\"2\" fill=\"currentColor\"/><path d=\"M160 110L80 139M160 110L189 30M80 139L225 165L189 30M80 139L100 50L189 30\" stroke=\"currentColor\" fill=\"none\"/><text x=\"62\" y=\"146\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"230\" y=\"178\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"193\" y=\"24\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"82\" y=\"46\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"152\" y=\"126\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"128\" y=\"92\" font-size=\"12\" fill=\"currentColor\">130°</text></svg>",
+      "archetype": "euc-anglechase",
       "parts": [
         {
           "q": "Calculate, with a reason, the size of $A\\hat{B}C$.",
@@ -42,6 +43,7 @@
       "difficulty": 1,
       "context": "In the figure, AC is a diameter of the circle with centre O. B and D are points on the circle on opposite sides of AC. AB, BC, AD, DC and BD are drawn. $B\\hat{A}C=34^\\circ$ and $C\\hat{A}D=21^\\circ$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"110\" r=\"2\" fill=\"currentColor\"/><path d=\"M75 110L245 110M75 110L192 31L245 110M75 110L223 167L245 110M192 31L223 167\" stroke=\"currentColor\" fill=\"none\"/><text x=\"58\" y=\"114\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"194\" y=\"24\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"250\" y=\"114\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"226\" y=\"183\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"152\" y=\"104\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"100\" y=\"105\" font-size=\"11\" fill=\"currentColor\">34°</text><text x=\"98\" y=\"128\" font-size=\"11\" fill=\"currentColor\">21°</text></svg>",
+      "archetype": "euc-anglechase",
       "parts": [
         {
           "q": "Write down, with a reason, the size of $A\\hat{B}C$.",
@@ -82,6 +84,7 @@
       "difficulty": 2,
       "context": "In the figure, TA and TB are tangents from an external point T to the circle with centre O, touching the circle at A and B. C is a point on the major arc AB. OA, OB, AB, CA and CB are drawn. $A\\hat{T}B=52^\\circ$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"190\" cy=\"120\" r=\"70\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"currentColor\"/><path d=\"M30 120L159 57L159 183L30 120M159 57L190 120L159 183M159 57L260 120L159 183\" stroke=\"currentColor\" fill=\"none\"/><text x=\"12\" y=\"124\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"148\" y=\"50\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"148\" y=\"198\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"266\" y=\"124\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"196\" y=\"136\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"52\" y=\"124\" font-size=\"11\" fill=\"currentColor\">52°</text></svg>",
+      "archetype": "euc-anglechase",
       "parts": [
         {
           "q": "Calculate, with reasons, the size of $T\\hat{A}B$.",
@@ -126,6 +129,7 @@
       "difficulty": 2,
       "context": "In $\\triangle ABC$, D is a point on AB and E is a point on AC such that $DE\\parallel BC$. $AD=6$ units, $DB=4$ units and $AE=9$ units.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M140 30L60 190L280 190L140 30M92 126L224 126\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M154 121L162 126L154 131M166 185L174 190L166 195\" stroke=\"currentColor\" fill=\"none\"/><text x=\"134\" y=\"22\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"44\" y=\"198\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"286\" y=\"196\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"74\" y=\"130\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"230\" y=\"130\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"102\" y=\"82\" font-size=\"12\" fill=\"currentColor\">6</text><text x=\"62\" y=\"162\" font-size=\"12\" fill=\"currentColor\">4</text><text x=\"186\" y=\"74\" font-size=\"12\" fill=\"currentColor\">9</text></svg>",
+      "archetype": "euc-proportionality",
       "parts": [
         {
           "q": "Calculate, with a reason, the length of EC.",
@@ -172,6 +176,7 @@
       "difficulty": 2,
       "context": "In the figure, chords AB and CD of a circle intersect at E inside the circle. AC and BD are drawn.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M86 68L225 165M225 55L90 159M86 68L225 55M90 159L225 165\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"150\" cy=\"113\" r=\"2\" fill=\"currentColor\"/><text x=\"68\" y=\"64\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"230\" y=\"178\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"230\" y=\"52\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"72\" y=\"170\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"137\" y=\"105\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-similar",
       "parts": [
         {
           "q": "Prove that $\\triangle AEC\\sim\\triangle DEB$.",
@@ -209,6 +214,7 @@
       "difficulty": 3,
       "context": "In the figure, TA is a tangent to the circle at A. A straight line through T cuts the circle at B and C, with B between T and C. AB and AC are drawn.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"200\" cy=\"120\" r=\"70\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M30 170L178 47M30 170L251 72M155 66L130 126M155 66L251 72\" stroke=\"currentColor\" fill=\"none\"/><text x=\"14\" y=\"176\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"144\" y=\"58\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"116\" y=\"142\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"258\" y=\"68\" font-size=\"13\" fill=\"currentColor\">C</text></svg>",
+      "archetype": "euc-tanchord",
       "parts": [
         {
           "q": "Prove that $\\triangle TAB\\sim\\triangle TCA$.",
@@ -239,6 +245,262 @@
             "$TA=6$ units (length $>0$)"
           ],
           "answer": "$TA=6$ units"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-07",
+      "difficulty": 2,
+      "context": "O is the centre of the circle. A and B are points on the circle, and C is a point on the major arc AB. Prove the theorem that states that the angle subtended by chord AB at the centre is twice the angle subtended by AB at the circumference, i.e. $A\\hat{O}B=2\\times A\\hat{C}B$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"115\" r=\"2\" fill=\"currentColor\"/><path d=\"M160 33L86 150M160 33L234 150\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 115L86 150M160 115L234 150M160 33L160 197\" stroke=\"currentColor\" fill=\"none\"/><text x=\"72\" y=\"154\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"238\" y=\"154\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"164\" y=\"111\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"157\" y=\"211\" font-size=\"13\" fill=\"currentColor\">D</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Prove that $A\\hat{O}B=2\\,A\\hat{C}B$.",
+          "marks": 5,
+          "solution": [
+            "Construction: Join CO and produce it to D.",
+            "Let $\\hat{C_1}=A\\hat{C}O$ and $\\hat{C_2}=B\\hat{C}O$.",
+            "$OA=OC$ (radii), so $O\\hat{A}C=\\hat{C_1}$ (angles opp equal sides in isosceles $\\triangle OAC$).",
+            "$A\\hat{O}D=\\hat{C_1}+O\\hat{A}C=2\\hat{C_1}$ (exterior angle of $\\triangle OAC$ = sum of opposite interior angles).",
+            "Similarly, $OB=OC$ gives $B\\hat{O}D=2\\hat{C_2}$.",
+            "$A\\hat{O}B=A\\hat{O}D+D\\hat{O}B=2\\hat{C_1}+2\\hat{C_2}=2(\\hat{C_1}+\\hat{C_2})=2\\,A\\hat{C}B$."
+          ],
+          "answer": "$A\\hat{O}B=2\\,A\\hat{C}B$ (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-08",
+      "difficulty": 2,
+      "context": "ABCD is a cyclic quadrilateral of a circle with centre O. Prove the theorem that states that the opposite angles of a cyclic quadrilateral are supplementary, i.e. $\\hat{A}+\\hat{C}=180^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"115\" r=\"2\" fill=\"currentColor\"/><path d=\"M113 48L207 48L207 182L113 182Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 115L207 48M160 115L113 182\" stroke=\"currentColor\" fill=\"none\"/><text x=\"99\" y=\"48\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"211\" y=\"48\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"211\" y=\"190\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"99\" y=\"190\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"164\" y=\"127\" font-size=\"13\" fill=\"currentColor\">O</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Prove that $\\hat{A}+\\hat{C}=180^\\circ$.",
+          "marks": 5,
+          "solution": [
+            "Construction: Join OB and OD.",
+            "Let $\\hat{A}=x$ and $\\hat{C}=y$.",
+            "$\\hat{A}$ is subtended at the circumference by arc BCD; the angle at the centre on the same arc is $B\\hat{O}D=2x$ (angle at centre = $2\\times$ angle at circumference) — the reflex angle measured on the C-side.",
+            "$\\hat{C}$ is subtended by arc BAD; the angle at the centre on that side is $B\\hat{O}D=2y$ — measured on the A-side.",
+            "The two central angles together make a revolution: $2x+2y=360^\\circ$.",
+            "$\\therefore x+y=180^\\circ$, i.e. $\\hat{A}+\\hat{C}=180^\\circ$."
+          ],
+          "answer": "$\\hat{A}+\\hat{C}=180^\\circ$ (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-09",
+      "difficulty": 2,
+      "context": "SAT is a tangent to the circle at A. AB is a chord and C is a point on the circle in the alternate segment. Prove the theorem that states that the angle between the tangent and the chord equals the angle in the alternate segment, i.e. $B\\hat{A}T=A\\hat{C}B$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"55\" y1=\"197\" x2=\"265\" y2=\"197\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 197L237 87L160 33L160 197M89 74L160 197M89 74L237 87\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"212\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"242\" y=\"91\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"75\" y=\"74\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"250\" y=\"193\" font-size=\"12\" fill=\"currentColor\">T</text><text x=\"60\" y=\"193\" font-size=\"12\" fill=\"currentColor\">S</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Prove that $B\\hat{A}T=A\\hat{C}B$.",
+          "marks": 5,
+          "solution": [
+            "Construction: Draw diameter AD and join BD.",
+            "Let $B\\hat{A}T=x$.",
+            "$D\\hat{A}T=90^\\circ$ (tangent $\\perp$ diameter at point of contact).",
+            "$\\therefore D\\hat{A}B=90^\\circ-x$.",
+            "$A\\hat{B}D=90^\\circ$ (angle in semicircle, AD is a diameter).",
+            "In $\\triangle ABD$: $A\\hat{D}B=180^\\circ-90^\\circ-(90^\\circ-x)=x$ (angle sum of triangle).",
+            "$A\\hat{C}B=A\\hat{D}B=x$ (angles in the same segment, subtended by AB).",
+            "$\\therefore B\\hat{A}T=A\\hat{C}B$."
+          ],
+          "answer": "$B\\hat{A}T=A\\hat{C}B$ (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-10",
+      "difficulty": 2,
+      "context": "In $\\triangle ABC$, D is a point on AB and E is a point on AC with $DE\\parallel BC$. Prove the theorem that states that a line drawn parallel to one side of a triangle divides the other two sides proportionally, i.e. $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 30L50 190L270 190Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"105\" y1=\"110\" x2=\"215\" y2=\"110\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M105 110L270 190M215 110L50 190\" stroke=\"currentColor\" fill=\"none\" stroke-dasharray=\"3 3\"/><text x=\"155\" y=\"24\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"36\" y=\"196\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"274\" y=\"196\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"90\" y=\"112\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"220\" y=\"112\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Prove that $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+          "marks": 6,
+          "solution": [
+            "Construction: Join BE and CD (and draw perpendicular heights from E to AB and from D to AC).",
+            "$\\dfrac{\\text{area }\\triangle ADE}{\\text{area }\\triangle BDE}=\\dfrac{AD}{DB}$ (same height from E; triangles with equal heights have areas in the ratio of their bases).",
+            "$\\dfrac{\\text{area }\\triangle ADE}{\\text{area }\\triangle CED}=\\dfrac{AE}{EC}$ (same height from D).",
+            "area $\\triangle BDE=$ area $\\triangle CED$ (same base DE and equal heights, since $DE\\parallel BC$).",
+            "$\\therefore \\dfrac{AD}{DB}=\\dfrac{AE}{EC}$."
+          ],
+          "answer": "$\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$ (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-11",
+      "difficulty": 2,
+      "context": "In the figure, DAE is a tangent to the circle at A. AB and AC are chords of the circle. It is given that $D\\hat{A}B=E\\hat{A}C$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"60\" y1=\"33\" x2=\"260\" y2=\"33\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 33L93 162L227 162Z\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"79\" y=\"168\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"232\" y=\"168\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"66\" y=\"29\" font-size=\"12\" fill=\"currentColor\">D</text><text x=\"250\" y=\"29\" font-size=\"12\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-prove-equal",
+      "parts": [
+        {
+          "q": "Give a reason why $A\\hat{C}B=D\\hat{A}B$.",
+          "marks": 1,
+          "solution": [
+            "Tangent-chord angle: the angle between tangent DA and chord AB equals the angle in the alternate segment."
+          ],
+          "answer": "Tan-chord theorem"
+        },
+        {
+          "q": "Give a reason why $A\\hat{B}C=E\\hat{A}C$.",
+          "marks": 1,
+          "solution": [
+            "Tangent-chord angle: the angle between tangent AE and chord AC equals the angle in the alternate segment."
+          ],
+          "answer": "Tan-chord theorem"
+        },
+        {
+          "q": "Hence prove that $AB=AC$.",
+          "marks": 3,
+          "solution": [
+            "$D\\hat{A}B=E\\hat{A}C$ (given).",
+            "From the reasons above, $A\\hat{C}B=D\\hat{A}B$ and $A\\hat{B}C=E\\hat{A}C$.",
+            "$\\therefore A\\hat{C}B=A\\hat{B}C$.",
+            "In $\\triangle ABC$, sides opposite equal angles are equal, so $AB=AC$ (isosceles)."
+          ],
+          "answer": "$AB=AC$ (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-12",
+      "difficulty": 2,
+      "context": "In $\\triangle ABC$, BE and CF are altitudes (heights), with E on AC and F on AB. The altitudes intersect at H.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 25L70 180L250 180Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M70 180L205 102M250 180L115 102\" stroke=\"currentColor\" fill=\"none\"/><text x=\"156\" y=\"19\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"56\" y=\"186\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"254\" y=\"186\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"209\" y=\"100\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"101\" y=\"102\" font-size=\"13\" fill=\"currentColor\">F</text></svg>",
+      "archetype": "euc-prove-equal",
+      "parts": [
+        {
+          "q": "Write down the sizes of $B\\hat{F}C$ and $B\\hat{E}C$.",
+          "marks": 2,
+          "solution": [
+            "$B\\hat{F}C=90^\\circ$ (CF is an altitude, so $CF\\perp AB$).",
+            "$B\\hat{E}C=90^\\circ$ (BE is an altitude, so $BE\\perp AC$)."
+          ],
+          "answer": "Both $=90^\\circ$"
+        },
+        {
+          "q": "Prove that BFEC is a cyclic quadrilateral.",
+          "marks": 3,
+          "solution": [
+            "$B\\hat{F}C=B\\hat{E}C=90^\\circ$.",
+            "F and E lie on the same side of BC and subtend equal angles ($90^\\circ$) on BC.",
+            "$\\therefore$ F and E lie on a circle with BC as a chord (converse: equal angles subtended by a line segment on the same side).",
+            "$\\therefore$ BFEC is a cyclic quadrilateral."
+          ],
+          "answer": "BFEC is cyclic (proven)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-13",
+      "difficulty": 2,
+      "context": "In $\\triangle PQR$, S lies on PQ and T lies on PR with $ST\\parallel QR$. It is given that $PS=6$ cm, $SQ=4$ cm and $PT=9$ cm.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 30L50 190L270 190Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"105\" y1=\"110\" x2=\"215\" y2=\"110\" stroke=\"currentColor\" fill=\"none\"/><text x=\"155\" y=\"24\" font-size=\"13\" fill=\"currentColor\">P</text><text x=\"36\" y=\"196\" font-size=\"13\" fill=\"currentColor\">Q</text><text x=\"274\" y=\"196\" font-size=\"13\" fill=\"currentColor\">R</text><text x=\"90\" y=\"112\" font-size=\"13\" fill=\"currentColor\">S</text><text x=\"220\" y=\"112\" font-size=\"13\" fill=\"currentColor\">T</text></svg>",
+      "archetype": "euc-proportionality",
+      "parts": [
+        {
+          "q": "Calculate the length of TR.",
+          "marks": 3,
+          "solution": [
+            "$ST\\parallel QR$, so $\\dfrac{PS}{SQ}=\\dfrac{PT}{TR}$ (a line parallel to one side divides the other two sides proportionally).",
+            "$\\dfrac{6}{4}=\\dfrac{9}{TR}$",
+            "$TR=\\dfrac{9\\times 4}{6}=6$ cm"
+          ],
+          "answer": "$TR=6$ cm"
+        },
+        {
+          "q": "If $ST=9$ cm, calculate the length of QR.",
+          "marks": 3,
+          "solution": [
+            "$\\triangle PST\\;|||\\;\\triangle PQR$ (equiangular, since $ST\\parallel QR$).",
+            "$\\dfrac{ST}{QR}=\\dfrac{PS}{PQ}=\\dfrac{6}{10}=\\dfrac{3}{5}$",
+            "$QR=\\dfrac{9\\times 5}{3}=15$ cm"
+          ],
+          "answer": "$QR=15$ cm"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-14",
+      "difficulty": 3,
+      "context": "In the figure, chords AC and BD of a circle intersect at E inside the circle.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M89 74L239 136M89 156L231 74\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"172\" cy=\"108\" r=\"2\" fill=\"currentColor\"/><text x=\"75\" y=\"74\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"243\" y=\"140\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"75\" y=\"162\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"236\" y=\"74\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"176\" y=\"120\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-similar",
+      "parts": [
+        {
+          "q": "Prove that $\\triangle AEB\\;|||\\;\\triangle DEC$.",
+          "marks": 4,
+          "solution": [
+            "$E\\hat{A}B=E\\hat{D}C$ (angles in the same segment, subtended by chord BC).",
+            "$A\\hat{E}B=D\\hat{E}C$ (vertically opposite angles).",
+            "$A\\hat{B}E=D\\hat{C}E$ (angles in the same segment, subtended by chord AD, or third angles).",
+            "$\\therefore \\triangle AEB\\;|||\\;\\triangle DEC$ (AAA)."
+          ],
+          "answer": "Similar (proven)"
+        },
+        {
+          "q": "Hence prove that $AE\\cdot EC=BE\\cdot ED$.",
+          "marks": 3,
+          "solution": [
+            "From the similarity, corresponding sides are in proportion: $\\dfrac{AE}{DE}=\\dfrac{EB}{EC}$.",
+            "Cross-multiplying: $AE\\cdot EC=DE\\cdot EB=BE\\cdot ED$."
+          ],
+          "answer": "$AE\\cdot EC=BE\\cdot ED$ (proven)"
+        },
+        {
+          "q": "If $AE=8$, $EC=3$ and $BE=4$, calculate the length of ED.",
+          "marks": 2,
+          "solution": [
+            "$AE\\cdot EC=BE\\cdot ED$",
+            "$8\\times 3=4\\times ED$",
+            "$ED=\\dfrac{24}{4}=6$"
+          ],
+          "answer": "$ED=6$"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-15",
+      "difficulty": 3,
+      "context": "In the figure, ATB is a tangent to the circle at T. TC and TD are chords, and C and D are points on the circle with CD drawn. It is given that $B\\hat{T}C=63^\\circ$ and $A\\hat{T}D=48^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"55\" y1=\"197\" x2=\"265\" y2=\"197\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 197L223 62L97 62L160 197\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"212\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"228\" y=\"62\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"83\" y=\"62\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"60\" y=\"193\" font-size=\"12\" fill=\"currentColor\">A</text><text x=\"250\" y=\"193\" font-size=\"12\" fill=\"currentColor\">B</text></svg>",
+      "archetype": "euc-tanchord",
+      "parts": [
+        {
+          "q": "Determine, with a reason, the size of $T\\hat{D}C$.",
+          "marks": 2,
+          "solution": [
+            "$T\\hat{D}C=B\\hat{T}C=63^\\circ$ (tangent-chord angle: angle between tangent TB and chord TC equals the angle in the alternate segment)."
+          ],
+          "answer": "$T\\hat{D}C=63^\\circ$"
+        },
+        {
+          "q": "Determine, with a reason, the size of $T\\hat{C}D$.",
+          "marks": 2,
+          "solution": [
+            "$T\\hat{C}D=A\\hat{T}D=48^\\circ$ (tangent-chord angle: angle between tangent TA and chord TD equals the angle in the alternate segment)."
+          ],
+          "answer": "$T\\hat{C}D=48^\\circ$"
+        },
+        {
+          "q": "Hence calculate the size of $D\\hat{T}C$.",
+          "marks": 2,
+          "solution": [
+            "In $\\triangle TCD$: $D\\hat{T}C=180^\\circ-T\\hat{D}C-T\\hat{C}D$ (angle sum of triangle).",
+            "$=180^\\circ-63^\\circ-48^\\circ=69^\\circ$"
+          ],
+          "answer": "$D\\hat{T}C=69^\\circ$"
         }
       ]
     }

@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "",
       "svg": null,
+      "archetype": "cal-first-principles",
       "parts": [
         {
           "q": "Determine $f'(x)$ from first principles if $f(x)=2x^2-x$.",
@@ -49,6 +50,7 @@
       "difficulty": 2,
       "context": "Given: $f(x)=x^3-4x^2+3x$",
       "svg": null,
+      "archetype": "cal-cubic-graph",
       "parts": [
         {
           "q": "Determine $f'(x)$.",
@@ -87,6 +89,7 @@
       "difficulty": 2,
       "context": "Given: $f(x)=x^3-3x^2-9x+27$",
       "svg": null,
+      "archetype": "cal-cubic-graph",
       "parts": [
         {
           "q": "Show that $(x-3)$ is a factor of $f(x)$ and hence determine the $x$-intercepts of $f$.",
@@ -136,6 +139,7 @@
       "difficulty": 3,
       "context": "The sketch shows the graph of $y=f'(x)$, the DERIVATIVE of a cubic function $f$. The graph of $f'$ is a parabola that opens upwards with $x$-intercepts at $x=-1$ and $x=5$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"110\" x2=\"300\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"90\" y1=\"15\" x2=\"90\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 40 68 Q 140 260 240 68\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"65\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><circle cx=\"215\" cy=\"110\" r=\"3\" fill=\"currentColor\"/><text x=\"48\" y=\"103\" font-size=\"13\" fill=\"currentColor\">-1</text><text x=\"219\" y=\"103\" font-size=\"13\" fill=\"currentColor\">5</text><text x=\"244\" y=\"62\" font-size=\"13\" fill=\"currentColor\">y = f'(x)</text><text x=\"290\" y=\"105\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"96\" y=\"26\" font-size=\"13\" fill=\"currentColor\">y</text></svg>",
+      "archetype": "cal-fprime-graph",
       "parts": [
         {
           "q": "Write down the $x$-coordinates of the turning points of $f$.",
@@ -180,6 +184,7 @@
       "difficulty": 2,
       "context": "A farmer in Limpopo has $60$ m of fencing to build a rectangular camp against an existing straight wall. The wall forms one of the long sides, so only THREE sides need fencing. Let the width (each side perpendicular to the wall) be $x$ metres.",
       "svg": null,
+      "archetype": "cal-optimise",
       "parts": [
         {
           "q": "Show that the area of the camp is given by $A(x)=60x-2x^2$.",
@@ -215,6 +220,7 @@
       "difficulty": 2,
       "context": "A cricket ball is hit vertically upwards. Its height (in metres) above the ground after $t$ seconds is given by $s(t)=40t-5t^2$.",
       "svg": null,
+      "archetype": "cal-optimise",
       "parts": [
         {
           "q": "Determine the velocity of the ball after $2$ seconds.",
@@ -243,6 +249,195 @@
             "$a(t)=-10$ m/s$^2$ (constant, directed downwards)"
           ],
           "answer": "$-10$ m/s$^2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-07",
+      "difficulty": 1,
+      "context": "Given: $f(x)=2x^2+x$",
+      "svg": null,
+      "archetype": "cal-first-principles",
+      "parts": [
+        {
+          "q": "Determine $f'(x)$ from first principles.",
+          "marks": 5,
+          "solution": [
+            "$f(x+h)=2(x+h)^2+(x+h)=2x^2+4xh+2h^2+x+h$",
+            "$f(x+h)-f(x)=4xh+2h^2+h$",
+            "$\\dfrac{f(x+h)-f(x)}{h}=4x+2h+1$",
+            "$f'(x)=\\displaystyle\\lim_{h\to 0}(4x+2h+1)$",
+            "$f'(x)=4x+1$"
+          ],
+          "answer": "$f'(x)=4x+1$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-08",
+      "difficulty": 1,
+      "context": "Determine the derivative in each case.",
+      "svg": null,
+      "archetype": "cal-rules",
+      "parts": [
+        {
+          "q": "$f'(x)$ if $f(x)=x^3-3\\sqrt{x}$",
+          "marks": 3,
+          "solution": [
+            "$f(x)=x^3-3x^{\frac{1}{2}}$",
+            "$f'(x)=3x^2-\\dfrac{3}{2}x^{-\frac{1}{2}}$",
+            "$f'(x)=3x^2-\\dfrac{3}{2\\sqrt{x}}$"
+          ],
+          "answer": "$3x^2-\\dfrac{3}{2\\sqrt{x}}$"
+        },
+        {
+          "q": "$\\dfrac{dy}{dx}$ if $y=(2x-1)(x+3)$",
+          "marks": 3,
+          "solution": [
+            "Expand: $y=2x^2+5x-3$",
+            "$\\dfrac{dy}{dx}=4x+5$"
+          ],
+          "answer": "$4x+5$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-09",
+      "difficulty": 2,
+      "context": "Determine the derivative in each case.",
+      "svg": null,
+      "archetype": "cal-rules",
+      "parts": [
+        {
+          "q": "$D_x\\left[\\dfrac{2}{x^2}-\\sqrt[3]{x^{7}}\right]$",
+          "marks": 4,
+          "solution": [
+            "Rewrite: $2x^{-2}-x^{\frac{7}{3}}$",
+            "$D_x=-4x^{-3}-\\dfrac{7}{3}x^{\frac{4}{3}}$",
+            "$=-\\dfrac{4}{x^3}-\\dfrac{7}{3}\\sqrt[3]{x^{4}}$"
+          ],
+          "answer": "$-\\dfrac{4}{x^3}-\\dfrac{7}{3}\\sqrt[3]{x^{4}}$"
+        },
+        {
+          "q": "$\\dfrac{dy}{dx}$ if $y=\\dfrac{x^2-4}{x-2}$, $x\neq 2$",
+          "marks": 2,
+          "solution": [
+            "Simplify first: $y=\\dfrac{(x-2)(x+2)}{x-2}=x+2$",
+            "$\\dfrac{dy}{dx}=1$"
+          ],
+          "answer": "$1$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-10",
+      "difficulty": 2,
+      "context": "Given: $f(x)=x^3-2x^2+1$",
+      "svg": null,
+      "archetype": "cal-tangent",
+      "parts": [
+        {
+          "q": "Determine the equation of the tangent to $f$ at $x=2$.",
+          "marks": 4,
+          "solution": [
+            "$f'(x)=3x^2-4x$",
+            "$m=f'(2)=12-8=4$",
+            "$f(2)=8-8+1=1$, point $(2;1)$",
+            "$y-1=4(x-2)\\Rightarrow y=4x-7$"
+          ],
+          "answer": "$y=4x-7$"
+        },
+        {
+          "q": "Determine the $x$-coordinate(s) of the point(s) on $f$ where the gradient of the tangent is $4$.",
+          "marks": 3,
+          "solution": [
+            "$f'(x)=4$: $3x^2-4x=4$",
+            "$3x^2-4x-4=0\\Rightarrow (3x+2)(x-2)=0$",
+            "$x=-\\dfrac{2}{3}$ or $x=2$"
+          ],
+          "answer": "$x=-\\dfrac{2}{3}$ or $x=2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-11",
+      "difficulty": 2,
+      "context": "Given: $f(x)=-x^3+9x$",
+      "svg": null,
+      "archetype": "cal-tangent",
+      "parts": [
+        {
+          "q": "Determine $f'(x)$.",
+          "marks": 2,
+          "solution": [
+            "$f'(x)=-3x^2+9$"
+          ],
+          "answer": "$-3x^2+9$"
+        },
+        {
+          "q": "For which values of $x$ will the tangent to $f$ have a positive gradient?",
+          "marks": 3,
+          "solution": [
+            "$f'(x)>0$: $-3x^2+9>0$",
+            "$x^2<3$",
+            "$-\\sqrt{3}<x<\\sqrt{3}$"
+          ],
+          "answer": "$-\\sqrt{3}<x<\\sqrt{3}$"
+        },
+        {
+          "q": "Determine the equation of the tangent to $f$ at $x=1$.",
+          "marks": 3,
+          "solution": [
+            "$m=f'(1)=-3+9=6$",
+            "$f(1)=-1+9=8$, point $(1;8)$",
+            "$y-8=6(x-1)\\Rightarrow y=6x+2$"
+          ],
+          "answer": "$y=6x+2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-12",
+      "difficulty": 3,
+      "context": "The sketch shows the graph of $y=f'(x)$, the DERIVATIVE of a cubic function $f$. The graph of $f'$ cuts the $x$-axis at $x=-1$ and $x=3$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"205\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M53 93L64 105L74 116L85 126L95 134L106 141L116 147L127 152L137 155L148 157L158 158L169 158L179 156L190 153L200 149L211 143L221 137L232 129L242 119L253 109L263 97\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"90\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"230\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><text x=\"82\" y=\"122\" font-size=\"12\" fill=\"currentColor\">-1</text><text x=\"228\" y=\"122\" font-size=\"12\" fill=\"currentColor\">3</text><text x=\"305\" y=\"134\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"244\" y=\"114\" font-size=\"13\" fill=\"currentColor\">y=f'(x)</text></svg>",
+      "archetype": "cal-fprime-graph",
+      "parts": [
+        {
+          "q": "For which values of $x$ is $f$ increasing?",
+          "marks": 2,
+          "solution": [
+            "$f$ increases where $f'(x)>0$",
+            "From the graph $f'(x)>0$ for $x<-1$ or $x>3$"
+          ],
+          "answer": "$x<-1$ or $x>3$"
+        },
+        {
+          "q": "Write down the $x$-coordinates of the turning points of $f$.",
+          "marks": 2,
+          "solution": [
+            "Turning points of $f$ occur where $f'(x)=0$",
+            "$x=-1$ and $x=3$"
+          ],
+          "answer": "$x=-1$ and $x=3$"
+        },
+        {
+          "q": "Determine the $x$-coordinate of the point of inflection of $f$.",
+          "marks": 2,
+          "solution": [
+            "The point of inflection of $f$ occurs where $f'$ has its turning point (where $f''=0$)",
+            "By symmetry of $f'$ this is midway between the roots: $x=\\dfrac{-1+3}{2}=1$"
+          ],
+          "answer": "$x=1$"
+        },
+        {
+          "q": "For which values of $x$ is $f$ concave down?",
+          "marks": 2,
+          "solution": [
+            "$f$ is concave down where $f''(x)<0$, i.e. where $f'$ is decreasing",
+            "From the graph $f'$ decreases for $x<1$"
+          ],
+          "answer": "$x<1$"
         }
       ]
     }

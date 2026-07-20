@@ -9,6 +9,7 @@
       "difficulty": 2,
       "context": "In the diagram, $\\triangle ABC$ has vertices $A(-2; 1)$, $B(4; 5)$ and $C(6; 2)$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"164\" x2=\"308\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"116\" y1=\"8\" x2=\"116\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"300\" y=\"158\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"122\" y=\"18\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"104\" y=\"178\" font-size=\"13\" fill=\"currentColor\">O</text><path d=\"M68 138 L212 34 L260 112 Z\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"68\" cy=\"138\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"212\" cy=\"34\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"260\" cy=\"112\" r=\"2.5\" fill=\"currentColor\"/><text x=\"24\" y=\"152\" font-size=\"13\" fill=\"currentColor\">A(-2;1)</text><text x=\"204\" y=\"24\" font-size=\"13\" fill=\"currentColor\">B(4;5)</text><text x=\"264\" y=\"126\" font-size=\"13\" fill=\"currentColor\">C(6;2)</text></svg>",
+      "archetype": "ana-triangle",
       "parts": [
         {
           "q": "Calculate the length of $AB$. Leave your answer in simplest surd form.",
@@ -54,6 +55,7 @@
       "difficulty": 1,
       "context": "The points $P(-1; 3)$ and $Q(4; -2)$ lie on a straight line in the Cartesian plane.",
       "svg": null,
+      "archetype": "ana-incline",
       "parts": [
         {
           "q": "Calculate the gradient of the line $PQ$.",
@@ -89,6 +91,7 @@
       "difficulty": 2,
       "context": "In the diagram, $ABCD$ is a quadrilateral with vertices $A(-2; -3)$, $B(4; -1)$, $C(6; 4)$ and $D$. The diagonals $AC$ and $BD$ intersect at $M$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"120\" x2=\"300\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"104\" y1=\"20\" x2=\"104\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"292\" y=\"114\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"110\" y=\"30\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"92\" y=\"134\" font-size=\"13\" fill=\"currentColor\">O</text><path d=\"M48 180 L216 140 L272 40 L104 80 Z\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"48\" y1=\"180\" x2=\"272\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"216\" y1=\"140\" x2=\"104\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"48\" cy=\"180\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"216\" cy=\"140\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"272\" cy=\"40\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"104\" cy=\"80\" r=\"2.5\" fill=\"currentColor\"/><text x=\"26\" y=\"198\" font-size=\"13\" fill=\"currentColor\">A(-2;-3)</text><text x=\"222\" y=\"156\" font-size=\"13\" fill=\"currentColor\">B(4;-1)</text><text x=\"260\" y=\"30\" font-size=\"13\" fill=\"currentColor\">C(6;4)</text><text x=\"58\" y=\"74\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"166\" y=\"102\" font-size=\"13\" fill=\"currentColor\">M</text></svg>",
+      "archetype": "ana-triangle",
       "parts": [
         {
           "q": "Determine the coordinates of $M$, the midpoint of $AC$.",
@@ -128,6 +131,7 @@
       "difficulty": 2,
       "context": "The straight line $\\ell$ has equation $2x-3y+6=0$.",
       "svg": null,
+      "archetype": "ana-incline",
       "parts": [
         {
           "q": "Write down the gradient and the $y$-intercept of $\\ell$.",
@@ -164,6 +168,7 @@
       "difficulty": 2,
       "context": "In the diagram, the circle defined by $x^2+y^2-6x+4y-12=0$ has centre $M$. The point $A(7; 1)$ lies on the circle, and the tangent to the circle at $A$ is drawn.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"78\" x2=\"250\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"78\" y1=\"14\" x2=\"78\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"242\" y=\"72\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"84\" y=\"24\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"66\" y=\"92\" font-size=\"13\" fill=\"currentColor\">O</text><circle cx=\"126\" cy=\"110\" r=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"126\" y1=\"110\" x2=\"190\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"166\" y1=\"30\" x2=\"238\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"126\" cy=\"110\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"190\" cy=\"62\" r=\"2.5\" fill=\"currentColor\"/><text x=\"96\" y=\"128\" font-size=\"13\" fill=\"currentColor\">M</text><text x=\"196\" y=\"54\" font-size=\"13\" fill=\"currentColor\">A(7;1)</text></svg>",
+      "archetype": "ana-circle",
       "parts": [
         {
           "q": "Determine the coordinates of the centre $M$ and the radius of the circle.",
@@ -203,6 +208,7 @@
       "difficulty": 3,
       "context": "The circle with equation $x^2+y^2=20$ has its centre at the origin $O$. The point $T(2; 4)$ lies on the circle. The tangent to the circle at $T$ intersects the $x$-axis at $R$ and the $y$-axis at $S$.",
       "svg": null,
+      "archetype": "ana-tangent",
       "parts": [
         {
           "q": "Show that $T(2; 4)$ lies on the circle.",
@@ -231,6 +237,204 @@
             "Area $=\\frac{1}{2}\\times OR\\times OS=\\frac{1}{2}\\times 10\\times 5=25$ square units"
           ],
           "answer": "Area $=25$ square units"
+        }
+      ]
+    },
+    {
+      "id": "analytical-geometry-07",
+      "difficulty": 2,
+      "context": "In the diagram, $\\triangle ABC$ has vertices $A(-3; -2)$, $B(1; 6)$ and $C(5; 0)$. The angles of inclination of lines $AB$ and $BC$ are $\\alpha$ and $\\beta$ respectively.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"138\" x2=\"300\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"114\" y1=\"10\" x2=\"114\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"292\" y=\"132\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"120\" y=\"20\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"100\" y=\"152\" font-size=\"13\" fill=\"currentColor\">O</text><path d=\"M60 174 L132 30 L204 138 Z\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"60\" cy=\"174\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"132\" cy=\"30\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"204\" cy=\"138\" r=\"2.5\" fill=\"currentColor\"/><text x=\"16\" y=\"190\" font-size=\"13\" fill=\"currentColor\">A(-3;-2)</text><text x=\"124\" y=\"22\" font-size=\"13\" fill=\"currentColor\">B(1;6)</text><text x=\"210\" y=\"154\" font-size=\"13\" fill=\"currentColor\">C(5;0)</text></svg>",
+      "archetype": "ana-incline",
+      "parts": [
+        {
+          "q": "Calculate $\\alpha$, the angle of inclination of $AB$, rounded to two decimal places.",
+          "marks": 2,
+          "solution": [
+            "$m_{AB}=\\frac{6-(-2)}{1-(-3)}=\\frac{8}{4}=2$",
+            "$\\tan\\alpha=2\\ \\Rightarrow\\ \\alpha=\\tan^{-1}(2)\\approx 63{,}43^{\\circ}$"
+          ],
+          "answer": "$\\alpha\\approx 63{,}43^{\\circ}$"
+        },
+        {
+          "q": "Calculate $\\beta$, the angle of inclination of $BC$, rounded to two decimal places.",
+          "marks": 3,
+          "solution": [
+            "$m_{BC}=\\frac{0-6}{5-1}=-\\frac{3}{2}$",
+            "Reference angle: $\\tan^{-1}\\left(\\frac{3}{2}\\right)\\approx 56{,}31^{\\circ}$",
+            "Since the gradient is negative, $\\beta$ is obtuse: $\\beta=180^{\\circ}-56{,}31^{\\circ}=123{,}69^{\\circ}$"
+          ],
+          "answer": "$\\beta\\approx 123{,}69^{\\circ}$"
+        },
+        {
+          "q": "Hence calculate the size of $A\\hat{B}C$.",
+          "marks": 2,
+          "solution": [
+            "$\\beta$ is an exterior angle of $\\triangle ABC$ at the point where $BC$ crosses the line through $AB$, so $\\beta=\\alpha+A\\hat{B}C$ (exterior angle of a triangle).",
+            "$A\\hat{B}C=\\beta-\\alpha=123{,}69^{\\circ}-63{,}43^{\\circ}=60{,}26^{\\circ}$"
+          ],
+          "answer": "$A\\hat{B}C\\approx 60{,}26^{\\circ}$"
+        }
+      ]
+    },
+    {
+      "id": "analytical-geometry-08",
+      "difficulty": 2,
+      "context": "In the diagram, the circle with centre $M(-2; 3)$ passes through the points $P(2; 6)$ and $N(1; -1)$. The tangent to the circle at $P$ is drawn.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"15\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"120\" y1=\"10\" x2=\"120\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"292\" y=\"124\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"126\" y=\"20\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"106\" y=\"144\" font-size=\"13\" fill=\"currentColor\">O</text><circle cx=\"92\" cy=\"88\" r=\"70\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"92\" y1=\"88\" x2=\"148\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"127\" y1=\"18\" x2=\"204\" y2=\"121\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"92\" cy=\"88\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"148\" cy=\"46\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"134\" cy=\"144\" r=\"2.5\" fill=\"currentColor\"/><text x=\"62\" y=\"102\" font-size=\"13\" fill=\"currentColor\">M</text><text x=\"154\" y=\"40\" font-size=\"13\" fill=\"currentColor\">P(2;6)</text><text x=\"140\" y=\"158\" font-size=\"13\" fill=\"currentColor\">N(1;-1)</text></svg>",
+      "archetype": "ana-circle",
+      "parts": [
+        {
+          "q": "Show that the equation of the circle is $x^2+y^2+4x-6y-12=0$.",
+          "marks": 3,
+          "solution": [
+            "$r^2=MP^2=(2-(-2))^2+(6-3)^2=16+9=25$",
+            "Circle: $(x+2)^2+(y-3)^2=25$",
+            "Expand: $x^2+4x+4+y^2-6y+9=25$",
+            "$\\therefore x^2+y^2+4x-6y-12=0$"
+          ],
+          "answer": "$(x+2)^2+(y-3)^2=25$ expands to $x^2+y^2+4x-6y-12=0$"
+        },
+        {
+          "q": "Show that $N(1; -1)$ lies on the circle.",
+          "marks": 2,
+          "solution": [
+            "$(1+2)^2+(-1-3)^2=9+16=25=r^2$",
+            "$\\therefore N$ lies on the circle."
+          ],
+          "answer": "$(1+2)^2+(-1-3)^2=25=r^2$, so $N$ is on the circle"
+        },
+        {
+          "q": "Determine the equation of the tangent to the circle at $P$, in the form $y=mx+c$.",
+          "marks": 4,
+          "solution": [
+            "Gradient of radius $MP$: $m_{MP}=\\frac{6-3}{2-(-2)}=\\frac{3}{4}$",
+            "Tangent $\\perp$ radius at the point of contact: $m_{tan}=-\\frac{4}{3}$",
+            "$y-6=-\\frac{4}{3}(x-2)$",
+            "$\\therefore y=-\\frac{4}{3}x+\\frac{26}{3}$"
+          ],
+          "answer": "$y=-\\frac{4}{3}x+\\frac{26}{3}$"
+        },
+        {
+          "q": "The tangent to the circle at $N$ is also drawn. Prove that the two tangents are perpendicular to each other.",
+          "marks": 3,
+          "solution": [
+            "Gradient of radius $MN$: $m_{MN}=\\frac{-1-3}{1-(-2)}=-\\frac{4}{3}$",
+            "Tangent at $N$: $m=-\\frac{1}{m_{MN}}=\\frac{3}{4}$",
+            "Product of the tangent gradients: $-\\frac{4}{3}\\times\\frac{3}{4}=-1$",
+            "$\\therefore$ the two tangents are perpendicular."
+          ],
+          "answer": "$m_{tan\\,P}\\times m_{tan\\,N}=-\\frac{4}{3}\\times\\frac{3}{4}=-1$"
+        }
+      ]
+    },
+    {
+      "id": "analytical-geometry-09",
+      "difficulty": 3,
+      "context": "The circle defined by $x^2+y^2-4x+2y-20=0$ has centre $M$. The point $T(5; 3)$ lies on the circle.",
+      "svg": null,
+      "archetype": "ana-tangent",
+      "parts": [
+        {
+          "q": "Determine the coordinates of $M$ and the radius of the circle.",
+          "marks": 3,
+          "solution": [
+            "Complete the squares: $x^2-4x+y^2+2y=20$",
+            "$(x-2)^2-4+(y+1)^2-1=20$",
+            "$(x-2)^2+(y+1)^2=25$",
+            "$\\therefore M(2;\\ -1)$ and radius $r=5$"
+          ],
+          "answer": "$M(2;\\ -1)$ and $r=5$"
+        },
+        {
+          "q": "Determine the equation of the tangent to the circle at $T$, in the form $y=mx+c$.",
+          "marks": 4,
+          "solution": [
+            "Gradient of radius $MT$: $m_{MT}=\\frac{3-(-1)}{5-2}=\\frac{4}{3}$",
+            "Tangent $\\perp$ radius: $m_{tan}=-\\frac{3}{4}$",
+            "$y-3=-\\frac{3}{4}(x-5)$",
+            "$\\therefore y=-\\frac{3}{4}x+\\frac{27}{4}$"
+          ],
+          "answer": "$y=-\\frac{3}{4}x+\\frac{27}{4}$"
+        },
+        {
+          "q": "Another tangent to the circle is parallel to the tangent at $T$. Determine the equation of this tangent.",
+          "marks": 4,
+          "solution": [
+            "A parallel tangent touches the circle at $T'$, the point diametrically opposite $T$, so $M$ is the midpoint of $TT'$.",
+            "$T'=(2\\times 2-5;\\ 2\\times(-1)-3)=(-1;\\ -5)$",
+            "Same gradient as the tangent at $T$: $m=-\\frac{3}{4}$",
+            "$y-(-5)=-\\frac{3}{4}(x-(-1))\\ \\Rightarrow\\ y=-\\frac{3}{4}x-\\frac{23}{4}$"
+          ],
+          "answer": "$y=-\\frac{3}{4}x-\\frac{23}{4}$"
+        }
+      ]
+    },
+    {
+      "id": "analytical-geometry-10",
+      "difficulty": 3,
+      "context": "$M(-1; 2)$ and $T(t; k)$ are points in the Cartesian plane such that the gradient of $MT$ is $-2$ and $MT=\\sqrt{45}$. $T$ lies in the fourth quadrant.",
+      "svg": null,
+      "archetype": "ana-level4",
+      "parts": [
+        {
+          "q": "Show that $(t+1)^2+(k-2)^2=45$.",
+          "marks": 2,
+          "solution": [
+            "Distance formula: $MT=\\sqrt{(t-(-1))^2+(k-2)^2}=\\sqrt{45}$",
+            "Squaring both sides: $(t+1)^2+(k-2)^2=45$"
+          ],
+          "answer": "$(t+1)^2+(k-2)^2=45$ (from the distance formula, squared)"
+        },
+        {
+          "q": "Determine the coordinates of $T$.",
+          "marks": 5,
+          "solution": [
+            "Gradient condition: $\\frac{k-2}{t+1}=-2\\ \\Rightarrow\\ k-2=-2(t+1)$",
+            "Substitute into the distance equation: $(t+1)^2+4(t+1)^2=45$",
+            "$5(t+1)^2=45\\ \\Rightarrow\\ (t+1)^2=9\\ \\Rightarrow\\ t+1=\\pm 3$",
+            "$t=2$ gives $k=2-2(3)=-4$, so $T(2;\\ -4)$; $t=-4$ gives $k=2-2(-3)=8$, so $T(-4;\\ 8)$",
+            "$T$ lies in the fourth quadrant ($t>0$, $k<0$): $\\therefore T(2;\\ -4)$"
+          ],
+          "answer": "$T(2;\\ -4)$"
+        }
+      ]
+    },
+    {
+      "id": "analytical-geometry-11",
+      "difficulty": 3,
+      "context": "The circle $(x-1)^2+(y+2)^2=25$ has centre $M$. A straight line with gradient $\\frac{3}{4}$ is drawn through $M$ and cuts the circle at $W$ and $V$. $W$ lies above the $x$-axis.",
+      "svg": null,
+      "archetype": "ana-level4",
+      "parts": [
+        {
+          "q": "Write down the coordinates of $M$ and the length of the radius.",
+          "marks": 2,
+          "solution": [
+            "$M(1;\\ -2)$ and $r=\\sqrt{25}=5$"
+          ],
+          "answer": "$M(1;\\ -2)$ and $r=5$"
+        },
+        {
+          "q": "Determine the coordinates of $W$ and $V$.",
+          "marks": 5,
+          "solution": [
+            "Line through $M$ with gradient $\\frac{3}{4}$: $y+2=\\frac{3}{4}(x-1)$",
+            "Substitute into the circle: $(x-1)^2+\\left(\\frac{3}{4}(x-1)\\right)^2=25$",
+            "$(x-1)^2+\\frac{9}{16}(x-1)^2=25\\ \\Rightarrow\\ \\frac{25}{16}(x-1)^2=25$",
+            "$(x-1)^2=16\\ \\Rightarrow\\ x=5$ or $x=-3$",
+            "$x=5$: $y=-2+\\frac{3}{4}(4)=1$; $x=-3$: $y=-2+\\frac{3}{4}(-4)=-5$",
+            "$W$ lies above the $x$-axis: $\\therefore W(5;\\ 1)$ and $V(-3;\\ -5)$"
+          ],
+          "answer": "$W(5;\\ 1)$ and $V(-3;\\ -5)$"
+        },
+        {
+          "q": "Write down the length of $WV$.",
+          "marks": 1,
+          "solution": [
+            "$WV$ passes through the centre $M$, so it is a diameter: $WV=2r=10$ units"
+          ],
+          "answer": "$WV=10$ units"
         }
       ]
     }

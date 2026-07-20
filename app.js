@@ -6,7 +6,8 @@
   const view = $("#view");
 
   /* ── state ─────────────────────────────────────────────── */
-  const KEY = "mm1";
+  const KEY = "mm2";
+  localStorage.removeItem("mm1"); // pre-launch test data lived under the old key
   const state = load();
   function load() {
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }

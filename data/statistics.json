@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "The daily taxi commute times (in minutes) of 10 workers travelling from Soweto to Johannesburg CBD are recorded: $32; 45; 28; 51; 39; 47; 35; 42; 56; 40$",
       "svg": null,
+      "archetype": "stat-sd-effect",
       "parts": [
         {
           "q": "Calculate the mean commute time.",
@@ -45,6 +46,7 @@
       "difficulty": 2,
       "context": "A takeaway in Durban records the number of bunny chows sold per day over 11 days. The sorted data is: $12; 15; 18; 21; 24; 27; 33; 39; 46; 52; 60$",
       "svg": null,
+      "archetype": "stat-boxplot",
       "parts": [
         {
           "q": "Write down the five-number summary of the data.",
@@ -91,6 +93,7 @@
       "difficulty": 2,
       "context": "The finishing times of 80 runners in a 10 km fun run in Cape Town are grouped in the table below (time $t$ in minutes): $30\\le t<40$: 6 runners; $40\\le t<50$: 14 runners; $50\\le t<60$: 26 runners; $60\\le t<70$: 20 runners; $70\\le t<80$: 10 runners; $80\\le t<90$: 4 runners. A cumulative frequency graph (ogive) is drawn for this data.",
       "svg": null,
+      "archetype": "stat-ogive",
       "parts": [
         {
           "q": "Write down the cumulative frequencies for the six intervals.",
@@ -143,6 +146,7 @@
       "difficulty": 2,
       "context": "A spaza shop owner in Polokwane records the maximum daily temperature ($x$, in °C) and the number of cold drinks sold ($y$) on 8 days: $(18; 40),\\ (21; 44),\\ (24; 52),\\ (26; 57),\\ (29; 66),\\ (31; 68),\\ (33; 75),\\ (35; 80)$",
       "svg": null,
+      "archetype": "stat-regression",
       "parts": [
         {
           "q": "Determine the equation of the least-squares regression line $\\hat{y}=a+bx$. Round $a$ and $b$ to four decimal places.",
@@ -196,6 +200,7 @@
       "difficulty": 3,
       "context": "A club cricketer's runs in 8 innings are: $34; 12; 45; x; 28; 51; 9; 41$. The mean of the 8 innings is 32 runs.",
       "svg": null,
+      "archetype": "stat-sd-effect",
       "parts": [
         {
           "q": "Show that $x=36$.",
@@ -232,6 +237,199 @@
             "The median (which only moves from $35$ to $36$) better represents the typical score, because the median is resistant to the outlier of $130$, whereas the mean is pulled up to $\\approx 42{,}89$ — higher than 7 of the 9 scores."
           ],
           "answer": "The median, because it is not distorted by the outlier of 130"
+        }
+      ]
+    },
+    {
+      "id": "statistics-06",
+      "difficulty": 2,
+      "context": "During a drought, the daily water usage ($x$, in litres) of 120 households in Mbombela was recorded. An ogive (cumulative frequency curve) was drawn from the data. The cumulative frequency table used for the ogive reads: $x<20$: 12 households; $x<40$: 42; $x<60$: 76; $x<80$: 102; $x<100$: 116; $x<120$: 120.",
+      "svg": null,
+      "archetype": "stat-ogive",
+      "parts": [
+        {
+          "q": "How many households used at least 40 but less than 60 litres of water per day?",
+          "marks": 2,
+          "solution": [
+            "Frequency of the interval $40\\le x<60$: $76-42=34$",
+            "$\\therefore$ 34 households"
+          ],
+          "answer": "34 households"
+        },
+        {
+          "q": "Write down the modal class of the data.",
+          "marks": 1,
+          "solution": [
+            "Frequencies per interval (differences of the cumulative frequencies): $12;\\ 30;\\ 34;\\ 26;\\ 14;\\ 4$",
+            "The highest frequency (34) belongs to $40\\le x<60$."
+          ],
+          "answer": "$40\\le x<60$"
+        },
+        {
+          "q": "Use the ogive to estimate the median daily water usage.",
+          "marks": 2,
+          "solution": [
+            "The median is at the $\\frac{120}{2}=60$th household, which lies in the interval $40\\le x<60$ (cumulative frequency goes from 42 to 76).",
+            "Reading across from 60 on the cumulative frequency axis: $M\\approx 40+\\frac{60-42}{34}\\times 20\\approx 50{,}6$ litres"
+          ],
+          "answer": "$M\\approx 50{,}6$ litres (accept $50$–$51$ litres read from the ogive)"
+        },
+        {
+          "q": "Estimate the interquartile range of the data.",
+          "marks": 3,
+          "solution": [
+            "$Q_1$ is at the $\\frac{120}{4}=30$th household, in $20\\le x<40$: $Q_1\\approx 20+\\frac{30-12}{30}\\times 20=32$ litres",
+            "$Q_3$ is at the $90$th household, in $60\\le x<80$: $Q_3\\approx 60+\\frac{90-76}{26}\\times 20\\approx 70{,}8$ litres",
+            "$IQR=Q_3-Q_1\\approx 70{,}8-32=38{,}8$ litres"
+          ],
+          "answer": "$IQR\\approx 38{,}8$ litres (accept $38$–$40$ litres from ogive readings)"
+        },
+        {
+          "q": "The municipality fines any household that uses more than 90 litres per day. Estimate how many households will be fined.",
+          "marks": 2,
+          "solution": [
+            "At $x=90$ (halfway through $80\\le x<100$): cumulative frequency $\\approx 102+\\frac{10}{20}\\times 14=109$",
+            "Households above 90 litres: $120-109=11$"
+          ],
+          "answer": "$\\approx 11$ households"
+        }
+      ]
+    },
+    {
+      "id": "statistics-07",
+      "difficulty": 2,
+      "context": "The number of minutes that 12 Grade 12 learners in Bloemfontein spent on social media one evening is: $28;\\ 35;\\ 22;\\ 41;\\ 5;\\ 30;\\ 44;\\ 25;\\ 32;\\ 38;\\ 18;\\ 95$",
+      "svg": null,
+      "archetype": "stat-boxplot",
+      "parts": [
+        {
+          "q": "Determine the five-number summary of the data.",
+          "marks": 4,
+          "solution": [
+            "Sorted data: $5;\\ 18;\\ 22;\\ 25;\\ 28;\\ 30;\\ 32;\\ 35;\\ 38;\\ 41;\\ 44;\\ 95$",
+            "Minimum $=5$ and Maximum $=95$",
+            "$n=12$, so the median is the average of the 6th and 7th values: $M=\\frac{30+32}{2}=31$",
+            "$Q_1=\\frac{22+25}{2}=23{,}5$ (median of the lower 6 values) and $Q_3=\\frac{38+41}{2}=39{,}5$ (median of the upper 6 values)",
+            "Five-number summary: $(5;\\ 23{,}5;\\ 31;\\ 39{,}5;\\ 95)$"
+          ],
+          "answer": "$(5;\\ 23{,}5;\\ 31;\\ 39{,}5;\\ 95)$"
+        },
+        {
+          "q": "Use the rule that an outlier lies more than $1{,}5\\times IQR$ beyond a quartile to show that $95$ is an outlier, but $5$ is not.",
+          "marks": 3,
+          "solution": [
+            "$IQR=Q_3-Q_1=39{,}5-23{,}5=16$",
+            "Upper fence: $Q_3+1{,}5\\times IQR=39{,}5+24=63{,}5$. Since $95>63{,}5$, the value $95$ IS an outlier.",
+            "Lower fence: $Q_1-1{,}5\\times IQR=23{,}5-24=-0{,}5$. Since $5>-0{,}5$, the value $5$ is NOT an outlier."
+          ],
+          "answer": "$95>63{,}5$ (outlier); $5>-0{,}5$ (not an outlier)"
+        },
+        {
+          "q": "The data is represented on a box-and-whisker diagram. Comment on the skewness of the data, giving a reason.",
+          "marks": 2,
+          "solution": [
+            "$Q_3-M=39{,}5-31=8{,}5$ and $M-Q_1=31-23{,}5=7{,}5$, and the maximum (95) lies far beyond $Q_3$, giving a much longer right whisker.",
+            "$\\therefore$ the data is skewed to the right (positively skewed)."
+          ],
+          "answer": "Skewed to the right (positively skewed) — the right whisker is much longer and $Q_3-M>M-Q_1$"
+        }
+      ]
+    },
+    {
+      "id": "statistics-08",
+      "difficulty": 2,
+      "context": "The daily wages (in rand) of the 7 workers at a car wash in Tembisa are: $170;\\ 190;\\ 200;\\ 220;\\ 230;\\ 250;\\ 280$",
+      "svg": null,
+      "archetype": "stat-sd-effect",
+      "parts": [
+        {
+          "q": "Calculate the mean and the standard deviation of the daily wages.",
+          "marks": 3,
+          "solution": [
+            "$\\bar{x}=\\frac{170+190+200+220+230+250+280}{7}=\\frac{1540}{7}=R220$",
+            "By calculator (population standard deviation): $\\sigma=\\sqrt{\\frac{\\sum(x_i-\\bar{x})^2}{n}}=\\sqrt{\\frac{8400}{7}}\\approx R34{,}64$"
+          ],
+          "answer": "$\\bar{x}=R220$ and $\\sigma\\approx R34{,}64$"
+        },
+        {
+          "q": "Each worker receives an increase of R35 per day. Write down the new mean and the new standard deviation.",
+          "marks": 2,
+          "solution": [
+            "Adding a constant to every value shifts the mean by that constant: new mean $=220+35=R255$",
+            "The spread of the data is unchanged: new $\\sigma\\approx R34{,}64$ (unchanged)"
+          ],
+          "answer": "New mean $=R255$; $\\sigma\\approx R34{,}64$ (unchanged)"
+        },
+        {
+          "q": "The owner instead considers increasing every wage by 10%. Determine the new mean and the new standard deviation for this option.",
+          "marks": 2,
+          "solution": [
+            "Multiplying every value by $1{,}1$ scales both measures: new mean $=220\\times 1{,}1=R242$",
+            "New $\\sigma=34{,}64\\times 1{,}1\\approx R38{,}11$"
+          ],
+          "answer": "New mean $=R242$; new $\\sigma\\approx R38{,}11$"
+        },
+        {
+          "q": "Explain why the standard deviation stays the same for the R35 increase but changes for the 10% increase.",
+          "marks": 2,
+          "solution": [
+            "Adding R35 shifts every value by the same amount, so each deviation $x_i-\\bar{x}$ is unchanged — the spread, and therefore $\\sigma$, stays the same.",
+            "Multiplying by $1{,}1$ stretches every deviation by a factor of $1{,}1$, so the spread increases and $\\sigma$ is multiplied by $1{,}1$ as well."
+          ],
+          "answer": "A constant shift leaves the deviations from the mean unchanged; a percentage increase scales the deviations (and $\\sigma$) by the same factor"
+        }
+      ]
+    },
+    {
+      "id": "statistics-09",
+      "difficulty": 1,
+      "context": "A petrol station in Benoni records the number of hours of load-shedding per day ($x$) and the number of litres of petrol sold for generators ($y$) on 8 days: $(2; 35),\\ (3; 48),\\ (4; 52),\\ (5; 66),\\ (6; 70),\\ (7; 85),\\ (8; 92),\\ (10; 110)$",
+      "svg": null,
+      "archetype": "stat-regression",
+      "parts": [
+        {
+          "q": "Determine the equation of the least-squares regression line $\\hat{y}=a+bx$. Round $a$ and $b$ to four decimal places.",
+          "marks": 3,
+          "solution": [
+            "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=45$, $\\sum y=558$, $\\sum xy=3603$, $\\sum x^2=303$):",
+            "$b=\\frac{8(3603)-(45)(558)}{8(303)-(45)^2}\\approx 9{,}3083$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{558}{8}-9{,}3083\\times\\frac{45}{8}\\approx 17{,}3910$",
+            "$\\therefore\\ \\hat{y}=17{,}3910+9{,}3083x$ (values rounded to 4 decimal places)"
+          ],
+          "answer": "$\\hat{y}=17{,}3910+9{,}3083x$"
+        },
+        {
+          "q": "Predict the number of litres of petrol sold for generators on a day with 9 hours of load-shedding.",
+          "marks": 2,
+          "solution": [
+            "$\\hat{y}=17{,}3910+9{,}3083(9)\\approx 101{,}17$",
+            "$\\therefore$ approximately 101 litres."
+          ],
+          "answer": "$\\approx 101$ litres ($\\hat{y}\\approx 101{,}17$)"
+        },
+        {
+          "q": "Write down the value of the correlation coefficient $r$, rounded to four decimal places.",
+          "marks": 1,
+          "solution": [
+            "By calculator: $r\\approx 0{,}9958$"
+          ],
+          "answer": "$r\\approx 0{,}9958$"
+        },
+        {
+          "q": "Interpret the value of $r$ in the context of this data.",
+          "marks": 1,
+          "solution": [
+            "There is a very strong positive linear relationship between the hours of load-shedding and the litres of generator petrol sold: more load-shedding, more petrol sold."
+          ],
+          "answer": "Very strong positive linear correlation between load-shedding hours and generator petrol sales"
+        },
+        {
+          "q": "Explain why the prediction made in the earlier part of this question can be considered reliable.",
+          "marks": 1,
+          "solution": [
+            "$x=9$ lies inside the range of the observed data ($2$ to $10$ hours), so it is interpolation — and $r\\approx 0{,}9958$ shows the linear model fits the data very well."
+          ],
+          "answer": "It is interpolation ($9$ lies within the data range $2$–$10$) and the correlation is very strong"
         }
       ]
     }

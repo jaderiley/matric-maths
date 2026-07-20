@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "For two events $A$ and $B$ it is given that $P(A)=0{,}35$, $P(B)=0{,}5$ and $P(A\\text{ or }B)=0{,}675$.",
       "svg": null,
+      "archetype": "prob-rules",
       "parts": [
         {
           "q": "Determine $P(A\\text{ and }B)$.",
@@ -45,6 +46,7 @@
       "difficulty": 2,
       "context": "In a group of $120$ Grade 12 learners at a school in Tshwane, $65$ take Mathematics (M), $50$ take Physical Sciences (P) and $25$ take both subjects. The rest take neither subject.",
       "svg": null,
+      "archetype": "prob-venn",
       "parts": [
         {
           "q": "Draw a Venn diagram to represent this information, showing the number of learners in each region.",
@@ -90,6 +92,7 @@
       "difficulty": 2,
       "context": "Lerato travels to school either by taxi or on foot. The probability that she takes a taxi is $0{,}6$. If she takes a taxi, the probability that she is late is $0{,}1$. If she walks, the probability that she is late is $0{,}3$.",
       "svg": null,
+      "archetype": "prob-tree",
       "parts": [
         {
           "q": "Draw a tree diagram to represent this situation. Show the probability on each branch.",
@@ -127,6 +130,7 @@
       "difficulty": 2,
       "context": "A spaza shop owner in Soweto recorded how $150$ customers paid and whether they bought airtime. Of the $90$ customers who paid cash, $45$ bought airtime. Of the $60$ customers who paid by card, $25$ bought airtime. (Contingency table totals: cash $=90$, card $=60$; airtime $=70$, no airtime $=80$.)",
       "svg": null,
+      "archetype": "prob-rules",
       "parts": [
         {
           "q": "Determine the probability that a randomly selected customer paid cash.",
@@ -170,6 +174,7 @@
       "difficulty": 3,
       "context": "Consider the letters of the word MOSSEL (as in Mossel Bay). Note that the letter S appears twice.",
       "svg": null,
+      "archetype": "prob-counting",
       "parts": [
         {
           "q": "In how many different ways can all six letters be arranged in a row?",
@@ -207,6 +212,204 @@
             "Total $=26\\times 25\\times 24\\times 10\\times 10=1\\,560\\,000$"
           ],
           "answer": "$1\\,560\\,000$"
+        }
+      ]
+    },
+    {
+      "id": "probability-06",
+      "difficulty": 2,
+      "context": "In a group of $70$ learners, each learner belongs to at least one of three clubs: Debate ($D$), Chess ($C$) and Art ($A$). The following is known:\n- $15$ belong to Debate only, $12$ to Chess only, $10$ to Art only\n- $8$ belong to Debate and Chess only\n- $6$ belong to Debate and Art only\n- $5$ belong to Chess and Art only\n- $x$ belong to all three clubs",
+      "svg": null,
+      "archetype": "prob-venn",
+      "parts": [
+        {
+          "q": "Calculate the value of $x$.",
+          "marks": 3,
+          "solution": [
+            "All regions add up to the total of $70$",
+            "$15+12+10+8+6+5+x=70$",
+            "$56+x=70$",
+            "$x=14$"
+          ],
+          "answer": "$x=14$"
+        },
+        {
+          "q": "Determine the probability that a randomly chosen learner belongs to at least TWO clubs.",
+          "marks": 2,
+          "solution": [
+            "At least two $=8+6+5+14=33$",
+            "$P=\\dfrac{33}{70}$"
+          ],
+          "answer": "$\\dfrac{33}{70}$"
+        },
+        {
+          "q": "Determine the probability that a learner belongs to exactly ONE club.",
+          "marks": 2,
+          "solution": [
+            "Exactly one $=15+12+10=37$",
+            "$P=\\dfrac{37}{70}$"
+          ],
+          "answer": "$\\dfrac{37}{70}$"
+        },
+        {
+          "q": "Determine the probability that a learner belongs to the Debate club.",
+          "marks": 2,
+          "solution": [
+            "$n(D)=15+8+6+14=43$",
+            "$P=\\dfrac{43}{70}$"
+          ],
+          "answer": "$\\dfrac{43}{70}$"
+        }
+      ]
+    },
+    {
+      "id": "probability-07",
+      "difficulty": 2,
+      "context": "On any given day in winter, the probability of load-shedding in a town is $0{,}4$. If there is load-shedding, the probability that Thabo is late for work is $0{,}7$. If there is no load-shedding, the probability that he is late is $0{,}15$.",
+      "svg": null,
+      "archetype": "prob-tree",
+      "parts": [
+        {
+          "q": "Represent the given information on a tree diagram, showing the probability on each branch.",
+          "marks": 3,
+          "solution": [
+            "First branching: Load-shedding $0{,}4$ / No load-shedding $0{,}6$",
+            "From Load-shedding: Late $0{,}7$ / Not late $0{,}3$",
+            "From No load-shedding: Late $0{,}15$ / Not late $0{,}85$"
+          ],
+          "answer": "Tree with branches $0{,}4$ and $0{,}6$; then $0{,}7/0{,}3$ and $0{,}15/0{,}85$"
+        },
+        {
+          "q": "Calculate the probability that there is load-shedding AND Thabo is late.",
+          "marks": 2,
+          "solution": [
+            "Multiply along the branch: $0{,}4\times 0{,}7$",
+            "$=0{,}28$"
+          ],
+          "answer": "$0{,}28$"
+        },
+        {
+          "q": "Calculate the probability that Thabo is late for work on a given day.",
+          "marks": 2,
+          "solution": [
+            "$P(\text{late})=0{,}4\times 0{,}7+0{,}6\times 0{,}15$",
+            "$=0{,}28+0{,}09=0{,}37$"
+          ],
+          "answer": "$0{,}37$"
+        }
+      ]
+    },
+    {
+      "id": "probability-08",
+      "difficulty": 2,
+      "context": "A code consists of $5$ characters in the form: letter, letter, digit, digit, digit. There are $26$ letters and the digits are $0$ to $9$.",
+      "svg": null,
+      "archetype": "prob-counting",
+      "parts": [
+        {
+          "q": "How many different codes can be formed if letters and digits may be repeated?",
+          "marks": 2,
+          "solution": [
+            "$26\times 26\times 10\times 10\times 10$",
+            "$=676\\,000$"
+          ],
+          "answer": "$676\\,000$"
+        },
+        {
+          "q": "How many different codes can be formed if: the two letters may NOT be repeated, the code may NOT start with A or B, and the last digit must be even?",
+          "marks": 4,
+          "solution": [
+            "First letter: not A or B $\\Rightarrow 24$ choices",
+            "Second letter: any letter except the first $\\Rightarrow 25$ choices",
+            "First and second digit: $10$ each",
+            "Last digit even $\\{0;2;4;6;8\\}\\Rightarrow 5$ choices",
+            "$24\times 25\times 10\times 10\times 5=300\\,000$"
+          ],
+          "answer": "$300\\,000$"
+        },
+        {
+          "q": "The restriction that the code may not start with A or B is now removed (all other conditions in the previous question stay). Calculate the percentage increase in the number of possible codes.",
+          "marks": 2,
+          "solution": [
+            "New total: $26\times 25\times 10\times 10\times 5=325\\,000$",
+            "Increase $=\\dfrac{325\\,000-300\\,000}{300\\,000}\times 100\\%$",
+            "$=\\dfrac{25\\,000}{300\\,000}\times 100\\%=8{,}33\\%$"
+          ],
+          "answer": "$8{,}33\\%$"
+        }
+      ]
+    },
+    {
+      "id": "probability-09",
+      "difficulty": 3,
+      "context": "Eight learners of different heights stand in a random straight line, one behind the other.",
+      "svg": null,
+      "archetype": "prob-arrangement-prob",
+      "parts": [
+        {
+          "q": "In how many different ways can the eight learners be arranged in the line?",
+          "marks": 1,
+          "solution": [
+            "$8!=40\\,320$"
+          ],
+          "answer": "$40\\,320$"
+        },
+        {
+          "q": "Calculate the probability that the two tallest learners stand next to each other.",
+          "marks": 2,
+          "solution": [
+            "Treat the two tallest as one unit: $7!$ arrangements, $\times 2$ for their order $=7!\times 2=10\\,080$",
+            "$P=\\dfrac{10\\,080}{40\\,320}=\\dfrac{1}{4}$"
+          ],
+          "answer": "$\\dfrac{1}{4}$"
+        },
+        {
+          "q": "Calculate the probability that exactly THREE learners stand between the two tallest learners.",
+          "marks": 3,
+          "solution": [
+            "The pair must occupy positions differing by $4$: $(1;5),(2;6),(3;7),(4;8)$ — $4$ position pairs",
+            "$\times 2$ for the order of the two tallest, $\times 6!$ for the other six learners",
+            "Favourable $=4\times 2\times 720=5\\,760$",
+            "$P=\\dfrac{5\\,760}{40\\,320}=\\dfrac{1}{7}$"
+          ],
+          "answer": "$\\dfrac{1}{7}$"
+        }
+      ]
+    },
+    {
+      "id": "probability-10",
+      "difficulty": 3,
+      "context": "Consider the letters of the word NUMBER. All six letters are different.",
+      "svg": null,
+      "archetype": "prob-arrangement-prob",
+      "parts": [
+        {
+          "q": "How many different arrangements of all the letters are possible?",
+          "marks": 1,
+          "solution": [
+            "$6!=720$"
+          ],
+          "answer": "$720$"
+        },
+        {
+          "q": "Calculate the probability that an arrangement starts and ends with a vowel.",
+          "marks": 3,
+          "solution": [
+            "Vowels are U and E ($2$ vowels)",
+            "First position: $2$ vowel choices; last position: $1$ remaining vowel; middle $4$ letters: $4!=24$",
+            "Favourable $=2\times 1\times 24=48$",
+            "$P=\\dfrac{48}{720}=\\dfrac{1}{15}$"
+          ],
+          "answer": "$\\dfrac{1}{15}$"
+        },
+        {
+          "q": "Calculate the probability that the letters M and B are next to each other.",
+          "marks": 2,
+          "solution": [
+            "Treat M and B as one unit: $5!\times 2=240$",
+            "$P=\\dfrac{240}{720}=\\dfrac{1}{3}$"
+          ],
+          "answer": "$\\dfrac{1}{3}$"
         }
       ]
     }

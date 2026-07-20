@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "The graphs of $f(x)=x^2-4x-5$ and $g(x)=x+1$ are drawn on the same set of axes.",
       "svg": null,
+      "archetype": "fun-parabola-line",
       "parts": [
         {
           "q": "Determine the coordinates of the $x$-intercepts of $f$.",
@@ -59,6 +60,7 @@
       "difficulty": 2,
       "context": "Given: $g(x)=\\dfrac{3}{x-2}-1$",
       "svg": null,
+      "archetype": "fun-hyperbola",
       "parts": [
         {
           "q": "Write down the equations of the asymptotes of $g$.",
@@ -97,6 +99,7 @@
       "difficulty": 2,
       "context": "Given: $f(x)=3^{x}$",
       "svg": null,
+      "archetype": "fun-exponential",
       "parts": [
         {
           "q": "Determine the equation of $f^{-1}$ in the form $y=\\ldots$",
@@ -150,6 +153,7 @@
       "difficulty": 2,
       "context": "The sketch shows the parabola $f$ with turning point $(1;8)$. The graph passes through the point $(3;0)$.",
       "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"300\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 74 170 Q 140 -62 206 170\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"140\" cy=\"54\" r=\"3\" fill=\"currentColor\"/><circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><text x=\"148\" y=\"50\" font-size=\"13\" fill=\"currentColor\">(1;8)</text><text x=\"204\" y=\"168\" font-size=\"13\" fill=\"currentColor\">(3;0)</text><text x=\"290\" y=\"145\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"116\" y=\"26\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"60\" y=\"70\" font-size=\"13\" fill=\"currentColor\">f</text></svg>",
+      "archetype": "fun-parabola-line",
       "parts": [
         {
           "q": "Show that $f(x)=-2(x-1)^2+8$.",
@@ -197,6 +201,7 @@
       "difficulty": 2,
       "context": "The graph of $g(x)=a\\cdot b^{x}+q$ (with $b>1$) has a horizontal asymptote $y=-4$ and passes through the points $(0;-2)$ and $(1;2)$.",
       "svg": null,
+      "archetype": "fun-exponential",
       "parts": [
         {
           "q": "Write down the value of $q$.",
@@ -242,6 +247,7 @@
       "difficulty": 3,
       "context": "The graphs of $f(x)=-x^2+2x+3$ and the straight line $g(x)=x+1$ intersect at points $A$ and $B$, where $A$ lies on the $x$-axis. $P$ is a point on $f$ and $Q$ is a point on $g$ such that $PQ$ is vertical and lies between $A$ and $B$.",
       "svg": null,
+      "archetype": "fun-parabola-line",
       "parts": [
         {
           "q": "Determine the coordinates of $A$ and $B$.",
@@ -276,6 +282,255 @@
             "$1-4k+12=0$, so $k=\\dfrac{13}{4}$"
           ],
           "answer": "$k=\\dfrac{13}{4}$"
+        }
+      ]
+    },
+    {
+      "id": "functions-07",
+      "difficulty": 2,
+      "context": "The hyperbola $g(x)=\\dfrac{a}{x+p}+q$ has asymptotes $x=-1$ and $y=3$, and passes through the point $(0;5)$.",
+      "svg": null,
+      "archetype": "fun-hyperbola",
+      "parts": [
+        {
+          "q": "Write down the values of $p$ and $q$.",
+          "marks": 2,
+          "solution": [
+            "Vertical asymptote $x=-p=-1$, so $p=1$",
+            "Horizontal asymptote $y=q=3$, so $q=3$"
+          ],
+          "answer": "$p=1$, $q=3$"
+        },
+        {
+          "q": "Show that $a=2$.",
+          "marks": 2,
+          "solution": [
+            "Substitute $(0;5)$: $5=\\dfrac{a}{0+1}+3$",
+            "$a=5-3=2$"
+          ],
+          "answer": "$a=2$"
+        },
+        {
+          "q": "Determine the equation of the axis of symmetry of $g$ that has a negative gradient.",
+          "marks": 2,
+          "solution": [
+            "The symmetry axes pass through the point of intersection of the asymptotes $(-1;3)$",
+            "Negative gradient: $y-3=-1(x+1)$",
+            "$y=-x+2$"
+          ],
+          "answer": "$y=-x+2$"
+        },
+        {
+          "q": "Determine the $x$-intercept of $g$.",
+          "marks": 2,
+          "solution": [
+            "$\\dfrac{2}{x+1}+3=0$",
+            "$\\dfrac{2}{x+1}=-3\\Rightarrow x+1=-\\dfrac{2}{3}$",
+            "$x=-\\dfrac{5}{3}$, so $\\left(-\\dfrac{5}{3};0\right)$"
+          ],
+          "answer": "$\\left(-\\dfrac{5}{3};0\right)$"
+        }
+      ]
+    },
+    {
+      "id": "functions-08",
+      "difficulty": 2,
+      "context": "Given: $f(x)=2x^2-x$",
+      "svg": null,
+      "archetype": "fun-avg-gradient",
+      "parts": [
+        {
+          "q": "Determine the average gradient of $f$ between $x=-2$ and $x=1$.",
+          "marks": 3,
+          "solution": [
+            "$f(-2)=2(4)-(-2)=10$",
+            "$f(1)=2(1)-1=1$",
+            "Average gradient $=\\dfrac{1-10}{1-(-2)}=\\dfrac{-9}{3}=-3$"
+          ],
+          "answer": "$-3$"
+        },
+        {
+          "q": "The average gradient of $f$ between $x=1$ and $x=k$ is $5$. Calculate the value of $k$ (where $k\neq 1$).",
+          "marks": 3,
+          "solution": [
+            "$\\dfrac{f(k)-f(1)}{k-1}=5$",
+            "$\\dfrac{2k^2-k-1}{k-1}=5$",
+            "$\\dfrac{(2k+1)(k-1)}{k-1}=5\\Rightarrow 2k+1=5$",
+            "$k=2$"
+          ],
+          "answer": "$k=2$"
+        }
+      ]
+    },
+    {
+      "id": "functions-09",
+      "difficulty": 1,
+      "context": "Given: $f(x)=x^2+3$ and $g(x)=2x+3$",
+      "svg": null,
+      "archetype": "fun-avg-gradient",
+      "parts": [
+        {
+          "q": "Determine the average gradient of $f$ between $x=0$ and $x=2$.",
+          "marks": 2,
+          "solution": [
+            "$f(0)=3$, $f(2)=7$",
+            "Average gradient $=\\dfrac{7-3}{2-0}=2$"
+          ],
+          "answer": "$2$"
+        },
+        {
+          "q": "Calculate the vertical distance between $f$ and $g$ at $x=3$.",
+          "marks": 2,
+          "solution": [
+            "$f(3)=12$, $g(3)=9$",
+            "Vertical distance $=12-9=3$"
+          ],
+          "answer": "$3$ units"
+        },
+        {
+          "q": "Determine the $x$-values where $f$ and $g$ intersect.",
+          "marks": 2,
+          "solution": [
+            "$x^2+3=2x+3$",
+            "$x^2-2x=0\\Rightarrow x(x-2)=0$",
+            "$x=0$ or $x=2$"
+          ],
+          "answer": "$x=0$ or $x=2$"
+        }
+      ]
+    },
+    {
+      "id": "functions-10",
+      "difficulty": 2,
+      "context": "Given: $f(x)=2^{x}$",
+      "svg": null,
+      "archetype": "fun-transformations",
+      "parts": [
+        {
+          "q": "Write down the equation of $g$ if $g(x)=f(x-1)+3$, and give the equation of the horizontal asymptote of $g$.",
+          "marks": 2,
+          "solution": [
+            "$g(x)=2^{x-1}+3$",
+            "Horizontal asymptote: $y=3$"
+          ],
+          "answer": "$g(x)=2^{x-1}+3$; asymptote $y=3$"
+        },
+        {
+          "q": "The graph of $f$ is reflected about the $y$-axis to form $h$. Write down the equation of $h$.",
+          "marks": 1,
+          "solution": [
+            "Reflection about the $y$-axis: $x\to -x$",
+            "$h(x)=2^{-x}$"
+          ],
+          "answer": "$h(x)=2^{-x}$"
+        },
+        {
+          "q": "Describe the transformation from $f$ to $k$ where $k(x)=2^{x}-5$, and write down the range of $k$.",
+          "marks": 2,
+          "solution": [
+            "$k$ is $f$ shifted $5$ units downwards",
+            "Range of $f$ is $y>0$, so range of $k$ is $y>-5$"
+          ],
+          "answer": "Shift $5$ units down; range $y>-5$"
+        }
+      ]
+    },
+    {
+      "id": "functions-11",
+      "difficulty": 2,
+      "context": "The graph of $f(x)=\\dfrac{1}{x}$ is transformed to $g(x)=\\dfrac{1}{x+2}-3$.",
+      "svg": null,
+      "archetype": "fun-transformations",
+      "parts": [
+        {
+          "q": "Describe the transformation from $f$ to $g$.",
+          "marks": 2,
+          "solution": [
+            "$x\to x+2$: shift $2$ units to the left",
+            "$-3$: shift $3$ units downwards"
+          ],
+          "answer": "$2$ left and $3$ down"
+        },
+        {
+          "q": "Write down the equations of the asymptotes of $g$.",
+          "marks": 2,
+          "solution": [
+            "Vertical asymptote: $x=-2$",
+            "Horizontal asymptote: $y=-3$"
+          ],
+          "answer": "$x=-2$ and $y=-3$"
+        },
+        {
+          "q": "The graph of $g$ undergoes a transformation to $h$ such that the domain and range of $h$ are the same as those of $g$, and $h'(x)>0$ on its domain. Describe a possible transformation.",
+          "marks": 2,
+          "solution": [
+            "$g$ is decreasing on each branch; $h$ must be increasing but keep the same asymptotes $x=-2$, $y=-3$",
+            "Reflect $g$ about a line through the point of intersection of its asymptotes, e.g. about the vertical line $x=-2$ (or about the horizontal line $y=-3$)"
+          ],
+          "answer": "Reflect about $x=-2$ (or about $y=-3$)"
+        }
+      ]
+    },
+    {
+      "id": "functions-12",
+      "difficulty": 3,
+      "context": "Given: $f(x)=x^2-3x+2$",
+      "svg": null,
+      "archetype": "fun-level4-tangent",
+      "parts": [
+        {
+          "q": "Determine the value(s) of $m$ for which the line $y=mx-2$ is a tangent to $f$.",
+          "marks": 4,
+          "solution": [
+            "For a tangent: $x^2-3x+2=mx-2$",
+            "$x^2-(3+m)x+4=0$ must have equal roots, so $\\Delta=0$",
+            "$(3+m)^2-4(1)(4)=0\\Rightarrow (3+m)^2=16$",
+            "$3+m=\\pm 4\\Rightarrow m=1$ or $m=-7$"
+          ],
+          "answer": "$m=1$ or $m=-7$"
+        },
+        {
+          "q": "For which values of $m$ will the line $y=mx-2$ cut $f$ at two distinct points?",
+          "marks": 3,
+          "solution": [
+            "Two distinct points: $\\Delta>0$",
+            "$(3+m)^2-16>0\\Rightarrow (3+m)^2>16$",
+            "$3+m>4$ or $3+m<-4$",
+            "$m>1$ or $m<-7$"
+          ],
+          "answer": "$m>1$ or $m<-7$"
+        }
+      ]
+    },
+    {
+      "id": "functions-13",
+      "difficulty": 3,
+      "context": "Given: $f(x)=-x^2+6x+1$ and the straight line $g(x)=2x+3$.",
+      "svg": null,
+      "archetype": "fun-level4-tangent",
+      "parts": [
+        {
+          "q": "Write down the coordinates of the turning point of $f$.",
+          "marks": 2,
+          "solution": [
+            "$x=-\\dfrac{b}{2a}=-\\dfrac{6}{2(-1)}=3$",
+            "$f(3)=-9+18+1=10$",
+            "Turning point $(3;10)$"
+          ],
+          "answer": "$(3;10)$"
+        },
+        {
+          "q": "Given $k(x)=f(x+m)$, determine the value of $m$ for which $g$ is a tangent to $k$.",
+          "marks": 5,
+          "solution": [
+            "$k(x)=-(x+m)^2+6(x+m)+1=-x^2+(6-2m)x+(-m^2+6m+1)$",
+            "Tangent: $k(x)=2x+3$ has equal roots",
+            "$-x^2+(4-2m)x+(-m^2+6m-2)=0$, i.e. $x^2-(4-2m)x+(m^2-6m+2)=0$",
+            "$\\Delta=0$: $(4-2m)^2-4(m^2-6m+2)=0$",
+            "$16-16m+4m^2-4m^2+24m-8=0\\Rightarrow 8m+8=0$",
+            "$m=-1$"
+          ],
+          "answer": "$m=-1$"
         }
       ]
     }

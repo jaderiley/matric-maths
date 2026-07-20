@@ -9,6 +9,7 @@
       "difficulty": 1,
       "context": "A delivery bakkie is bought for R380 000. Its value depreciates at $14\\%$ per annum on the reducing-balance method. The price of a new bakkie of the same model increases with inflation at $6\\%$ per annum.",
       "svg": null,
+      "archetype": "fin-compound",
       "parts": [
         {
           "q": "Calculate the value of the bakkie after $5$ years. Round to the nearest cent.",
@@ -37,6 +38,7 @@
       "difficulty": 2,
       "context": "Bank A offers an interest rate of $10{,}5\\%$ per annum, compounded monthly. Bank B offers $10{,}8\\%$ per annum, compounded annually.",
       "svg": null,
+      "archetype": "fin-nominal-effective",
       "parts": [
         {
           "q": "Convert Bank A's rate to an effective annual interest rate. Give your answer correct to TWO decimal places.",
@@ -64,6 +66,7 @@
       "difficulty": 2,
       "context": "Thandi wants to save for a deposit on a flat. She pays R1 500 into a savings account at the END of every month for $6$ years. The account earns interest at $9\\%$ per annum, compounded monthly.",
       "svg": null,
+      "archetype": "fin-annuity-fv",
       "parts": [
         {
           "q": "Calculate the value of Thandi's savings at the end of the $6$ years. Round to the nearest cent.",
@@ -92,6 +95,7 @@
       "difficulty": 2,
       "context": "The Dlamini family takes out a home loan of R950 000 to buy a house in Soweto. Interest is charged at $11\\%$ per annum, compounded monthly, and the loan is repaid with equal monthly payments over $20$ years, starting one month after the loan is granted.",
       "svg": null,
+      "archetype": "fin-loan",
       "parts": [
         {
           "q": "Calculate the monthly payment. Round to the nearest cent.",
@@ -130,6 +134,7 @@
       "difficulty": 3,
       "context": "Sipho opens a savings account with a single deposit of R20 000. From the end of the first month he also deposits R500 at the END of every month for $5$ years. The account earns $8\\%$ per annum, compounded monthly. Exactly $3$ years after opening the account he withdraws R10 000 to repair his taxi.",
       "svg": null,
+      "archetype": "fin-annuity-fv",
       "parts": [
         {
           "q": "Calculate the value that the initial R20 000 deposit alone grows to at the end of the $5$ years. Round to the nearest cent.",
@@ -150,6 +155,197 @@
             "Balance $=$ R$54\\ 806{,}46$ (nearest cent)"
           ],
           "answer": "R54 806,46"
+        }
+      ]
+    },
+    {
+      "id": "finance-06",
+      "difficulty": 1,
+      "context": "Lerato invests R25 000 in a fixed-deposit account that pays interest at $7{,}5\\%$ per annum, compounded quarterly.",
+      "svg": null,
+      "archetype": "fin-compound",
+      "parts": [
+        {
+          "q": "Calculate the value of the investment after $6$ years. Round to the nearest cent.",
+          "marks": 3,
+          "solution": [
+            "$i=\\dfrac{0{,}075}{4}=0{,}01875$ and $n=6\\times 4=24$",
+            "$A=25\\ 000(1{,}01875)^{24}$",
+            "$A=$ R$39\\ 044{,}78$ (nearest cent)"
+          ],
+          "answer": "R39 044,78"
+        },
+        {
+          "q": "How long, in years (correct to TWO decimal places), will it take an investment to DOUBLE in value at $8\\%$ per annum, compounded annually?",
+          "marks": 4,
+          "solution": [
+            "$2P=P(1{,}08)^n$",
+            "$(1{,}08)^n=2$",
+            "$n=\\dfrac{\\log 2}{\\log 1{,}08}$",
+            "$n\\approx 9{,}01$ years"
+          ],
+          "answer": "$9{,}01$ years"
+        }
+      ]
+    },
+    {
+      "id": "finance-07",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "fin-nominal-effective",
+      "parts": [
+        {
+          "q": "Convert a nominal interest rate of $9{,}6\\%$ per annum, compounded quarterly, to an effective annual interest rate. Give your answer correct to TWO decimal places.",
+          "marks": 3,
+          "solution": [
+            "$1+i_{\\text{eff}}=\\left(1+\\dfrac{0{,}096}{4}\\right)^{4}$",
+            "$i_{\\text{eff}}=(1{,}024)^{4}-1=0{,}0995\\ldots$",
+            "Effective rate $\\approx 9{,}95\\%$ per annum"
+          ],
+          "answer": "$9{,}95\\%$ per annum (effective)"
+        },
+        {
+          "q": "Determine the nominal interest rate, compounded monthly, that is equivalent to an effective annual rate of $12\\%$. Give your answer correct to TWO decimal places.",
+          "marks": 4,
+          "solution": [
+            "$\\left(1+\\dfrac{i}{12}\\right)^{12}=1{,}12$",
+            "$1+\\dfrac{i}{12}=1{,}12^{\\frac{1}{12}}$",
+            "$i=12\\left(1{,}12^{\\frac{1}{12}}-1\\right)=0{,}1139\\ldots$",
+            "Nominal rate $\\approx 11{,}39\\%$ per annum, compounded monthly"
+          ],
+          "answer": "$11{,}39\\%$ per annum, compounded monthly"
+        }
+      ]
+    },
+    {
+      "id": "finance-08",
+      "difficulty": 2,
+      "context": "Zanele buys a car with a loan of R285 000. Interest is charged at $12{,}5\\%$ per annum, compounded monthly. She repays the loan with equal monthly instalments over $6$ years, starting one month after the loan is granted.",
+      "svg": null,
+      "archetype": "fin-loan",
+      "parts": [
+        {
+          "q": "Calculate Zanele's monthly instalment. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}125}{12}$ and $n=6\\times 12=72$",
+            "$P=\\dfrac{x\\left[1-(1+i)^{-n}\\right]}{i}$, so $x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}$",
+            "$x=\\dfrac{285\\ 000\\times\\frac{0{,}125}{12}}{1-\\left(1+\\frac{0{,}125}{12}\\right)^{-72}}$",
+            "$x=$ R$5\\ 646{,}19$ (nearest cent)"
+          ],
+          "answer": "R5 646,19 per month"
+        },
+        {
+          "q": "Calculate the TOTAL amount of interest Zanele pays over the $6$ years.",
+          "marks": 2,
+          "solution": [
+            "Total paid $=72\\times 5\\ 646{,}19=$ R$406\\ 525{,}68$",
+            "Interest $=406\\ 525{,}68-285\\ 000=$ R$121\\ 525{,}68$"
+          ],
+          "answer": "R121 525,68"
+        }
+      ]
+    },
+    {
+      "id": "finance-09",
+      "difficulty": 3,
+      "context": "Bongani inherits R750 000 and invests it in an account earning $9\\%$ per annum, compounded monthly. Starting one month after the investment is made, he withdraws R8 000 at the end of EVERY month.",
+      "svg": null,
+      "archetype": "fin-level4",
+      "parts": [
+        {
+          "q": "How many withdrawals of the FULL R8 000 will Bongani be able to make?",
+          "marks": 5,
+          "solution": [
+            "$i=\\dfrac{0{,}09}{12}=0{,}0075$; the investment is the present value of the withdrawals: $750\\ 000=\\dfrac{8\\ 000\\left[1-(1{,}0075)^{-n}\\right]}{0{,}0075}$",
+            "$1-(1{,}0075)^{-n}=\\dfrac{750\\ 000\\times 0{,}0075}{8\\ 000}=0{,}703125$",
+            "$(1{,}0075)^{-n}=0{,}296875$",
+            "$-n=\\dfrac{\\log 0{,}296875}{\\log 1{,}0075}$, so $n=162{,}53\\ldots$",
+            "He can make $162$ withdrawals of the full R$8\\ 000$"
+          ],
+          "answer": "$162$ full withdrawals"
+        },
+        {
+          "q": "Calculate the balance in the account immediately after the last full withdrawal. Round to the nearest cent.",
+          "marks": 3,
+          "solution": [
+            "Balance $=750\\ 000(1{,}0075)^{162}-\\dfrac{8\\ 000\\left[(1{,}0075)^{162}-1\\right]}{0{,}0075}$",
+            "$=$ R$4\\ 234{,}45$ (nearest cent)",
+            "(One month later this grows to only R$4\\ 266{,}21$, which is less than R$8\\ 000$ — confirming that a $163$rd full withdrawal is impossible)"
+          ],
+          "answer": "R4 234,45"
+        }
+      ]
+    },
+    {
+      "id": "finance-10",
+      "difficulty": 3,
+      "context": "The Mokoena family takes out a home loan of R600 000 at $10{,}5\\%$ per annum, compounded monthly. The loan is to be repaid with equal monthly instalments over $20$ years, starting one month after the loan is granted.",
+      "svg": null,
+      "archetype": "fin-level4",
+      "parts": [
+        {
+          "q": "Calculate the monthly instalment. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}105}{12}=0{,}00875$ and $n=20\\times 12=240$",
+            "$x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}=\\dfrac{600\\ 000\\times 0{,}00875}{1-(1{,}00875)^{-240}}$",
+            "$x=$ R$5\\ 990{,}28$ (nearest cent)"
+          ],
+          "answer": "R5 990,28 per month"
+        },
+        {
+          "q": "Immediately after the $60$th instalment, the family pays an EXTRA lump sum of R100 000 into the loan account. The monthly instalment remains unchanged. Calculate how many months EARLIER the loan will be settled.",
+          "marks": 7,
+          "solution": [
+            "Balance after $60$ payments: $600\\ 000(1{,}00875)^{60}-\\dfrac{5\\ 990{,}28\\left[(1{,}00875)^{60}-1\\right]}{0{,}00875}=$ R$541\\ 911{,}03$",
+            "After the lump sum the balance is $541\\ 911{,}03-100\\ 000=$ R$441\\ 911{,}03$",
+            "Let $n$ be the number of remaining payments: $441\\ 911{,}03=\\dfrac{5\\ 990{,}28\\left[1-(1{,}00875)^{-n}\\right]}{0{,}00875}$",
+            "$(1{,}00875)^{-n}=1-\\dfrac{441\\ 911{,}03\\times 0{,}00875}{5\\ 990{,}28}=0{,}3545\\ldots$",
+            "$n=\\dfrac{\\log 0{,}3545\\ldots}{-\\log 1{,}00875}=119{,}04\\ldots$",
+            "So $120$ more payments are needed ($119$ full instalments plus one final smaller payment), instead of the $240-60=180$ that remained",
+            "The loan is settled $180-120=60$ months ($5$ years) earlier"
+          ],
+          "answer": "$60$ months ($5$ years) earlier"
+        }
+      ]
+    },
+    {
+      "id": "finance-11",
+      "difficulty": 2,
+      "context": "A printing company in Durban buys a machine for R450 000. The machine depreciates at $15\\%$ per annum on the reducing-balance method and must be replaced after $8$ years. The price of a new machine increases at $6\\%$ per annum. The old machine will be sold at its scrap value after $8$ years, and the company sets up a sinking fund to cover the shortfall. The fund earns $8{,}25\\%$ per annum, compounded monthly. Equal monthly payments are made into the fund, starting one month after the machine is bought and ending at the end of the $8$ years.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Calculate the scrap value of the machine after $8$ years. Round to the nearest cent.",
+          "marks": 2,
+          "solution": [
+            "$A=450\\ 000(1-0{,}15)^8=450\\ 000(0{,}85)^8$",
+            "$A=$ R$122\\ 620{,}74$ (nearest cent)"
+          ],
+          "answer": "R122 620,74"
+        },
+        {
+          "q": "Calculate the price of a NEW machine after $8$ years. Round to the nearest cent.",
+          "marks": 2,
+          "solution": [
+            "$A=450\\ 000(1{,}06)^8$",
+            "$A=$ R$717\\ 231{,}63$ (nearest cent)"
+          ],
+          "answer": "R717 231,63"
+        },
+        {
+          "q": "Calculate the monthly payment into the sinking fund. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "Amount needed in the fund: $717\\ 231{,}63-122\\ 620{,}74=$ R$594\\ 610{,}89$",
+            "$i=\\dfrac{0{,}0825}{12}=0{,}006875$ and $n=8\\times 12=96$",
+            "$594\\ 610{,}89=\\dfrac{x\\left[(1{,}006875)^{96}-1\\right]}{0{,}006875}$",
+            "$x=$ R$4\\ 393{,}62$ (nearest cent)"
+          ],
+          "answer": "R4 393,62 per month"
         }
       ]
     }
