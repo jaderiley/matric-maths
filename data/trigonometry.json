@@ -239,38 +239,38 @@
           "solution": [
             "In $\\triangle BCD$: $\\frac{BC}{\\sin B\\hat{D}C}=\\frac{CD}{\\sin C\\hat{B}D}$ (sine rule)",
             "$BC=\\frac{40\\sin 40^\\circ}{\\sin 35^\\circ}$",
-            "$BC\\approx 44.83$ m"
+            "$BC\\approx 44{,}83$ m"
           ],
-          "answer": "$BC\\approx 44.83$ m"
+          "answer": "$BC\\approx 44{,}83$ m"
         },
         {
           "q": "Hence calculate $h$, the height of the mast, correct to TWO decimal places.",
           "marks": 2,
           "solution": [
             "In right-angled $\\triangle ABC$: $\\tan 52^\\circ=\\frac{h}{BC}$",
-            "$h=44.83\\tan 52^\\circ\\approx 57.38$ m"
+            "$h=44{,}83\\tan 52^\\circ\\approx 57{,}38$ m"
           ],
-          "answer": "$h\\approx 57.38$ m"
+          "answer": "$h\\approx 57{,}38$ m"
         },
         {
           "q": "Calculate the area of $\\triangle BCD$, correct to TWO decimal places.",
           "marks": 3,
           "solution": [
             "Area $=\\frac{1}{2}\\cdot BC\\cdot CD\\cdot\\sin B\\hat{C}D$ (area rule)",
-            "$=\\frac{1}{2}(44.83)(40)\\sin 105^\\circ$",
-            "$\\approx 865.98$ m$^2$"
+            "$=\\frac{1}{2}(44{,}83)(40)\\sin 105^\\circ$",
+            "$\\approx 865{,}98$ m$^2$"
           ],
-          "answer": "Area $\\approx 865.98$ m$^2$"
+          "answer": "Area $\\approx 865{,}98$ m$^2$"
         },
         {
           "q": "Calculate the length of BD, correct to TWO decimal places.",
           "marks": 3,
           "solution": [
             "$BD^2=BC^2+CD^2-2\\cdot BC\\cdot CD\\cdot\\cos B\\hat{C}D$ (cosine rule)",
-            "$BD^2=(44.83)^2+(40)^2-2(44.83)(40)\\cos 105^\\circ$",
-            "$BD\\approx 67.36$ m"
+            "$BD^2=(44{,}83)^2+(40)^2-2(44{,}83)(40)\\cos 105^\\circ$",
+            "$BD\\approx 67{,}36$ m"
           ],
-          "answer": "$BD\\approx 67.36$ m"
+          "answer": "$BD\\approx 67{,}36$ m"
         }
       ]
     },

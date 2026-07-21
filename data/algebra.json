@@ -154,15 +154,15 @@
           "answer": "$p=\\pm 8$"
         },
         {
-          "q": "Show that the roots of $x^2+(k+1)x+k=0$ are real and rational for ALL real values of $k$.",
+          "q": "Show that the roots of $x^2+(k+1)x+k=0$ are real for ALL real values of $k$.",
           "marks": 4,
           "solution": [
             "$\\Delta=(k+1)^2-4(1)(k)$",
             "$=k^2+2k+1-4k$",
             "$=k^2-2k+1=(k-1)^2$",
-            "$(k-1)^2\\geq 0$ for all $k$, and it is a perfect square, so the roots are real and rational for all real $k$"
+            "$(k-1)^2\\geq 0$ for all $k$, so the roots are real for all real $k$"
           ],
-          "answer": "$\\Delta=(k-1)^2\\geq 0$, a perfect square, so the roots are always real and rational"
+          "answer": "$\\Delta=(k-1)^2\\geq 0$ for all real $k$, so the roots are always real"
         }
       ]
     },
@@ -387,15 +387,15 @@
           "answer": "$k>4$"
         },
         {
-          "q": "Show that the roots of $x^2-(k+3)x+3k=0$ are rational for ALL real values of $k$.",
+          "q": "Show that the roots of $x^2-(k+3)x+3k=0$ are real for ALL real values of $k$.",
           "marks": 4,
           "solution": [
             "$\\Delta=\\left[-(k+3)\\right]^2-4(1)(3k)$",
             "$=k^2+6k+9-12k$",
             "$=k^2-6k+9=(k-3)^2$",
-            "$(k-3)^2\\geq 0$ and is a perfect square for all real $k$, so the roots are always rational"
+            "$(k-3)^2\\geq 0$ for all real $k$, so the roots are always real"
           ],
-          "answer": "$\\Delta=(k-3)^2$, a perfect square for all real $k$, so the roots are always rational"
+          "answer": "$\\Delta=(k-3)^2\\geq 0$ for all real $k$, so the roots are always real"
         }
       ]
     },

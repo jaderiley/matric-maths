@@ -266,7 +266,7 @@
             "$f(x+h)=2(x+h)^2+(x+h)=2x^2+4xh+2h^2+x+h$",
             "$f(x+h)-f(x)=4xh+2h^2+h$",
             "$\\dfrac{f(x+h)-f(x)}{h}=4x+2h+1$",
-            "$f'(x)=\\displaystyle\\lim_{h\to 0}(4x+2h+1)$",
+            "$f'(x)=\\displaystyle\\lim_{h\\to 0}(4x+2h+1)$",
             "$f'(x)=4x+1$"
           ],
           "answer": "$f'(x)=4x+1$"
@@ -284,8 +284,8 @@
           "q": "$f'(x)$ if $f(x)=x^3-3\\sqrt{x}$",
           "marks": 3,
           "solution": [
-            "$f(x)=x^3-3x^{\frac{1}{2}}$",
-            "$f'(x)=3x^2-\\dfrac{3}{2}x^{-\frac{1}{2}}$",
+            "$f(x)=x^3-3x^{\\frac{1}{2}}$",
+            "$f'(x)=3x^2-\\dfrac{3}{2}x^{-\\frac{1}{2}}$",
             "$f'(x)=3x^2-\\dfrac{3}{2\\sqrt{x}}$"
           ],
           "answer": "$3x^2-\\dfrac{3}{2\\sqrt{x}}$"
@@ -309,17 +309,17 @@
       "archetype": "cal-rules",
       "parts": [
         {
-          "q": "$D_x\\left[\\dfrac{2}{x^2}-\\sqrt[3]{x^{7}}\right]$",
+          "q": "$D_x\\left[\\dfrac{2}{x^2}-\\sqrt[3]{x^{7}}\\right]$",
           "marks": 4,
           "solution": [
-            "Rewrite: $2x^{-2}-x^{\frac{7}{3}}$",
-            "$D_x=-4x^{-3}-\\dfrac{7}{3}x^{\frac{4}{3}}$",
+            "Rewrite: $2x^{-2}-x^{\\frac{7}{3}}$",
+            "$D_x=-4x^{-3}-\\dfrac{7}{3}x^{\\frac{4}{3}}$",
             "$=-\\dfrac{4}{x^3}-\\dfrac{7}{3}\\sqrt[3]{x^{4}}$"
           ],
           "answer": "$-\\dfrac{4}{x^3}-\\dfrac{7}{3}\\sqrt[3]{x^{4}}$"
         },
         {
-          "q": "$\\dfrac{dy}{dx}$ if $y=\\dfrac{x^2-4}{x-2}$, $x\neq 2$",
+          "q": "$\\dfrac{dy}{dx}$ if $y=\\dfrac{x^2-4}{x-2}$, $x\\neq 2$",
           "marks": 2,
           "solution": [
             "Simplify first: $y=\\dfrac{(x-2)(x+2)}{x-2}=x+2$",

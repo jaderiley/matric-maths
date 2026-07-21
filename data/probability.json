@@ -283,7 +283,7 @@
           "q": "Calculate the probability that there is load-shedding AND Thabo is late.",
           "marks": 2,
           "solution": [
-            "Multiply along the branch: $0{,}4\times 0{,}7$",
+            "Multiply along the branch: $0{,}4\\times 0{,}7$",
             "$=0{,}28$"
           ],
           "answer": "$0{,}28$"
@@ -292,7 +292,7 @@
           "q": "Calculate the probability that Thabo is late for work on a given day.",
           "marks": 2,
           "solution": [
-            "$P(\text{late})=0{,}4\times 0{,}7+0{,}6\times 0{,}15$",
+            "$P(\\text{late})=0{,}4\\times 0{,}7+0{,}6\\times 0{,}15$",
             "$=0{,}28+0{,}09=0{,}37$"
           ],
           "answer": "$0{,}37$"
@@ -310,7 +310,7 @@
           "q": "How many different codes can be formed if letters and digits may be repeated?",
           "marks": 2,
           "solution": [
-            "$26\times 26\times 10\times 10\times 10$",
+            "$26\\times 26\\times 10\\times 10\\times 10$",
             "$=676\\,000$"
           ],
           "answer": "$676\\,000$"
@@ -323,7 +323,7 @@
             "Second letter: any letter except the first $\\Rightarrow 25$ choices",
             "First and second digit: $10$ each",
             "Last digit even $\\{0;2;4;6;8\\}\\Rightarrow 5$ choices",
-            "$24\times 25\times 10\times 10\times 5=300\\,000$"
+            "$24\\times 25\\times 10\\times 10\\times 5=300\\,000$"
           ],
           "answer": "$300\\,000$"
         },
@@ -331,9 +331,9 @@
           "q": "The restriction that the code may not start with A or B is now removed (all other conditions in the previous question stay). Calculate the percentage increase in the number of possible codes.",
           "marks": 2,
           "solution": [
-            "New total: $26\times 25\times 10\times 10\times 5=325\\,000$",
-            "Increase $=\\dfrac{325\\,000-300\\,000}{300\\,000}\times 100\\%$",
-            "$=\\dfrac{25\\,000}{300\\,000}\times 100\\%=8{,}33\\%$"
+            "New total: $26\\times 25\\times 10\\times 10\\times 5=325\\,000$",
+            "Increase $=\\dfrac{325\\,000-300\\,000}{300\\,000}\\times 100\\%$",
+            "$=\\dfrac{25\\,000}{300\\,000}\\times 100\\%=8{,}33\\%$"
           ],
           "answer": "$8{,}33\\%$"
         }
@@ -358,7 +358,7 @@
           "q": "Calculate the probability that the two tallest learners stand next to each other.",
           "marks": 2,
           "solution": [
-            "Treat the two tallest as one unit: $7!$ arrangements, $\times 2$ for their order $=7!\times 2=10\\,080$",
+            "Treat the two tallest as one unit: $7!$ arrangements, $\\times 2$ for their order $=7!\\times 2=10\\,080$",
             "$P=\\dfrac{10\\,080}{40\\,320}=\\dfrac{1}{4}$"
           ],
           "answer": "$\\dfrac{1}{4}$"
@@ -368,8 +368,8 @@
           "marks": 3,
           "solution": [
             "The pair must occupy positions differing by $4$: $(1;5),(2;6),(3;7),(4;8)$ — $4$ position pairs",
-            "$\times 2$ for the order of the two tallest, $\times 6!$ for the other six learners",
-            "Favourable $=4\times 2\times 720=5\\,760$",
+            "$\\times 2$ for the order of the two tallest, $\\times 6!$ for the other six learners",
+            "Favourable $=4\\times 2\\times 720=5\\,760$",
             "$P=\\dfrac{5\\,760}{40\\,320}=\\dfrac{1}{7}$"
           ],
           "answer": "$\\dfrac{1}{7}$"
@@ -397,7 +397,7 @@
           "solution": [
             "Vowels are U and E ($2$ vowels)",
             "First position: $2$ vowel choices; last position: $1$ remaining vowel; middle $4$ letters: $4!=24$",
-            "Favourable $=2\times 1\times 24=48$",
+            "Favourable $=2\\times 1\\times 24=48$",
             "$P=\\dfrac{48}{720}=\\dfrac{1}{15}$"
           ],
           "answer": "$\\dfrac{1}{15}$"
@@ -406,7 +406,7 @@
           "q": "Calculate the probability that the letters M and B are next to each other.",
           "marks": 2,
           "solution": [
-            "Treat M and B as one unit: $5!\times 2=240$",
+            "Treat M and B as one unit: $5!\\times 2=240$",
             "$P=\\dfrac{240}{720}=\\dfrac{1}{3}$"
           ],
           "answer": "$\\dfrac{1}{3}$"
