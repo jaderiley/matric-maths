@@ -1,5 +1,5 @@
 /* Matric Maths service worker — cache-first PWA */
-const VERSION = "mm-v4";
+const VERSION = "mm-v5";
 const CORE = [
   "./",
   "./index.html",
@@ -23,6 +23,7 @@ const CORE = [
   "./data/euclidean-geometry.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
+  "./og.png",
   "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css",
   "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js",
   "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js",

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaderiley.github.io/matric-maths/sitemap.xml

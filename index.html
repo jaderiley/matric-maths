@@ -9,14 +9,50 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon-192.png" type="image/png">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="canonical" href="https://jaderiley.github.io/matric-maths/">
   <meta property="og:title" content="Matric Maths — NSC Paper 1 &amp; 2 Practice">
   <meta property="og:description" content="Practice like it's the real thing: exam-style questions, memo solutions, timed mocks. Free, offline, no sign-up.">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Matric Maths">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:url" content="https://jaderiley.github.io/matric-maths/">
+  <meta property="og:image" content="https://jaderiley.github.io/matric-maths/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Matric Maths: 124 exam-style NSC questions, 915 marks, 10 topics, free.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Matric Maths — NSC Paper 1 & 2 Practice",
+    "url": "https://jaderiley.github.io/matric-maths/",
+    "image": "https://jaderiley.github.io/matric-maths/og.png",
+    "description": "Free Grade 12 NSC Mathematics practice for Paper 1 and Paper 2: 124 original CAPS-aligned exam-style questions worth 915 marks, each with memo-style worked solutions, plus timed mock papers and progress tracking. Works offline, no sign-up.",
+    "inLanguage": "en-ZA",
+    "isAccessibleForFree": true,
+    "learningResourceType": ["Practice problem set", "Mock exam"],
+    "educationalLevel": "Grade 12",
+    "educationalAlignment": [
+      { "@type": "AlignmentObject", "alignmentType": "educationalSubject", "targetName": "Mathematics" },
+      { "@type": "AlignmentObject", "alignmentType": "educationalFramework", "targetName": "CAPS / National Senior Certificate (South Africa)" }
+    ],
+    "about": [
+      "Algebra and equations", "Number patterns and sequences", "Functions and graphs",
+      "Financial mathematics", "Differential calculus", "Probability",
+      "Statistics and regression", "Analytical geometry", "Trigonometry", "Euclidean geometry"
+    ],
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "typicalAgeRange": "17-19",
+    "author": { "@type": "Person", "name": "Jade Riley" },
+    "license": "https://jaderiley.github.io/matric-maths/#/about"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#view">Skip to content</a>
@@ -35,7 +71,36 @@
     </nav>
   </header>
 
-  <main id="view" class="view" tabindex="-1"></main>
+  <!-- The first paint. app.js replaces this the moment it boots, but until then
+       (slow connection, or a crawler that doesn't run scripts) this is a real
+       page instead of an empty one. Keep the numbers in step with data/. -->
+  <main id="view" class="view" tabindex="-1">
+    <p class="exam-rule">National Senior Certificate — practice</p>
+    <h1 class="display">Practice like it's<br>the <em>real paper</em>.</h1>
+    <p class="lede">Exam-style Grade 12 maths questions with full memo solutions. Work a topic, mark yourself like a marker would, or sit a timed mock. Free, offline, no sign-up.</p>
+    <a class="card paper-card" href="#/paper/1">
+      <h2>Paper 1</h2>
+      <span class="sub">Algebra · Functions · Calculus</span>
+      <div class="meta"><span>6 topics</span><span>73 questions</span><span>526 marks banked</span></div>
+    </a>
+    <a class="card paper-card paper-card--2" href="#/paper/2">
+      <h2>Paper 2</h2>
+      <span class="sub">Trig · Geometry · Statistics</span>
+      <div class="meta"><span>4 topics</span><span>51 questions</span><span>389 marks banked</span></div>
+    </a>
+    <div class="btnrow">
+      <a class="btn btn--red" href="#/exam/1">Sit a timed mock</a>
+      <a class="btn" href="#/map">Exam map</a>
+      <a class="btn btn--quiet" href="#/papers">Past papers</a>
+      <a class="btn btn--quiet" href="#/progress">My progress</a>
+    </div>
+    <noscript>
+      <p class="lede">The questions need JavaScript to run, so switch it on for this
+        page to practise here. In the meantime the official NSC papers and memos are
+        free from the
+        <a href="https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx" rel="noopener" target="_blank">Department of Basic Education</a>.</p>
+    </noscript>
+  </main>
 
   <footer class="site-foot">
     <p><strong>Matric Maths</strong> — free NSC Grade 12 practice. All questions are original and CAPS-aligned; they are not past papers.</p>

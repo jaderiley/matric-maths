@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- One URL by design: the app is a single page with hash routing, so every
+     view (#/paper/1, #/map, ...) lives at this address. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jaderiley.github.io/matric-maths/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
