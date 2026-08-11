@@ -581,6 +581,76 @@
           "answer": "$TM\\approx 17{,}17$ m"
         }
       ]
+    },
+    {
+      "id": "trigonometry-17",
+      "difficulty": 2,
+      "context": "Given the equation: $\\sin 2x=\\cos(x+30^\\circ)$",
+      "svg": null,
+      "archetype": "trig-general-solution",
+      "parts": [
+        {
+          "q": "Determine the general solution of the equation.",
+          "marks": 6,
+          "solution": [
+            "Write the right-hand side as a sine: $\\cos(x+30^\\circ)=\\sin(90^\\circ-(x+30^\\circ))=\\sin(60^\\circ-x)$",
+            "$\\sin 2x=\\sin(60^\\circ-x)$",
+            "Case 1: $2x=60^\\circ-x+k\\cdot 360^\\circ$, so $3x=60^\\circ+k\\cdot 360^\\circ$",
+            "$x=20^\\circ+k\\cdot 120^\\circ,\\ k\\in\\mathbb{Z}$",
+            "Case 2: $2x=180^\\circ-(60^\\circ-x)+k\\cdot 360^\\circ$, so $x=120^\\circ+k\\cdot 360^\\circ$",
+            "$\\therefore x=20^\\circ+k\\cdot 120^\\circ$ or $x=120^\\circ+k\\cdot 360^\\circ,\\ k\\in\\mathbb{Z}$"
+          ],
+          "answer": "$x=20^\\circ+k\\cdot 120^\\circ$ or $x=120^\\circ+k\\cdot 360^\\circ$, $k\\in\\mathbb{Z}$"
+        },
+        {
+          "q": "Hence write down all the solutions of the equation in the interval $[-180^\\circ; 180^\\circ]$.",
+          "marks": 3,
+          "solution": [
+            "From $x=20^\\circ+k\\cdot 120^\\circ$: $k=-1$ gives $-100^\\circ$; $k=0$ gives $20^\\circ$; $k=1$ gives $140^\\circ$",
+            "From $x=120^\\circ+k\\cdot 360^\\circ$: $k=0$ gives $120^\\circ$",
+            "$\\therefore x\\in\\{-100^\\circ;\\ 20^\\circ;\\ 120^\\circ;\\ 140^\\circ\\}$"
+          ],
+          "answer": "$x=-100^\\circ$, $20^\\circ$, $120^\\circ$ or $140^\\circ$"
+        }
+      ]
+    },
+    {
+      "id": "trigonometry-18",
+      "difficulty": 2,
+      "context": "Given that $\\tan\\theta=-\\dfrac{5}{12}$ with $\\theta\\in(90^\\circ; 180^\\circ)$. Determine, WITHOUT using a calculator, the value of each of the following. Show ALL working.",
+      "svg": null,
+      "archetype": "trig-nocalc-point",
+      "parts": [
+        {
+          "q": "$\\cos\\theta$",
+          "marks": 2,
+          "solution": [
+            "$\\theta$ is in the second quadrant: choose the point $(-12;\\ 5)$ on the terminal arm, so $r=\\sqrt{(-12)^2+5^2}=13$",
+            "$\\cos\\theta=\\dfrac{x}{r}=-\\dfrac{12}{13}$"
+          ],
+          "answer": "$\\cos\\theta=-\\dfrac{12}{13}$"
+        },
+        {
+          "q": "$\\sin 2\\theta$",
+          "marks": 3,
+          "solution": [
+            "$\\sin\\theta=\\dfrac{y}{r}=\\dfrac{5}{13}$",
+            "$\\sin 2\\theta=2\\sin\\theta\\cos\\theta=2\\times\\dfrac{5}{13}\\times\\left(-\\dfrac{12}{13}\\right)$",
+            "$=-\\dfrac{120}{169}$"
+          ],
+          "answer": "$\\sin 2\\theta=-\\dfrac{120}{169}$"
+        },
+        {
+          "q": "$\\sin(\\theta+30^\\circ)$",
+          "marks": 4,
+          "solution": [
+            "$\\sin(\\theta+30^\\circ)=\\sin\\theta\\cos 30^\\circ+\\cos\\theta\\sin 30^\\circ$",
+            "$=\\dfrac{5}{13}\\times\\dfrac{\\sqrt{3}}{2}+\\left(-\\dfrac{12}{13}\\right)\\times\\dfrac{1}{2}$",
+            "$=\\dfrac{5\\sqrt{3}-12}{26}$"
+          ],
+          "answer": "$\\sin(\\theta+30^\\circ)=\\dfrac{5\\sqrt{3}-12}{26}$"
+        }
+      ]
     }
   ]
 }

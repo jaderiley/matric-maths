@@ -440,6 +440,163 @@
           "answer": "$x<1$"
         }
       ]
+    },
+    {
+      "id": "calculus-13",
+      "difficulty": 1,
+      "context": "",
+      "svg": null,
+      "archetype": "cal-first-principles",
+      "parts": [
+        {
+          "q": "Determine $f'(x)$ from first principles if $f(x)=3-2x^2$.",
+          "marks": 5,
+          "solution": [
+            "$f(x+h)=3-2(x+h)^2=3-2x^2-4xh-2h^2$",
+            "$f(x+h)-f(x)=-4xh-2h^2$",
+            "$f'(x)=\\lim_{h\\to 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\to 0}\\dfrac{-4xh-2h^2}{h}$",
+            "$=\\lim_{h\\to 0}(-4x-2h)$",
+            "$=-4x$"
+          ],
+          "answer": "$f'(x)=-4x$"
+        },
+        {
+          "q": "Determine $D_x\\left[\\sqrt{x}\\,(x+2)\\right]$.",
+          "marks": 3,
+          "solution": [
+            "Expand first: $\\sqrt{x}(x+2)=x^{\\frac{3}{2}}+2x^{\\frac{1}{2}}$",
+            "$D_x=\\dfrac{3}{2}x^{\\frac{1}{2}}+x^{-\\frac{1}{2}}$",
+            "$=\\dfrac{3\\sqrt{x}}{2}+\\dfrac{1}{\\sqrt{x}}$"
+          ],
+          "answer": "$\\dfrac{3\\sqrt{x}}{2}+\\dfrac{1}{\\sqrt{x}}$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-14",
+      "difficulty": 2,
+      "context": "Given: $f(x)=x^3-6x^2+9x$",
+      "svg": null,
+      "archetype": "cal-cubic-graph",
+      "parts": [
+        {
+          "q": "Determine the $x$-intercepts of $f$.",
+          "marks": 3,
+          "solution": [
+            "$x^3-6x^2+9x=0$",
+            "$x(x^2-6x+9)=x(x-3)^2=0$",
+            "$x=0$ or $x=3$ (repeated): the graph cuts at $(0;0)$ and touches at $(3;0)$"
+          ],
+          "answer": "$(0;0)$ and $(3;0)$"
+        },
+        {
+          "q": "Determine the coordinates of the turning points of $f$.",
+          "marks": 4,
+          "solution": [
+            "$f'(x)=3x^2-12x+9=0$",
+            "$3(x-1)(x-3)=0$, so $x=1$ or $x=3$",
+            "$f(1)=1-6+9=4$ and $f(3)=27-54+27=0$",
+            "Turning points: $(1;4)$ (local maximum) and $(3;0)$ (local minimum)"
+          ],
+          "answer": "$(1;4)$ and $(3;0)$"
+        },
+        {
+          "q": "Determine the coordinates of the point of inflection of $f$.",
+          "marks": 2,
+          "solution": [
+            "$f''(x)=6x-12=0$, so $x=2$",
+            "$f(2)=8-24+18=2$, so the point of inflection is $(2;2)$"
+          ],
+          "answer": "$(2;2)$"
+        },
+        {
+          "q": "For which values of $x$ is $f$ concave up?",
+          "marks": 2,
+          "solution": [
+            "Concave up where $f''(x)>0$: $6x-12>0$",
+            "$x>2$"
+          ],
+          "answer": "$x>2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-15",
+      "difficulty": 2,
+      "context": "A juice company designs an open-top box (no lid) with a SQUARE base of side $x$ cm and height $h$ cm. The box must hold exactly $32\\ 000$ cm$^3$ of juice.",
+      "svg": null,
+      "archetype": "cal-optimise",
+      "parts": [
+        {
+          "q": "Show that the total outside surface area of the box is given by $S(x)=x^2+\\dfrac{128\\ 000}{x}$.",
+          "marks": 3,
+          "solution": [
+            "Volume: $x^2h=32\\ 000$, so $h=\\dfrac{32\\ 000}{x^2}$",
+            "Surface area (base + 4 sides, no lid): $S=x^2+4xh$",
+            "$S=x^2+4x\\cdot\\dfrac{32\\ 000}{x^2}=x^2+\\dfrac{128\\ 000}{x}$"
+          ],
+          "answer": "$S(x)=x^2+\\dfrac{128\\ 000}{x}$"
+        },
+        {
+          "q": "Determine the value of $x$ for which the surface area is a minimum.",
+          "marks": 4,
+          "solution": [
+            "$S(x)=x^2+128\\ 000x^{-1}$",
+            "$S'(x)=2x-\\dfrac{128\\ 000}{x^2}=0$",
+            "$2x^3=128\\ 000$, so $x^3=64\\ 000$",
+            "$x=40$ cm"
+          ],
+          "answer": "$x=40$ cm"
+        },
+        {
+          "q": "Calculate the minimum surface area of the box.",
+          "marks": 2,
+          "solution": [
+            "$S(40)=40^2+\\dfrac{128\\ 000}{40}=1\\ 600+3\\ 200$",
+            "$S=4\\ 800$ cm$^2$ (with height $h=\\dfrac{32\\ 000}{1600}=20$ cm)"
+          ],
+          "answer": "$4\\ 800$ cm$^2$"
+        }
+      ]
+    },
+    {
+      "id": "calculus-16",
+      "difficulty": 2,
+      "context": "Given: $f(x)=x^3-3x+2$",
+      "svg": null,
+      "archetype": "cal-tangent",
+      "parts": [
+        {
+          "q": "Determine the equation of the tangent to $f$ at the point where $x=2$.",
+          "marks": 4,
+          "solution": [
+            "$f'(x)=3x^2-3$",
+            "$m=f'(2)=12-3=9$",
+            "$f(2)=8-6+2=4$, so the point of contact is $(2;4)$",
+            "$y-4=9(x-2)\\Rightarrow y=9x-14$"
+          ],
+          "answer": "$y=9x-14$"
+        },
+        {
+          "q": "Determine the coordinates of the points on $f$ where the tangent is horizontal.",
+          "marks": 3,
+          "solution": [
+            "Horizontal tangent: $f'(x)=0$: $3x^2-3=0$",
+            "$x^2=1$, so $x=1$ or $x=-1$",
+            "$f(1)=1-3+2=0$ and $f(-1)=-1+3+2=4$: the points are $(1;0)$ and $(-1;4)$"
+          ],
+          "answer": "$(1;0)$ and $(-1;4)$"
+        },
+        {
+          "q": "For which values of $x$ is $f$ decreasing?",
+          "marks": 2,
+          "solution": [
+            "$f$ decreases where $f'(x)<0$: $3x^2-3<0$",
+            "$x^2<1$, so $-1<x<1$"
+          ],
+          "answer": "$-1<x<1$"
+        }
+      ]
     }
   ]
 }

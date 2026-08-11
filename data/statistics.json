@@ -432,6 +432,191 @@
           "answer": "It is interpolation ($9$ lies within the data range $2$–$10$) and the correlation is very strong"
         }
       ]
+    },
+    {
+      "id": "statistics-10",
+      "difficulty": 2,
+      "context": "The marks (out of 50) of 10 learners in a Kimberley maths class test are: $28;\\ 34;\\ x;\\ 45;\\ 38;\\ 25;\\ 41;\\ 30;\\ 36;\\ 33$. The mean mark is 34.",
+      "svg": null,
+      "archetype": "stat-sd-effect",
+      "parts": [
+        {
+          "q": "Show that $x=30$.",
+          "marks": 3,
+          "solution": [
+            "$\\frac{28+34+x+45+38+25+41+30+36+33}{10}=34$",
+            "$310+x=340$",
+            "$\\therefore x=30$"
+          ],
+          "answer": "$x=30$"
+        },
+        {
+          "q": "Calculate the standard deviation of the marks.",
+          "marks": 2,
+          "solution": [
+            "By calculator (population standard deviation):",
+            "$\\sigma\\approx 5{,}83$ marks (rounded to 2 decimal places)"
+          ],
+          "answer": "$\\sigma\\approx 5{,}83$ marks"
+        },
+        {
+          "q": "How many learners scored within one standard deviation of the mean?",
+          "marks": 2,
+          "solution": [
+            "Interval: $(34-5{,}83;\\ 34+5{,}83)=(28{,}17;\\ 39{,}83)$",
+            "Marks in this interval: $30;\\ 30;\\ 33;\\ 34;\\ 36;\\ 38$ — that is 6 learners"
+          ],
+          "answer": "6 learners"
+        },
+        {
+          "q": "The test is converted to a percentage by doubling every mark. Write down the new mean and the new standard deviation.",
+          "marks": 2,
+          "solution": [
+            "Multiplying every value by 2 scales both measures:",
+            "New mean $=34\\times 2=68\\%$ and new $\\sigma\\approx 5{,}83\\times 2=11{,}66$"
+          ],
+          "answer": "New mean $=68$; new $\\sigma\\approx 11{,}66$"
+        }
+      ]
+    },
+    {
+      "id": "statistics-11",
+      "difficulty": 2,
+      "context": "The number of prepaid electricity units bought in one week by 11 households in Katlehong (sorted): $8;\\ 12;\\ 15;\\ 18;\\ 22;\\ 25;\\ 28;\\ 34;\\ 41;\\ 50;\\ 78$",
+      "svg": null,
+      "archetype": "stat-boxplot",
+      "parts": [
+        {
+          "q": "Write down the five-number summary of the data.",
+          "marks": 4,
+          "solution": [
+            "Minimum $=8$ and Maximum $=78$",
+            "$n=11$, so the median is the 6th value: $M=25$",
+            "$Q_1$ is the median of the lower 5 values (3rd value): $Q_1=15$; $Q_3$ is the 9th value: $Q_3=41$",
+            "Five-number summary: $(8;\\ 15;\\ 25;\\ 41;\\ 78)$"
+          ],
+          "answer": "$(8;\\ 15;\\ 25;\\ 41;\\ 78)$"
+        },
+        {
+          "q": "Use the rule that an outlier lies more than $1{,}5\\times IQR$ beyond a quartile to determine whether $78$ is an outlier.",
+          "marks": 3,
+          "solution": [
+            "$IQR=Q_3-Q_1=41-15=26$",
+            "Upper fence: $Q_3+1{,}5\\times IQR=41+39=80$",
+            "Since $78<80$, the value $78$ is NOT an outlier."
+          ],
+          "answer": "$78<80$, so $78$ is not an outlier"
+        },
+        {
+          "q": "Comment on the skewness of the data. Give a reason based on the quartiles.",
+          "marks": 2,
+          "solution": [
+            "$Q_3-M=41-25=16$ and $M-Q_1=25-15=10$",
+            "Since $Q_3-M>M-Q_1$ (and the right whisker is much longer), the data is skewed to the right (positively skewed)."
+          ],
+          "answer": "Skewed to the right (positively skewed): $Q_3-M=16>M-Q_1=10$"
+        }
+      ]
+    },
+    {
+      "id": "statistics-12",
+      "difficulty": 2,
+      "context": "The distances ($d$, in km) that 90 learners at a school in Mthatha travel to school are grouped as follows: $0\\le d<5$: 18 learners; $5\\le d<10$: 27; $10\\le d<15$: 21; $15\\le d<20$: 12; $20\\le d<25$: 8; $25\\le d<30$: 4. An ogive (cumulative frequency curve) is drawn from this data.",
+      "svg": null,
+      "archetype": "stat-ogive",
+      "parts": [
+        {
+          "q": "Write down the cumulative frequencies for the six intervals.",
+          "marks": 2,
+          "solution": [
+            "Cumulative frequencies: $18;\\ 45;\\ 66;\\ 78;\\ 86;\\ 90$",
+            "(Each value is plotted at the upper boundary of its interval.)"
+          ],
+          "answer": "$18;\\ 45;\\ 66;\\ 78;\\ 86;\\ 90$"
+        },
+        {
+          "q": "Write down the modal class of the data.",
+          "marks": 1,
+          "solution": [
+            "The class with the highest frequency (27 learners) is $5\\le d<10$."
+          ],
+          "answer": "$5\\le d<10$"
+        },
+        {
+          "q": "Use the ogive to estimate the median distance travelled.",
+          "marks": 2,
+          "solution": [
+            "The median is at the $\\frac{90}{2}=45$th learner.",
+            "The cumulative frequency reaches exactly 45 at the boundary $d=10$: $M\\approx 5+\\frac{45-18}{27}\\times 5=10$ km"
+          ],
+          "answer": "$M\\approx 10$ km"
+        },
+        {
+          "q": "Estimate the upper quartile of the data.",
+          "marks": 2,
+          "solution": [
+            "$Q_3$ is at the $\\frac{3}{4}\\times 90=67{,}5$th learner, which lies in $15\\le d<20$ (cumulative frequency goes from 66 to 78).",
+            "$Q_3\\approx 15+\\frac{67{,}5-66}{12}\\times 5\\approx 15{,}6$ km"
+          ],
+          "answer": "$Q_3\\approx 15{,}6$ km (accept $15$–$16$ km read from the ogive)"
+        },
+        {
+          "q": "What percentage of the learners travel 20 km or more to school?",
+          "marks": 2,
+          "solution": [
+            "Learners with $d\\ge 20$: $8+4=12$",
+            "Percentage: $\\frac{12}{90}\\times 100\\approx 13{,}33\\%$"
+          ],
+          "answer": "$\\approx 13{,}33\\%$"
+        }
+      ]
+    },
+    {
+      "id": "statistics-13",
+      "difficulty": 2,
+      "context": "A tutor in Gqeberha records the number of hours ($x$) each of 8 learners spent preparing for a test, and the mark ($y$, as a percentage) each scored: $(1; 42),\\ (2; 48),\\ (3; 55),\\ (4; 59),\\ (5; 66),\\ (6; 70),\\ (7; 74),\\ (8; 83)$",
+      "svg": null,
+      "archetype": "stat-regression",
+      "parts": [
+        {
+          "q": "Determine the equation of the least-squares regression line $\\hat{y}=a+bx$. Round $a$ and $b$ to four decimal places.",
+          "marks": 3,
+          "solution": [
+            "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=36$, $\\sum y=497$, $\\sum xy=2471$, $\\sum x^2=204$):",
+            "$b=\\frac{8(2471)-(36)(497)}{8(204)-(36)^2}\\approx 5{,}5833$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{497}{8}-5{,}5833\\times\\frac{36}{8}=37{,}0000$",
+            "$\\therefore\\ \\hat{y}=37{,}0000+5{,}5833x$"
+          ],
+          "answer": "$\\hat{y}=37{,}0000+5{,}5833x$"
+        },
+        {
+          "q": "Predict the mark of a learner who prepares for $6{,}5$ hours.",
+          "marks": 2,
+          "solution": [
+            "$\\hat{y}=37+5{,}5833(6{,}5)\\approx 73{,}29$",
+            "$\\therefore$ approximately $73\\%$."
+          ],
+          "answer": "$\\approx 73\\%$ ($\\hat{y}\\approx 73{,}29$)"
+        },
+        {
+          "q": "Write down the value of the correlation coefficient $r$, rounded to four decimal places, and interpret it in context.",
+          "marks": 2,
+          "solution": [
+            "By calculator: $r\\approx 0{,}9964$",
+            "There is a very strong positive linear relationship between preparation time and test mark: more hours of preparation, higher marks."
+          ],
+          "answer": "$r\\approx 0{,}9964$ — very strong positive linear correlation"
+        },
+        {
+          "q": "Explain why this prediction is more reliable than predicting the mark of a learner who prepares for 20 hours.",
+          "marks": 2,
+          "solution": [
+            "$6{,}5$ hours lies inside the observed data range ($1$ to $8$ hours) — interpolation.",
+            "$20$ hours lies far outside the range — extrapolation, where the linear trend cannot be assumed to continue."
+          ],
+          "answer": "$6{,}5$ is interpolation (inside the range $1$–$8$); $20$ would be extrapolation"
+        }
+      ]
     }
   ]
 }

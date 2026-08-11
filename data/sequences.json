@@ -383,6 +383,152 @@
           "answer": "$400$ cm"
         }
       ]
+    },
+    {
+      "id": "sequences-12",
+      "difficulty": 1,
+      "context": "In an arithmetic sequence, the fourth term is $19$ and the ninth term is $44$.",
+      "svg": null,
+      "archetype": "seq-arith",
+      "parts": [
+        {
+          "q": "Determine the first term and the common difference of the sequence.",
+          "marks": 4,
+          "solution": [
+            "$T_4=a+3d=19$ and $T_9=a+8d=44$",
+            "Subtracting: $5d=25$, so $d=5$",
+            "$a=19-3(5)=4$"
+          ],
+          "answer": "$a=4$ and $d=5$"
+        },
+        {
+          "q": "Determine a formula for $T_n$ and hence show that $149$ is a term of the sequence.",
+          "marks": 3,
+          "solution": [
+            "$T_n=4+(n-1)(5)=5n-1$",
+            "$5n-1=149$ gives $5n=150$, so $n=30$",
+            "$n=30$ is a natural number, so $149$ is the $30$th term"
+          ],
+          "answer": "$T_n=5n-1$; $149=T_{30}$"
+        },
+        {
+          "q": "Calculate the sum of the first $30$ terms of the sequence.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{30}=\\dfrac{30}{2}\\left[2(4)+29(5)\\right]=15(153)$",
+            "$S_{30}=2295$"
+          ],
+          "answer": "$S_{30}=2295$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-13",
+      "difficulty": 2,
+      "context": "A geometric series has a first term of $18$ and a sum to infinity of $24$.",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Determine the common ratio of the series.",
+          "marks": 3,
+          "solution": [
+            "$S_\\infty=\\dfrac{a}{1-r}$: $\\dfrac{18}{1-r}=24$",
+            "$1-r=\\dfrac{18}{24}=\\dfrac{3}{4}$",
+            "$r=\\dfrac{1}{4}$"
+          ],
+          "answer": "$r=\\dfrac{1}{4}$"
+        },
+        {
+          "q": "Calculate the third term of the series.",
+          "marks": 2,
+          "solution": [
+            "$T_3=ar^2=18\\left(\\dfrac{1}{4}\\right)^2=\\dfrac{18}{16}$",
+            "$T_3=\\dfrac{9}{8}=1{,}125$"
+          ],
+          "answer": "$T_3=\\dfrac{9}{8}$"
+        },
+        {
+          "q": "Calculate the sum of the first $5$ terms of the series. Leave your answer as a fraction.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{a(1-r^n)}{1-r}$",
+            "$S_5=\\dfrac{18\\left(1-\\left(\\frac{1}{4}\\right)^5\\right)}{1-\\frac{1}{4}}=24\\left(1-\\dfrac{1}{1024}\\right)$",
+            "$S_5=24\\times\\dfrac{1023}{1024}=\\dfrac{3069}{128}$"
+          ],
+          "answer": "$S_5=\\dfrac{3069}{128}\\approx 23{,}98$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-14",
+      "difficulty": 2,
+      "context": "The quadratic number pattern $3;\\ 10;\\ 21;\\ 36;\\ \\ldots$ has a constant second difference.",
+      "svg": null,
+      "archetype": "seq-quadratic",
+      "parts": [
+        {
+          "q": "Write down the value of the second difference.",
+          "marks": 1,
+          "solution": [
+            "First differences: $7;\\ 11;\\ 15$",
+            "Second difference $=4$"
+          ],
+          "answer": "$4$"
+        },
+        {
+          "q": "Determine a formula for the $n$-th term of the pattern in the form $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "$2a=4$, so $a=2$",
+            "$T_1$: $2+b+c=3$, so $b+c=1$",
+            "$T_2$: $8+2b+c=10$, so $2b+c=2$",
+            "Subtracting: $b=1$ and $c=0$, so $T_n=2n^2+n$"
+          ],
+          "answer": "$T_n=2n^2+n$"
+        },
+        {
+          "q": "Determine which term of the pattern is equal to $465$.",
+          "marks": 3,
+          "solution": [
+            "$2n^2+n=465$, so $2n^2+n-465=0$",
+            "$n=\\dfrac{-1\\pm\\sqrt{1+4(2)(465)}}{4}=\\dfrac{-1\\pm\\sqrt{3721}}{4}=\\dfrac{-1\\pm 61}{4}$",
+            "$n=15$ (rejecting the negative value): the $15$th term"
+          ],
+          "answer": "The $15$th term"
+        }
+      ]
+    },
+    {
+      "id": "sequences-15",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "seq-sigma",
+      "parts": [
+        {
+          "q": "Calculate: $\\sum_{k=2}^{12}(4k+1)$.",
+          "marks": 3,
+          "solution": [
+            "Arithmetic series: first term $4(2)+1=9$, last term $4(12)+1=49$",
+            "Number of terms: $12-2+1=11$",
+            "$S=\\dfrac{11}{2}(9+49)=\\dfrac{11}{2}(58)=319$"
+          ],
+          "answer": "$319$"
+        },
+        {
+          "q": "Determine the value of $n$ for which $\\sum_{k=1}^{n}(2k-3)=675$.",
+          "marks": 4,
+          "solution": [
+            "The terms form an arithmetic series with first term $-1$ and common difference $2$",
+            "$S_n=\\dfrac{n}{2}\\left[2(-1)+(n-1)(2)\\right]=\\dfrac{n}{2}(2n-4)=n^2-2n$",
+            "$n^2-2n=675$, so $n^2-2n-675=0$",
+            "$(n-27)(n+25)=0$, so $n=27$ (rejecting $n=-25$)"
+          ],
+          "answer": "$n=27$"
+        }
+      ]
     }
   ]
 }

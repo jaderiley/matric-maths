@@ -153,6 +153,20 @@
 
   /* ── views ─────────────────────────────────────────────── */
 
+  /* 2026 final NSC timetable (CEM-approved, Feb 2026): Maths P1 Fri 23 Oct,
+     P2 Mon 26 Oct, both 09:00. Hidden automatically once the dates pass. */
+  function examCountdown() {
+    const papers = [["Paper 1", new Date(2026, 9, 23)], ["Paper 2", new Date(2026, 9, 26)]];
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const chips = papers.map(([name, d]) => {
+      const days = Math.round((d - today) / 864e5);
+      if (days < 0) return null;
+      return `${name}: ${days === 0 ? "<strong>TODAY</strong>" : `<strong>${days}</strong> day${days === 1 ? "" : "s"}`}`;
+    }).filter(Boolean);
+    if (!chips.length) return "";
+    return `<p class="exam-dates">Final NSC exams — Fri 23 Oct &amp; Mon 26 Oct 2026 · ${chips.join(" · ")}</p>`;
+  }
+
   async function homeView() {
     const m = await getManifest();
     const cards = await Promise.all(Object.entries(m.papers).map(async ([p, info]) => {
@@ -171,6 +185,7 @@
       <p class="exam-rule">National Senior Certificate — practice</p>
       <h1 class="display">Practice like it's<br>the <em>real paper</em>.</h1>
       <p class="lede">Exam-style Grade 12 maths questions with full memo solutions. Work a topic, mark yourself like a marker would, or sit a timed mock. Free, offline, no sign-up.</p>
+      ${examCountdown()}
       ${cards.join("")}
       <div class="btnrow">
         <a class="btn btn--red" href="#/exam/1">Sit a timed mock</a>
@@ -378,6 +393,10 @@
       const mm = Math.floor(left / 60000), ss = Math.floor(left % 60000 / 1000);
       clock.textContent = `${String(Math.floor(mm / 60))}:${String(mm % 60).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
       clock.classList.toggle("low", left < 15 * 60 * 1000 && left > 0);
+      if (left < 15 * 60 * 1000 && left > 0 && !sess.warned) {
+        sess.warned = true; save();
+        toast("15 minutes left — wrap up your working.");
+      }
       if (left === 0 && sess.phase === "write") { clock.textContent = "TIME"; }
     }
     if (!marking) { tick(); timerInt = setInterval(tick, 1000); } else { clock.textContent = "—"; }

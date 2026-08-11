@@ -1,5 +1,5 @@
 /* Matric Maths service worker — cache-first PWA */
-const VERSION = "mm-v5";
+const VERSION = "mm-v6";
 const CORE = [
   "./",
   "./index.html",

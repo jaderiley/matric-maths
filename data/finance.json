@@ -348,6 +348,132 @@
           "answer": "R4 393,62 per month"
         }
       ]
+    },
+    {
+      "id": "finance-12",
+      "difficulty": 1,
+      "context": "A school in Bloemfontein buys a laptop for R18 500. The laptop depreciates at $22\\%$ per annum on the reducing-balance method. The price of a new laptop of the same model increases at $7\\%$ per annum.",
+      "svg": null,
+      "archetype": "fin-compound",
+      "parts": [
+        {
+          "q": "Calculate the value of the laptop after $4$ years. Round to the nearest cent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1-i)^n=18\\ 500(1-0{,}22)^4$",
+            "$A=18\\ 500(0{,}78)^4$",
+            "$A=$ R$6\\ 847{,}79$ (nearest cent)"
+          ],
+          "answer": "R6 847,79"
+        },
+        {
+          "q": "Calculate the price of a NEW laptop of the same model after $4$ years. Round to the nearest cent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1+i)^n=18\\ 500(1{,}07)^4$",
+            "$A=$ R$24\\ 249{,}73$ (nearest cent)"
+          ],
+          "answer": "R24 249,73"
+        }
+      ]
+    },
+    {
+      "id": "finance-13",
+      "difficulty": 2,
+      "context": "Naledi saves for a car deposit by paying R900 into a savings account at the END of every month for $4$ years. The account earns interest at $7{,}8\\%$ per annum, compounded monthly.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Calculate the value of Naledi's savings at the end of the $4$ years. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}078}{12}=0{,}0065$ and $n=4\\times 12=48$",
+            "$F=\\dfrac{x\\left[(1+i)^n-1\\right]}{i}$",
+            "$F=\\dfrac{900\\left[(1{,}0065)^{48}-1\\right]}{0{,}0065}$",
+            "$F=$ R$50\\ 507{,}46$ (nearest cent)"
+          ],
+          "answer": "R50 507,46"
+        },
+        {
+          "q": "How much interest does Naledi earn over the $4$ years?",
+          "marks": 2,
+          "solution": [
+            "Total deposited $=48\\times 900=$ R$43\\ 200$",
+            "Interest $=50\\ 507{,}46-43\\ 200=$ R$7\\ 307{,}46$"
+          ],
+          "answer": "R7 307,46"
+        }
+      ]
+    },
+    {
+      "id": "finance-14",
+      "difficulty": 2,
+      "context": "Karabo takes out a student loan of R120 000. Interest is charged at $11{,}25\\%$ per annum, compounded monthly. The loan is repaid with equal monthly payments over $5$ years, starting one month after the loan is granted.",
+      "svg": null,
+      "archetype": "fin-loan",
+      "parts": [
+        {
+          "q": "Calculate the monthly payment. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}1125}{12}=0{,}009375$ and $n=5\\times 12=60$",
+            "$P=\\dfrac{x\\left[1-(1+i)^{-n}\\right]}{i}$, so $x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}$",
+            "$x=\\dfrac{120\\ 000\\times 0{,}009375}{1-(1{,}009375)^{-60}}$",
+            "$x=$ R$2\\ 624{,}08$ (nearest cent)"
+          ],
+          "answer": "R2 624,08 per month"
+        },
+        {
+          "q": "Calculate the outstanding balance of the loan immediately after the $24$th payment. Round to the nearest cent.",
+          "marks": 4,
+          "solution": [
+            "Balance $=P(1+i)^{24}-\\dfrac{x\\left[(1+i)^{24}-1\\right]}{i}$",
+            "$=120\\ 000(1{,}009375)^{24}-\\dfrac{2\\ 624{,}08\\left[(1{,}009375)^{24}-1\\right]}{0{,}009375}$",
+            "$=$ R$79\\ 862{,}91$ (nearest cent, using the rounded payment)"
+          ],
+          "answer": "R79 862,91 (accept small differences from rounding the monthly payment)"
+        },
+        {
+          "q": "Calculate the TOTAL interest paid over the $5$ years if all $60$ payments are made as scheduled.",
+          "marks": 2,
+          "solution": [
+            "Total paid $=60\\times 2\\ 624{,}08=$ R$157\\ 444{,}80$",
+            "Interest $=157\\ 444{,}80-120\\ 000=$ R$37\\ 444{,}80$"
+          ],
+          "answer": "R37 444,80"
+        }
+      ]
+    },
+    {
+      "id": "finance-15",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "fin-nominal-effective",
+      "parts": [
+        {
+          "q": "Convert a nominal interest rate of $11{,}4\\%$ per annum, compounded monthly, to an effective annual interest rate. Give your answer correct to TWO decimal places.",
+          "marks": 3,
+          "solution": [
+            "$1+i_{\\text{eff}}=\\left(1+\\dfrac{0{,}114}{12}\\right)^{12}$",
+            "$i_{\\text{eff}}=(1{,}0095)^{12}-1=0{,}1201\\ldots$",
+            "Effective rate $\\approx 12{,}01\\%$ per annum"
+          ],
+          "answer": "$12{,}01\\%$ per annum (effective)"
+        },
+        {
+          "q": "Determine the nominal interest rate, compounded quarterly, that is equivalent to an effective annual rate of $10{,}25\\%$. Give your answer correct to TWO decimal places.",
+          "marks": 4,
+          "solution": [
+            "$\\left(1+\\dfrac{i}{4}\\right)^{4}=1{,}1025$",
+            "$1+\\dfrac{i}{4}=1{,}1025^{\\frac{1}{4}}$",
+            "$i=4\\left(1{,}1025^{\\frac{1}{4}}-1\\right)=0{,}0988\\ldots$",
+            "Nominal rate $\\approx 9{,}88\\%$ per annum, compounded quarterly"
+          ],
+          "answer": "$9{,}88\\%$ per annum, compounded quarterly"
+        }
+      ]
     }
   ]
 }

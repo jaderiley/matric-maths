@@ -418,6 +418,76 @@
           "answer": "$\\dfrac{21}{40}$"
         }
       ]
+    },
+    {
+      "id": "algebra-17",
+      "difficulty": 1,
+      "context": "",
+      "svg": null,
+      "archetype": "alg-quad-factor",
+      "parts": [
+        {
+          "q": "Solve for $x$: $x(x+3)=10$.",
+          "marks": 3,
+          "solution": [
+            "$x^2+3x-10=0$",
+            "$(x+5)(x-2)=0$",
+            "$x=-5$ or $x=2$"
+          ],
+          "answer": "$x=-5$ or $x=2$"
+        },
+        {
+          "q": "Solve for $x$, correct to TWO decimal places: $2x^2-6x+1=0$.",
+          "marks": 4,
+          "solution": [
+            "$x=\\dfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ with $a=2$, $b=-6$, $c=1$",
+            "$x=\\dfrac{6\\pm\\sqrt{(-6)^2-4(2)(1)}}{2(2)}=\\dfrac{6\\pm\\sqrt{28}}{4}$",
+            "$x=2{,}82$ or $x=0{,}18$"
+          ],
+          "answer": "$x=2{,}82$ or $x=0{,}18$"
+        },
+        {
+          "q": "Solve for $x$: $2^{x}+2^{x+2}=40$.",
+          "marks": 3,
+          "solution": [
+            "$2^x(1+2^2)=40$",
+            "$5\\cdot 2^x=40$, so $2^x=8=2^3$",
+            "$x=3$"
+          ],
+          "answer": "$x=3$"
+        }
+      ]
+    },
+    {
+      "id": "algebra-18",
+      "difficulty": 3,
+      "context": "One root of the equation $x^2-10x+k=0$ is FOUR times the other root.",
+      "svg": null,
+      "archetype": "alg-level4",
+      "parts": [
+        {
+          "q": "Determine the value of $k$.",
+          "marks": 5,
+          "solution": [
+            "Let the roots be $r$ and $4r$",
+            "Sum of roots: $r+4r=10$ (since $-\\frac{b}{a}=10$)",
+            "$5r=10$, so $r=2$: the roots are $2$ and $8$",
+            "Product of roots: $k=r\\times 4r=2\\times 8$",
+            "$k=16$ (check: $x^2-10x+16=(x-2)(x-8)=0$ ✓)"
+          ],
+          "answer": "$k=16$"
+        },
+        {
+          "q": "For which values of $k$ will the equation $x^2-10x+k=0$ have non-real roots?",
+          "marks": 3,
+          "solution": [
+            "$\\Delta=b^2-4ac=(-10)^2-4(1)(k)=100-4k$",
+            "For non-real roots: $100-4k<0$",
+            "$k>25$"
+          ],
+          "answer": "$k>25$"
+        }
+      ]
     }
   ]
 }
