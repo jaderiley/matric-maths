@@ -1,5 +1,5 @@
 /* Matric Maths service worker — cache-first PWA */
-const VERSION = "mm-v6";
+const VERSION = "mm-v7";
 const CORE = [
   "./",
   "./index.html",
@@ -21,6 +21,21 @@ const CORE = [
   "./data/analytical-geometry.json",
   "./data/trigonometry.json",
   "./data/euclidean-geometry.json",
+  "./data/af/index.json",
+  "./data/af/papers.json",
+  "./data/af/notes.json",
+  "./data/af/map-1.json",
+  "./data/af/map-2.json",
+  "./data/af/algebra.json",
+  "./data/af/sequences.json",
+  "./data/af/functions.json",
+  "./data/af/finance.json",
+  "./data/af/calculus.json",
+  "./data/af/probability.json",
+  "./data/af/statistics.json",
+  "./data/af/analytical-geometry.json",
+  "./data/af/trigonometry.json",
+  "./data/af/euclidean-geometry.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./og.png",

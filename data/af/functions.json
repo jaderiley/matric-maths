@@ -1,0 +1,677 @@
+{
+ "id": "functions",
+ "paper": 1,
+ "title": "Funksies en grafieke",
+ "blurb": "Parabole, hiperbole en eksponensiële grafieke: vergelykings, draaipunte, asimptote, definisieversameling en waardeversameling, transformasies, inverses en die interpretasie van sketse.",
+ "questions": [
+  {
+   "id": "functions-01",
+   "difficulty": 1,
+   "context": "Die grafieke van $f(x)=x^2-4x-5$ en $g(x)=x+1$ word op dieselfde assestelsel geteken.",
+   "svg": null,
+   "archetype": "fun-parabola-line",
+   "parts": [
+    {
+     "q": "Bepaal die koördinate van die $x$-afsnitte van $f$.",
+     "marks": 2,
+     "solution": [
+      "$x^2-4x-5=0$",
+      "$(x-5)(x+1)=0$",
+      "$x=5$ of $x=-1$, dus is die $x$-afsnitte $(5;0)$ en $(-1;0)$"
+     ],
+     "answer": "$(5;0)$ en $(-1;0)$"
+    },
+    {
+     "q": "Bepaal die koördinate van die draaipunt van $f$.",
+     "marks": 2,
+     "solution": [
+      "$x=-\\dfrac{b}{2a}=-\\dfrac{-4}{2(1)}=2$",
+      "$f(2)=(2)^2-4(2)-5=-9$",
+      "Draaipunt: $(2;-9)$"
+     ],
+     "answer": "$(2;-9)$"
+    },
+    {
+     "q": "Bepaal die koördinate van die snypunte van $f$ en $g$.",
+     "marks": 4,
+     "solution": [
+      "$x^2-4x-5=x+1$",
+      "$x^2-5x-6=0$",
+      "$(x-6)(x+1)=0$",
+      "$x=6$ of $x=-1$",
+      "$g(6)=7$ en $g(-1)=0$",
+      "Snypunte: $(6;7)$ en $(-1;0)$"
+     ],
+     "answer": "$(6;7)$ en $(-1;0)$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $f(x)<g(x)$?",
+     "marks": 2,
+     "solution": [
+      "$f(x)<g(x)$ tussen die snypunte (die parabool lê daar onder die reguitlyn)",
+      "$-1<x<6$"
+     ],
+     "answer": "$-1<x<6$"
+    }
+   ]
+  },
+  {
+   "id": "functions-02",
+   "difficulty": 2,
+   "context": "Gegee: $g(x)=\\dfrac{3}{x-2}-1$",
+   "svg": null,
+   "archetype": "fun-hyperbola",
+   "parts": [
+    {
+     "q": "Skryf die vergelykings van die asimptote van $g$ neer.",
+     "marks": 2,
+     "solution": [
+      "Vertikale asimptoot: $x=2$",
+      "Horisontale asimptoot: $y=-1$"
+     ],
+     "answer": "$x=2$ en $y=-1$"
+    },
+    {
+     "q": "Bepaal die koördinate van die $x$- en $y$-afsnitte van $g$.",
+     "marks": 3,
+     "solution": [
+      "$y$-afsnit: $g(0)=\\dfrac{3}{0-2}-1=-\\dfrac{3}{2}-1=-\\dfrac{5}{2}$, dus $\\left(0;-\\dfrac{5}{2}\\right)$",
+      "$x$-afsnit: $\\dfrac{3}{x-2}-1=0$",
+      "$\\dfrac{3}{x-2}=1$, dus $x-2=3$",
+      "$x=5$, dus $(5;0)$"
+     ],
+     "answer": "$x$-afsnit $(5;0)$; $y$-afsnit $\\left(0;-\\dfrac{5}{2}\\right)$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $g(x)\\ge 0$?",
+     "marks": 2,
+     "solution": [
+      "Vir $x<2$ is die breuk $\\dfrac{3}{x-2}$ negatief, dus is $g(x)<0$ daar",
+      "Vir $x>2$: $\\dfrac{3}{x-2}\\ge 1$ gee $x-2\\le 3$, d.w.s. $x\\le 5$",
+      "$2<x\\le 5$"
+     ],
+     "answer": "$2<x\\le 5$"
+    }
+   ]
+  },
+  {
+   "id": "functions-03",
+   "difficulty": 2,
+   "context": "Gegee: $f(x)=3^{x}$",
+   "svg": null,
+   "archetype": "fun-exponential",
+   "parts": [
+    {
+     "q": "Bepaal die vergelyking van $f^{-1}$ in die vorm $y=\\ldots$",
+     "marks": 2,
+     "solution": [
+      "Verwissel $x$ en $y$: $x=3^{y}$",
+      "$y=\\log_{3}x$"
+     ],
+     "answer": "$y=\\log_{3}x$"
+    },
+    {
+     "q": "Die punt $(2;9)$ lê op $f$. Skryf die koördinate van die ooreenstemmende punt op $f^{-1}$ neer.",
+     "marks": 1,
+     "solution": [
+      "Refleksie in die lyn $y=x$: $(9;2)$"
+     ],
+     "answer": "$(9;2)$"
+    },
+    {
+     "q": "Skryf die definisieversameling van $f^{-1}$ neer.",
+     "marks": 1,
+     "solution": [
+      "Die waardeversameling van $f$ is $y>0$, dus is die definisieversameling van $f^{-1}$ $x>0$"
+     ],
+     "answer": "$x>0$"
+    },
+    {
+     "q": "Die grafiek van $f$ word $1$ eenheid na regs en $2$ eenhede opwaarts geskuif om $h$ te vorm. Skryf die vergelyking van $h$ neer.",
+     "marks": 2,
+     "solution": [
+      "1 eenheid na regs: vervang $x$ met $x-1$",
+      "2 eenhede opwaarts: tel 2 by",
+      "$h(x)=3^{x-1}+2$"
+     ],
+     "answer": "$h(x)=3^{x-1}+2$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $f^{-1}(x)<1$?",
+     "marks": 2,
+     "solution": [
+      "$\\log_{3}x<1$",
+      "$x<3^{1}$, maar $x$ moet in die definisieversameling van $f^{-1}$ wees ($x>0$)",
+      "$0<x<3$"
+     ],
+     "answer": "$0<x<3$"
+    }
+   ]
+  },
+  {
+   "id": "functions-04",
+   "difficulty": 2,
+   "context": "Die skets toon die parabool $f$ met draaipunt $(1;8)$. Die grafiek gaan deur die punt $(3;0)$.",
+   "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"150\" x2=\"300\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"110\" y1=\"15\" x2=\"110\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 74 170 Q 140 -62 206 170\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"140\" cy=\"54\" r=\"3\" fill=\"currentColor\"/><circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><text x=\"148\" y=\"50\" font-size=\"13\" fill=\"currentColor\">(1;8)</text><text x=\"204\" y=\"168\" font-size=\"13\" fill=\"currentColor\">(3;0)</text><text x=\"290\" y=\"145\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"116\" y=\"26\" font-size=\"13\" fill=\"currentColor\">y</text><text x=\"60\" y=\"70\" font-size=\"13\" fill=\"currentColor\">f</text></svg>",
+   "archetype": "fun-parabola-line",
+   "parts": [
+    {
+     "q": "Toon aan dat $f(x)=-2(x-1)^2+8$.",
+     "marks": 3,
+     "solution": [
+      "Draaipuntvorm: $f(x)=a(x-1)^2+8$",
+      "Vervang $(3;0)$: $0=a(3-1)^2+8$",
+      "$4a=-8$, dus $a=-2$",
+      "$f(x)=-2(x-1)^2+8$"
+     ],
+     "answer": "$a=-2$, dus $f(x)=-2(x-1)^2+8$"
+    },
+    {
+     "q": "Skryf die $y$-afsnit van $f$ neer.",
+     "marks": 1,
+     "solution": [
+      "$f(0)=-2(0-1)^2+8=-2+8=6$, dus $(0;6)$"
+     ],
+     "answer": "$(0;6)$"
+    },
+    {
+     "q": "Bepaal die ander $x$-afsnit van $f$.",
+     "marks": 2,
+     "solution": [
+      "$-2(x-1)^2+8=0$",
+      "$(x-1)^2=4$, dus $x-1=\\pm 2$",
+      "$x=3$ of $x=-1$; die ander $x$-afsnit is $(-1;0)$"
+     ],
+     "answer": "$(-1;0)$"
+    },
+    {
+     "q": "Bepaal die gemiddelde gradiënt van $f$ tussen $x=-1$ en $x=2$.",
+     "marks": 3,
+     "solution": [
+      "$f(-1)=-2(-2)^2+8=0$",
+      "$f(2)=-2(1)^2+8=6$",
+      "Gemiddelde gradiënt $=\\dfrac{f(2)-f(-1)}{2-(-1)}=\\dfrac{6-0}{3}=2$"
+     ],
+     "answer": "$2$"
+    }
+   ]
+  },
+  {
+   "id": "functions-05",
+   "difficulty": 2,
+   "context": "Die grafiek van $g(x)=a\\cdot b^{x}+q$ (met $b>1$) het 'n horisontale asimptoot $y=-4$ en gaan deur die punte $(0;-2)$ en $(1;2)$.",
+   "svg": null,
+   "archetype": "fun-exponential",
+   "parts": [
+    {
+     "q": "Skryf die waarde van $q$ neer.",
+     "marks": 1,
+     "solution": [
+      "Die horisontale asimptoot van $g$ is $y=q$, dus $q=-4$"
+     ],
+     "answer": "$q=-4$"
+    },
+    {
+     "q": "Bepaal die waardes van $a$ en $b$.",
+     "marks": 4,
+     "solution": [
+      "Vervang $(0;-2)$: $a\\cdot b^{0}-4=-2$",
+      "$a=2$",
+      "Vervang $(1;2)$: $2b-4=2$",
+      "$b=3$, dus $g(x)=2\\cdot 3^{x}-4$"
+     ],
+     "answer": "$a=2$ en $b=3$"
+    },
+    {
+     "q": "Bepaal die $x$-afsnit van $g$, korrek tot twee desimale plekke.",
+     "marks": 3,
+     "solution": [
+      "$2\\cdot 3^{x}-4=0$",
+      "$3^{x}=2$",
+      "$x=\\log_{3}2=\\dfrac{\\log 2}{\\log 3}\\approx 0{,}63$"
+     ],
+     "answer": "$x\\approx 0{,}63$"
+    },
+    {
+     "q": "Skryf die waardeversameling van $g$ neer.",
+     "marks": 1,
+     "solution": [
+      "$y>-4$"
+     ],
+     "answer": "$y>-4$"
+    }
+   ]
+  },
+  {
+   "id": "functions-06",
+   "difficulty": 3,
+   "context": "Die grafieke van $f(x)=-x^2+2x+3$ en die reguitlyn $g(x)=x+1$ sny by punte $A$ en $B$, waar $A$ op die $x$-as lê. $P$ is 'n punt op $f$ en $Q$ is 'n punt op $g$ sodanig dat $PQ$ vertikaal is en tussen $A$ en $B$ lê.",
+   "svg": null,
+   "archetype": "fun-parabola-line",
+   "parts": [
+    {
+     "q": "Bepaal die koördinate van $A$ en $B$.",
+     "marks": 4,
+     "solution": [
+      "$-x^2+2x+3=x+1$",
+      "$x^2-x-2=0$",
+      "$(x-2)(x+1)=0$, dus $x=2$ of $x=-1$",
+      "$g(-1)=0$ en $g(2)=3$",
+      "$A(-1;0)$ (op die $x$-as) en $B(2;3)$"
+     ],
+     "answer": "$A(-1;0)$ en $B(2;3)$"
+    },
+    {
+     "q": "Bepaal die maksimum lengte van $PQ$.",
+     "marks": 4,
+     "solution": [
+      "$PQ(x)=f(x)-g(x)=-x^2+2x+3-(x+1)=-x^2+x+2$",
+      "Maksimum waar $\\dfrac{d(PQ)}{dx}=-2x+1=0$, d.w.s. $x=\\dfrac{1}{2}$ (of gebruik $x=-\\dfrac{b}{2a}$)",
+      "$PQ\\left(\\dfrac{1}{2}\\right)=-\\dfrac{1}{4}+\\dfrac{1}{2}+2=\\dfrac{9}{4}$",
+      "Maksimum lengte van $PQ=\\dfrac{9}{4}=2{,}25$ eenhede"
+     ],
+     "answer": "$\\dfrac{9}{4}$ eenhede"
+    },
+    {
+     "q": "Bepaal die waarde van $k$ waarvoor die lyn $y=x+k$ 'n raaklyn aan $f$ is.",
+     "marks": 3,
+     "solution": [
+      "$-x^2+2x+3=x+k$",
+      "$x^2-x+(k-3)=0$",
+      "Raaklyn: gelyke wortels, dus $\\Delta=(-1)^2-4(1)(k-3)=0$",
+      "$1-4k+12=0$, dus $k=\\dfrac{13}{4}$"
+     ],
+     "answer": "$k=\\dfrac{13}{4}$"
+    }
+   ]
+  },
+  {
+   "id": "functions-07",
+   "difficulty": 2,
+   "context": "Die hiperbool $g(x)=\\dfrac{a}{x+p}+q$ het asimptote $x=-1$ en $y=3$, en gaan deur die punt $(0;5)$.",
+   "svg": null,
+   "archetype": "fun-hyperbola",
+   "parts": [
+    {
+     "q": "Skryf die waardes van $p$ en $q$ neer.",
+     "marks": 2,
+     "solution": [
+      "Vertikale asimptoot $x=-p=-1$, dus $p=1$",
+      "Horisontale asimptoot $y=q=3$, dus $q=3$"
+     ],
+     "answer": "$p=1$, $q=3$"
+    },
+    {
+     "q": "Toon aan dat $a=2$.",
+     "marks": 2,
+     "solution": [
+      "Vervang $(0;5)$: $5=\\dfrac{a}{0+1}+3$",
+      "$a=5-3=2$"
+     ],
+     "answer": "$a=2$"
+    },
+    {
+     "q": "Bepaal die vergelyking van die simmetrie-as van $g$ wat 'n negatiewe gradiënt het.",
+     "marks": 2,
+     "solution": [
+      "Die simmetrie-asse gaan deur die snypunt van die asimptote $(-1;3)$",
+      "Negatiewe gradiënt: $y-3=-1(x+1)$",
+      "$y=-x+2$"
+     ],
+     "answer": "$y=-x+2$"
+    },
+    {
+     "q": "Bepaal die $x$-afsnit van $g$.",
+     "marks": 2,
+     "solution": [
+      "$\\dfrac{2}{x+1}+3=0$",
+      "$\\dfrac{2}{x+1}=-3\\Rightarrow x+1=-\\dfrac{2}{3}$",
+      "$x=-\\dfrac{5}{3}$, dus $\\left(-\\dfrac{5}{3};0\\right)$"
+     ],
+     "answer": "$\\left(-\\dfrac{5}{3};0\\right)$"
+    }
+   ]
+  },
+  {
+   "id": "functions-08",
+   "difficulty": 2,
+   "context": "Gegee: $f(x)=2x^2-x$",
+   "svg": null,
+   "archetype": "fun-avg-gradient",
+   "parts": [
+    {
+     "q": "Bepaal die gemiddelde gradiënt van $f$ tussen $x=-2$ en $x=1$.",
+     "marks": 3,
+     "solution": [
+      "$f(-2)=2(4)-(-2)=10$",
+      "$f(1)=2(1)-1=1$",
+      "Gemiddelde gradiënt $=\\dfrac{1-10}{1-(-2)}=\\dfrac{-9}{3}=-3$"
+     ],
+     "answer": "$-3$"
+    },
+    {
+     "q": "Die gemiddelde gradiënt van $f$ tussen $x=1$ en $x=k$ is $5$. Bereken die waarde van $k$ (waar $k\\neq 1$).",
+     "marks": 3,
+     "solution": [
+      "$\\dfrac{f(k)-f(1)}{k-1}=5$",
+      "$\\dfrac{2k^2-k-1}{k-1}=5$",
+      "$\\dfrac{(2k+1)(k-1)}{k-1}=5\\Rightarrow 2k+1=5$",
+      "$k=2$"
+     ],
+     "answer": "$k=2$"
+    }
+   ]
+  },
+  {
+   "id": "functions-09",
+   "difficulty": 1,
+   "context": "Gegee: $f(x)=x^2+3$ en $g(x)=2x+3$",
+   "svg": null,
+   "archetype": "fun-avg-gradient",
+   "parts": [
+    {
+     "q": "Bepaal die gemiddelde gradiënt van $f$ tussen $x=0$ en $x=2$.",
+     "marks": 2,
+     "solution": [
+      "$f(0)=3$, $f(2)=7$",
+      "Gemiddelde gradiënt $=\\dfrac{7-3}{2-0}=2$"
+     ],
+     "answer": "$2$"
+    },
+    {
+     "q": "Bereken die vertikale afstand tussen $f$ en $g$ by $x=3$.",
+     "marks": 2,
+     "solution": [
+      "$f(3)=12$, $g(3)=9$",
+      "Vertikale afstand $=12-9=3$"
+     ],
+     "answer": "$3$ eenhede"
+    },
+    {
+     "q": "Bepaal die $x$-waardes waar $f$ en $g$ sny.",
+     "marks": 2,
+     "solution": [
+      "$x^2+3=2x+3$",
+      "$x^2-2x=0\\Rightarrow x(x-2)=0$",
+      "$x=0$ of $x=2$"
+     ],
+     "answer": "$x=0$ of $x=2$"
+    }
+   ]
+  },
+  {
+   "id": "functions-10",
+   "difficulty": 2,
+   "context": "Gegee: $f(x)=2^{x}$",
+   "svg": null,
+   "archetype": "fun-transformations",
+   "parts": [
+    {
+     "q": "Skryf die vergelyking van $g$ neer as $g(x)=f(x-1)+3$, en gee die vergelyking van die horisontale asimptoot van $g$.",
+     "marks": 2,
+     "solution": [
+      "$g(x)=2^{x-1}+3$",
+      "Horisontale asimptoot: $y=3$"
+     ],
+     "answer": "$g(x)=2^{x-1}+3$; asimptoot $y=3$"
+    },
+    {
+     "q": "Die grafiek van $f$ word in die $y$-as gereflekteer om $h$ te vorm. Skryf die vergelyking van $h$ neer.",
+     "marks": 1,
+     "solution": [
+      "Refleksie in die $y$-as: $x\\to -x$",
+      "$h(x)=2^{-x}$"
+     ],
+     "answer": "$h(x)=2^{-x}$"
+    },
+    {
+     "q": "Beskryf die transformasie van $f$ na $k$ waar $k(x)=2^{x}-5$, en skryf die waardeversameling van $k$ neer.",
+     "marks": 2,
+     "solution": [
+      "$k$ is $f$ wat $5$ eenhede afwaarts geskuif is",
+      "Die waardeversameling van $f$ is $y>0$, dus is die waardeversameling van $k$ $y>-5$"
+     ],
+     "answer": "Skuif $5$ eenhede afwaarts; waardeversameling $y>-5$"
+    }
+   ]
+  },
+  {
+   "id": "functions-11",
+   "difficulty": 2,
+   "context": "Die grafiek van $f(x)=\\dfrac{1}{x}$ word getransformeer na $g(x)=\\dfrac{1}{x+2}-3$.",
+   "svg": null,
+   "archetype": "fun-transformations",
+   "parts": [
+    {
+     "q": "Beskryf die transformasie van $f$ na $g$.",
+     "marks": 2,
+     "solution": [
+      "$x\\to x+2$: skuif $2$ eenhede na links",
+      "$-3$: skuif $3$ eenhede afwaarts"
+     ],
+     "answer": "$2$ na links en $3$ afwaarts"
+    },
+    {
+     "q": "Skryf die vergelykings van die asimptote van $g$ neer.",
+     "marks": 2,
+     "solution": [
+      "Vertikale asimptoot: $x=-2$",
+      "Horisontale asimptoot: $y=-3$"
+     ],
+     "answer": "$x=-2$ en $y=-3$"
+    },
+    {
+     "q": "Die grafiek van $g$ ondergaan 'n transformasie na $h$ sodanig dat die definisieversameling en waardeversameling van $h$ dieselfde as dié van $g$ is, en dat $h'(x)>0$ op sy definisieversameling is. Beskryf 'n moontlike transformasie.",
+     "marks": 2,
+     "solution": [
+      "$g$ is dalend op elke tak; $h$ moet stygend wees maar dieselfde asimptote $x=-2$, $y=-3$ behou",
+      "Reflekteer $g$ in 'n lyn deur die snypunt van sy asimptote, bv. in die vertikale lyn $x=-2$ (of in die horisontale lyn $y=-3$)"
+     ],
+     "answer": "Reflekteer in $x=-2$ (of in $y=-3$)"
+    }
+   ]
+  },
+  {
+   "id": "functions-12",
+   "difficulty": 3,
+   "context": "Gegee: $f(x)=x^2-3x+2$",
+   "svg": null,
+   "archetype": "fun-level4-tangent",
+   "parts": [
+    {
+     "q": "Bepaal die waarde(s) van $m$ waarvoor die lyn $y=mx-2$ 'n raaklyn aan $f$ is.",
+     "marks": 4,
+     "solution": [
+      "Vir 'n raaklyn: $x^2-3x+2=mx-2$",
+      "$x^2-(3+m)x+4=0$ moet gelyke wortels hê, dus $\\Delta=0$",
+      "$(3+m)^2-4(1)(4)=0\\Rightarrow (3+m)^2=16$",
+      "$3+m=\\pm 4\\Rightarrow m=1$ of $m=-7$"
+     ],
+     "answer": "$m=1$ of $m=-7$"
+    },
+    {
+     "q": "Vir watter waardes van $m$ sal die lyn $y=mx-2$ die grafiek van $f$ by twee verskillende punte sny?",
+     "marks": 3,
+     "solution": [
+      "Twee verskillende punte: $\\Delta>0$",
+      "$(3+m)^2-16>0\\Rightarrow (3+m)^2>16$",
+      "$3+m>4$ of $3+m<-4$",
+      "$m>1$ of $m<-7$"
+     ],
+     "answer": "$m>1$ of $m<-7$"
+    }
+   ]
+  },
+  {
+   "id": "functions-13",
+   "difficulty": 3,
+   "context": "Gegee: $f(x)=-x^2+6x+1$ en die reguitlyn $g(x)=2x+3$.",
+   "svg": null,
+   "archetype": "fun-level4-tangent",
+   "parts": [
+    {
+     "q": "Skryf die koördinate van die draaipunt van $f$ neer.",
+     "marks": 2,
+     "solution": [
+      "$x=-\\dfrac{b}{2a}=-\\dfrac{6}{2(-1)}=3$",
+      "$f(3)=-9+18+1=10$",
+      "Draaipunt $(3;10)$"
+     ],
+     "answer": "$(3;10)$"
+    },
+    {
+     "q": "Gegee $k(x)=f(x+m)$, bepaal die waarde van $m$ waarvoor $g$ 'n raaklyn aan $k$ is.",
+     "marks": 5,
+     "solution": [
+      "$k(x)=-(x+m)^2+6(x+m)+1=-x^2+(6-2m)x+(-m^2+6m+1)$",
+      "Raaklyn: $k(x)=2x+3$ het gelyke wortels",
+      "$-x^2+(4-2m)x+(-m^2+6m-2)=0$, d.w.s. $x^2-(4-2m)x+(m^2-6m+2)=0$",
+      "$\\Delta=0$: $(4-2m)^2-4(m^2-6m+2)=0$",
+      "$16-16m+4m^2-4m^2+24m-8=0\\Rightarrow 8m+8=0$",
+      "$m=-1$"
+     ],
+     "answer": "$m=-1$"
+    }
+   ]
+  },
+  {
+   "id": "functions-14",
+   "difficulty": 2,
+   "context": "Die grafieke van $f(x)=x^2-2x-8$ en $g(x)=x-8$ word op dieselfde assestelsel geteken.",
+   "svg": null,
+   "archetype": "fun-parabola-line",
+   "parts": [
+    {
+     "q": "Bepaal die koördinate van die $x$-afsnitte van $f$.",
+     "marks": 2,
+     "solution": [
+      "$x^2-2x-8=0$",
+      "$(x-4)(x+2)=0$",
+      "$x=4$ of $x=-2$: die $x$-afsnitte is $(4;0)$ en $(-2;0)$"
+     ],
+     "answer": "$(4;0)$ en $(-2;0)$"
+    },
+    {
+     "q": "Bepaal die koördinate van die draaipunt van $f$.",
+     "marks": 2,
+     "solution": [
+      "$x=-\\dfrac{b}{2a}=-\\dfrac{-2}{2(1)}=1$",
+      "$f(1)=1-2-8=-9$: draaipunt $(1;-9)$"
+     ],
+     "answer": "$(1;-9)$"
+    },
+    {
+     "q": "Bepaal die koördinate van die snypunte van $f$ en $g$.",
+     "marks": 4,
+     "solution": [
+      "$x^2-2x-8=x-8$",
+      "$x^2-3x=0$, dus $x(x-3)=0$",
+      "$x=0$ of $x=3$",
+      "$g(0)=-8$ en $g(3)=-5$: die punte is $(0;-8)$ en $(3;-5)$"
+     ],
+     "answer": "$(0;-8)$ en $(3;-5)$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $f(x)\\le g(x)$?",
+     "marks": 2,
+     "solution": [
+      "$f(x)\\le g(x)$ tussen die snypunte (die parabool lê daar onder die reguitlyn)",
+      "$0\\le x\\le 3$"
+     ],
+     "answer": "$0\\le x\\le 3$"
+    }
+   ]
+  },
+  {
+   "id": "functions-15",
+   "difficulty": 2,
+   "context": "Gegee: $g(x)=\\dfrac{6}{x-3}+2$",
+   "svg": null,
+   "archetype": "fun-hyperbola",
+   "parts": [
+    {
+     "q": "Skryf die vergelykings van die asimptote van $g$ neer.",
+     "marks": 2,
+     "solution": [
+      "Vertikale asimptoot: $x=3$",
+      "Horisontale asimptoot: $y=2$"
+     ],
+     "answer": "$x=3$ en $y=2$"
+    },
+    {
+     "q": "Toon aan dat die grafiek van $g$ deur die oorsprong gaan, en dat die oorsprong SOWEL die $x$-afsnit as die $y$-afsnit is.",
+     "marks": 3,
+     "solution": [
+      "$g(0)=\\dfrac{6}{0-3}+2=-2+2=0$, dus is $(0;0)$ die $y$-afsnit",
+      "$x$-afsnit: $\\dfrac{6}{x-3}+2=0$ gee $\\dfrac{6}{x-3}=-2$, dus $x-3=-3$",
+      "$x=0$: die $x$-afsnit is ook $(0;0)$"
+     ],
+     "answer": "$g(0)=0$ en die enigste $x$-afsnit is $x=0$, dus is albei afsnitte die oorsprong"
+    },
+    {
+     "q": "Bepaal die vergelyking van die simmetrie-as van $g$ wat 'n positiewe gradiënt het.",
+     "marks": 2,
+     "solution": [
+      "Die simmetrie-asse gaan deur die snypunt van die asimptote, $(3;2)$",
+      "Positiewe gradiënt: $y-2=1(x-3)$, dus $y=x-1$"
+     ],
+     "answer": "$y=x-1$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $g(x)>0$?",
+     "marks": 3,
+     "solution": [
+      "Vir $x>3$: $\\dfrac{6}{x-3}>0$, dus $g(x)>2>0$ vir alle $x>3$",
+      "Vir $x<3$: $\\dfrac{6}{x-3}+2>0$ gee $\\dfrac{6}{x-3}>-2$; vermenigvuldiging met die negatiewe $(x-3)$ keer die ongelykheidsteken om: $6<-2(x-3)$, dus $x<0$",
+      "$\\therefore g(x)>0$ vir $x<0$ of $x>3$"
+     ],
+     "answer": "$x<0$ of $x>3$"
+    }
+   ]
+  },
+  {
+   "id": "functions-16",
+   "difficulty": 2,
+   "context": "Gegee: $f(x)=\\left(\\dfrac{1}{3}\\right)^{x}$",
+   "svg": null,
+   "archetype": "fun-exponential",
+   "parts": [
+    {
+     "q": "Bepaal die vergelyking van $f^{-1}$ in die vorm $y=\\ldots$",
+     "marks": 2,
+     "solution": [
+      "Verwissel $x$ en $y$: $x=\\left(\\dfrac{1}{3}\\right)^{y}$",
+      "$y=\\log_{\\frac{1}{3}}x$"
+     ],
+     "answer": "$y=\\log_{\\frac{1}{3}}x$"
+    },
+    {
+     "q": "Die punt $(-2; 9)$ lê op $f$. Skryf die koördinate van die ooreenstemmende punt op $f^{-1}$ neer.",
+     "marks": 1,
+     "solution": [
+      "Refleksie in die lyn $y=x$: $(9;-2)$"
+     ],
+     "answer": "$(9;-2)$"
+    },
+    {
+     "q": "Skryf die definisieversameling van $f^{-1}$ neer.",
+     "marks": 1,
+     "solution": [
+      "Die waardeversameling van $f$ is $y>0$, dus is die definisieversameling van $f^{-1}$ $x>0$"
+     ],
+     "answer": "$x>0$"
+    },
+    {
+     "q": "Vir watter waardes van $x$ is $f^{-1}(x)\\ge -2$?",
+     "marks": 3,
+     "solution": [
+      "$\\log_{\\frac{1}{3}}x\\ge -2$",
+      "Die grondtal is $\\dfrac{1}{3}<1$, dus is $f^{-1}$ DALEND: die ongelykheidsteken keer om wanneer ons die logaritme verwyder",
+      "$x\\le\\left(\\dfrac{1}{3}\\right)^{-2}=9$, saam met die definisieversameling $x>0$: $0<x\\le 9$"
+     ],
+     "answer": "$0<x\\le 9$"
+    }
+   ]
+  }
+ ]
+}

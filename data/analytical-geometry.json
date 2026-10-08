@@ -270,7 +270,7 @@
           "q": "Hence calculate the size of $A\\hat{B}C$.",
           "marks": 2,
           "solution": [
-            "$\\beta$ is an exterior angle of $\\triangle ABC$ at the point where $BC$ crosses the line through $AB$, so $\\beta=\\alpha+A\\hat{B}C$ (exterior angle of a triangle).",
+            "$AB$ cuts the $x$-axis at $P(-2;\\ 0)$ and $BC$ cuts it at $C(5;\\ 0)$. In $\\triangle PBC$, $\\beta$ is the exterior angle at $C$, so $\\beta=\\alpha+P\\hat{B}C=\\alpha+A\\hat{B}C$ (exterior angle of a triangle; P lies on AB).",
             "$A\\hat{B}C=\\beta-\\alpha=123{,}69^{\\circ}-63{,}43^{\\circ}=60{,}26^{\\circ}$"
           ],
           "answer": "$A\\hat{B}C\\approx 60{,}26^{\\circ}$"

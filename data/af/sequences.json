@@ -1,0 +1,534 @@
+{
+  "id": "sequences",
+  "paper": 1,
+  "title": "Patrone, rye en reekse",
+  "blurb": "Rekenkundige en meetkundige rye en reekse, kwadratiese getalpatrone, sigmanotasie en som tot oneindig.",
+  "questions": [
+    {
+      "id": "sequences-01",
+      "difficulty": 1,
+      "context": "Beskou die rekenkundige ry $5;\\ 9;\\ 13;\\ \\ldots$",
+      "svg": null,
+      "archetype": "seq-arith",
+      "parts": [
+        {
+          "q": "Bepaal 'n formule vir $T_n$, die $n$-de term van die ry.",
+          "marks": 2,
+          "solution": [
+            "$a=5$, $d=4$",
+            "$T_n=a+(n-1)d=5+4(n-1)=4n+1$"
+          ],
+          "answer": "$T_n=4n+1$"
+        },
+        {
+          "q": "Watter term van die ry is gelyk aan $85$?",
+          "marks": 2,
+          "solution": [
+            "$4n+1=85$",
+            "$4n=84$, dus $n=21$"
+          ],
+          "answer": "Die $21$ste term"
+        },
+        {
+          "q": "Bereken die som van die eerste $20$ terme van die ry.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{20}=\\dfrac{20}{2}\\left[2(5)+19(4)\\right]=10(10+76)$",
+            "$S_{20}=860$"
+          ],
+          "answer": "$S_{20}=860$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-02",
+      "difficulty": 2,
+      "context": "Die kwadratiese getalpatroon $6;\\ 17;\\ 34;\\ 57;\\ \\ldots$ het 'n konstante tweede verskil.",
+      "svg": null,
+      "archetype": "seq-quadratic",
+      "parts": [
+        {
+          "q": "Skryf die volgende term van die patroon neer.",
+          "marks": 1,
+          "solution": [
+            "Eerste verskille: $11;\\ 17;\\ 23$, tweede verskil $6$, dus is die volgende eerste verskil $29$",
+            "$T_5=57+29=86$"
+          ],
+          "answer": "$86$"
+        },
+        {
+          "q": "Bepaal 'n formule vir die $n$-de term van die patroon in die vorm $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "$2a=6$, dus $a=3$",
+            "$T_1$: $3+b+c=6$, dus $b+c=3$",
+            "$T_2$: $12+2b+c=17$, dus $2b+c=5$",
+            "Trek af: $b=2$ en $c=1$",
+            "$T_n=3n^2+2n+1$"
+          ],
+          "answer": "$T_n=3n^2+2n+1$"
+        },
+        {
+          "q": "Bepaal watter term van die patroon die EERSTE term is wat groter as $500$ is.",
+          "marks": 3,
+          "solution": [
+            "Los op: $3n^2+2n+1>500$, d.w.s. $3n^2+2n-499>0$",
+            "$n=\\dfrac{-2+\\sqrt{4+4(3)(499)}}{6}=\\dfrac{-2+\\sqrt{5992}}{6}\\approx 12{,}57$",
+            "Dus is $n=13$ die eerste natuurlike getal wat aan die ongelykheid voldoen: $T_{13}=3(169)+26+1=534>500$ (en $T_{12}=457<500$)"
+          ],
+          "answer": "Die $13$de term ($T_{13}=534$)"
+        }
+      ]
+    },
+    {
+      "id": "sequences-03",
+      "difficulty": 2,
+      "context": "In 'n meetkundige ry is die tweede term $6$ en die vyfde term $48$.",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Bepaal die eerste term $a$ en die konstante verhouding $r$ van die ry.",
+          "marks": 4,
+          "solution": [
+            "$ar=6$ en $ar^4=48$",
+            "Deel: $r^3=\\dfrac{48}{6}=8$",
+            "$r=2$",
+            "$a=\\dfrac{6}{r}=3$"
+          ],
+          "answer": "$a=3$ en $r=2$"
+        },
+        {
+          "q": "Bereken die som van die eerste $10$ terme van die ry.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{a(r^n-1)}{r-1}$",
+            "$S_{10}=\\dfrac{3(2^{10}-1)}{2-1}=3(1023)$",
+            "$S_{10}=3069$"
+          ],
+          "answer": "$S_{10}=3069$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-04",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "seq-sigma",
+      "parts": [
+        {
+          "q": "Bereken: $\\sum_{k=1}^{15}(3k-5)$.",
+          "marks": 3,
+          "solution": [
+            "Die terme vorm 'n rekenkundige reeks: eerste term $3(1)-5=-2$, laaste term $3(15)-5=40$, met $15$ terme",
+            "$S_{15}=\\dfrac{15}{2}(-2+40)$",
+            "$S_{15}=\\dfrac{15}{2}(38)=285$"
+          ],
+          "answer": "$285$"
+        },
+        {
+          "q": "Skryf die reeks $3+6+12+\\ldots+384$ in sigmanotasie neer.",
+          "marks": 3,
+          "solution": [
+            "Meetkundige reeks met $a=3$ en $r=2$, dus $T_k=3\\cdot 2^{k-1}$",
+            "Laaste term: $3\\cdot 2^{k-1}=384$ gee $2^{k-1}=128=2^7$, dus $k=8$",
+            "$\\sum_{k=1}^{8}3\\cdot 2^{k-1}$"
+          ],
+          "answer": "$\\sum_{k=1}^{8}3\\cdot 2^{k-1}$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-05",
+      "difficulty": 2,
+      "context": "Beskou die meetkundige reeks $(x-2)+(x-2)^2+(x-2)^3+\\ldots$",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Bepaal die waardes van $x$ waarvoor die reeks konvergeer.",
+          "marks": 3,
+          "solution": [
+            "Die konstante verhouding is $r=x-2$",
+            "Vir konvergensie: $-1<r<1$, d.w.s. $-1<x-2<1$",
+            "$1<x<3$, met $x\\neq 2$ (as $x=2$, is elke term $0$, dus is die reeks nie meetkundig nie)"
+          ],
+          "answer": "$1<x<3$, $x\\neq 2$"
+        },
+        {
+          "q": "Bereken die som tot oneindig van die reeks as $x=2{,}5$.",
+          "marks": 2,
+          "solution": [
+            "$a=r=0{,}5$, dus $S_\\infty=\\dfrac{a}{1-r}=\\dfrac{0{,}5}{1-0{,}5}$",
+            "$S_\\infty=1$"
+          ],
+          "answer": "$S_\\infty=1$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-06",
+      "difficulty": 3,
+      "context": "Die getalle $x;\\ x+4;\\ 2x+2$ is die eerste drie terme van 'n meetkundige ry.",
+      "svg": null,
+      "archetype": "seq-combined",
+      "parts": [
+        {
+          "q": "Bepaal die moontlike waarde(s) van $x$.",
+          "marks": 4,
+          "solution": [
+            "Gelyke verhoudings: $\\dfrac{x+4}{x}=\\dfrac{2x+2}{x+4}$",
+            "$(x+4)^2=x(2x+2)$",
+            "$x^2+8x+16=2x^2+2x$, dus $x^2-6x-16=0$",
+            "$(x-8)(x+2)=0$, wat $x=8$ of $x=-2$ gee"
+          ],
+          "answer": "$x=8$ of $x=-2$"
+        },
+        {
+          "q": "As $x=8$, bepaal die $10$de term van die ry.",
+          "marks": 3,
+          "solution": [
+            "Die ry is $8;\\ 12;\\ 18;\\ \\ldots$ met $r=\\dfrac{12}{8}=\\dfrac{3}{2}$",
+            "$T_{10}=ar^9=8\\left(\\dfrac{3}{2}\\right)^9=\\dfrac{3^9}{2^6}=\\dfrac{19683}{64}$",
+            "$T_{10}=307{,}546875\\approx 307{,}55$"
+          ],
+          "answer": "$T_{10}=\\dfrac{19683}{64}\\approx 307{,}55$"
+        },
+        {
+          "q": "As $x=-2$, verduidelik waarom die som tot oneindig van die ry NIE bestaan nie.",
+          "marks": 2,
+          "solution": [
+            "Die ry is $-2;\\ 2;\\ -2;\\ \\ldots$ met $r=-1$",
+            "$S_\\infty$ bestaan slegs wanneer $-1<r<1$; aangesien $r=-1$, konvergeer die reeks nie"
+          ],
+          "answer": "$r=-1$, wat nie aan $-1<r<1$ voldoen nie, dus konvergeer die reeks nie"
+        }
+      ]
+    },
+    {
+      "id": "sequences-07",
+      "difficulty": 1,
+      "context": "In 'n rekenkundige ry is die derde term $11$ en die agtste term $31$.",
+      "svg": null,
+      "archetype": "seq-arith",
+      "parts": [
+        {
+          "q": "Bepaal die eerste term en die konstante verskil van die ry.",
+          "marks": 4,
+          "solution": [
+            "$T_3=a+2d=11$ en $T_8=a+7d=31$",
+            "Trek af: $5d=20$, dus $d=4$",
+            "$a=11-2(4)=3$"
+          ],
+          "answer": "$a=3$ en $d=4$"
+        },
+        {
+          "q": "Watter term van die ry is gelyk aan $99$?",
+          "marks": 2,
+          "solution": [
+            "$T_n=3+(n-1)(4)=4n-1$",
+            "$4n-1=99$, dus $n=25$"
+          ],
+          "answer": "Die $25$ste term"
+        },
+        {
+          "q": "Bereken die som van die eerste $25$ terme van die ry.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{25}=\\dfrac{25}{2}\\left[2(3)+24(4)\\right]=\\dfrac{25}{2}(102)$",
+            "$S_{25}=1275$"
+          ],
+          "answer": "$S_{25}=1275$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-08",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "seq-sigma",
+      "parts": [
+        {
+          "q": "Bereken: $\\sum_{k=3}^{20}(5k+2)$.",
+          "marks": 3,
+          "solution": [
+            "Rekenkundige reeks: eerste term $5(3)+2=17$, laaste term $5(20)+2=102$",
+            "Aantal terme: $20-3+1=18$",
+            "$S=\\dfrac{18}{2}(17+102)=9(119)=1071$"
+          ],
+          "answer": "$1071$"
+        },
+        {
+          "q": "Skryf die reeks $2+9+16+\\ldots+142$ in sigmanotasie neer.",
+          "marks": 3,
+          "solution": [
+            "Rekenkundige reeks met $a=2$ en $d=7$, dus $T_k=2+7(k-1)=7k-5$",
+            "Laaste term: $7k-5=142$ gee $k=21$",
+            "$\\sum_{k=1}^{21}(7k-5)$"
+          ],
+          "answer": "$\\sum_{k=1}^{21}(7k-5)$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-09",
+      "difficulty": 2,
+      "context": "'n Kwadratiese getalpatroon het eerste term $T_1=2$. Die EERSTE verskille van die patroon vorm die rekenkundige ry $5;\\ 9;\\ 13;\\ \\ldots$",
+      "svg": null,
+      "archetype": "seq-quadratic",
+      "parts": [
+        {
+          "q": "Skryf die waardes van $T_2$, $T_3$ en $T_4$ neer.",
+          "marks": 2,
+          "solution": [
+            "$T_2=2+5=7$ en $T_3=7+9=16$",
+            "$T_4=16+13=29$"
+          ],
+          "answer": "$T_2=7$; $T_3=16$; $T_4=29$"
+        },
+        {
+          "q": "Bepaal 'n formule vir die $n$-de term van die patroon in die vorm $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "Tweede verskil is $4$, dus $2a=4$ en $a=2$",
+            "$T_1$: $2+b+c=2$, dus $b+c=0$",
+            "$T_2$: $8+2b+c=7$, dus $2b+c=-1$",
+            "Trek af: $b=-1$ en $c=1$, dus $T_n=2n^2-n+1$"
+          ],
+          "answer": "$T_n=2n^2-n+1$"
+        },
+        {
+          "q": "Bereken $T_{40}-T_{39}$ SONDER om $T_{40}$ of $T_{39}$ self te bereken.",
+          "marks": 3,
+          "solution": [
+            "$T_{40}-T_{39}$ is die $39$ste eerste verskil van die patroon",
+            "Die eerste verskille is rekenkundig met eerste term $5$ en konstante verskil $4$: die $k$-de eerste verskil is $5+4(k-1)=4k+1$",
+            "$T_{40}-T_{39}=4(39)+1=157$"
+          ],
+          "answer": "$157$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-10",
+      "difficulty": 3,
+      "context": "Die getalle $4;\\ x;\\ y$ is die eerste drie terme van 'n rekenkundige ry, en $x;\\ y;\\ 18$ is die eerste drie terme van 'n meetkundige ry.",
+      "svg": null,
+      "archetype": "seq-combined",
+      "parts": [
+        {
+          "q": "Bepaal die waarde(s) van $x$ en $y$.",
+          "marks": 6,
+          "solution": [
+            "Rekenkundig: $x-4=y-x$, dus $y=2x-4$",
+            "Meetkundig: $\\dfrac{y}{x}=\\dfrac{18}{y}$, dus $y^2=18x$",
+            "Substitueer: $(2x-4)^2=18x$",
+            "$4x^2-16x+16=18x$, dus $4x^2-34x+16=0$, d.w.s. $2x^2-17x+8=0$",
+            "$(2x-1)(x-8)=0$, dus $x=8$ of $x=\\dfrac{1}{2}$",
+            "As $x=8$, dan is $y=12$ (meetkundig: $8;\\ 12;\\ 18$ met $r=\\dfrac{3}{2}$); as $x=\\dfrac{1}{2}$, dan is $y=-3$ (meetkundig: $\\dfrac{1}{2};\\ -3;\\ 18$ met $r=-6$); albei is geldig"
+          ],
+          "answer": "$x=8$ en $y=12$, of $x=\\dfrac{1}{2}$ en $y=-3$"
+        },
+        {
+          "q": "As $x=8$, bereken die som van die eerste $12$ terme van die REKENKUNDIGE ry.",
+          "marks": 3,
+          "solution": [
+            "Die rekenkundige ry is $4;\\ 8;\\ 12;\\ \\ldots$ met $a=4$ en $d=4$",
+            "$S_{12}=\\dfrac{12}{2}\\left[2(4)+11(4)\\right]=6(52)$",
+            "$S_{12}=312$"
+          ],
+          "answer": "$S_{12}=312$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-11",
+      "difficulty": 2,
+      "context": "'n Slinger by 'n wetenskapsentrum in Johannesburg word losgelaat. Sy eerste swaai het 'n booglengte van $60$ cm, en elke swaai daarna het 'n booglengte wat $85\\%$ van die vorige swaai is.",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Bereken die booglengte van die vyfde swaai.",
+          "marks": 2,
+          "solution": [
+            "Meetkundig met $a=60$ en $r=0{,}85$: $T_5=ar^4=60(0{,}85)^4$",
+            "$T_5=31{,}32$ cm"
+          ],
+          "answer": "$31{,}32$ cm"
+        },
+        {
+          "q": "Bepaal watter swaai die EERSTE een is met 'n booglengte van minder as $10$ cm.",
+          "marks": 4,
+          "solution": [
+            "$60(0{,}85)^{n-1}<10$",
+            "$(0{,}85)^{n-1}<\\dfrac{1}{6}$",
+            "$n-1>\\dfrac{\\log\\frac{1}{6}}{\\log 0{,}85}=11{,}02\\ldots$ (die ongelykheidsteken draai om omdat $\\log 0{,}85<0$)",
+            "Dus $n-1=12$, d.w.s. $n=13$: die $13$de swaai ($T_{13}=8{,}53$ cm, terwyl $T_{12}=10{,}04$ cm)"
+          ],
+          "answer": "Die $13$de swaai"
+        },
+        {
+          "q": "Bereken die TOTALE afstand wat die slinger se punt aflê as dit toegelaat word om onbepaald lank te swaai.",
+          "marks": 3,
+          "solution": [
+            "$r=0{,}85$ voldoen aan $-1<r<1$, dus bestaan die som tot oneindig",
+            "$S_\\infty=\\dfrac{a}{1-r}=\\dfrac{60}{1-0{,}85}$",
+            "$S_\\infty=400$ cm"
+          ],
+          "answer": "$400$ cm"
+        }
+      ]
+    },
+    {
+      "id": "sequences-12",
+      "difficulty": 1,
+      "context": "In 'n rekenkundige ry is die vierde term $19$ en die negende term $44$.",
+      "svg": null,
+      "archetype": "seq-arith",
+      "parts": [
+        {
+          "q": "Bepaal die eerste term en die konstante verskil van die ry.",
+          "marks": 4,
+          "solution": [
+            "$T_4=a+3d=19$ en $T_9=a+8d=44$",
+            "Trek af: $5d=25$, dus $d=5$",
+            "$a=19-3(5)=4$"
+          ],
+          "answer": "$a=4$ en $d=5$"
+        },
+        {
+          "q": "Bepaal 'n formule vir $T_n$ en toon gevolglik aan dat $149$ 'n term van die ry is.",
+          "marks": 3,
+          "solution": [
+            "$T_n=4+(n-1)(5)=5n-1$",
+            "$5n-1=149$ gee $5n=150$, dus $n=30$",
+            "$n=30$ is 'n natuurlike getal, dus is $149$ die $30$ste term"
+          ],
+          "answer": "$T_n=5n-1$; $149=T_{30}$"
+        },
+        {
+          "q": "Bereken die som van die eerste $30$ terme van die ry.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{n}{2}\\left[2a+(n-1)d\\right]$",
+            "$S_{30}=\\dfrac{30}{2}\\left[2(4)+29(5)\\right]=15(153)$",
+            "$S_{30}=2295$"
+          ],
+          "answer": "$S_{30}=2295$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-13",
+      "difficulty": 2,
+      "context": "'n Meetkundige reeks het 'n eerste term van $18$ en 'n som tot oneindig van $24$.",
+      "svg": null,
+      "archetype": "seq-geometric",
+      "parts": [
+        {
+          "q": "Bepaal die konstante verhouding van die reeks.",
+          "marks": 3,
+          "solution": [
+            "$S_\\infty=\\dfrac{a}{1-r}$: $\\dfrac{18}{1-r}=24$",
+            "$1-r=\\dfrac{18}{24}=\\dfrac{3}{4}$",
+            "$r=\\dfrac{1}{4}$"
+          ],
+          "answer": "$r=\\dfrac{1}{4}$"
+        },
+        {
+          "q": "Bereken die derde term van die reeks.",
+          "marks": 2,
+          "solution": [
+            "$T_3=ar^2=18\\left(\\dfrac{1}{4}\\right)^2=\\dfrac{18}{16}$",
+            "$T_3=\\dfrac{9}{8}=1{,}125$"
+          ],
+          "answer": "$T_3=\\dfrac{9}{8}$"
+        },
+        {
+          "q": "Bereken die som van die eerste $5$ terme van die reeks. Laat jou antwoord as 'n breuk.",
+          "marks": 3,
+          "solution": [
+            "$S_n=\\dfrac{a(1-r^n)}{1-r}$",
+            "$S_5=\\dfrac{18\\left(1-\\left(\\frac{1}{4}\\right)^5\\right)}{1-\\frac{1}{4}}=24\\left(1-\\dfrac{1}{1024}\\right)$",
+            "$S_5=24\\times\\dfrac{1023}{1024}=\\dfrac{3069}{128}$"
+          ],
+          "answer": "$S_5=\\dfrac{3069}{128}\\approx 23{,}98$"
+        }
+      ]
+    },
+    {
+      "id": "sequences-14",
+      "difficulty": 2,
+      "context": "Die kwadratiese getalpatroon $3;\\ 10;\\ 21;\\ 36;\\ \\ldots$ het 'n konstante tweede verskil.",
+      "svg": null,
+      "archetype": "seq-quadratic",
+      "parts": [
+        {
+          "q": "Skryf die waarde van die tweede verskil neer.",
+          "marks": 1,
+          "solution": [
+            "Eerste verskille: $7;\\ 11;\\ 15$",
+            "Tweede verskil $=4$"
+          ],
+          "answer": "$4$"
+        },
+        {
+          "q": "Bepaal 'n formule vir die $n$-de term van die patroon in die vorm $T_n=an^2+bn+c$.",
+          "marks": 4,
+          "solution": [
+            "$2a=4$, dus $a=2$",
+            "$T_1$: $2+b+c=3$, dus $b+c=1$",
+            "$T_2$: $8+2b+c=10$, dus $2b+c=2$",
+            "Trek af: $b=1$ en $c=0$, dus $T_n=2n^2+n$"
+          ],
+          "answer": "$T_n=2n^2+n$"
+        },
+        {
+          "q": "Bepaal watter term van die patroon gelyk is aan $465$.",
+          "marks": 3,
+          "solution": [
+            "$2n^2+n=465$, dus $2n^2+n-465=0$",
+            "$n=\\dfrac{-1\\pm\\sqrt{1+4(2)(465)}}{4}=\\dfrac{-1\\pm\\sqrt{3721}}{4}=\\dfrac{-1\\pm 61}{4}$",
+            "$n=15$ (verwerp die negatiewe waarde): die $15$de term"
+          ],
+          "answer": "Die $15$de term"
+        }
+      ]
+    },
+    {
+      "id": "sequences-15",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "seq-sigma",
+      "parts": [
+        {
+          "q": "Bereken: $\\sum_{k=2}^{12}(4k+1)$.",
+          "marks": 3,
+          "solution": [
+            "Rekenkundige reeks: eerste term $4(2)+1=9$, laaste term $4(12)+1=49$",
+            "Aantal terme: $12-2+1=11$",
+            "$S=\\dfrac{11}{2}(9+49)=\\dfrac{11}{2}(58)=319$"
+          ],
+          "answer": "$319$"
+        },
+        {
+          "q": "Bepaal die waarde van $n$ waarvoor $\\sum_{k=1}^{n}(2k-3)=675$.",
+          "marks": 4,
+          "solution": [
+            "Die terme vorm 'n rekenkundige reeks met eerste term $-1$ en konstante verskil $2$",
+            "$S_n=\\dfrac{n}{2}\\left[2(-1)+(n-1)(2)\\right]=\\dfrac{n}{2}(2n-4)=n^2-2n$",
+            "$n^2-2n=675$, dus $n^2-2n-675=0$",
+            "$(n-27)(n+25)=0$, dus $n=27$ (verwerp $n=-25$)"
+          ],
+          "answer": "$n=27$"
+        }
+      ]
+    }
+  ]
+}

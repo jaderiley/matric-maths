@@ -1,0 +1,508 @@
+{
+  "id": "euclidean-geometry",
+  "paper": 2,
+  "title": "Euklidiese meetkunde",
+  "blurb": "Sirkelstellings, koordevierhoeke, raaklyne en die raaklyn-koordstelling, eweredigheid, gelykvormige driehoeke en gekombineerde probleme.",
+  "questions": [
+    {
+      "id": "euclidean-geometry-01",
+      "difficulty": 1,
+      "context": "In die figuur is O die middelpunt van die sirkel. A, B, C en D is punte op die sirkel met $A\\hat{O}C=130^\\circ$. B lê op die groot boog AC en D lê op die klein boog AC. OA, OC, AB, BC, AD en DC is getrek.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"110\" r=\"2\" fill=\"currentColor\"/><path d=\"M160 110L80 139M160 110L189 30M80 139L225 165L189 30M80 139L100 50L189 30\" stroke=\"currentColor\" fill=\"none\"/><text x=\"62\" y=\"146\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"230\" y=\"178\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"193\" y=\"24\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"82\" y=\"46\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"152\" y=\"126\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"128\" y=\"92\" font-size=\"12\" fill=\"currentColor\">130°</text></svg>",
+      "archetype": "euc-anglechase",
+      "parts": [
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{B}C$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{B}C=\\frac{1}{2}A\\hat{O}C=65^\\circ$ (middelpunts∠ $=2\\times$ omtreks∠)"
+          ],
+          "answer": "$A\\hat{B}C=65^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{D}C$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{D}C=180^\\circ-65^\\circ=115^\\circ$ (teenoorst ∠e van koordevh ABCD)"
+          ],
+          "answer": "$A\\hat{D}C=115^\\circ$"
+        },
+        {
+          "q": "Bereken, met redes, die grootte van $O\\hat{A}C$.",
+          "marks": 2,
+          "solution": [
+            "$OA=OC$ (radiusse), dus $O\\hat{A}C=O\\hat{C}A$ (∠e teenoor gelyke sye)",
+            "$O\\hat{A}C=\\frac{180^\\circ-130^\\circ}{2}=25^\\circ$ (som van ∠e in $\\triangle OAC$)"
+          ],
+          "answer": "$O\\hat{A}C=25^\\circ$"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-02",
+      "difficulty": 1,
+      "context": "In die figuur is AC 'n middellyn van die sirkel met middelpunt O. B en D is punte op die sirkel aan weerskante van AC. AB, BC, AD, DC en BD is getrek. $B\\hat{A}C=34^\\circ$ en $C\\hat{A}D=21^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"110\" r=\"2\" fill=\"currentColor\"/><path d=\"M75 110L245 110M75 110L192 31L245 110M75 110L223 167L245 110M192 31L223 167\" stroke=\"currentColor\" fill=\"none\"/><text x=\"58\" y=\"114\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"194\" y=\"24\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"250\" y=\"114\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"226\" y=\"183\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"152\" y=\"104\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"100\" y=\"105\" font-size=\"11\" fill=\"currentColor\">34°</text><text x=\"98\" y=\"128\" font-size=\"11\" fill=\"currentColor\">21°</text></svg>",
+      "archetype": "euc-anglechase",
+      "parts": [
+        {
+          "q": "Skryf, met rede, die grootte van $A\\hat{B}C$ neer.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{B}C=90^\\circ$ (∠ in halfsirkel)"
+          ],
+          "answer": "$A\\hat{B}C=90^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{C}B$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{C}B=180^\\circ-90^\\circ-34^\\circ=56^\\circ$ (som van ∠e in $\\triangle ABC$)"
+          ],
+          "answer": "$A\\hat{C}B=56^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{D}B$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{D}B=A\\hat{C}B=56^\\circ$ (∠e in dieselfde segment, onderspan deur koord AB)"
+          ],
+          "answer": "$A\\hat{D}B=56^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $D\\hat{B}C$.",
+          "marks": 2,
+          "solution": [
+            "$D\\hat{B}C=C\\hat{A}D=21^\\circ$ (∠e in dieselfde segment, onderspan deur koord DC)"
+          ],
+          "answer": "$D\\hat{B}C=21^\\circ$"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-03",
+      "difficulty": 2,
+      "context": "In die figuur is TA en TB raaklyne vanuit 'n punt T buite die sirkel met middelpunt O; hulle raak die sirkel by A en B. C is 'n punt op die groot boog AB. OA, OB, AB, CA en CB is getrek. $A\\hat{T}B=52^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"190\" cy=\"120\" r=\"70\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"190\" cy=\"120\" r=\"2\" fill=\"currentColor\"/><path d=\"M30 120L159 57L159 183L30 120M159 57L190 120L159 183M159 57L260 120L159 183\" stroke=\"currentColor\" fill=\"none\"/><text x=\"12\" y=\"124\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"148\" y=\"50\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"148\" y=\"198\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"266\" y=\"124\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"196\" y=\"136\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"52\" y=\"124\" font-size=\"11\" fill=\"currentColor\">52°</text></svg>",
+      "archetype": "euc-anglechase",
+      "parts": [
+        {
+          "q": "Bereken, met redes, die grootte van $T\\hat{A}B$.",
+          "marks": 3,
+          "solution": [
+            "$TA=TB$ (raaklyne vanuit dieselfde punt)",
+            "$T\\hat{A}B=T\\hat{B}A$ (∠e teenoor gelyke sye)",
+            "$T\\hat{A}B=\\frac{180^\\circ-52^\\circ}{2}=64^\\circ$ (som van ∠e in $\\triangle TAB$)"
+          ],
+          "answer": "$T\\hat{A}B=64^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{C}B$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{C}B=T\\hat{A}B=64^\\circ$ (raaklyn-koordstelling)"
+          ],
+          "answer": "$A\\hat{C}B=64^\\circ$"
+        },
+        {
+          "q": "Bereken, met rede, die grootte van $A\\hat{O}B$.",
+          "marks": 2,
+          "solution": [
+            "$A\\hat{O}B=2\\times A\\hat{C}B=128^\\circ$ (middelpunts∠ $=2\\times$ omtreks∠)"
+          ],
+          "answer": "$A\\hat{O}B=128^\\circ$"
+        },
+        {
+          "q": "Bewys dat TAOB 'n koordevierhoek is.",
+          "marks": 3,
+          "solution": [
+            "$O\\hat{A}T=90^\\circ$ (raaklyn $\\perp$ radius)",
+            "$O\\hat{B}T=90^\\circ$ (raaklyn $\\perp$ radius)",
+            "$O\\hat{A}T+O\\hat{B}T=180^\\circ$, dus is TAOB 'n koordevierhoek (teenoorst ∠e van vierhoek is supplementêr)"
+          ],
+          "answer": "TAOB is 'n koordevierhoek aangesien $O\\hat{A}T+O\\hat{B}T=180^\\circ$."
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-04",
+      "difficulty": 2,
+      "context": "In $\\triangle ABC$ is D 'n punt op AB en E 'n punt op AC sodat $DE\\parallel BC$. $AD=6$ eenhede, $DB=4$ eenhede en $AE=9$ eenhede.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M140 30L60 190L280 190L140 30M92 126L224 126\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M154 121L162 126L154 131M166 185L174 190L166 195\" stroke=\"currentColor\" fill=\"none\"/><text x=\"134\" y=\"22\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"44\" y=\"198\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"286\" y=\"196\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"74\" y=\"130\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"230\" y=\"130\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"102\" y=\"82\" font-size=\"12\" fill=\"currentColor\">6</text><text x=\"62\" y=\"162\" font-size=\"12\" fill=\"currentColor\">4</text><text x=\"186\" y=\"74\" font-size=\"12\" fill=\"currentColor\">9</text></svg>",
+      "archetype": "euc-proportionality",
+      "parts": [
+        {
+          "q": "Bereken, met rede, die lengte van EC.",
+          "marks": 3,
+          "solution": [
+            "$\\frac{AD}{DB}=\\frac{AE}{EC}$ (lyn ∥ een sy van $\\triangle$)",
+            "$\\frac{6}{4}=\\frac{9}{EC}$",
+            "$EC=\\frac{9\\times 4}{6}=6$ eenhede"
+          ],
+          "answer": "$EC=6$ eenhede"
+        },
+        {
+          "q": "Bewys dat $\\triangle ADE\\sim\\triangle ABC$.",
+          "marks": 3,
+          "solution": [
+            "$\\hat{A}$ is gemeen",
+            "$A\\hat{D}E=A\\hat{B}C$ (ooreenkomstige ∠e, $DE\\parallel BC$)",
+            "$\\therefore\\triangle ADE\\sim\\triangle ABC$ (∠∠∠)"
+          ],
+          "answer": "$\\triangle ADE\\sim\\triangle ABC$ volgens ∠∠∠."
+        },
+        {
+          "q": "As $BC=15$ eenhede, bereken die lengte van DE.",
+          "marks": 2,
+          "solution": [
+            "$\\frac{DE}{BC}=\\frac{AD}{AB}=\\frac{6}{10}$ (ooreenstemmende sye van gelykvormige driehoeke)",
+            "$DE=\\frac{6}{10}\\times 15=9$ eenhede"
+          ],
+          "answer": "$DE=9$ eenhede"
+        },
+        {
+          "q": "Bepaal die verhouding $\\text{oppervlakte }\\triangle ADE:\\text{oppervlakte }\\triangle ABC$.",
+          "marks": 2,
+          "solution": [
+            "Verhouding van oppervlaktes $=\\left(\\frac{AD}{AB}\\right)^2=\\left(\\frac{6}{10}\\right)^2$ (gelykvormige driehoeke)",
+            "$=\\frac{9}{25}$, d.w.s. $9:25$"
+          ],
+          "answer": "$9:25$"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-05",
+      "difficulty": 2,
+      "context": "In die figuur sny koorde AB en CD van 'n sirkel mekaar by E binne die sirkel. AC en BD is getrek.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"110\" r=\"85\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M86 68L225 165M225 55L90 159M86 68L225 55M90 159L225 165\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"150\" cy=\"113\" r=\"2\" fill=\"currentColor\"/><text x=\"68\" y=\"64\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"230\" y=\"178\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"230\" y=\"52\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"72\" y=\"170\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"137\" y=\"105\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-similar",
+      "parts": [
+        {
+          "q": "Bewys dat $\\triangle AEC\\sim\\triangle DEB$.",
+          "marks": 4,
+          "solution": [
+            "$A\\hat{E}C=D\\hat{E}B$ (regoorstaande ∠e)",
+            "$\\hat{A}=\\hat{D}$ (∠e in dieselfde segment, onderspan deur koord CB)",
+            "$\\hat{C}=\\hat{B}$ (∠e in dieselfde segment, onderspan deur koord AD)",
+            "$\\therefore\\triangle AEC\\sim\\triangle DEB$ (∠∠∠)"
+          ],
+          "answer": "$\\triangle AEC\\sim\\triangle DEB$ volgens ∠∠∠."
+        },
+        {
+          "q": "Bewys gevolglik dat $AE\\cdot EB=CE\\cdot ED$.",
+          "marks": 2,
+          "solution": [
+            "$\\frac{AE}{DE}=\\frac{EC}{EB}$ (ooreenstemmende sye van gelykvormige driehoeke)",
+            "$\\therefore AE\\cdot EB=CE\\cdot ED$"
+          ],
+          "answer": "$AE\\cdot EB=CE\\cdot ED$"
+        },
+        {
+          "q": "As $AE=4$ eenhede, $EB=9$ eenhede en $CE=6$ eenhede, bereken die lengte van ED.",
+          "marks": 2,
+          "solution": [
+            "$ED=\\frac{AE\\cdot EB}{CE}=\\frac{4\\times 9}{6}$",
+            "$ED=6$ eenhede"
+          ],
+          "answer": "$ED=6$ eenhede"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-06",
+      "difficulty": 3,
+      "context": "In die figuur is TA 'n raaklyn aan die sirkel by A. 'n Reguitlyn deur T sny die sirkel by B en C, met B tussen T en C. AB en AC is getrek.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"200\" cy=\"120\" r=\"70\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M30 170L178 47M30 170L251 72M155 66L130 126M155 66L251 72\" stroke=\"currentColor\" fill=\"none\"/><text x=\"14\" y=\"176\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"144\" y=\"58\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"116\" y=\"142\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"258\" y=\"68\" font-size=\"13\" fill=\"currentColor\">C</text></svg>",
+      "archetype": "euc-tanchord",
+      "parts": [
+        {
+          "q": "Bewys dat $\\triangle TAB\\sim\\triangle TCA$.",
+          "marks": 4,
+          "solution": [
+            "$\\hat{T}$ is gemeen",
+            "$T\\hat{A}B=A\\hat{C}B$ (raaklyn-koordstelling)",
+            "$T\\hat{B}A=T\\hat{A}C$ (som van ∠e in $\\triangle$; oorblywende ∠e gelyk)",
+            "$\\therefore\\triangle TAB\\sim\\triangle TCA$ (∠∠∠)"
+          ],
+          "answer": "$\\triangle TAB\\sim\\triangle TCA$ volgens ∠∠∠."
+        },
+        {
+          "q": "Bewys gevolglik dat $TA^2=TB\\cdot TC$.",
+          "marks": 2,
+          "solution": [
+            "$\\frac{TA}{TC}=\\frac{TB}{TA}$ (ooreenstemmende sye van gelykvormige driehoeke)",
+            "$\\therefore TA^2=TB\\cdot TC$"
+          ],
+          "answer": "$TA^2=TB\\cdot TC$"
+        },
+        {
+          "q": "As $TB=4$ eenhede en $BC=5$ eenhede, bereken die lengte van TA.",
+          "marks": 2,
+          "solution": [
+            "$TC=TB+BC=4+5=9$ eenhede",
+            "$TA^2=TB\\cdot TC=4\\times 9=36$",
+            "$TA=6$ eenhede (lengte $>0$)"
+          ],
+          "answer": "$TA=6$ eenhede"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-07",
+      "difficulty": 2,
+      "context": "O is die middelpunt van die sirkel. A en B is punte op die sirkel en C is 'n punt op die groot boog AB. Bewys die stelling wat beweer dat die hoek wat deur koord AB by die middelpunt onderspan word, twee keer die hoek is wat deur AB by die omtrek onderspan word, d.w.s. $A\\hat{O}B=2\\times A\\hat{C}B$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"115\" r=\"2\" fill=\"currentColor\"/><path d=\"M160 33L86 150M160 33L234 150\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 115L86 150M160 115L234 150M160 33L160 197\" stroke=\"currentColor\" fill=\"none\"/><text x=\"72\" y=\"154\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"238\" y=\"154\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"164\" y=\"111\" font-size=\"13\" fill=\"currentColor\">O</text><text x=\"157\" y=\"211\" font-size=\"13\" fill=\"currentColor\">D</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Bewys dat $A\\hat{O}B=2\\,A\\hat{C}B$.",
+          "marks": 5,
+          "solution": [
+            "Konstruksie: Verbind CO en verleng tot by D.",
+            "Laat $\\hat{C_1}=A\\hat{C}O$ en $\\hat{C_2}=B\\hat{C}O$.",
+            "$OA=OC$ (radiusse), dus $O\\hat{A}C=\\hat{C_1}$ (∠e teenoor gelyke sye in gelykbenige $\\triangle OAC$).",
+            "$A\\hat{O}D=\\hat{C_1}+O\\hat{A}C=2\\hat{C_1}$ (buite∠ van $\\triangle OAC$ = som van teenoorstaande binne∠e).",
+            "Net so gee $OB=OC$ dat $B\\hat{O}D=2\\hat{C_2}$.",
+            "$A\\hat{O}B=A\\hat{O}D+D\\hat{O}B=2\\hat{C_1}+2\\hat{C_2}=2(\\hat{C_1}+\\hat{C_2})=2\\,A\\hat{C}B$."
+          ],
+          "answer": "$A\\hat{O}B=2\\,A\\hat{C}B$ (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-08",
+      "difficulty": 2,
+      "context": "ABCD is 'n koordevierhoek van 'n sirkel met middelpunt O. Bewys die stelling wat beweer dat die teenoorstaande hoeke van 'n koordevierhoek supplementêr is, d.w.s. $\\hat{A}+\\hat{C}=180^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"160\" cy=\"115\" r=\"2\" fill=\"currentColor\"/><path d=\"M113 48L207 48L207 182L113 182Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 115L207 48M160 115L113 182\" stroke=\"currentColor\" fill=\"none\"/><text x=\"99\" y=\"48\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"211\" y=\"48\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"211\" y=\"190\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"99\" y=\"190\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"164\" y=\"127\" font-size=\"13\" fill=\"currentColor\">O</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Bewys dat $\\hat{A}+\\hat{C}=180^\\circ$.",
+          "marks": 5,
+          "solution": [
+            "Konstruksie: Verbind OB en OD.",
+            "Laat $\\hat{A}=x$ en $\\hat{C}=y$.",
+            "$\\hat{A}$ word by die omtrek deur boog BCD onderspan; die hoek by die middelpunt op dieselfde boog is $B\\hat{O}D=2x$ (middelpunts∠ = $2\\times$ omtreks∠), aan die C-kant gemeet (hierdie hoek kan 'n reflekshoek wees).",
+            "$\\hat{C}$ word deur boog BAD onderspan; die hoek by die middelpunt aan daardie kant is $B\\hat{O}D=2y$, aan die A-kant gemeet.",
+            "Die twee middelpuntshoeke saam vorm 'n volle omwenteling: $2x+2y=360^\\circ$.",
+            "$\\therefore x+y=180^\\circ$, d.w.s. $\\hat{A}+\\hat{C}=180^\\circ$."
+          ],
+          "answer": "$\\hat{A}+\\hat{C}=180^\\circ$ (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-09",
+      "difficulty": 2,
+      "context": "SAT is 'n raaklyn aan die sirkel by A. AB is 'n koord en C is 'n punt op die sirkel in die teenoorstaande segment. Bewys die stelling wat beweer dat die hoek tussen die raaklyn en die koord gelyk is aan die hoek in die teenoorstaande segment, d.w.s. $B\\hat{A}T=A\\hat{C}B$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"55\" y1=\"197\" x2=\"265\" y2=\"197\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 197L237 87L160 33L160 197M89 74L160 197M89 74L237 87\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"212\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"242\" y=\"91\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"75\" y=\"74\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"250\" y=\"193\" font-size=\"12\" fill=\"currentColor\">T</text><text x=\"60\" y=\"193\" font-size=\"12\" fill=\"currentColor\">S</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Bewys dat $B\\hat{A}T=A\\hat{C}B$.",
+          "marks": 5,
+          "solution": [
+            "Konstruksie: Teken middellyn AD en verbind BD.",
+            "Laat $B\\hat{A}T=x$.",
+            "$D\\hat{A}T=90^\\circ$ (raaklyn $\\perp$ middellyn by raakpunt).",
+            "$\\therefore D\\hat{A}B=90^\\circ-x$.",
+            "$A\\hat{B}D=90^\\circ$ (∠ in halfsirkel, AD is 'n middellyn).",
+            "In $\\triangle ABD$: $A\\hat{D}B=180^\\circ-90^\\circ-(90^\\circ-x)=x$ (som van ∠e in driehoek).",
+            "$A\\hat{C}B=A\\hat{D}B=x$ (∠e in dieselfde segment, onderspan deur AB).",
+            "$\\therefore B\\hat{A}T=A\\hat{C}B$."
+          ],
+          "answer": "$B\\hat{A}T=A\\hat{C}B$ (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-10",
+      "difficulty": 2,
+      "context": "In $\\triangle ABC$ is D 'n punt op AB en E 'n punt op AC met $DE\\parallel BC$. Bewys die stelling wat beweer dat 'n lyn wat ewewydig aan een sy van 'n driehoek getrek word, die ander twee sye eweredig verdeel, d.w.s. $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 30L50 190L270 190Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"105\" y1=\"110\" x2=\"215\" y2=\"110\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M105 110L270 190M215 110L50 190\" stroke=\"currentColor\" fill=\"none\" stroke-dasharray=\"3 3\"/><text x=\"155\" y=\"24\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"36\" y=\"196\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"274\" y=\"196\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"90\" y=\"112\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"220\" y=\"112\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-theorem-proof",
+      "parts": [
+        {
+          "q": "Bewys dat $\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$.",
+          "marks": 6,
+          "solution": [
+            "Konstruksie: Verbind BE en CD (en teken loodregte hoogtes vanaf E na AB en vanaf D na AC).",
+            "$\\dfrac{\\text{oppervlakte }\\triangle ADE}{\\text{oppervlakte }\\triangle BDE}=\\dfrac{AD}{DB}$ (dieselfde hoogte vanaf E; driehoeke met gelyke hoogtes het oppervlaktes in dieselfde verhouding as hul basisse).",
+            "$\\dfrac{\\text{oppervlakte }\\triangle ADE}{\\text{oppervlakte }\\triangle CED}=\\dfrac{AE}{EC}$ (dieselfde hoogte vanaf D).",
+            "oppervlakte $\\triangle BDE=$ oppervlakte $\\triangle CED$ (dieselfde basis DE en gelyke hoogtes, aangesien $DE\\parallel BC$).",
+            "$\\therefore \\dfrac{AD}{DB}=\\dfrac{AE}{EC}$."
+          ],
+          "answer": "$\\dfrac{AD}{DB}=\\dfrac{AE}{EC}$ (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-11",
+      "difficulty": 2,
+      "context": "In die figuur is DAE 'n raaklyn aan die sirkel by A. AB en AC is koorde van die sirkel. Dit is gegee dat $D\\hat{A}B=E\\hat{A}C$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"60\" y1=\"33\" x2=\"260\" y2=\"33\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 33L93 162L227 162Z\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"27\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"79\" y=\"168\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"232\" y=\"168\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"66\" y=\"29\" font-size=\"12\" fill=\"currentColor\">D</text><text x=\"250\" y=\"29\" font-size=\"12\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-prove-equal",
+      "parts": [
+        {
+          "q": "Gee 'n rede waarom $A\\hat{C}B=D\\hat{A}B$.",
+          "marks": 1,
+          "solution": [
+            "Raaklyn-koordhoek: die hoek tussen raaklyn DA en koord AB is gelyk aan die hoek in die teenoorstaande segment."
+          ],
+          "answer": "Raaklyn-koordstelling"
+        },
+        {
+          "q": "Gee 'n rede waarom $A\\hat{B}C=E\\hat{A}C$.",
+          "marks": 1,
+          "solution": [
+            "Raaklyn-koordhoek: die hoek tussen raaklyn AE en koord AC is gelyk aan die hoek in die teenoorstaande segment."
+          ],
+          "answer": "Raaklyn-koordstelling"
+        },
+        {
+          "q": "Bewys gevolglik dat $AB=AC$.",
+          "marks": 3,
+          "solution": [
+            "$D\\hat{A}B=E\\hat{A}C$ (gegee).",
+            "Uit die redes hierbo is $A\\hat{C}B=D\\hat{A}B$ en $A\\hat{B}C=E\\hat{A}C$.",
+            "$\\therefore A\\hat{C}B=A\\hat{B}C$.",
+            "In $\\triangle ABC$ is sye teenoor gelyke hoeke gelyk, dus $AB=AC$ (gelykbenig)."
+          ],
+          "answer": "$AB=AC$ (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-12",
+      "difficulty": 2,
+      "context": "In $\\triangle ABC$ is BE en CF hoogtelyne (hoogtes), met E op AC en F op AB. Die hoogtelyne sny mekaar by H.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 25L70 180L250 180Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M70 180L205 102M250 180L115 102\" stroke=\"currentColor\" fill=\"none\"/><text x=\"156\" y=\"19\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"56\" y=\"186\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"254\" y=\"186\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"209\" y=\"100\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"101\" y=\"102\" font-size=\"13\" fill=\"currentColor\">F</text><text x=\"155\" y=\"146\" font-size=\"13\" fill=\"currentColor\">H</text></svg>",
+      "archetype": "euc-prove-equal",
+      "parts": [
+        {
+          "q": "Skryf die groottes van $B\\hat{F}C$ en $B\\hat{E}C$ neer.",
+          "marks": 2,
+          "solution": [
+            "$B\\hat{F}C=90^\\circ$ (CF is 'n hoogtelyn, dus $CF\\perp AB$).",
+            "$B\\hat{E}C=90^\\circ$ (BE is 'n hoogtelyn, dus $BE\\perp AC$)."
+          ],
+          "answer": "Albei $=90^\\circ$"
+        },
+        {
+          "q": "Bewys dat BFEC 'n koordevierhoek is.",
+          "marks": 3,
+          "solution": [
+            "$B\\hat{F}C=B\\hat{E}C=90^\\circ$.",
+            "F en E lê aan dieselfde kant van BC en onderspan gelyke hoeke ($90^\\circ$) op BC.",
+            "$\\therefore$ F en E lê op 'n sirkel met BC as koord (omgekeerde: gelyke ∠e onderspan deur 'n lynstuk aan dieselfde kant).",
+            "$\\therefore$ BFEC is 'n koordevierhoek."
+          ],
+          "answer": "BFEC is 'n koordevierhoek (bewys)"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-13",
+      "difficulty": 2,
+      "context": "In $\\triangle PQR$ lê S op PQ en T op PR met $ST\\parallel QR$. Dit is gegee dat $PS=6$ cm, $SQ=4$ cm en $PT=9$ cm.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 30L50 190L270 190Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"105\" y1=\"110\" x2=\"215\" y2=\"110\" stroke=\"currentColor\" fill=\"none\"/><text x=\"155\" y=\"24\" font-size=\"13\" fill=\"currentColor\">P</text><text x=\"36\" y=\"196\" font-size=\"13\" fill=\"currentColor\">Q</text><text x=\"274\" y=\"196\" font-size=\"13\" fill=\"currentColor\">R</text><text x=\"90\" y=\"112\" font-size=\"13\" fill=\"currentColor\">S</text><text x=\"220\" y=\"112\" font-size=\"13\" fill=\"currentColor\">T</text></svg>",
+      "archetype": "euc-proportionality",
+      "parts": [
+        {
+          "q": "Bereken die lengte van TR.",
+          "marks": 3,
+          "solution": [
+            "$ST\\parallel QR$, dus $\\dfrac{PS}{SQ}=\\dfrac{PT}{TR}$ ('n lyn ewewydig aan een sy verdeel die ander twee sye eweredig).",
+            "$\\dfrac{6}{4}=\\dfrac{9}{TR}$",
+            "$TR=\\dfrac{9\\times 4}{6}=6$ cm"
+          ],
+          "answer": "$TR=6$ cm"
+        },
+        {
+          "q": "As $ST=9$ cm, bereken die lengte van QR.",
+          "marks": 3,
+          "solution": [
+            "$\\triangle PST\\;|||\\;\\triangle PQR$ (gelykhoekig, aangesien $ST\\parallel QR$).",
+            "$\\dfrac{ST}{QR}=\\dfrac{PS}{PQ}=\\dfrac{6}{10}=\\dfrac{3}{5}$",
+            "$QR=\\dfrac{9\\times 5}{3}=15$ cm"
+          ],
+          "answer": "$QR=15$ cm"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-14",
+      "difficulty": 3,
+      "context": "In die figuur sny koorde AC en BD van 'n sirkel mekaar by E binne die sirkel.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M89 74L239 136M89 156L231 74\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"172\" cy=\"108\" r=\"2\" fill=\"currentColor\"/><text x=\"75\" y=\"74\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"243\" y=\"140\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"75\" y=\"162\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"236\" y=\"74\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"176\" y=\"120\" font-size=\"13\" fill=\"currentColor\">E</text></svg>",
+      "archetype": "euc-similar",
+      "parts": [
+        {
+          "q": "Bewys dat $\\triangle AEB\\;|||\\;\\triangle DEC$.",
+          "marks": 4,
+          "solution": [
+            "$E\\hat{A}B=E\\hat{D}C$ (∠e in dieselfde segment, onderspan deur koord BC).",
+            "$A\\hat{E}B=D\\hat{E}C$ (regoorstaande ∠e).",
+            "$A\\hat{B}E=D\\hat{C}E$ (∠e in dieselfde segment, onderspan deur koord AD, of derde ∠e).",
+            "$\\therefore \\triangle AEB\\;|||\\;\\triangle DEC$ (∠∠∠)."
+          ],
+          "answer": "Gelykvormig (bewys)"
+        },
+        {
+          "q": "Bewys gevolglik dat $AE\\cdot EC=BE\\cdot ED$.",
+          "marks": 3,
+          "solution": [
+            "Uit die gelykvormigheid is ooreenstemmende sye eweredig: $\\dfrac{AE}{DE}=\\dfrac{EB}{EC}$.",
+            "Kruisvermenigvuldiging: $AE\\cdot EC=DE\\cdot EB=BE\\cdot ED$."
+          ],
+          "answer": "$AE\\cdot EC=BE\\cdot ED$ (bewys)"
+        },
+        {
+          "q": "As $AE=8$, $EC=3$ en $BE=4$, bereken die lengte van ED.",
+          "marks": 2,
+          "solution": [
+            "$AE\\cdot EC=BE\\cdot ED$",
+            "$8\\times 3=4\\times ED$",
+            "$ED=\\dfrac{24}{4}=6$"
+          ],
+          "answer": "$ED=6$"
+        }
+      ]
+    },
+    {
+      "id": "euclidean-geometry-15",
+      "difficulty": 3,
+      "context": "In die figuur is ATB 'n raaklyn aan die sirkel by T. TC en TD is koorde, en C en D is punte op die sirkel met CD getrek. Dit is gegee dat $B\\hat{T}C=63^\\circ$ en $A\\hat{T}D=48^\\circ$.",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"160\" cy=\"115\" r=\"82\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"55\" y1=\"197\" x2=\"265\" y2=\"197\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M160 197L223 62L97 62L160 197\" stroke=\"currentColor\" fill=\"none\"/><text x=\"157\" y=\"212\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"228\" y=\"62\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"83\" y=\"62\" font-size=\"13\" fill=\"currentColor\">D</text><text x=\"60\" y=\"193\" font-size=\"12\" fill=\"currentColor\">A</text><text x=\"250\" y=\"193\" font-size=\"12\" fill=\"currentColor\">B</text></svg>",
+      "archetype": "euc-tanchord",
+      "parts": [
+        {
+          "q": "Bepaal, met rede, die grootte van $T\\hat{D}C$.",
+          "marks": 2,
+          "solution": [
+            "$T\\hat{D}C=B\\hat{T}C=63^\\circ$ (raaklyn-koordhoek: die hoek tussen raaklyn TB en koord TC is gelyk aan die hoek in die teenoorstaande segment)."
+          ],
+          "answer": "$T\\hat{D}C=63^\\circ$"
+        },
+        {
+          "q": "Bepaal, met rede, die grootte van $T\\hat{C}D$.",
+          "marks": 2,
+          "solution": [
+            "$T\\hat{C}D=A\\hat{T}D=48^\\circ$ (raaklyn-koordhoek: die hoek tussen raaklyn TA en koord TD is gelyk aan die hoek in die teenoorstaande segment)."
+          ],
+          "answer": "$T\\hat{C}D=48^\\circ$"
+        },
+        {
+          "q": "Bereken gevolglik die grootte van $D\\hat{T}C$.",
+          "marks": 2,
+          "solution": [
+            "In $\\triangle TCD$: $D\\hat{T}C=180^\\circ-T\\hat{D}C-T\\hat{C}D$ (som van ∠e in driehoek).",
+            "$=180^\\circ-63^\\circ-48^\\circ=69^\\circ$"
+          ],
+          "answer": "$D\\hat{T}C=69^\\circ$"
+        }
+      ]
+    }
+  ]
+}

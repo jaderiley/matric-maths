@@ -3,7 +3,7 @@
     "title": "Algebra, Equations & Inequalities",
     "sections": [
       { "h": "What you must be able to do", "points": [
-        "Solve quadratics by factorising, by the formula $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ (to 2 decimal places when asked), and by completing the square (answers in surd form).",
+        "Solve quadratics by factorising and by the formula $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ (to 2 decimal places when asked, otherwise in simplest surd form). Completing the square is not examined as a way to solve an equation, but you still need it for turning points and circle equations.",
         "Solve quadratic inequalities and give the answer in interval or inequality notation.",
         "Solve simultaneous equations where one is linear and one is quadratic (or contains $xy$ or fractions).",
         "Solve exponential equations (common factor, or quadratic in $2^x$) and surd equations (isolate, square, CHECK).",
@@ -66,7 +66,7 @@
       { "h": "What you must be able to do", "points": [
         "Parabola $y=a(x+p)^2+q$ / $y=ax^2+bx+c$: intercepts, turning point $x=-\\frac{b}{2a}$, axis of symmetry, sketch.",
         "Hyperbola $y=\\frac{a}{x+p}+q$: asymptotes $x=-p$, $y=q$, intercepts, axes of symmetry $y=\\pm(x+p)+q$.",
-        "Exponential $y=a\\cdot b^{x+p}+q$ and its inverse $y=\\log_b x$; sketch both and state domain/range.",
+        "Exponential $y=a\\cdot b^{x+p}+q$; the inverse of $y=b^x$ is $y=\\log_b x$. Sketch both and state domain/range.",
         "Inverses: swap $x$ and $y$, solve for $y$; restrict a parabola's domain so $f^{-1}$ is a function.",
         "Read solutions off graphs: $f(x)\\ge0$, $f(x)>g(x)$, $f(x)\\cdot g(x)\\le0$, lengths between graphs, average gradient."
       ]},

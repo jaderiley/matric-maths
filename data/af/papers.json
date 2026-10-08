@@ -1,0 +1,207 @@
+{
+ "updated": "2026-10-08",
+ "note": "Amptelike Afrikaanse NSS-vraestelle vir Wiskunde, direk van die nasionale Departement van Basiese Onderwys (education.gov.za). Die memoranda is tweetalig (Afrikaans en Engels). Die NSS is 'n NASIONALE eksamen - Gauteng en elke ander provinsie skryf presies dieselfde vraestelle. Die spieël-ZIP's word deur die Oos-Kaapse Departement van Onderwys aangebied (dieselfde DBO-vraestelle).",
+ "guidelines": {
+  "name": "DBO se portaal vir vorige NSS-vraestelle (alle vakke, alle jare)",
+  "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations/NSCPastExaminationpapers.aspx"
+ },
+ "years": [
+  {
+   "year": 2024,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=JEqOMNWPEl8%3d&tabid=5193&portalid=0&mid=13724",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=D_T4clPBpkk%3d&tabid=5193&portalid=0&mid=13724"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=KJGPh8hBJ94%3d&tabid=5193&portalid=0&mid=13724",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0DIM92_2Vu8%3d&tabid=5193&portalid=0&mid=13724"
+      },
+      {
+       "name": "Vraestel 1 (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024.zip"
+      },
+      {
+       "name": "Vraestel 2 (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024.zip"
+      }
+     ]
+    },
+    {
+     "session": "Mei/Junie",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=BWwysjsPSXs%3d&tabid=4933&portalid=0&mid=13146",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=LhWLj4xwFNo%3d&tabid=4933&portalid=0&mid=13146"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=bZwYl6ijOnI%3d&tabid=4933&portalid=0&mid=13146",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=hmseEn24qZI%3d&tabid=4933&portalid=0&mid=13146"
+      },
+      {
+       "name": "Vraestel 1 (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024.zip"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "year": 2023,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=u2RBAp2R5dI%3d&tabid=4682&portalid=0&mid=12681",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=ViEtlf4659c%3d&tabid=4682&portalid=0&mid=12681"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=KLYyQ2fFlgE%3d&tabid=4682&portalid=0&mid=12681",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0RJSBcYBmhA%3d&tabid=4682&portalid=0&mid=12681"
+      },
+      {
+       "name": "Vraestel 1 + memo (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P1%20Nov%202023.zip"
+      }
+     ]
+    },
+    {
+     "session": "Mei/Junie",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=nVAzvZTmyHA%3d&tabid=4504&portalid=0&mid=12317",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=lKqjE45EcJE%3d&tabid=4504&portalid=0&mid=12317"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=wlPED3Dh0Ak%3d&tabid=4504&portalid=0&mid=12317",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=QglalUTQMaw%3d&tabid=4504&portalid=0&mid=12317"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "year": 2022,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=fYWHlnp3D6g%3d&tabid=3294&portalid=0&mid=10986",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=gytAGGPYSc8%3d&tabid=3294&portalid=0&mid=10986"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=UWYNCw88KY4%3d&tabid=3294&portalid=0&mid=10986",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=var8F7VpOmU%3d&tabid=3294&portalid=0&mid=10986"
+      },
+      {
+       "name": "Alle vraestelle (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2022_November_NSC_Exams/Mathematics%20Nov%202022.zip"
+      }
+     ]
+    },
+    {
+     "session": "Mei/Junie",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=X1H2CPHKEWw%3d&tabid=3138&portalid=0&mid=10574",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=ias3gDQea2c%3d&tabid=3138&portalid=0&mid=10574"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=b617COfgPXA%3d&tabid=3138&portalid=0&mid=10574",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=iMIvxdxJCEs%3d&tabid=3138&portalid=0&mid=10574"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "year": 2021,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=nkSImSv3enc%3d&tabid=2922&portalid=0&mid=10135",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=LJo4MZ4DRZM%3d&tabid=2922&portalid=0&mid=10135"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=RuztUNr2dh4%3d&tabid=2922&portalid=0&mid=10135",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=s7hK0H8bqPM%3d&tabid=2922&portalid=0&mid=10135"
+      },
+      {
+       "name": "Alle vraestelle (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2021_November_NSC_Exams/Mathematics%20Nov%202021.zip"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "year": 2020,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=Pva8knyVfSI%3d&tabid=2702&portalid=0&mid=9632",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=P7kQcnNxRHY%3d&tabid=2702&portalid=0&mid=9632"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=sqawF1WlyGs%3d&tabid=2702&portalid=0&mid=9632",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=R9cpC35sw60%3d&tabid=2702&portalid=0&mid=9632"
+      },
+      {
+       "name": "Alle vraestelle (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2020_November_NSC_Exams/Mathematics.zip"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "year": 2019,
+   "sessions": [
+    {
+     "session": "November",
+     "items": [
+      {
+       "name": "Vraestel 1",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=uBNz5LRdtnc%3d&tabid=2556&portalid=0&mid=8994",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=DtEIXt8fp_E%3d&tabid=2556&portalid=0&mid=8994"
+      },
+      {
+       "name": "Vraestel 2",
+       "url": "https://www.education.gov.za/LinkClick.aspx?fileticket=jKyeThQBluQ%3d&tabid=2556&portalid=0&mid=8994",
+       "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=n-F98_w5Zig%3d&tabid=2556&portalid=0&mid=8994"
+      },
+      {
+       "name": "Vraestelle 1 & 2, geen memo's nie (spieël-ZIP)",
+       "url": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20QP.zip"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -121,7 +121,7 @@
             "Cubic with positive leading coefficient: rises to the local maximum $(-1;32)$, falls to the local minimum $(3;0)$, then rises",
             "Curve cuts the $x$-axis at $(-3;0)$ and touches it at $(3;0)$"
           ],
-          "answer": "Increasing cubic shape through $(-3;0)$, $(0;27)$, max $(-1;32)$, touching the $x$-axis at min $(3;0)$"
+          "answer": "Cubic shape (positive leading coefficient) through $(-3;0)$, $(0;27)$, max $(-1;32)$, touching the $x$-axis at min $(3;0)$"
         },
         {
           "q": "Determine the coordinates of the point of inflection of $f$.",
@@ -400,7 +400,7 @@
       "id": "calculus-12",
       "difficulty": 3,
       "context": "The sketch shows the graph of $y=f'(x)$, the DERIVATIVE of a cubic function $f$. The graph of $f'$ cuts the $x$-axis at $x=-1$ and $x=3$.",
-      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"205\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M53 93L64 105L74 116L85 126L95 134L106 141L116 147L127 152L137 155L148 157L158 158L169 158L179 156L190 153L200 149L211 143L221 137L232 129L242 119L253 109L263 97\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"90\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"230\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><text x=\"82\" y=\"122\" font-size=\"12\" fill=\"currentColor\">-1</text><text x=\"228\" y=\"122\" font-size=\"12\" fill=\"currentColor\">3</text><text x=\"305\" y=\"134\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"244\" y=\"114\" font-size=\"13\" fill=\"currentColor\">y=f'(x)</text></svg>",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><line x1=\"20\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"125\" y1=\"20\" x2=\"125\" y2=\"205\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M53 93L64 105L74 116L85 126L95 134L106 141L116 147L127 152L137 155L148 157L158 158L169 158L179 156L190 153L200 149L211 143L221 137L232 129L242 119L253 109L263 97\" stroke=\"currentColor\" fill=\"none\"/><circle cx=\"90\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"230\" cy=\"130\" r=\"2.5\" fill=\"currentColor\"/><text x=\"82\" y=\"122\" font-size=\"12\" fill=\"currentColor\">-1</text><text x=\"228\" y=\"122\" font-size=\"12\" fill=\"currentColor\">3</text><text x=\"305\" y=\"134\" font-size=\"13\" fill=\"currentColor\">x</text><text x=\"244\" y=\"114\" font-size=\"13\" fill=\"currentColor\">y=f'(x)</text></svg>",
       "archetype": "cal-fprime-graph",
       "parts": [
         {

@@ -1,0 +1,255 @@
+{
+ "paper": 2,
+ "sources": [
+  "DBO Nov. 2024 V2 (volledig gelees)",
+  "DBO Nov. 2023 V2 (gedeeltelik)",
+  "DBO Nov. 2021/2022 V2 + Jun. 2021 V2 (struktuurkontrole)"
+ ],
+ "weighting": {
+  "statistics": 20,
+  "analytical-geometry": 40,
+  "trigonometry": 50,
+  "euclidean-geometry": 40
+ },
+ "structure_notes": [
+  "Die vraestel bestaan uit ±10–11 vrae, 150 punte, 3 uur, en begin ALTYD met statistiek (Vr. 1–2, ±20 punte), dan analitiese meetkunde (Vr. 3–4, ±40), trigonometrie (Vr. 5–8, ±50), en laaste Euklidiese meetkunde (Vr. 9–11, ±40).",
+  "Vanaf 2024: ‘Verskaf redes vir jou bewerings’ is bo die meetkundevrae gedruk — die bewering-rede-formaat is verpligtend en redes dra punte.",
+  "Die BEWYSE van stellings is eksamineerbaar: in 2024 is die volledige bewys van die eweredigheidstelling gevra (6 punte). Leer die eksamineerbare bewyse: lyn vanuit middelpunt ⊥ koord, middelpuntshoek, teenoorstaande hoeke van 'n koordevierhoek, raaklyn-koordstelling, eweredigheid, gelykvormigheid.",
+  "Een vraag oor analitiese meetkunde is driehoek-/vierhoekwerk (gradiënte, lengtes, verhoudings, oppervlaktes); die ander is ALTYD die sirkel: vergelyking, raaklyn, en 'n slotdeel met 'n bewys-element.",
+  "Trigonometrie is vier vrae (Vr. 5–8) wat vyf take dek, en (2) en (3) deel gewoonlik een vraag: (1) eksakte waardes sonder sakrekenaar uit inligting oor 'n punt/kwadrant, (2) identiteitsafleiding + bewys, (3) algemene oplossing of intervalvergelyking, (4) grafieke + oplossings van die grafieke aflees, en (5) die 2D/3D sinusreël-, cosinusreël- en oppervlaktereëlprobleem (±9-13 punte).",
+  "Die laaste Euklidiese vraag is die moeilikste in die vraestel: 'n toepassingsvraag met meer as een sirkel wat raaklyn-koordstelling, koordevierhoeke en gelykvormigheid aaneenskakel tot 'n bewys van 'n produk van sye soos GF² = BC·FC·AF/AD.",
+  "Leerders verloor die meeste punte weens: redes wat in meetkunde uitgelaat word, kwadranttekens in trigonometrie sonder sakrekenaar, en om nie definisieversamelings in algemene oplossings te beperk of te toets nie."
+ ],
+ "archetypes": [
+  {
+   "id": "stat-regression",
+   "topic": "statistics",
+   "name": "Kleinste-kwadrate-regressie + voorspelling",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-8",
+   "how_asked": "Tabel met tweeveranderlike data (dikwels met spreidiagram): bepaal die regressielyn ŷ=a+bx met die sakrekenaar, skryf r neer, voorspel y vir 'n gegewe x, lewer kommentaar oor interpolasie teenoor ekstrapolasie.",
+   "notes": "Gee a en b tot minstens 2 desimale plekke en hou hulle onafgerond gestoor vir die voorspelling. Ken die verskil tussen korrelasiesterkte (r) en oorsaaklikheid.",
+   "difficulty": 1
+  },
+  {
+   "id": "stat-sd-effect",
+   "topic": "statistics",
+   "name": "Gemiddelde/σ en die effek van veranderinge in die data",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "2-4",
+   "how_asked": "Hoe beïnvloed die byvoeging van 'n konstante by elke waarde (of 'n uitskieter) die gemiddelde / standaardafwyking / mediaan? 2024: elke speler doen 5 meer opstote — wat is die effek op σ?",
+   "notes": "Konstante byvoeg: gemiddelde verskuif, σ ONVERANDERD. Vermenigvuldig: albei skaleer. Uitskieters beïnvloed die gemiddelde sterk, die mediaan skaars.",
+   "difficulty": 2
+  },
+  {
+   "id": "stat-ogive",
+   "topic": "statistics",
+   "name": "Aflees van 'n ogief (kumulatiewefrekwensie-kurwe)",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "6-8",
+   "how_asked": "Gegee 'n ogief: skat die mediaan en kwartiele, die interkwartielvariasiewydte, hoeveel waarnemings 'n waarde oorskry, en 'n opvolgberekening met 'n persentasie of reël.",
+   "notes": "Mediaan by n/2 op die kumulatiewe as, lees AF na die x-as. Die steilste gedeelte is die modale klas.",
+   "difficulty": 2
+  },
+  {
+   "id": "stat-boxplot",
+   "topic": "statistics",
+   "name": "Vyfgetalopsomming / mond-en-snordiagram",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "4-6",
+   "how_asked": "Bereken die vyfgetalopsomming uit rou data, teken die mond-en-snordiagram (rooster in die antwoordboek), lewer kommentaar op skeefheid, of toets vir uitskieters met 1,5×IKV (interkwartielvariasiewydte).",
+   "notes": "Rigting van skeefheid = die langer snor/kant van die boks. Uitskietergrense: Q1-1,5×IKV en Q3+1,5×IKV.",
+   "difficulty": 2
+  },
+  {
+   "id": "ana-triangle",
+   "topic": "analytical-geometry",
+   "name": "Driehoek-/vierhoekkoördinaatketting",
+   "frequency": "elke vraestel",
+   "typical_marks": "15-19",
+   "how_asked": "Gegee hoekpunte (een soms onbekend): gradiënt van 'n sy, sy vergelyking, toon 'n puntwaarde aan, lengtes, middelpunte, bewys ewewydig/loodreg, verhoudings soos DB/DC, en 'n deel oor oppervlakteverhoudings met 'n ewewydige lyn.",
+   "notes": "Die ketting bou op sigself — 'n vroeë fout bederf latere dele, kontroleer dus elke waarde. Oppervlakteverhouding met 'n ewewydige lyn → gelykvormige driehoeke met verhouding (syverhouding)².",
+   "difficulty": 2
+  },
+  {
+   "id": "ana-incline",
+   "topic": "analytical-geometry",
+   "name": "Inklinasiehoek",
+   "frequency": "elke vraestel",
+   "typical_marks": "2-4",
+   "how_asked": "Bepaal die inklinasie θ van 'n lyn, of die hoek tussen twee lyne via hul inklinasies.",
+   "notes": "tan θ = m; vir negatiewe gradiënte is θ = 180° - verwysingshoek. Hoek in 'n driehoek tussen lyne = verskil van inklinasies (buitehoek-redenasie).",
+   "difficulty": 2
+  },
+  {
+   "id": "ana-circle",
+   "topic": "analytical-geometry",
+   "name": "Sirkel: vergelyking, middelpunt en radius, toon aan",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-6",
+   "how_asked": "Toon aan dat die sirkel se vergelyking x²+y²+Dx+Ey+F=0 is, gegee die middelpunt/'n punt, of voltooi die vierkant om die middelpunt en radius te vind; toon aan dat 'n puntparameter soos d=7 op die sirkel lê.",
+   "notes": "Voltooi die vierkant noukeurig — helfte van die koëffisiënt, kwadreer, balanseer. 'n ‘Toon aan’ beteken elke stap moet verskyn.",
+   "difficulty": 2
+  },
+  {
+   "id": "ana-tangent",
+   "topic": "analytical-geometry",
+   "name": "Raaklyn aan 'n sirkel",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-5",
+   "how_asked": "Vergelyking van die raaklyn by 'n gegewe punt op die sirkel; of bewys dat twee raaklyne/koorde loodreg is.",
+   "notes": "Raaklyn ⊥ radius by die raakpunt: m_raaklyn = -1/m_radius. Vir loodregtheidsbewyse vermenigvuldig die twee gradiënte en toon dat dit -1 is.",
+   "difficulty": 2
+  },
+  {
+   "id": "ana-level4",
+   "topic": "analytical-geometry",
+   "name": "Vlak 4: soektog na koördinate",
+   "frequency": "baie vraestelle",
+   "typical_marks": "5-6",
+   "how_asked": "Bepaal onbekende koördinate uit 'n gradiënt EN 'n lengte (bv. gradiënt van AD = -4 en AD = √612), of 'n voorwaarde dat 'n sirkel 'n lyn sny met twee onbekendes.",
+   "notes": "Twee voorwaardes → twee vergelykings. Afstand gee 'n kwadratiese vergelyking — kies die oplossing wat by die gestelde kwadrant/diagram pas.",
+   "difficulty": 3
+  },
+  {
+   "id": "trig-nocalc-point",
+   "topic": "trigonometry",
+   "name": "Eksakte waardes sonder sakrekenaar uit 'n punt/kwadrant",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-8",
+   "how_asked": "'n Punt op die eindarm soos P(-3;-4) definieer hoek A: bepaal cos A, cos 2A, dan sin(A-B) waar B 'n gegewe verhouding en kwadrant het.",
+   "notes": "Teken die driehoek, kry r, let op die TEKENS per kwadrant. Vir saamgestelde waardes skryf eers die uitbreiding neer en vervang dan die eksakte verhoudings.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-express-p",
+   "topic": "trigonometry",
+   "name": "Druk uit in terme van p/t",
+   "frequency": "baie vraestelle",
+   "typical_marks": "3-4",
+   "how_asked": "Gegee cos α = p (of sin 22° = p): druk 'n ander waarde uit — soos 'n produk van saamgestelde-hoek-/halfhoekterme — in terme van p.",
+   "notes": "Herlei die teikenwaarde na funksies van α met ko-funksies, reduksie en dubbel-/halfhoekidentiteite voordat jy p vervang.",
+   "difficulty": 3
+  },
+  {
+   "id": "trig-reduction",
+   "topic": "trigonometry",
+   "name": "Vereenvoudiging met reduksieformules",
+   "frequency": "elke vraestel",
+   "typical_marks": "5-7",
+   "how_asked": "Vereenvoudig 'n breuk van terme soos cos(90°+x), sin(180°-x), cos(360°+y), sin(-y) tot 'n enkele verhouding of bewys dat dit gelyk is aan bv. tan(x+y).",
+   "notes": "Skakel elke term om na funksies van x (of x en y) met die korrekte tekens, soek dan na saamgestelde-hoek-patrone in die resultaat.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-identity",
+   "topic": "trigonometry",
+   "name": "Bewys 'n identiteit (+ waar ongedefinieerd)",
+   "frequency": "elke vraestel",
+   "typical_marks": "5-7",
+   "how_asked": "Bewys 'n identiteit met dubbelhoeke en faktorisering, bv. (cos2A + cosA + 1)/(sin2A + sinA) = 1/tanA; soms word cos(x+y) uit 'n gegewe identiteit afgelei, en meld waar die identiteit ongedefinieerd is.",
+   "notes": "Werk net met een kant. Kies die cos2A-vorm wat faktoriseer met wat langsaan staan. Ongedefinieerd waar enige noemer (of tan) nul/ongedefinieerd is.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-general-solution",
+   "topic": "trigonometry",
+   "name": "Algemene oplossing / intervalvergelyking",
+   "frequency": "elke vraestel",
+   "typical_marks": "5-7",
+   "how_asked": "Los 'n trigonometriese vergelyking op (kwadraties in sin/cos, ko-funksie soos sin(x+20°)=cos(2x), of een met 'n wortelteken) — algemene oplossing met k∈ℤ, of alle x in 'n gegewe interval.",
+   "notes": "Twee oplossingsfamilies vir sin/cos-vergelykings — moenie die tweede weglaat nie. Eindig deur oplossings binne die interval te lys as een gegee is.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-graphs",
+   "topic": "trigonometry",
+   "name": "Trigonometriese grafieke: teken, lees, sny",
+   "frequency": "elke vraestel",
+   "typical_marks": "8-11",
+   "how_asked": "Gegee/teken grafieke soos tan x en cos 2x + 1 op [-180°;180°]: asimptote, periode, waar f(x)≤0, en ‘gebruik die grafieke om die algemene oplossing van ... te bepaal’ vir 'n vergelyking wat hulle kombineer.",
+   "notes": "Die ‘gebruik die grafieke’-deel omskep 'n lelike vergelyking (bv. 2cos³x - sinx = 0) in ‘waar sny die getekende grafieke’ — sien die verband.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-max-min",
+   "topic": "trigonometry",
+   "name": "Maksimum/minimum van 'n trigonometriese uitdrukking",
+   "frequency": "baie vraestelle",
+   "typical_marks": "3-4",
+   "how_asked": "Maksimum waarde van 'n uitdrukking soos (4 - 8sin²x)/3 en die kleinste x waar dit voorkom.",
+   "notes": "Herskryf met cos2x (waardeversameling [-1;1]) en redeneer vanuit die waardeversameling — geen differensiaalrekening nodig nie.",
+   "difficulty": 2
+  },
+  {
+   "id": "trig-2d3d",
+   "topic": "trigonometry",
+   "name": "2D/3D-probleem met sinusreël, cosinusreël en oppervlaktereël",
+   "frequency": "elke vraestel",
+   "typical_marks": "9-13",
+   "how_asked": "'n Gebou-/mas-/veldscenario oor 2-3 driehoeke met hoogtehoeke: bereken 'n horisontale afstand, dan 'n skuins lengte of hoogte met die sinus- of cosinusreël; soms bewys eers 'n formule in terme van gegewe hoeke.",
+   "notes": "Los driehoek vir driehoek op; die gedeelde sy is die brug. Regte hoeke skuil in ‘vertikale gebou op horisontale vlak’. Dra eksakte waardes oor tussen stappe.",
+   "difficulty": 3
+  },
+  {
+   "id": "euc-anglechase",
+   "topic": "euclidean-geometry",
+   "name": "Hoekjag met sirkelstellings",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-10",
+   "how_asked": "'n Sirkeldiagram (koordevierhoek, raaklyn, middellyn, middelpunt): bereken benoemde hoeke met redes, bv. buite∠ van koordevh = 86° lei na gelykbenige driehoeke en hoeke in dieselfde segment.",
+   "notes": "Elke bewering moet sy rede tussen hakies hê. Merk gelyke hoeke op die diagram soos jy vorder; soek raaklynpare, middellyne (90°), en gelyke koorde/boë.",
+   "difficulty": 1
+  },
+  {
+   "id": "euc-prove-equal",
+   "topic": "euclidean-geometry",
+   "name": "Bewys dat sye/hoeke gelyk of lyne ewewydig is",
+   "frequency": "elke vraestel",
+   "typical_marks": "3-5",
+   "how_asked": "Bewys gevolglik dat AD = DC, of dat 'n vierhoek 'n koordevierhoek is, of dat twee lyne ewewydig is — voortbouend op die hoekjag wat daaraan voorafgaan.",
+   "notes": "Gelyke sye kom van gelyke hoeke (gelykbenig) of kongruensie; koordevierhoek van omgekeerde stellings. ‘Gevolglik’ = gebruik die vorige antwoord.",
+   "difficulty": 2
+  },
+  {
+   "id": "euc-theorem-proof",
+   "topic": "euclidean-geometry",
+   "name": "Boekwerk: bewys 'n eksamineerbare stelling",
+   "frequency": "meeste vraestelle (2024: eweredigheid)",
+   "typical_marks": "5-6",
+   "how_asked": "Bewys die stelling: 'n lyn ewewydig aan een sy van 'n driehoek verdeel die ander twee sye eweredig — of 'n ander eksamineerbare bewys (middelpuntshoek, raaklyn-koordstelling, koordevierhoek).",
+   "notes": "Suiwer boekwerkpunte — memoriseer die konstruksies (hoogtes/verbindingslyne) en die bewysskelette vir alle eksamineerbare stellings.",
+   "difficulty": 2
+  },
+  {
+   "id": "euc-proportionality",
+   "topic": "euclidean-geometry",
+   "name": "Toepassings van eweredigheid en die middelpuntstelling",
+   "frequency": "elke vraestel",
+   "typical_marks": "5-9",
+   "how_asked": "Met ewewydige lyne / 'n loodlyn vanuit die middelpunt wat 'n koord halveer: bewys 'n verhouding soos OR:WS = 1:2, bereken dan 'n lengte gegee een waarde (ST = 15 → PT).",
+   "notes": "'n Loodlyn vanuit die middelpunt halveer die koord — dit plus die middelpuntstelling bou die meeste 1:2-verhoudings. Stel die eweredigheid op en vervang dan getalle.",
+   "difficulty": 2
+  },
+  {
+   "id": "euc-similar",
+   "topic": "euclidean-geometry",
+   "name": "Gelykvormige driehoeke → produk van sye",
+   "frequency": "elke vraestel",
+   "typical_marks": "8-12",
+   "how_asked": "Bewys △AGF ||| △ABC, bewys dan 'n produkverwantskap soos AG·AD = AC·AF, wat opbou tot 'n finale samestelling soos GF² = BC·FC·AF/AD.",
+   "notes": "Twee gelyke hoeke ⇒ gelykvormig (∠∠∠). Skryf die hoekpunte in ooreenkomstige volgorde, vorm die syverhoudings, vermenigvuldig kruiselings. Die laaste deel vermenigvuldig/deel gewoonlik TWEE vroeëre resultate.",
+   "difficulty": 3
+  },
+  {
+   "id": "euc-tanchord",
+   "topic": "euclidean-geometry",
+   "name": "Raaklyn-koordstelling en toepassingsvrae met twee sirkels",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "4-6",
+   "how_asked": "Twee sirkels wat raak met 'n gemeenskaplike raaklyn: vind verskeie hoeke gelyk aan x met redes — raaklyn-koordstelling in elke sirkel plus dieselfde-segment-skakels.",
+   "notes": "Die gemeenskaplike raaklyn laat jou die raaklyn-koordstelling in BEIDE sirkels gebruik. Benoem sistematies; elke gelyke hoek het sy eie rede nodig.",
+   "difficulty": 3
+  }
+ ]
+}

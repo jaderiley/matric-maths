@@ -257,7 +257,7 @@
           "marks": 3,
           "solution": [
             "Area $=\\frac{1}{2}\\cdot BC\\cdot CD\\cdot\\sin B\\hat{C}D$ (area rule)",
-            "$=\\frac{1}{2}(44{,}83)(40)\\sin 105^\\circ$",
+            "$=\\frac{1}{2}(44{,}8266)(40)\\sin 105^\\circ$",
             "$\\approx 865{,}98$ m$^2$"
           ],
           "answer": "Area $\\approx 865{,}98$ m$^2$"
@@ -549,7 +549,7 @@
       "id": "trigonometry-16",
       "difficulty": 3,
       "context": "$TM$ is a vertical mast with its base $M$ on horizontal ground. $A$ and $B$ are two points on the ground. The angle of elevation of $T$ from $A$ is $28^\\circ$. In $\\triangle ABM$, $A\\hat{B}M=48^\\circ$, $M\\hat{A}B=65^\\circ$ and $AB=40$ m.",
-      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 175L235 190L150 120Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"150\" y1=\"120\" x2=\"150\" y2=\"35\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"40\" y1=\"175\" x2=\"150\" y2=\"35\" stroke=\"currentColor\" fill=\"none\" stroke-dasharray=\"4 3\"/><path d=\"M150 108L162 108L162 120\" stroke=\"currentColor\" fill=\"none\"/><text x=\"28\" y=\"180\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"240\" y=\"195\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"150\" y=\"134\" font-size=\"13\" fill=\"currentColor\">M</text><text x=\"150\" y=\"30\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"60\" y=\"168\" font-size=\"11\" fill=\"currentColor\">28 deg</text></svg>",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M40 175L235 190L150 120Z\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"150\" y1=\"120\" x2=\"150\" y2=\"35\" stroke=\"currentColor\" fill=\"none\"/><line x1=\"40\" y1=\"175\" x2=\"150\" y2=\"35\" stroke=\"currentColor\" fill=\"none\" stroke-dasharray=\"4 3\"/><path d=\"M150 108L162 108L162 120\" stroke=\"currentColor\" fill=\"none\"/><text x=\"28\" y=\"180\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"240\" y=\"195\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"150\" y=\"134\" font-size=\"13\" fill=\"currentColor\">M</text><text x=\"150\" y=\"30\" font-size=\"13\" fill=\"currentColor\">T</text><text x=\"60\" y=\"168\" font-size=\"11\" fill=\"currentColor\">28°</text></svg>",
       "archetype": "trig-2d3d",
       "parts": [
         {

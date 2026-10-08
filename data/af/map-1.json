@@ -1,0 +1,377 @@
+{
+ "paper": 1,
+ "sources": [
+  "DBO Nov. 2024 V1 (volledig gelees)",
+  "DBO Nov. 2023 V1 (volledig gelees)",
+  "DBO Nov. 2021/2022 V1 (struktuurkontrole)"
+ ],
+ "weighting": {
+  "algebra": 25,
+  "sequences": 25,
+  "functions": 35,
+  "finance": 15,
+  "calculus": 35,
+  "probability": 15
+ },
+ "structure_notes": [
+  "Die vraestel bestaan uit ±11–12 vrae, 150 punte, 3 uur. Vraag 1 is ALTYD roetine-algebra ter waarde van 24–27 punte — verseker hierdie punte eerste, dit is die maklikste punte in die hele vraestel.",
+  "Rye en reekse kom as Vrae 2–3 (±24 punte): een rekenkundige/sigma-vraag, een kwadratiese-patroonvraag en een meetkundige vraag, dikwels in 'n werklike konteks (bv. krimpende sirkels).",
+  "Funksies strek oor Vrae 4–6 (±34 punte): een eksponensiële of logaritme-vraag, een hiperboolvraag, een parabool-plus-lyn-vraag. Inverse funksies verskyn ELKE jaar, gewoonlik ter waarde van 3–6 punte.",
+  "Finansiële wiskunde is een vraag (±14–16 punte) met 'n lening of annuïteit as hoofgereg; die laaste subvraag is 'n vlak 4-wending (ekstra betaling, gemiste betaling, of ‘hoeveel onttrekkings’).",
+  "Differensiaalrekening strek oor twee tot drie vrae (±35 punte): reëls + eerste beginsels (Vr. 8-tipe), 'n derdegraadse-grafiekvraag (gegewe skets of skets word gevra), en 'n optimaliserings-/tempo-van-verandering-vraag in konteks.",
+  "Waarskynlikheid is die laaste twee vrae (±15–17 punte): een Venn-/boomdiagram-/reëlsvraag en een telvraag. Die laaste deel van die telvraag is dikwels die moeilikste 2–4 punte in die vraestel.",
+  "Elke vraestel sluit subvrae af met 'n vlak 4-‘insig’-deel ter waarde van 2–7 punte — hierdie dele bepaal of jy 80%+ kry. Voorbeelde uit werklike vraestelle: teleskopiese produkte, Diofantiese eksponentvergelykings, raaklyn-via-diskriminant, leerders-in-'n-ry-waarskynlikheid."
+ ],
+ "archetypes": [
+  {
+   "id": "alg-quad-factor",
+   "topic": "algebra",
+   "name": "Los 'n kwadratiese vergelyking op deur te faktoriseer",
+   "frequency": "elke vraestel, Vr. 1.1.1",
+   "typical_marks": "2-3",
+   "how_asked": "Los op vir x: 'n kwadratiese vergelyking wat faktoriseer, soms in faktorvorm gegee soos x(x-3)=0.",
+   "notes": "Gratis punte. Let op: as dit reeds gefaktoriseer is, moenie uitvermenigvuldig nie.",
+   "difficulty": 1
+  },
+  {
+   "id": "alg-quad-formula",
+   "topic": "algebra",
+   "name": "Los 'n kwadratiese vergelyking op met die formule (2 d.p.)",
+   "frequency": "elke vraestel, Vr. 1.1.2",
+   "typical_marks": "3-4",
+   "how_asked": "Los op vir x, korrek tot TWEE desimale plekke — 'n kwadratiese vergelyking wat nie faktoriseer nie.",
+   "notes": "Herrangskik eers na =0; afrondingsfoute kos punte — hou 4 desimale tot aan die einde.",
+   "difficulty": 1
+  },
+  {
+   "id": "alg-quad-inequality",
+   "topic": "algebra",
+   "name": "Kwadratiese ongelykheid",
+   "frequency": "elke vraestel",
+   "typical_marks": "3-4",
+   "how_asked": "Los op vir x: 'n kwadratiese ongelykheid soos x²-2x-3>0, wat soms eers herrangskik moet word.",
+   "notes": "Skets die parabool of gebruik 'n getallelyn; gee die antwoord in intervalnotasie of ongelykheidsnotasie.",
+   "difficulty": 2
+  },
+  {
+   "id": "alg-exp-equation",
+   "topic": "algebra",
+   "name": "Eksponensiële vergelyking (gemeenskaplike faktor of kwadraties in 2^x)",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "4-5",
+   "how_asked": "Los op vir x in 'n vergelyking soos 2^(2x) - 2^(x+2) - 32 = 0 of met 'n gemeenskaplike faktor van magte.",
+   "notes": "Stel k=2^x, of haal die kleinste mag uit as gemeenskaplike faktor. Kontroleer watter oplossings geldig is (2^x>0).",
+   "difficulty": 2
+  },
+  {
+   "id": "alg-surd-equation",
+   "topic": "algebra",
+   "name": "Wortelvergelyking met geldigheidstoets",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "4",
+   "how_asked": "Los op vir x: 'n vergelyking met √(ax+b) gelyk aan 'n uitdrukking in x.",
+   "notes": "Isoleer die wortel, kwadreer albei kante, kontroleer ALTYD albei antwoorde in die oorspronklike vergelyking — een is gewoonlik ongeldig.",
+   "difficulty": 2
+  },
+  {
+   "id": "alg-simultaneous",
+   "topic": "algebra",
+   "name": "Gelyktydige vergelykings (lineêr + kwadraties)",
+   "frequency": "elke vraestel, Vr. 1.2",
+   "typical_marks": "5-6",
+   "how_asked": "Los gelyktydig op vir x en y; een vergelyking is lineêr, die ander kwadraties of bevat xy — soms met breuke soos 1/x + 1/y = 1.",
+   "notes": "Maak x of y die onderwerp van die lineêre vergelyking en vervang. Twee koördinaatpare word verwag.",
+   "difficulty": 2
+  },
+  {
+   "id": "alg-nature-roots",
+   "topic": "algebra",
+   "name": "Aard van die wortels / waardes van k",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "3-5",
+   "how_asked": "Vir watter waardes van k sal die vergelyking gelyke / reële / nie-reële wortels hê, of bewys dat die wortels vir alle k rasionaal is.",
+   "notes": "Alles draai om Δ = b²-4ac. ‘Toon aan dat dit rasionaal is vir alle k’ → toon dat Δ 'n volkome vierkant is.",
+   "difficulty": 2
+  },
+  {
+   "id": "alg-level4",
+   "topic": "algebra",
+   "name": "Vlak 4-insigprobleem in algebra",
+   "frequency": "elke vraestel, laaste deel van Vr. 1",
+   "typical_marks": "3-4",
+   "how_asked": "'n Kort onbekende probleem: teleskopiese produkte, heelgetaloplossings van eksponentvergelykings soos 2^(m+1)+2^m = 3^(n+2)-3^n, of algebraïese ‘bepaal alle waardes’-redenering.",
+   "notes": "Moenie paniekerig raak nie — haal gemeenskaplike magte uit, skryf produkte term vir term uit, soek na kansellasie.",
+   "difficulty": 3
+  },
+  {
+   "id": "seq-arith",
+   "topic": "sequences",
+   "name": "Basiese rekenkundige ry/reeks",
+   "frequency": "elke vraestel",
+   "typical_marks": "2-4 per deel",
+   "how_asked": "Gegee a en d (of twee terme): bepaal Tn, n vir 'n gegewe waarde, of Sn.",
+   "notes": "Skryf a en d uitdruklik neer — metodepunte.",
+   "difficulty": 1
+  },
+  {
+   "id": "seq-sigma",
+   "topic": "sequences",
+   "name": "Sigmanotasie (bereken of stel op)",
+   "frequency": "elke vraestel",
+   "typical_marks": "3-4",
+   "how_asked": "Evalueer 'n gegewe sigma-uitdrukking, of skryf 'n beskrewe som in sigmanotasie (2024: skryf 'n vergelyking in sigmanotasie vir die terme wat BYGEVOEG word wanneer 'n reeks uitgebrei word).",
+   "notes": "Tel die aantal terme noukeurig: van k=m tot n is daar n-m+1 terme.",
+   "difficulty": 2
+  },
+  {
+   "id": "seq-quadratic",
+   "topic": "sequences",
+   "name": "Kwadratiese patroon (tweede verskil)",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-8",
+   "how_asked": "Gegee 'n kwadratiese patroon of sy eerste verskille: bepaal Tn, 'n spesifieke term, of watter term gelyk is aan 'n waarde. 2024-wending: gegee T99 en die eerste verskille, bepaal T98.",
+   "notes": "Tn = an²+bn+c met 2a = tweede verskil. Die ry van eerste verskille is self rekenkundig — baie vrae speel geheel en al daar af.",
+   "difficulty": 2
+  },
+  {
+   "id": "seq-geometric",
+   "topic": "sequences",
+   "name": "Meetkundige ry/reeks + som tot oneindig",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-8",
+   "how_asked": "Bepaal r, Tn of Sn; bepaal vir watter waardes van x die reeks konvergeer; bereken S∞. Dikwels in konteks (oppervlaktes van krimpende vorms).",
+   "notes": "Konvergensie: -1 < r < 1 (en r ≠ 0). Vir ‘watter term is gelyk aan...’ los op met eksponente/logaritmes.",
+   "difficulty": 2
+  },
+  {
+   "id": "seq-combined",
+   "topic": "sequences",
+   "name": "Gekombineerde probleem met rekenkundige en meetkundige rye",
+   "frequency": "baie vraestelle",
+   "typical_marks": "4-6",
+   "how_asked": "Drie uitdrukkings in x vorm 'n rekenkundige of meetkundige ry — bepaal x; of die terme van 'n rekenkundige ry vorm 'n meetkundige ry.",
+   "notes": "Rekenkundig: T2-T1 = T3-T2. Meetkundig: T2/T1 = T3/T2. Kontroleer elke oplossing teen die voorwaardes van die ry.",
+   "difficulty": 3
+  },
+  {
+   "id": "fun-exponential",
+   "topic": "functions",
+   "name": "Eksponensiële funksie + inverse (logaritme)",
+   "frequency": "elke vraestel",
+   "typical_marks": "8-14",
+   "how_asked": "f(x)=a^x (± q) deur 'n gegewe punt: bepaal a, die waardeversameling, skets, dan die inverse — sy vergelyking in die vorm y=..., definisieversameling, of 'n gereflekteerde punt.",
+   "notes": "Die inverse van y=a^x is y=log_a x. Refleksie in y=x ruil die koördinate om.",
+   "difficulty": 2
+  },
+  {
+   "id": "fun-hyperbola",
+   "topic": "functions",
+   "name": "Hiperbool met asimptote en simmetrie-as",
+   "frequency": "elke vraestel",
+   "typical_marks": "8-11",
+   "how_asked": "f(x)=a/(x+p)+q vanaf 'n skets, afsnitte, of 'n gegewe simmetrie-as y=x+c: bepaal p, q, a; los f(x)≥0 op; beskryf 'n transformasie.",
+   "notes": "Asimptote x=-p, y=q. Die simmetrie-asse het gradiënte ±1 deur (-p; q).",
+   "difficulty": 2
+  },
+  {
+   "id": "fun-parabola-line",
+   "topic": "functions",
+   "name": "Parabool + reguitlyn-interaksie",
+   "frequency": "elke vraestel",
+   "typical_marks": "12-16",
+   "how_asked": "Gegee f (parabool) en g (lyn) met benoemde snypunte/afsnitte: draaipunt, toon die lyn se vergelyking aan, lengtes tussen die grafieke, en vir watter x is f>g of f·g≤0.",
+   "notes": "Die klassieke 4-puntvraag: maksimum vertikale lengte tussen kurwes → maksimeer f(x)-g(x) (voltooi die vierkant of gebruik differensiaalrekening).",
+   "difficulty": 2
+  },
+  {
+   "id": "fun-avg-gradient",
+   "topic": "functions",
+   "name": "Gemiddelde gradiënt / vertikale afstand",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "3-4",
+   "how_asked": "Gemiddelde gradiënt van f tussen twee x-waardes, of die vertikale afstand tussen twee grafieke by 'n gegewe x.",
+   "notes": "Gemiddelde gradiënt = (f(b)-f(a))/(b-a) — geen afgeleide nodig nie.",
+   "difficulty": 1
+  },
+  {
+   "id": "fun-transformations",
+   "topic": "functions",
+   "name": "Transformasie-redenering",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "2-3",
+   "how_asked": "Beskryf of pas 'n skuiwing/refleksie toe: skryf g neer as g(x)=f(x)+4, of beskryf 'n moontlike transformasie wat die definisieversameling/waardeversameling behou met 'n gegewe teken van die afgeleide.",
+   "notes": "Ken die effek van x→x+a (links), x→-x (refleksie in die y-as), f→f+q (op) op die definisieversameling, waardeversameling en asimptote.",
+   "difficulty": 2
+  },
+  {
+   "id": "fun-level4-tangent",
+   "topic": "functions",
+   "name": "Vlak 4: raaklyn via diskriminant / maksimum afstand",
+   "frequency": "baie vraestelle",
+   "typical_marks": "4-6",
+   "how_asked": "Bepaal m/k sodat 'n lyn 'n raaklyn aan 'n (moontlik geskuifde) parabool is, of maksimeer die vertikale afstand tussen twee grafieke.",
+   "notes": "Raaklyn: stel lyn = parabool, stel Δ=0. Geskuifde funksie k(x)=f(x+m): vervang en hanteer m as die onbekende.",
+   "difficulty": 3
+  },
+  {
+   "id": "fin-compound",
+   "topic": "finance",
+   "name": "Berekening van saamgestelde groei / verval",
+   "frequency": "elke vraestel",
+   "typical_marks": "2-4",
+   "how_asked": "Opgehoopte waarde met saamstelling (dikwels kwartaalliks/maandeliks), waardevermindering volgens die verminderdesaldo-metode of lineêr, of bepaal die koers/tyd.",
+   "notes": "Pas n en i by die samestellingsperiode aan. Lineêre waardevermindering bereik nul; die verminderdesaldo-metode bereik dit nooit nie.",
+   "difficulty": 1
+  },
+  {
+   "id": "fin-nominal-effective",
+   "topic": "finance",
+   "name": "Nominale vs. effektiewe rentekoers",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "2-3",
+   "how_asked": "Skakel 'n nominale koers wat maandeliks saamgestel word om na 'n effektiewe jaarlikse koers, of vergelyk twee rentekoersaanbiedings.",
+   "notes": "Gebruik 1 + i_eff = (1 + i_nom/m)^m.",
+   "difficulty": 2
+  },
+  {
+   "id": "fin-annuity-fv",
+   "topic": "finance",
+   "name": "Toekomstige-waarde-annuïteit (spaargeld/delgingsfonds)",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "4-5",
+   "how_asked": "Maandelikse deposito's om 'n teiken te bereik: bepaal die deposito of die opgehoopte waarde; delgingsfonds vir die vervanging van toerusting.",
+   "notes": "Tel n noukeurig vanaf die EERSTE tot die LAASTE betaling; 'n deposito ‘onmiddellik’ voeg 'n betaling by of verskuif die tydlyn.",
+   "difficulty": 2
+  },
+  {
+   "id": "fin-loan",
+   "topic": "finance",
+   "name": "Lening: paaiemente, saldo, totale rente",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-9",
+   "how_asked": "'n Lening wat maandeliks terugbetaal word: bepaal die paaiement, die uitstaande saldo ná k paaiemente, of die totale rente wat betaal is.",
+   "notes": "Uitstaande saldo = huidige waarde van die OORBLYWENDE paaiemente (of laat die lening groei en trek die gegroeide paaiemente af).",
+   "difficulty": 2
+  },
+  {
+   "id": "fin-level4",
+   "topic": "finance",
+   "name": "Vlak 4-wending in finansiële wiskunde",
+   "frequency": "elke vraestel se laaste finansiële deel",
+   "typical_marks": "5-7",
+   "how_asked": "Ekstra enkelbedrag betaal → hoeveel maande vroeër word die lening afbetaal; hoeveel onttrekkings kan 'n fonds volhou; gemiste paaiemente.",
+   "notes": "Hierdie vrae eindig daarmee dat jy met logaritmes vir n oplos. Stel EERS die tydlyn op, dan die vergelyking.",
+   "difficulty": 3
+  },
+  {
+   "id": "cal-first-principles",
+   "topic": "calculus",
+   "name": "Differensiasie vanuit eerste beginsels",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-5",
+   "how_asked": "Bepaal f'(x) vanuit eerste beginsels vir f(x)=ax² (of ax²+b, a/x).",
+   "notes": "Skryf elke keer die limietdefinisie neer — die punte is vir die proses. Moenie die lim (h→0) weglaat voordat jy vervang nie.",
+   "difficulty": 1
+  },
+  {
+   "id": "cal-rules",
+   "topic": "calculus",
+   "name": "Differensiasiereëls ná herskrywing",
+   "frequency": "elke vraestel",
+   "typical_marks": "2-4 per deel",
+   "how_asked": "Bepaal dy/dx of Dx van uitdrukkings met wortelvorme, breuke soos 2/x² - ³√(x⁷), of produkte wat eers uitgebrei moet word.",
+   "notes": "Skryf ALLES eers as magte van x. Antwoorde mag met negatiewe/gebroke eksponente gelaat word.",
+   "difficulty": 1
+  },
+  {
+   "id": "cal-tangent",
+   "topic": "calculus",
+   "name": "Vergelyking van 'n raaklyn / gradiëntvoorwaarde",
+   "frequency": "elke vraestel",
+   "typical_marks": "3-5",
+   "how_asked": "Raaklyn aan 'n derdegraadse funksie by x=a; of vir watter x het die raaklyn 'n positiewe/gegewe gradiënt.",
+   "notes": "m = f'(a), punt vanaf f(a). ‘Raaklyn dalend’-tipe voorwaardes → ongelykheid in f'(x).",
+   "difficulty": 2
+  },
+  {
+   "id": "cal-cubic-graph",
+   "topic": "calculus",
+   "name": "Derdegraadse grafiek: skets of interpreteer",
+   "frequency": "elke vraestel",
+   "typical_marks": "8-18",
+   "how_asked": "Skets f(x)=x³+... met afsnitte en draaipunte; of GEGEE die skets/draaipunte, beantwoord: waar is f dalend, konkaaf op, x-afsnitte van f', waardes van k sodat f(x)+k 3 positiewe wortels het.",
+   "notes": "Die k-skuifvraag is 'n vaste item: dink daaraan om die grafiek vertikaal te skuif en die wortels te tel tussen die y-waardes van die draaipunte.",
+   "difficulty": 2
+  },
+  {
+   "id": "cal-fprime-graph",
+   "topic": "calculus",
+   "name": "Interpretasie van die grafiek van f'",
+   "frequency": "baie vraestelle",
+   "typical_marks": "6-8",
+   "how_asked": "Gegee die paraboolgrafiek van f' (nie f nie): waar is f stygend, draaipunte van f, x-waarde van die buigpunt, redenering oor die vorm.",
+   "notes": "f' bokant die x-as ⇔ f stygend; nulpunte van f' ⇔ draaipunte van f; draaipunt van f' ⇔ buigpunt van f.",
+   "difficulty": 3
+  },
+  {
+   "id": "cal-optimise",
+   "topic": "calculus",
+   "name": "Optimalisering / tempo van verandering in konteks",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-8",
+   "how_asked": "Maksimeer oppervlakte/volume met 'n beperking, of beweging: gegee s'(t) of s(t), bepaal maksimum spoed, afstand afgelê, tempo van verandering.",
+   "notes": "Bou eers die enkelveranderlike-funksie (gebruik die beperking), stel dan die afgeleide = 0. Vir beweging: differensieer $s(t)$ vir spoed, en spoed weer vir versnelling (integrasie is nie in die KABV nie, dus word afstand altyd uit 'n gegewe funksie gelees).",
+   "difficulty": 3
+  },
+  {
+   "id": "prob-rules",
+   "topic": "probability",
+   "name": "Waarskynlikheidsreëls / onafhanklikheidstoets",
+   "frequency": "elke vraestel",
+   "typical_marks": "4-8",
+   "how_asked": "Gegee P(A), P(B) en inligting: bepaal P(A en B), P(ten minste een); bepaal of gebeurtenisse onafhanklik of onderling uitsluitend is, met berekeninge.",
+   "notes": "Onafhanklik: P(A en B) = P(A)·P(B). Ten minste een: 1 - P(geen). Toon BEIDE kante van die onafhanklikheidstoets.",
+   "difficulty": 1
+  },
+  {
+   "id": "prob-venn",
+   "topic": "probability",
+   "name": "Venn-diagram (teken + gebruik)",
+   "frequency": "meeste vraestelle",
+   "typical_marks": "5-9",
+   "how_asked": "Gegee oorvleuelende versamelingsgetalle in woorde: teken die Venn-diagram, bereken dan waarskynlikhede soos P(ten minste twee vakke), of los op vir 'n onbekende gebied deur die totaal te gebruik.",
+   "notes": "Vul van die binneste snyding na buite. Laat die onbekende gebied x wees en stel dit gelyk aan die totaal.",
+   "difficulty": 2
+  },
+  {
+   "id": "prob-tree",
+   "topic": "probability",
+   "name": "Boomdiagram (afhanklike/voorwaardelike opstelling)",
+   "frequency": "baie vraestelle",
+   "typical_marks": "5-6",
+   "how_asked": "Tweestadium-gebeurtenisse met verskillende waarskynlikhede per tak (weer, sneeu → temperatuur): teken die boom met takwaarskynlikhede, dan P(spesifieke uitkoms).",
+   "notes": "Vermenigvuldig langs takke, tel op tussen takke. Die takke vanaf elke knoop se waarskynlikhede tel op tot 1.",
+   "difficulty": 2
+  },
+  {
+   "id": "prob-counting",
+   "topic": "probability",
+   "name": "Fundamentele telbeginsel met beperkings",
+   "frequency": "elke vraestel",
+   "typical_marks": "6-8",
+   "how_asked": "Kodes/nommerplate/letterrangskikkings: totale rangskikkings met herhaling, dan met beperkings (sekere karakters verbode, geen herhaling, moet op 'n onewe syfer eindig); soms 'n vergelyking van persentasieverandering.",
+   "notes": "Hanteer die MEES beperkte posisie eerste. Herhaalde letters: deel deur k! vir elke herhaalde letter.",
+   "difficulty": 2
+  },
+  {
+   "id": "prob-arrangement-prob",
+   "topic": "probability",
+   "name": "Vlak 4: waarskynlikheid van 'n rangskikking",
+   "frequency": "baie vraestelle",
+   "typical_marks": "3-4",
+   "how_asked": "n persone in 'n ry: die waarskynlikheid dat twee spesifieke persone presies k ander tussen hulle het, of langs mekaar sit.",
+   "notes": "Gunstige rangskikkings / totale rangskikkings (n!). Tel die posisies vir die paar, ×2 vir hul volgorde, × rangskikkings van die res.",
+   "difficulty": 3
+  }
+ ]
+}

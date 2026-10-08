@@ -1,0 +1,311 @@
+{
+  "algebra": {
+    "title": "Algebra, vergelykings en ongelykhede",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Los kwadratiese vergelykings op deur te faktoriseer en met die formule $x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}$ (tot 2 desimale plekke wanneer dit gevra word, anders in eenvoudigste wortelvorm). Voltooiing van die vierkant word nie as metode om 'n vergelyking op te los geëksamineer nie, maar jy het dit steeds nodig vir draaipunte en sirkelvergelykings.",
+        "Los kwadratiese ongelykhede op en gee die antwoord in intervalnotasie of ongelykheidsnotasie.",
+        "Los gelyktydige vergelykings op waar een lineêr en een kwadraties is (of $xy$ of breuke bevat).",
+        "Los eksponensiële vergelykings op (gemeenskaplike faktor, of kwadraties in $2^x$) en wortelvergelykings (isoleer, kwadreer, KONTROLEER).",
+        "Gebruik die diskriminant $\\Delta=b^2-4ac$ om oor die aard van die wortels te redeneer en waardes van $k$ te bepaal."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Herrangskik altyd tot $=0$ (of $>0/<0$) voordat jy faktoriseer of die formule gebruik.",
+        "Ongelykhede: bepaal die wortels, skets die parabool en lees af waar dit bo/onder die as lê. Moet nooit deur 'n veranderlike uitdrukking deel nie.",
+        "Gelyktydig: maak een veranderlike die onderwerp van die LINEÊRE vergelyking, vervang dit in die kwadratiese vergelyking, los op en vervang dan terug om albei pare te kry.",
+        "Eksponensiële vergelykings soos $2^{2x}-2^{x+2}-32=0$: stel $k=2^x$ om 'n kwadratiese vergelyking in $k$ te kry; verwerp $k\\le0$.",
+        "Wortelvergelykings: kontroleer ELKE antwoord ná kwadrering in die oorspronklike vergelyking — kwadrering skep ongeldige wortels.",
+        "Aard van die wortels: reëel $\\Leftrightarrow\\Delta\\ge0$; gelyk $\\Leftrightarrow\\Delta=0$; nie-reëel $\\Leftrightarrow\\Delta<0$; rasionaal $\\Leftrightarrow\\Delta$ 'n volkome vierkant."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Te vroeg afrond in die formule — hou 4 desimale en rond eers heel laaste af.",
+        "Die negatiewe wortel vergeet wanneer $x^2=c$ opgelos word (antwoord: $x=\\pm\\sqrt{c}$).",
+        "Ongelykheidsantwoorde wat as 'n enkele interval geskryf word wanneer die parabool na bo oopmaak en die oplossing BUITE die wortels lê ($x<a$ of $x>b$).",
+        "Die antwoorde van wortelvergelykings nie kontroleer nie — gewoonlik is presies een geldig.",
+        "In $k$-vrae $\\Delta=0$ oplos wanneer die vraag reële ONGELYKE wortels ($\\Delta>0$) gevra het."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 1, ±25 punte)", "points": [
+        "Vr. 1.1 is 'n leer: faktoriseer (2-3), formule tot 2 d.p. (3-4), ongelykheid (3-4), dan 'n eksponensiële en/of wortelvergelyking (4-5 elk).",
+        "Vr. 1.2 is die gelyktydige paar vir 5-6 punte.",
+        "Die laaste deel is 'n vlak 4-wending vir 3-4 punte: teleskopiese produkte, heelgetal-eksponentvergelykings soos $2^{m+1}+2^m=3^{n+2}-3^n$, of redenering oor alle moontlike waardes. Haal gemeenskaplike magte uit en skryf dinge uit — moenie dit oorslaan nie, deelpunte tel werklik."
+      ]}
+    ]
+  },
+  "sequences": {
+    "title": "Patrone, rye en reekse",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Rekenkundig: $T_n=a+(n-1)d$, $S_n=\\frac{n}{2}[2a+(n-1)d]$ — bepaal terme, posisies en somme.",
+        "Meetkundig: $T_n=ar^{n-1}$, $S_n=\\frac{a(r^n-1)}{r-1}$, $S_\\infty=\\frac{a}{1-r}$ vir $-1<r<1$.",
+        "Kwadratiese patrone: $T_n=an^2+bn+c$ waar die TWEEDE verskil $=2a$.",
+        "Sigmanotasie: bereken $\\sum$-uitdrukkings en skryf gegewe somme in sigmanotasie.",
+        "Gemengde probleme waar opeenvolgende uitdrukkings in $x$ 'n rekenkundige of meetkundige ry vorm."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Die aantal terme van $k=m$ tot $n$ is $n-m+1$ — die klassieke sigma-fout.",
+        "Kwadratiese patroon: eerste verskille vorm 'n rekenkundige ry. Vrae soos 'gegee $T_{99}$, bepaal $T_{98}$' vereis net die 98ste eerste verskil: $T_{99}-T_{98}=d_{98}$.",
+        "Om te bepaal watter term in 'n meetkundige ry gelyk is aan 'n waarde, los $ar^{n-1}=\\text{waarde}$ op deur priemfaktorisering of logaritmes te gebruik.",
+        "Konvergensievrae: stel $-1<r<1$ op waar $r$ 'n uitdrukking in $x$ is, en los die dubbele ongelykheid op.",
+        "Rekenkundige voorwaarde: $T_2-T_1=T_3-T_2$. Meetkundige voorwaarde: $\\frac{T_2}{T_1}=\\frac{T_3}{T_2}$. Kontroleer jou antwoorde altyd deur hulle terug in die ry te vervang."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "$n$ gebruik waar die vraag die TERM verlang en andersom — beantwoord die werklike vraag.",
+        "Som teenoor term: $S_n$-vrae beantwoord met $T_n$-formules.",
+        "$r\\neq0$ vergeet en waardes van $x$ wat opeenvolgende terme nul maak nie verwerp nie.",
+        "In konteksprobleme (oppervlaktes, lengtes) eenhede vergeet, of vergeet om die verhouding vir oppervlaktes te kwadreer."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 2–3, ±25 punte)", "points": [
+        "Een roetinevraag oor 'n rekenkundige ry/sigmanotasie, een kwadratiese-patroonvraag met 'n slim wending, en een vraag oor 'n meetkundige ry, dikwels in 'n werklike konteks (bv. sirkels wat met 'n faktor krimp — bepaal die radiuspatroon, die som van oppervlaktes, watter sirkel 'n gegewe grootte het).",
+        "Som tot oneindig kom die meeste jare voor, óf 'bereken $S_\\infty$' óf 'vir watter $x$ konvergeer die reeks'."
+      ]}
+    ]
+  },
+  "functions": {
+    "title": "Funksies en grafieke",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Parabool $y=a(x+p)^2+q$ / $y=ax^2+bx+c$: afsnitte, draaipunt $x=-\\frac{b}{2a}$, simmetrie-as, skets.",
+        "Hiperbool $y=\\frac{a}{x+p}+q$: asimptote $x=-p$, $y=q$, afsnitte, simmetrie-asse $y=\\pm(x+p)+q$.",
+        "Eksponensieel $y=a\\cdot b^{x+p}+q$; die inverse van $y=b^x$ is $y=\\log_b x$. Skets albei en gee die definisieversameling/waardeversameling.",
+        "Inverses: ruil $x$ en $y$ om, los op vir $y$; beperk 'n parabool se definisieversameling sodat $f^{-1}$ 'n funksie is.",
+        "Lees oplossings van grafieke af: $f(x)\\ge0$, $f(x)>g(x)$, $f(x)\\cdot g(x)\\le0$, lengtes tussen grafieke, gemiddelde gradiënt."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Vergelykings uit 'n skets bepaal: vervang die duidelik gemerkte punte (afsnitte, draaipunt, asimptoot-inligting) in die regte algemene vorm.",
+        "Vertikale afstand tussen $f$ en $g$ by $x$: $|f(x)-g(x)|$. MAKSIMUM vertikale afstand op 'n interval: maksimeer $f(x)-g(x)$ (voltooi die vierkant of differensieer).",
+        "Inverse van 'n eksponensiële funksie: $y=a^x\\Rightarrow f^{-1}: y=\\log_a x$. 'n Punt $(m;n)$ op $f$ word na $(n;m)$ gereflekteer.",
+        "'n Lyn wat aan 'n parabool raak: stel die twee vergelykings gelyk aan mekaar en vereis $\\Delta=0$.",
+        "Transformasies: $f(x)+q$ skuif op, $f(x+p)$ skuif links, $f(-x)$ reflekteer in die $y$-as, $-f(x)$ in die $x$-as — hou dop wat met asimptote en draaipunte gebeur."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Definisieversameling/waardeversameling met die verkeerde veranderlike of tipe hakie geskryf — die waardeversameling van $y=a^x-4$ is $y>-4$, nie $y\\ge-4$ nie.",
+        "Asimptoottekens: $y=\\frac{a}{x+p}+q$ het 'n vertikale asimptoot by $x=-p$ (nie $+p$ nie).",
+        "Vir $f(x)\\ge0$ op 'n hiperbool, onthou die deel anderkant die vertikale asimptoot.",
+        "Inverse-notasie: $f^{-1}(x)$ is NIE $\\frac{1}{f(x)}$ nie."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 4–6, ±35 punte)", "points": [
+        "Drie vrae: een oor 'n eksponensiële funksie (+inverse/logaritme), een oor 'n hiperbool, en een oor 'n parabool met 'n lyn.",
+        "Vaste items: 'skryf die asimptoot/waardeversameling neer' (1-2 gratis punte), 'bepaal die vergelyking van...' (3-4), 'vir watter waardes van $x$ is...' (2-3), en 'n laaste vlak 4-deel: maksimum vertikale afstand, of 'n raaklyn/skuif met 'n onbekende $m$ wat met die diskriminant opgelos word.",
+        "2024-voorbeeld: gegee $k(x)=f(x+m)$, bepaal $m$ sodat 'n lyn 'n raaklyn aan $k$ is — vervang, stel gelyk, $\\Delta=0$, los op vir $m$."
+      ]}
+    ]
+  },
+  "finance": {
+    "title": "Finansiële wiskunde",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Saamgestelde groei/verval: $A=P(1\\pm i)^n$; enkelvoudige rente/lineêre waardevermindering: $A=P(1\\pm ni)$.",
+        "Skakel nominaal om na effektief: $1+i_{eff}=(1+\\frac{i_{nom}}{m})^m$.",
+        "Toekomstige waarde van 'n annuïteit $F=\\frac{x[(1+i)^n-1]}{i}$ (spaargeld, delgingsfondse).",
+        "Huidige waarde $P=\\frac{x[1-(1+i)^{-n}]}{i}$ (lenings, 'hoeveel onttrekkings').",
+        "Los op vir $n$ met logaritmes; bepaal uitstaande saldo's; hanteer tydlynveranderings (ekstra paaiemente, onderbrekings, rentekoersveranderings)."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Pas $i$ en $n$ EERSTE by die samestellingsperiode aan (maandelikse koers = nominaal ÷ 12; maande, nie jare nie).",
+        "Teken 'n tydlyn vir enigiets verder as een stap. Merk deposito's, onttrekkings, koersveranderings en 'nou'.",
+        "Uitstaande saldo ná $k$ paaiemente = huidige waarde van die oorblywende $n-k$ paaiemente (vinnigste), of laat die lening $k$ maande groei en trek die gegroeide paaiemente af.",
+        "'Hoeveel maande vroeër / hoeveel onttrekkings': stel die annuïteitsvergelyking op met $n$ onbekend, isoleer $(1+i)^n$ (of $(1+i)^{-n}$), neem logaritmes.",
+        "Totale rente = (alle geld wat betaal is) − (leningsbedrag)."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Jare vir $n$ gebruik met 'n maandelikse koers (of andersom).",
+        "Aantal paaiemente: of die eerste paaiement 'een maand van nou af' of 'onmiddellik' gemaak word, verander $n$ of voeg 'n faktor $(1+i)$ by.",
+        "Waardevermindering: die verminderdesaldo-metode gebruik $(1-i)^n$; die reguitlynmetode TREK elke jaar dieselfde bedrag AF en kan nul bereik.",
+        "Geld afrond voor die finale antwoord — hou volle akkuraatheid, rond aan die einde tot sente af."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 7 of daaromtrent, ±15 punte)", "points": [
+        "'n Kort saamgestelde/verval-deel (2-4), dikwels 'n nominale/effektiewe of koers/tyd-oplossing (2-3), dan 'n lening of annuïteit as hoofgereg (6-9).",
+        "Die laaste deel is 'n vlak 4-tydlynwending: 'n enkelbedrag wat gedurende die leningstermyn betaal word → hoeveel maande vroeër eindig dit (2024, 7 punte); boerpot belê → hoeveel R20 000-onttrekkings is moontlik (2023, 5 punte). Dit eindig altyd in 'n logaritme-oplossing — oefen daardie stap tot dit outomaties is."
+      ]}
+    ]
+  },
+  "calculus": {
+    "title": "Differensiaalrekening",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Eerste beginsels: $f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$ vir $ax^2+bx+c$, $ax^3$, $\\frac{a}{x}$.",
+        "Differensieer ná herskrywing: wortelvorme na magte ($\\sqrt[3]{x^7}=x^{7/3}$), breuke na negatiewe eksponente, brei produkte uit.",
+        "Raaklyne: gradiënt $=f'(a)$, dan 'n lyn deur $(a;f(a))$.",
+        "Derdegraadse grafieke: afsnitte, draaipunte ($f'(x)=0$), buigpunt, skets en interpreteer.",
+        "Optimalisering en tempo van verandering in konteks (oppervlakte, volume, beweging)."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Skryf elke keer die limietdefinisie van eerste beginsels neer — die struktuur verdien punte selfs al maak jy 'n fout in die algebra.",
+        "Draaipunte: los $f'(x)=0$ op; konkawiteit via $f''$ ($f''>0$ konkaaf op); buigpunt by $f''(x)=0$.",
+        "Vir 'waardes van $k$ sodat $f(x)+k$ drie (positiewe) wortels het': skuif die grafiek vertikaal en vang die $x$-as streng tussen die $y$-waardes van die draaipunte vas.",
+        "Gegee die grafiek van $f'$ ('n parabool): $f$ is stygend waar $f'>0$; $f$ het draaipunte by die NULPUNTE van $f'$; $f$ het sy buigpunt by die draaipunt van $f'$.",
+        "Optimaliseringsresep: skryf die beperking neer, druk die teiken in EEN veranderlike uit, differensieer, stel $=0$, kontroleer dat dit 'n maksimum/minimum is, beantwoord die werklike vraag."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "$\\frac{2}{x^2}$ differensieer asof dit $2x^2$ is — skryf dit eers as $2x^{-2}$ ($\\Rightarrow-4x^{-3}$).",
+        "Notasiepunte: $\\frac{dy}{dx}$, $f'(x)$, $D_x$ — antwoord in die notasie wat gevra word.",
+        "Vergeet om BEIDE koördinate van draaipunte te gee wanneer jy skets.",
+        "In bewegingsprobleme $s$ (afstand), $s'$ (spoed) en $s''$ (versnelling) deurmekaarkry."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 8–10, ±35 punte)", "points": [
+        "Vr. 8-tipe: eerste beginsels (5) + twee herskryf-en-differensieer-dele (2-4 elk) + 'n raaklyn- of inverse-skakeldeel.",
+        "Vr. 9-tipe: 'n derdegraadse funksie — skets dit volledig, of interpreteer 'n gegewe skets (dalende interval, konkawiteit, tel van wortels ná 'n $k$-skuif, $x$-afsnitte van $f'$).",
+        "Vr. 10-tipe: optimalisering/tempo van verandering in konteks, werd 6-8 (heining teen 'n muur, volume van 'n boks, fietsryer se spoed $s'(t)=-3t^2+18t$ → maksimum spoed en afstand).",
+        "Die vraag oor die interpretasie van die $f'$-grafiek word die meeste verbrou — oefen die vertaaltabel tussen $f$ en $f'$ deeglik."
+      ]}
+    ]
+  },
+  "probability": {
+    "title": "Waarskynlikheid en telling",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Reëls: $P(A\\text{ of }B)=P(A)+P(B)-P(A\\text{ en }B)$; komplementêr $P(\\text{nie }A)=1-P(A)$.",
+        "Onafhanklike gebeurtenisse: $P(A\\text{ en }B)=P(A)\\cdot P(B)$; onderling uitsluitend: $P(A\\text{ en }B)=0$ — en TOETS hiervoor met getalle.",
+        "Venn-diagramme (2 of 3 versamelings) met 'n onbekende gebied $x$; boomdiagramme vir tweestadium-gebeurtenisse.",
+        "Telling: fundamentele telbeginsel, rangskikkings met beperkings, herhaalde letters (deel deur $k!$), en waarskynlikheid = gunstige/totale rangskikkings."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Venn: vul van die binneste oorvleueling na buite; tel alle gebiede bymekaar tot die totaal om vir $x$ op te los.",
+        "'Ten minste een' $=1-P(\\text{geen})$ — byna altyd die vinnigste roete.",
+        "Onafhanklikheidstoets: bereken $P(A\\text{ en }B)$ en $P(A)\\cdot P(B)$ afsonderlik en vergelyk — wys albei getalle.",
+        "Beperkings eerste: plaas die beperkte posisie/letter, vermenigvuldig dan die oorblywende keuses.",
+        "Letterrangskikkings met herhalings: $\\frac{n!}{k_1!\\,k_2!\\cdots}$.",
+        "Rangskikkingswaarskynlikheid: tel die gunstige opstellings (posisies vir die spesiale paar × hul interne volgorde × rangskikkings van die res) gedeel deur $n!$."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Onderling uitsluitend met onafhanklik verwar — hulle is amper teenoorgesteldes.",
+        "Boomdiagramme waar tweedestadium-waarskynlikhede nie verander wanneer hulle moet nie (of takke nie tot 1 optel nie).",
+        "Kodes tel: 'mag nie herhaal word nie' verander elke posisie se telling (26, dan 25...).",
+        "Vergeet dat 'deelbaar deur 5 / onewe syfer' die LAASTE posisie vasmaak — vul dit eerste."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 11–12, ±15 punte)", "points": [
+        "Een vraag oor reëls + 'n Venn- of boomdiagram (2024: teken die Venn-diagram vir drie eksamenvakke, P(ten minste twee), toets onafhanklikheid met berekeninge — 9 punte).",
+        "Een telvraag: kodes/nommerplate/foto's met toenemende beperkings, wat eindig met 'n wending van 2-4 punte soos 'n persentasietoename of 'n rangskikkingswaarskynlikheid ('waarskynlikheid dat presies 5 leerders tussen die twee jongstes staan').",
+        "Wys die vermenigvuldiging (bv. $26\\times10\\times25\\times5$) — metodepunte lê daar."
+      ]}
+    ]
+  },
+  "statistics": {
+    "title": "Statistiek en regressie",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Gemiddelde, mediaan, modus, variasiewydte, interkwartielvariasiewydte, vyfgetalopsomming, mond-en-snordiagramme en skeefheid.",
+        "Populasiestandaardafwyking $\\sigma$ (sakrekenaar) en 'binne een standaardafwyking'-tellings.",
+        "Ogiewe: lees die mediaan/kwartiele en die aantal waardes bo/onder 'n waarde af, en identifiseer die modale klas.",
+        "Kleinste-kwadrate-regressie $\\hat{y}=a+bx$ en korrelasie $r$ met die sakrekenaar; voorspel en interpreteer.",
+        "Uitwerking op gemiddelde/mediaan/σ van die optelling van 'n konstante, skalering, of 'n uitskieter; die uitskietertoets met $1{,}5\\times$IKV (interkwartielvariasiewydte)."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Vyfgetalopsomming: orden eers die data; vir $n$ waardes is die mediaan by posisie $\\frac{n+1}{2}$.",
+        "Ogief aflees: gaan na $\\frac{n}{2}$ (of $\\frac{n}{4}$, $\\frac{3n}{4}$) op die kumulatiewe as, oor na die kurwe, af na die waarde.",
+        "Regressie met die sakrekenaar: tweeveranderlike STAT-modus, teken $a$, $b$, $r$ op tot minstens twee desimale plekke af en hou hulle gestoor vir voorspellings.",
+        "Interpolasie (binne die omvang van die data) is betroubaar; ekstrapolasie (daarbuite) nie — sê so wanneer dit gevra word.",
+        "'n Konstante $c$ by elke waarde tel: gemiddelde/mediaan skuif met $c$, $\\sigma$ ONVERANDERD. Vermenigvuldig met $c$: alles skaal."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Die steekproef- ($n-1$) standaardafwyking gebruik — die NSS gebruik die populasie-$\\sigma_n$.",
+        "Skeefheidsrigting: regs/positiewe skeefheid het die LANG stert na regs (gemiddelde > mediaan).",
+        "Met afgeronde $a$, $b$ voorspel en dan die antwoord te veel afrond — meld watter afronding jy gebruik het.",
+        "'Hoe verander σ' met 'n getal beantwoord wanneer slegs die rigting/geen verandering gevra word."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 1–2, ±20 punte)", "points": [
+        "Een rou-data-/opsommingsvraag (vyfgetalopsomming, mond-en-snordiagram, σ, uitskietertoets) en een gegroepeerde/ogief- of regressievraag.",
+        "2024: regressie op rugbyspelers (bepaal $\\hat{y}$, $r$, voorspel, gemiddelde, uitwerking van +5 op σ, maksimum toename om 'n teiken te haal) + 'n ogief met die interpretasie van 'n reël oor werk van die huis af.",
+        "Verwag een 'interpreteer in konteks'-sinantwoord — skryf 'n kort, spesifieke sin, nie 'n opstel nie."
+      ]}
+    ]
+  },
+  "analytical-geometry": {
+    "title": "Analitiese meetkunde",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Afstand, middelpunt, gradiënt; vergelykings van lyne $y=mx+c$ / $y-y_1=m(x-x_1)$.",
+        "Ewewydigheids- ($m_1=m_2$) en loodregtheidsvoorwaardes ($m_1m_2=-1$); saamlynigheid.",
+        "Inklinasie: $\\tan\\theta=m$, met $\\theta\\in[0°;180°)$; hoeke tussen lyne uit inklinasies.",
+        "Sirkels $(x-a)^2+(y-b)^2=r^2$: bepaal middelpunt/radius deur die vierkant te voltooi; raaklyne (⊥ radius) by 'n punt.",
+        "Eienskappe van driehoeke en vierhoeke in die vlak; verhoudings en oppervlaktes."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Negatiewe gradiënt → stomphoekige inklinasie: $\\theta=180°-\\tan^{-1}|m|$.",
+        "'Toon aan dat die vergelyking van die sirkel ... is': voltooi die vierkant volledig — elke balanseringstap sigbaar.",
+        "Raaklyn by $P$: eers die gradiënt van radius $MP$, dan $m_{tan}=-\\frac{1}{m_{MP}}$, dan die lyn deur $P$.",
+        "Verhouding van segmente op 'n lyn: gebruik die x- (of y-) verskille — vir B op DC, $\\frac{DB}{DC}=\\frac{x_B-x_D}{x_C-x_D}$.",
+        "Oppervlakteverhoudings met 'n ewewydige lyn: die driehoeke is gelykvormig, dus skaal oppervlaktes met die KWADRAAT van die syverhouding.",
+        "Onbekende punt uit gradiënt + lengte: twee vergelykings (gradiënt gee 'n lineêre verband, afstand 'n kwadratiese vergelyking) — los op en kies die kwadrant wat by die diagram pas."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Radius en middellyn word verwar, en $r^2$ word as $r$ gelaat.",
+        "Tekenfoute by loodregte gradiënte — keer om EN maak negatief.",
+        "'n Diagrameienskap (soos 'n regte hoek) aanvaar wat BEWYS moet word.",
+        "Gekoppelde vrae: kontroleer elke vroeë antwoord (gradiënt, dan vergelyking, dan lengte), omdat latere dele hulle hergebruik."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 3–4, ±40 punte)", "points": [
+        "Vr. 3: 'n ketting van driehoek-/vierhoekhoekpunte — gradiënt → vergelyking → toon 'n koördinaat aan → lengte → verhouding → oppervlakteverhouding → bepaal die onbekende hoekpunt uit gradiënt + lengte (die slotvraag van 6 punte in 2024).",
+        "Vr. 4: DIE sirkelvraag — raaklynvergelyking, toon die sirkel se vergelyking aan, 'n 'toon aan dat $d=...$' punt-op-sirkel-deel, 'n hoek met behulp van inklinasiehoeke, en 'n loodregtheids-/raaklynbewys om af te sluit.",
+        "Albei vrae het 'n gedrukte diagram — herteken die belangrikste dele en merk bekende waardes soos jy vorder."
+      ]}
+    ]
+  },
+  "trigonometry": {
+    "title": "Trigonometrie",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Eksakte waardes uit 'n punt $P(x;y)$ op die eindarm, en uit gegewe verhoudings met kwadrantbeperkings — sonder 'n sakrekenaar.",
+        "Reduksieformules ($180°\\pm x$, $360°\\pm x$, $-x$, ko-funksies $90°\\pm x$) en spesiale hoeke.",
+        "Saamgestelde en dubbelhoeke: $\\sin(\\alpha\\pm\\beta)$, $\\cos(\\alpha\\pm\\beta)$, $\\sin2\\alpha$, al drie vorme van $\\cos2\\alpha$.",
+        "Bewys identiteite en meld waar hulle ongedefinieer is; bepaal algemene oplossings en los vergelykings in 'n gegewe interval op.",
+        "Skets/lees $\\sin$-, $\\cos$-, $\\tan$-grafieke met amplitude/periode/skuiwe; lees die oplossings van vergelykings UIT grafieke af.",
+        "Sinusreël, cosinusreël, oppervlaktereël in 2D- en 3D-probleme."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Punt op die eindarm: bereken $r=\\sqrt{x^2+y^2}$, lees dan verhoudings met die korrekte tekens af (CAST-diagram).",
+        "$\\cos2A$ uit $\\cos A$: gebruik $2\\cos^2A-1$; uit $\\sin A$: gebruik $1-2\\sin^2A$ — kies die vorm wat by jou gegewens pas.",
+        "Identiteite: faktoriseer deur die $\\cos2A$-vorm te gebruik wat by sy bure pas (bv. $\\cos2A+\\cos A+1=2\\cos^2A+\\cos A$).",
+        "Algemene oplossings: $\\sin x=\\sin\\alpha\\Rightarrow x=\\alpha+k360°$ of $x=180°-\\alpha+k360°$; $\\cos x=\\cos\\alpha\\Rightarrow x=\\pm\\alpha+k360°$; $\\tan x=\\tan\\alpha\\Rightarrow x=\\alpha+k180°$, $k\\in\\mathbb{Z}$.",
+        "Ko-funksievergelykings soos $\\sin(x+20°)=\\cos2x$: herskryf $\\cos2x=\\sin(90°-2x)$ en stel albei families gelyk.",
+        "3D-probleme: werk driehoek vir driehoek; die gedeelde sy oorbrug hulle. Regte hoeke ontstaan waar 'vertikaal' 'horisontaal' ontmoet.",
+        "Maksimum/minimum: herskryf in terme van 'n enkele $\\sin/\\cos$ (waardeversameling $[-1;1]$) en redeneer — sonder differensiaalrekening."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Die tweede oplossingsfamilie in algemene oplossings weglaat.",
+        "Tekenfoute in kwadrante II–IV wanneer sonder 'n sakrekenaar gewerk word — teken elke keer die sketsdriehoek.",
+        "'n Vergelyking deur $\\cos x$ deel (en oplossings verloor) in plaas van te faktoriseer.",
+        "$k\\in\\mathbb{Z}$ vergeet (verloor 'n punt) of antwoorde buite 'n gestelde interval laat.",
+        "In grade werk terwyl die sakrekenaar op radiale gestel is."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 5–8, ±50 punte)", "points": [
+        "Vr. 5: waardes sonder sakrekenaar uit 'n punt + 'n evaluering met saamgestelde hoeke + 'n 'druk uit in terme van $p$'-deel.",
+        "Vr. 6: lei 'n saamgestelde identiteit af, bewys 'n identiteit met baie reduksieformules (6 punte), los 'n vergelyking in 'n interval op, maksimum/minimum van 'n trigonometriese uitdrukking.",
+        "Vr. 7: grafieke — asimptote, periodes, teken een grafiek, dan 'gebruik die grafieke om die algemene oplossing te bepaal' van 'n gekombineerde vergelyking (sien dat dit beteken: waar die getekende grafieke mekaar sny).",
+        "Vr. 8: die 2D/3D-probleem (±9-13 punte): gebou/mas met hoogtehoeke oor 2-3 driehoeke — sinusreël vir die oorbruggingsy, cosinus-/oppervlaktereël om af te sluit."
+      ]}
+    ]
+  },
+  "euclidean-geometry": {
+    "title": "Euklidiese meetkunde",
+    "sections": [
+      { "h": "Wat jy moet kan doen", "points": [
+        "Alle sirkelstellings met hul redename: lyn vanuit middelpunt ⊥ koord; middelpunts∠ $=2\\times$ omtreks∠; ∠e in dieselfde segment; ∠ in halfsirkel; koordevierhoek (teenoorstaande ∠e supplementêr, buite∠ = teenoorstaande binne∠); raaklyne vanuit 'n punt; raaklyn-koordstelling.",
+        "Eweredigheid: 'n lyn ewewydig aan een sy van 'n driehoek verdeel die ander twee sye eweredig (en sy omgekeerde); die middelpuntstelling.",
+        "Gelykvormigheid: gelykhoekige driehoeke ⇒ sye eweredig, wat uitloop op produk-van-sye-resultate.",
+        "BEWYS die eksamineerbare stellings volledig van die begin af — hulle word vir regte punte gevra (2024: eweredigheidstelling, 6 punte)."
+      ]},
+      { "h": "Kernmetodes", "points": [
+        "Gebruik ALTYD die formaat bewering (rede) — bv. $\\hat{B}_1=\\hat{D}$ (raaklyn-koordstelling). Geen rede, geen punt.",
+        "Hoekjag: dra die gegewe hoeke oor na die diagram, soek dan raaklynpare, middellyne, koordevierhoeke en gelykbenige driehoeke met radiusse.",
+        "Om sye gelyk te bewys: vind gelyke hoeke in dieselfde driehoek (gelykbenig) of kongruente/gelykvormige driehoeke.",
+        "Om 'n produk soos $AG\\cdot AD=AC\\cdot AF$ te bewys: vind die twee gelykvormige driehoeke wie se verhoudings ná kruisvermenigvuldiging presies dit gee — skryf hoekpunte in ooreenkomstige volgorde.",
+        "Saamgestelde slotte soos $GF^2=\\frac{BC\\cdot FC\\cdot AF}{AD}$: vermenigvuldig/deel die resultate van die vorige dele — die eksamen bou hulle in volgorde op.",
+        "Verhoudings met die middelpunt: loodlyn vanuit die middelpunt halveer die koord; kombineer met die middelpuntstelling vir 1:2-verhoudings."
+      ]},
+      { "h": "Algemene slaggate", "points": [
+        "Verkeerde of vae redes ('hoeke in sirkel') — leer die presiese aanvaarde formulering.",
+        "Gebruik van wat jy nog moet bewys (sirkelredenering) — veral in 'gevolglik'-vrae.",
+        "Gelykvormige driehoeke in nie-ooreenkomstige volgorde geskryf, wat die verhouding bederf.",
+        "Aanvaar dat 'n lyn 'n middellyn of raaklyn is wanneer dit nie gegee is nie.",
+        "Die stellingbewyse oorslaan tydens studie — hulle is die voorspelbaarste 5-6 punte in die vraestel."
+      ]},
+      { "h": "Hoe die eksamen dit vra (Vr. 9–11, ±40 punte)", "points": [
+        "Vr. 9: 'n eensirkel-toepassingsvraag — bereken 'n hoek met redes, dan 'gevolglik bewys' gelyke koorde / koordevierhoek (±6 punte).",
+        "Vr. 10: 'n stelling-BEWYS (boekwerk) + 'n eweredigheids-/middelpuntstelling-toepassing met 'n numeriese lengte om af te sluit (±15 punte).",
+        "Vr. 11: die groot toepassingsvraag (±20 punte): dikwels twee sirkels met 'n gemeenskaplike raaklyn — vind 4 hoeke gelyk aan $x$ (6), bewys 'n syproduk (4), bewys gelykvormigheid (4), dan die saamgestelde produkslot (6).",
+        "Die instruksie 'Verskaf redes vir jou bewerings' word bo hierdie vrae gedruk — beskou elke bewering sonder 'n rede as 'n verlore punt."
+      ]}
+    ]
+  }
+}

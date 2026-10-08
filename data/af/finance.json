@@ -1,0 +1,479 @@
+{
+  "id": "finance",
+  "paper": 1,
+  "title": "Finansiële wiskunde",
+  "blurb": "Saamgestelde groei en verval, nominale en effektiewe koerse, annuïteite, lenings, uitstaande saldo's en delgingsfondstydlyne.",
+  "questions": [
+    {
+      "id": "finance-01",
+      "difficulty": 1,
+      "context": "'n Afleweringsbakkie word vir R380 000 gekoop. Die waarde van die bakkie verminder teen $14\\%$ per jaar volgens die verminderdesaldo-metode. Die prys van 'n nuwe bakkie van dieselfde model neem met inflasie toe teen $6\\%$ per jaar.",
+      "svg": null,
+      "archetype": "fin-compound",
+      "parts": [
+        {
+          "q": "Bereken die waarde van die bakkie ná $5$ jaar. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1-i)^n=380\\ 000(1-0{,}14)^5$",
+            "$A=380\\ 000(0{,}86)^5$",
+            "$A=$ R$178\\ 762{,}27$ (naaste sent)"
+          ],
+          "answer": "R178 762,27"
+        },
+        {
+          "q": "Bereken die prys van 'n NUWE bakkie van dieselfde model ná $5$ jaar. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1+i)^n=380\\ 000(1+0{,}06)^5$",
+            "$A=380\\ 000(1{,}06)^5$",
+            "$A=$ R$508\\ 525{,}72$ (naaste sent)"
+          ],
+          "answer": "R508 525,72"
+        }
+      ]
+    },
+    {
+      "id": "finance-02",
+      "difficulty": 2,
+      "context": "Bank A bied 'n rentekoers van $10{,}5\\%$ per jaar, maandeliks saamgestel. Bank B bied $10{,}8\\%$ per jaar, jaarliks saamgestel.",
+      "svg": null,
+      "archetype": "fin-nominal-effective",
+      "parts": [
+        {
+          "q": "Skakel Bank A se koers om na 'n effektiewe jaarlikse rentekoers. Gee jou antwoord korrek tot TWEE desimale plekke.",
+          "marks": 3,
+          "solution": [
+            "$1+i_{\\text{eff}}=\\left(1+\\dfrac{0{,}105}{12}\\right)^{12}$",
+            "$i_{\\text{eff}}=(1{,}00875)^{12}-1=0{,}1102\\ldots$",
+            "Effektiewe koers $\\approx 11{,}02\\%$ per jaar"
+          ],
+          "answer": "$11{,}02\\%$ per jaar (effektief)"
+        },
+        {
+          "q": "Watter bank bied die beter koers vir 'n belegger? Regverdig jou antwoord.",
+          "marks": 2,
+          "solution": [
+            "Bank A se effektiewe koers is $11{,}02\\%$, Bank B se effektiewe koers is $10{,}8\\%$",
+            "$11{,}02\\%>10{,}8\\%$, dus is Bank A beter vir 'n belegger"
+          ],
+          "answer": "Bank A, aangesien sy effektiewe koers ($11{,}02\\%$) hoër is as Bank B se $10{,}8\\%$"
+        }
+      ]
+    },
+    {
+      "id": "finance-03",
+      "difficulty": 2,
+      "context": "Thandi wil vir 'n deposito op 'n woonstel spaar. Sy betaal R1 500 aan die EINDE van elke maand vir $6$ jaar in 'n spaarrekening in. Die rekening verdien rente teen $9\\%$ per jaar, maandeliks saamgestel.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Bereken die waarde van Thandi se spaargeld aan die einde van die $6$ jaar. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}09}{12}=0{,}0075$ en $n=6\\times 12=72$",
+            "$F=\\dfrac{x\\left[(1+i)^n-1\\right]}{i}$",
+            "$F=\\dfrac{1\\ 500\\left[(1{,}0075)^{72}-1\\right]}{0{,}0075}$",
+            "$F=$ R$142\\ 510{,}54$ (naaste sent)"
+          ],
+          "answer": "R142 510,54"
+        },
+        {
+          "q": "Hoeveel rente verdien Thandi oor die $6$ jaar?",
+          "marks": 2,
+          "solution": [
+            "Totaal gedeponeer $=72\\times 1\\ 500=$ R$108\\ 000$",
+            "Rente $=142\\ 510{,}54-108\\ 000=$ R$34\\ 510{,}54$"
+          ],
+          "answer": "R34 510,54"
+        }
+      ]
+    },
+    {
+      "id": "finance-04",
+      "difficulty": 2,
+      "context": "Die Dlamini-gesin neem 'n verband van R950 000 uit om 'n huis in Soweto te koop. Rente word gehef teen $11\\%$ per jaar, maandeliks saamgestel, en die verband word oor $20$ jaar met gelyke maandelikse paaiemente terugbetaal, wat een maand nadat die lening toegestaan is, begin.",
+      "svg": null,
+      "archetype": "fin-loan",
+      "parts": [
+        {
+          "q": "Bereken die maandelikse paaiement. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}11}{12}$ en $n=20\\times 12=240$",
+            "$P=\\dfrac{x\\left[1-(1+i)^{-n}\\right]}{i}$, dus $x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}$",
+            "$x=\\dfrac{950\\ 000\\times\\frac{0{,}11}{12}}{1-\\left(1+\\frac{0{,}11}{12}\\right)^{-240}}$",
+            "$x=$ R$9\\ 805{,}79$ (naaste sent)"
+          ],
+          "answer": "R9 805,79 per maand"
+        },
+        {
+          "q": "Bereken die uitstaande saldo van die verband onmiddellik ná die $96$ste paaiement (d.w.s. ná $8$ jaar). Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "Saldo $=P(1+i)^{96}-\\dfrac{x\\left[(1+i)^{96}-1\\right]}{i}$",
+            "$=950\\ 000\\left(1+\\dfrac{0{,}11}{12}\\right)^{96}-\\dfrac{9\\ 805{,}79\\left[\\left(1+\\frac{0{,}11}{12}\\right)^{96}-1\\right]}{\\frac{0{,}11}{12}}$",
+            "$=$ R$782\\ 238{,}29$ (naaste sent, met die afgeronde paaiement van R$9\\ 805{,}79$; met die onafgeronde paaiement is dit R$782\\ 238{,}33$)"
+          ],
+          "answer": "R782 238,29 (aanvaar klein verskille weens afronding van die maandelikse paaiement)"
+        },
+        {
+          "q": "Bereken die TOTALE rente wat oor die volle $20$ jaar betaal word as al $240$ paaiemente soos geskeduleer gemaak word.",
+          "marks": 2,
+          "solution": [
+            "Totaal betaal $=240\\times 9\\ 805{,}79=$ R$2\\ 353\\ 389{,}60$",
+            "Rente $=2\\ 353\\ 389{,}60-950\\ 000=$ R$1\\ 403\\ 389{,}60$"
+          ],
+          "answer": "R1 403 389,60"
+        }
+      ]
+    },
+    {
+      "id": "finance-05",
+      "difficulty": 3,
+      "context": "Sipho open 'n spaarrekening met 'n enkele deposito van R20 000. Vanaf die einde van die eerste maand deponeer hy ook R500 aan die EINDE van elke maand vir $5$ jaar. Die rekening verdien $8\\%$ per jaar, maandeliks saamgestel. Presies $3$ jaar nadat die rekening geopen is, onttrek hy R10 000 om sy taxi te herstel.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Bereken die waarde waartoe die aanvanklike deposito van R20 000 alleen aan die einde van die $5$ jaar groei. Rond af tot die naaste sent.",
+          "marks": 2,
+          "solution": [
+            "$i=\\dfrac{0{,}08}{12}$ en $n=60$",
+            "$A=20\\ 000\\left(1+\\dfrac{0{,}08}{12}\\right)^{60}=$ R$29\\ 796{,}91$ (naaste sent)"
+          ],
+          "answer": "R29 796,91"
+        },
+        {
+          "q": "Bereken die saldo in die rekening aan die einde van die $5$ jaar, met inagneming van ALLE transaksies. Rond af tot die naaste sent.",
+          "marks": 5,
+          "solution": [
+            "Maandelikse deposito's (60 betalings): $F=\\dfrac{500\\left[\\left(1+\\frac{0{,}08}{12}\\right)^{60}-1\\right]}{\\frac{0{,}08}{12}}=$ R$36\\ 738{,}43$",
+            "Die onttrekking van R$10\\ 000$ sou oor die oorblywende $2$ jaar ($24$ maande) rente verdien het: $10\\ 000\\left(1+\\dfrac{0{,}08}{12}\\right)^{24}=$ R$11\\ 728{,}88$",
+            "Saldo $=29\\ 796{,}91+36\\ 738{,}43-11\\ 728{,}88$",
+            "Saldo $=$ R$54\\ 806{,}46$ (naaste sent)"
+          ],
+          "answer": "R54 806,46"
+        }
+      ]
+    },
+    {
+      "id": "finance-06",
+      "difficulty": 1,
+      "context": "Lerato belê R25 000 in 'n vastedepositorekening wat rente betaal teen $7{,}5\\%$ per jaar, kwartaalliks saamgestel.",
+      "svg": null,
+      "archetype": "fin-compound",
+      "parts": [
+        {
+          "q": "Bereken die waarde van die belegging ná $6$ jaar. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "$i=\\dfrac{0{,}075}{4}=0{,}01875$ en $n=6\\times 4=24$",
+            "$A=25\\ 000(1{,}01875)^{24}$",
+            "$A=$ R$39\\ 044{,}78$ (naaste sent)"
+          ],
+          "answer": "R39 044,78"
+        },
+        {
+          "q": "Hoeveel jaar (korrek tot TWEE desimale plekke) sal dit 'n belegging neem om teen $8\\%$ per jaar, jaarliks saamgestel, in waarde te VERDUBBEL?",
+          "marks": 4,
+          "solution": [
+            "$2P=P(1{,}08)^n$",
+            "$(1{,}08)^n=2$",
+            "$n=\\dfrac{\\log 2}{\\log 1{,}08}$",
+            "$n\\approx 9{,}01$ jaar"
+          ],
+          "answer": "$9{,}01$ jaar"
+        }
+      ]
+    },
+    {
+      "id": "finance-07",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "fin-nominal-effective",
+      "parts": [
+        {
+          "q": "Skakel 'n nominale rentekoers van $9{,}6\\%$ per jaar, kwartaalliks saamgestel, om na 'n effektiewe jaarlikse rentekoers. Gee jou antwoord korrek tot TWEE desimale plekke.",
+          "marks": 3,
+          "solution": [
+            "$1+i_{\\text{eff}}=\\left(1+\\dfrac{0{,}096}{4}\\right)^{4}$",
+            "$i_{\\text{eff}}=(1{,}024)^{4}-1=0{,}0995\\ldots$",
+            "Effektiewe koers $\\approx 9{,}95\\%$ per jaar"
+          ],
+          "answer": "$9{,}95\\%$ per jaar (effektief)"
+        },
+        {
+          "q": "Bepaal die nominale rentekoers, maandeliks saamgestel, wat gelykwaardig is aan 'n effektiewe jaarlikse koers van $12\\%$. Gee jou antwoord korrek tot TWEE desimale plekke.",
+          "marks": 4,
+          "solution": [
+            "$\\left(1+\\dfrac{i}{12}\\right)^{12}=1{,}12$",
+            "$1+\\dfrac{i}{12}=1{,}12^{\\frac{1}{12}}$",
+            "$i=12\\left(1{,}12^{\\frac{1}{12}}-1\\right)=0{,}1139\\ldots$",
+            "Nominale koers $\\approx 11{,}39\\%$ per jaar, maandeliks saamgestel"
+          ],
+          "answer": "$11{,}39\\%$ per jaar, maandeliks saamgestel"
+        }
+      ]
+    },
+    {
+      "id": "finance-08",
+      "difficulty": 2,
+      "context": "Zanele koop 'n motor met 'n lening van R285 000. Rente word gehef teen $12{,}5\\%$ per jaar, maandeliks saamgestel. Sy betaal die lening oor $6$ jaar met gelyke maandelikse paaiemente terug, wat een maand nadat die lening toegestaan is, begin.",
+      "svg": null,
+      "archetype": "fin-loan",
+      "parts": [
+        {
+          "q": "Bereken Zanele se maandelikse paaiement. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}125}{12}$ en $n=6\\times 12=72$",
+            "$P=\\dfrac{x\\left[1-(1+i)^{-n}\\right]}{i}$, dus $x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}$",
+            "$x=\\dfrac{285\\ 000\\times\\frac{0{,}125}{12}}{1-\\left(1+\\frac{0{,}125}{12}\\right)^{-72}}$",
+            "$x=$ R$5\\ 646{,}19$ (naaste sent)"
+          ],
+          "answer": "R5 646,19 per maand"
+        },
+        {
+          "q": "Bereken die TOTALE bedrag rente wat Zanele oor die $6$ jaar betaal.",
+          "marks": 2,
+          "solution": [
+            "Totaal betaal $=72\\times 5\\ 646{,}19=$ R$406\\ 525{,}68$",
+            "Rente $=406\\ 525{,}68-285\\ 000=$ R$121\\ 525{,}68$"
+          ],
+          "answer": "R121 525,68"
+        }
+      ]
+    },
+    {
+      "id": "finance-09",
+      "difficulty": 3,
+      "context": "Bongani erf R750 000 en belê dit in 'n rekening wat $9\\%$ per jaar verdien, maandeliks saamgestel. Met ingang van een maand nadat die belegging gemaak is, onttrek hy R8 000 aan die einde van ELKE maand.",
+      "svg": null,
+      "archetype": "fin-level4",
+      "parts": [
+        {
+          "q": "Hoeveel onttrekkings van die VOLLE R8 000 sal Bongani kan maak?",
+          "marks": 5,
+          "solution": [
+            "$i=\\dfrac{0{,}09}{12}=0{,}0075$; die belegging is die huidige waarde van die onttrekkings: $750\\ 000=\\dfrac{8\\ 000\\left[1-(1{,}0075)^{-n}\\right]}{0{,}0075}$",
+            "$1-(1{,}0075)^{-n}=\\dfrac{750\\ 000\\times 0{,}0075}{8\\ 000}=0{,}703125$",
+            "$(1{,}0075)^{-n}=0{,}296875$",
+            "$-n=\\dfrac{\\log 0{,}296875}{\\log 1{,}0075}$, dus $n=162{,}53\\ldots$",
+            "Hy kan $162$ onttrekkings van die volle R$8\\ 000$ maak"
+          ],
+          "answer": "$162$ volle onttrekkings"
+        },
+        {
+          "q": "Bereken die saldo in die rekening onmiddellik ná die laaste volle onttrekking. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "Saldo $=750\\ 000(1{,}0075)^{162}-\\dfrac{8\\ 000\\left[(1{,}0075)^{162}-1\\right]}{0{,}0075}$",
+            "$=$ R$4\\ 234{,}45$ (naaste sent)",
+            "(Een maand later het dit tot slegs R$4\\ 266{,}21$ gegroei, minder as R$8\\ 000$, wat bevestig dat 'n $163$ste volle onttrekking onmoontlik is)"
+          ],
+          "answer": "R4 234,45"
+        }
+      ]
+    },
+    {
+      "id": "finance-10",
+      "difficulty": 3,
+      "context": "Die Mokoena-gesin neem 'n verband van R600 000 teen $10{,}5\\%$ per jaar, maandeliks saamgestel, uit. Die verband moet oor $20$ jaar met gelyke maandelikse paaiemente terugbetaal word, wat een maand nadat die lening toegestaan is, begin.",
+      "svg": null,
+      "archetype": "fin-level4",
+      "parts": [
+        {
+          "q": "Bereken die maandelikse paaiement. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}105}{12}=0{,}00875$ en $n=20\\times 12=240$",
+            "$x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}=\\dfrac{600\\ 000\\times 0{,}00875}{1-(1{,}00875)^{-240}}$",
+            "$x=$ R$5\\ 990{,}28$ (naaste sent)"
+          ],
+          "answer": "R5 990,28 per maand"
+        },
+        {
+          "q": "Onmiddellik ná die $60$ste paaiement betaal die gesin 'n EKSTRA enkelbedrag van R100 000 in die leningrekening in. Die maandelikse paaiement bly onveranderd. Bereken hoeveel maande VROEËR die lening vereffen sal word.",
+          "marks": 7,
+          "solution": [
+            "Saldo ná $60$ betalings: $600\\ 000(1{,}00875)^{60}-\\dfrac{5\\ 990{,}28\\left[(1{,}00875)^{60}-1\\right]}{0{,}00875}=$ R$541\\ 911{,}03$",
+            "Ná die enkelbedrag is die saldo $541\\ 911{,}03-100\\ 000=$ R$441\\ 911{,}03$",
+            "Laat $n$ die aantal oorblywende betalings wees: $441\\ 911{,}03=\\dfrac{5\\ 990{,}28\\left[1-(1{,}00875)^{-n}\\right]}{0{,}00875}$",
+            "$(1{,}00875)^{-n}=1-\\dfrac{441\\ 911{,}03\\times 0{,}00875}{5\\ 990{,}28}=0{,}3545\\ldots$",
+            "$n=\\dfrac{\\log 0{,}3545\\ldots}{-\\log 1{,}00875}=119{,}04\\ldots$",
+            "Dus is nog $120$ betalings nodig ($119$ volle paaiemente plus een finale kleiner betaling), in plaas van die $240-60=180$ wat oorgebly het",
+            "Die lening word $180-120=60$ maande ($5$ jaar) vroeër vereffen"
+          ],
+          "answer": "$60$ maande ($5$ jaar) vroeër"
+        }
+      ]
+    },
+    {
+      "id": "finance-11",
+      "difficulty": 2,
+      "context": "'n Drukkery in Durban koop 'n masjien vir R450 000. Die waarde van die masjien verminder teen $15\\%$ per jaar volgens die verminderdesaldo-metode, en die masjien moet ná $8$ jaar vervang word. Die prys van 'n nuwe masjien neem toe teen $6\\%$ per jaar. Die ou masjien sal ná $8$ jaar teen sy skrootwaarde verkoop word, en die maatskappy stel 'n delgingsfonds in om die tekort te dek. Die fonds verdien $8{,}25\\%$ per jaar, maandeliks saamgestel. Gelyke maandelikse betalings word in die fonds inbetaal, vanaf een maand nadat die masjien gekoop is tot aan die einde van die $8$ jaar.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Bereken die skrootwaarde van die masjien ná $8$ jaar. Rond af tot die naaste sent.",
+          "marks": 2,
+          "solution": [
+            "$A=450\\ 000(1-0{,}15)^8=450\\ 000(0{,}85)^8$",
+            "$A=$ R$122\\ 620{,}74$ (naaste sent)"
+          ],
+          "answer": "R122 620,74"
+        },
+        {
+          "q": "Bereken die prys van 'n NUWE masjien ná $8$ jaar. Rond af tot die naaste sent.",
+          "marks": 2,
+          "solution": [
+            "$A=450\\ 000(1{,}06)^8$",
+            "$A=$ R$717\\ 231{,}63$ (naaste sent)"
+          ],
+          "answer": "R717 231,63"
+        },
+        {
+          "q": "Bereken die maandelikse betaling in die delgingsfonds. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "Bedrag benodig in die fonds: $717\\ 231{,}63-122\\ 620{,}74=$ R$594\\ 610{,}89$",
+            "$i=\\dfrac{0{,}0825}{12}=0{,}006875$ en $n=8\\times 12=96$",
+            "$594\\ 610{,}89=\\dfrac{x\\left[(1{,}006875)^{96}-1\\right]}{0{,}006875}$",
+            "$x=$ R$4\\ 393{,}62$ (naaste sent)"
+          ],
+          "answer": "R4 393,62 per maand"
+        }
+      ]
+    },
+    {
+      "id": "finance-12",
+      "difficulty": 1,
+      "context": "'n Skool in Bloemfontein koop 'n skootrekenaar vir R18 500. Die waarde van die skootrekenaar verminder teen $22\\%$ per jaar volgens die verminderdesaldo-metode. Die prys van 'n nuwe skootrekenaar van dieselfde model neem toe teen $7\\%$ per jaar.",
+      "svg": null,
+      "archetype": "fin-compound",
+      "parts": [
+        {
+          "q": "Bereken die waarde van die skootrekenaar ná $4$ jaar. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1-i)^n=18\\ 500(1-0{,}22)^4$",
+            "$A=18\\ 500(0{,}78)^4$",
+            "$A=$ R$6\\ 847{,}79$ (naaste sent)"
+          ],
+          "answer": "R6 847,79"
+        },
+        {
+          "q": "Bereken die prys van 'n NUWE skootrekenaar van dieselfde model ná $4$ jaar. Rond af tot die naaste sent.",
+          "marks": 3,
+          "solution": [
+            "$A=P(1+i)^n=18\\ 500(1{,}07)^4$",
+            "$A=$ R$24\\ 249{,}73$ (naaste sent)"
+          ],
+          "answer": "R24 249,73"
+        }
+      ]
+    },
+    {
+      "id": "finance-13",
+      "difficulty": 2,
+      "context": "Naledi spaar vir 'n deposito op 'n motor deur R900 aan die EINDE van elke maand vir $4$ jaar in 'n spaarrekening in te betaal. Die rekening verdien rente teen $7{,}8\\%$ per jaar, maandeliks saamgestel.",
+      "svg": null,
+      "archetype": "fin-annuity-fv",
+      "parts": [
+        {
+          "q": "Bereken die waarde van Naledi se spaargeld aan die einde van die $4$ jaar. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}078}{12}=0{,}0065$ en $n=4\\times 12=48$",
+            "$F=\\dfrac{x\\left[(1+i)^n-1\\right]}{i}$",
+            "$F=\\dfrac{900\\left[(1{,}0065)^{48}-1\\right]}{0{,}0065}$",
+            "$F=$ R$50\\ 507{,}46$ (naaste sent)"
+          ],
+          "answer": "R50 507,46"
+        },
+        {
+          "q": "Hoeveel rente verdien Naledi oor die $4$ jaar?",
+          "marks": 2,
+          "solution": [
+            "Totaal gedeponeer $=48\\times 900=$ R$43\\ 200$",
+            "Rente $=50\\ 507{,}46-43\\ 200=$ R$7\\ 307{,}46$"
+          ],
+          "answer": "R7 307,46"
+        }
+      ]
+    },
+    {
+      "id": "finance-14",
+      "difficulty": 2,
+      "context": "Karabo neem 'n studielening van R120 000 uit. Rente word gehef teen $11{,}25\\%$ per jaar, maandeliks saamgestel. Die lening word oor $5$ jaar met gelyke maandelikse paaiemente terugbetaal, wat een maand nadat die lening toegestaan is, begin.",
+      "svg": null,
+      "archetype": "fin-loan",
+      "parts": [
+        {
+          "q": "Bereken die maandelikse paaiement. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "$i=\\dfrac{0{,}1125}{12}=0{,}009375$ en $n=5\\times 12=60$",
+            "$P=\\dfrac{x\\left[1-(1+i)^{-n}\\right]}{i}$, dus $x=\\dfrac{P\\cdot i}{1-(1+i)^{-n}}$",
+            "$x=\\dfrac{120\\ 000\\times 0{,}009375}{1-(1{,}009375)^{-60}}$",
+            "$x=$ R$2\\ 624{,}08$ (naaste sent)"
+          ],
+          "answer": "R2 624,08 per maand"
+        },
+        {
+          "q": "Bereken die uitstaande saldo van die lening onmiddellik ná die $24$ste paaiement. Rond af tot die naaste sent.",
+          "marks": 4,
+          "solution": [
+            "Saldo $=P(1+i)^{24}-\\dfrac{x\\left[(1+i)^{24}-1\\right]}{i}$",
+            "$=120\\ 000(1{,}009375)^{24}-\\dfrac{2\\ 624{,}08\\left[(1{,}009375)^{24}-1\\right]}{0{,}009375}$",
+            "$=$ R$79\\ 862{,}91$ (naaste sent, met die afgeronde paaiement)"
+          ],
+          "answer": "R79 862,91 (aanvaar klein verskille weens afronding van die maandelikse paaiement)"
+        },
+        {
+          "q": "Bereken die TOTALE rente wat oor die $5$ jaar betaal word as al $60$ paaiemente soos geskeduleer gemaak word.",
+          "marks": 2,
+          "solution": [
+            "Totaal betaal $=60\\times 2\\ 624{,}08=$ R$157\\ 444{,}80$",
+            "Rente $=157\\ 444{,}80-120\\ 000=$ R$37\\ 444{,}80$"
+          ],
+          "answer": "R37 444,80"
+        }
+      ]
+    },
+    {
+      "id": "finance-15",
+      "difficulty": 2,
+      "context": "",
+      "svg": null,
+      "archetype": "fin-nominal-effective",
+      "parts": [
+        {
+          "q": "Skakel 'n nominale rentekoers van $11{,}4\\%$ per jaar, maandeliks saamgestel, om na 'n effektiewe jaarlikse rentekoers. Gee jou antwoord korrek tot TWEE desimale plekke.",
+          "marks": 3,
+          "solution": [
+            "$1+i_{\\text{eff}}=\\left(1+\\dfrac{0{,}114}{12}\\right)^{12}$",
+            "$i_{\\text{eff}}=(1{,}0095)^{12}-1=0{,}1201\\ldots$",
+            "Effektiewe koers $\\approx 12{,}01\\%$ per jaar"
+          ],
+          "answer": "$12{,}01\\%$ per jaar (effektief)"
+        },
+        {
+          "q": "Bepaal die nominale rentekoers, kwartaalliks saamgestel, wat gelykwaardig is aan 'n effektiewe jaarlikse koers van $10{,}25\\%$. Gee jou antwoord korrek tot TWEE desimale plekke.",
+          "marks": 4,
+          "solution": [
+            "$\\left(1+\\dfrac{i}{4}\\right)^{4}=1{,}1025$",
+            "$1+\\dfrac{i}{4}=1{,}1025^{\\frac{1}{4}}$",
+            "$i=4\\left(1{,}1025^{\\frac{1}{4}}-1\\right)=0{,}0988\\ldots$",
+            "Nominale koers $\\approx 9{,}88\\%$ per jaar, kwartaalliks saamgestel"
+          ],
+          "answer": "$9{,}88\\%$ per jaar, kwartaalliks saamgestel"
+        }
+      ]
+    }
+  ]
+}

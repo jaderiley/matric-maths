@@ -283,7 +283,7 @@
           "solution": [
             "Construction: Join OB and OD.",
             "Let $\\hat{A}=x$ and $\\hat{C}=y$.",
-            "$\\hat{A}$ is subtended at the circumference by arc BCD; the angle at the centre on the same arc is $B\\hat{O}D=2x$ (angle at centre = $2\\times$ angle at circumference) — the reflex angle measured on the C-side.",
+            "$\\hat{A}$ is subtended at the circumference by arc BCD; the angle at the centre on the same arc is $B\\hat{O}D=2x$ (angle at centre = $2\\times$ angle at circumference) — measured on the C-side (this angle may be reflex).",
             "$\\hat{C}$ is subtended by arc BAD; the angle at the centre on that side is $B\\hat{O}D=2y$ — measured on the A-side.",
             "The two central angles together make a revolution: $2x+2y=360^\\circ$.",
             "$\\therefore x+y=180^\\circ$, i.e. $\\hat{A}+\\hat{C}=180^\\circ$."
@@ -377,7 +377,7 @@
       "id": "euclidean-geometry-12",
       "difficulty": 2,
       "context": "In $\\triangle ABC$, BE and CF are altitudes (heights), with E on AC and F on AB. The altitudes intersect at H.",
-      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 25L70 180L250 180Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M70 180L205 102M250 180L115 102\" stroke=\"currentColor\" fill=\"none\"/><text x=\"156\" y=\"19\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"56\" y=\"186\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"254\" y=\"186\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"209\" y=\"100\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"101\" y=\"102\" font-size=\"13\" fill=\"currentColor\">F</text></svg>",
+      "svg": "<svg viewBox=\"0 0 320 220\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M160 25L70 180L250 180Z\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M70 180L205 102M250 180L115 102\" stroke=\"currentColor\" fill=\"none\"/><text x=\"156\" y=\"19\" font-size=\"13\" fill=\"currentColor\">A</text><text x=\"56\" y=\"186\" font-size=\"13\" fill=\"currentColor\">B</text><text x=\"254\" y=\"186\" font-size=\"13\" fill=\"currentColor\">C</text><text x=\"209\" y=\"100\" font-size=\"13\" fill=\"currentColor\">E</text><text x=\"101\" y=\"102\" font-size=\"13\" fill=\"currentColor\">F</text><text x=\"155\" y=\"146\" font-size=\"13\" fill=\"currentColor\">H</text></svg>",
       "archetype": "euc-prove-equal",
       "parts": [
         {

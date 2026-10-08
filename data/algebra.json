@@ -104,7 +104,7 @@
       "archetype": "alg-quad-formula",
       "parts": [
         {
-          "q": "Solve for $x$ by completing the square: $x^2+6x-2=0$. Leave your answer in simplest surd form.",
+          "q": "Solve for $x$ by completing the square: $x^2+6x-2=0$. Leave your answer in simplest surd form. (The NSC does not examine completing the square as a way to solve an equation, but the same skill finds turning points and circle centres.)",
           "marks": 4,
           "solution": [
             "$x^2+6x=2$",

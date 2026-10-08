@@ -1,0 +1,40 @@
+{
+ "papers": {
+  "1": {
+   "title": "Vraestel 1",
+   "subtitle": "Algebra · Funksies · Differensiaalrekening",
+   "topics": [
+    "algebra",
+    "sequences",
+    "functions",
+    "finance",
+    "calculus",
+    "probability"
+   ],
+   "blueprint": {
+    "algebra": 25,
+    "sequences": 25,
+    "functions": 35,
+    "finance": 15,
+    "calculus": 35,
+    "probability": 15
+   }
+  },
+  "2": {
+   "title": "Vraestel 2",
+   "subtitle": "Trig · Meetkunde · Statistiek",
+   "topics": [
+    "statistics",
+    "analytical-geometry",
+    "trigonometry",
+    "euclidean-geometry"
+   ],
+   "blueprint": {
+    "statistics": 20,
+    "analytical-geometry": 40,
+    "trigonometry": 50,
+    "euclidean-geometry": 40
+   }
+  }
+ }
+}

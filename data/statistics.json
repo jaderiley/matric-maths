@@ -154,7 +154,7 @@
           "solution": [
             "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=217$, $\\sum y=482$, $\\sum xy=13671$, $\\sum x^2=6133$):",
             "$b=\\frac{8(13671)-(217)(482)}{8(6133)-(217)^2}\\approx 2{,}4172$",
-            "$a=\\bar{y}-b\\bar{x}=\\frac{482}{8}-2{,}4172\\times\\frac{217}{8}\\approx -5{,}3170$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{482}{8}-2{,}417215\\times\\frac{217}{8}\\approx -5{,}3170$",
             "$\\therefore\\ \\hat{y}=-5{,}3170+2{,}4172x$ (values rounded to 4 decimal places)"
           ],
           "answer": "$\\hat{y}=-5{,}3170+2{,}4172x$"
@@ -234,7 +234,7 @@
           "q": "After the 9th innings, which measure of central tendency — the mean or the median — better represents the cricketer's typical score? Justify your answer.",
           "marks": 1,
           "solution": [
-            "The median (which only moves from $35$ to $36$) better represents the typical score, because the median is resistant to the outlier of $130$, whereas the mean is pulled up to $\\approx 42{,}89$ — higher than 7 of the 9 scores."
+            "The median (which only moves from $35$ to $36$) better represents the typical score, because the median is resistant to the outlier of $130$, whereas the mean is pulled up to $\\approx 42{,}89$ — higher than 6 of the 9 scores."
           ],
           "answer": "The median, because it is not distorted by the outlier of 130"
         }
@@ -365,7 +365,7 @@
           "marks": 2,
           "solution": [
             "Multiplying every value by $1{,}1$ scales both measures: new mean $=220\\times 1{,}1=R242$",
-            "New $\\sigma=34{,}64\\times 1{,}1\\approx R38{,}11$"
+            "New $\\sigma=34{,}641\\times 1{,}1\\approx R38{,}11$"
           ],
           "answer": "New mean $=R242$; new $\\sigma\\approx R38{,}11$"
         },
@@ -393,7 +393,7 @@
           "solution": [
             "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=45$, $\\sum y=558$, $\\sum xy=3603$, $\\sum x^2=303$):",
             "$b=\\frac{8(3603)-(45)(558)}{8(303)-(45)^2}\\approx 9{,}3083$",
-            "$a=\\bar{y}-b\\bar{x}=\\frac{558}{8}-9{,}3083\\times\\frac{45}{8}\\approx 17{,}3910$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{558}{8}-9{,}308271\\times\\frac{45}{8}\\approx 17{,}3910$",
             "$\\therefore\\ \\hat{y}=17{,}3910+9{,}3083x$ (values rounded to 4 decimal places)"
           ],
           "answer": "$\\hat{y}=17{,}3910+9{,}3083x$"
@@ -584,7 +584,7 @@
           "solution": [
             "By calculator (or from $b=\\frac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}$ with $n=8$, $\\sum x=36$, $\\sum y=497$, $\\sum xy=2471$, $\\sum x^2=204$):",
             "$b=\\frac{8(2471)-(36)(497)}{8(204)-(36)^2}\\approx 5{,}5833$",
-            "$a=\\bar{y}-b\\bar{x}=\\frac{497}{8}-5{,}5833\\times\\frac{36}{8}=37{,}0000$",
+            "$a=\\bar{y}-b\\bar{x}=\\frac{497}{8}-5{,}583333\\times\\frac{36}{8}=37{,}0000$",
             "$\\therefore\\ \\hat{y}=37{,}0000+5{,}5833x$"
           ],
           "answer": "$\\hat{y}=37{,}0000+5{,}5833x$"

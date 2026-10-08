@@ -1,6 +1,6 @@
 {
   "updated": "2026-07-19",
-  "note": "Official National Senior Certificate papers, downloaded directly from the national Department of Basic Education (education.gov.za). The NSC is a NATIONAL exam - Gauteng and every other province write these exact papers. Mirror ZIPs are hosted by the Eastern Cape DoE (same DBE papers).",
+  "note": "Official National Senior Certificate papers (the memos are bilingual, Afrikaans and English), downloaded directly from the national Department of Basic Education (education.gov.za). The NSC is a NATIONAL exam - Gauteng and every other province write these exact papers. Mirror ZIPs are hosted by the Eastern Cape DoE (same DBE papers).",
   "guidelines": {
     "name": "DBE NSC past-papers portal (all subjects, all years)",
     "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations/NSCPastExaminationpapers.aspx"
@@ -23,11 +23,11 @@
               "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0DIM92_2Vu8%3d&tabid=5193&portalid=0&mid=13724"
             },
             {
-              "name": "Paper 1 + memo (mirror ZIP)",
+              "name": "Paper 1 (mirror ZIP)",
               "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20Nov%202024.zip"
             },
             {
-              "name": "Paper 2 + memo (mirror ZIP)",
+              "name": "Paper 2 (mirror ZIP)",
               "url": "https://www.ecexams.co.za/2024_November_Gr_12_NSC_DBE_Exams/Mathematics%20P2%20Nov%202024.zip"
             }
           ]
@@ -46,7 +46,7 @@
               "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=hmseEn24qZI%3d&tabid=4933&portalid=0&mid=13146"
             },
             {
-              "name": "All papers (mirror ZIP)",
+              "name": "Paper 1 (mirror ZIP)",
               "url": "https://www.ecexams.co.za/2024_MayJune_Gr_12_NSC_DBE_Exams/Mathematics%20P1%20May-June%202024.zip"
             }
           ]
@@ -70,7 +70,7 @@
               "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=0RJSBcYBmhA%3d&tabid=4682&portalid=0&mid=12681"
             },
             {
-              "name": "All papers (mirror ZIP)",
+              "name": "Paper 1 + memo (mirror ZIP)",
               "url": "https://www.ecexams.co.za/2023_November_NSC_Exams/Mathematics%20P1%20Nov%202023.zip"
             }
           ]
@@ -196,7 +196,7 @@
               "memo": "https://www.education.gov.za/LinkClick.aspx?fileticket=n-F98_w5Zig%3d&tabid=2556&portalid=0&mid=8994"
             },
             {
-              "name": "All papers (mirror ZIP)",
+              "name": "Papers 1 & 2, no memos (mirror ZIP)",
               "url": "https://www.ecexams.co.za/2019_November_NSC_Exams/Mathematics%20QP.zip"
             }
           ]
