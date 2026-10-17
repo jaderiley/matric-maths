@@ -82,6 +82,10 @@
       session: (n) => `this session: ${n}`,
       unfinished: (n, d) => `You have an unfinished mock (${n} questions, started ${d}).`,
       resume: "Resume it", discard: "Discard",
+      packRule: "Printable pack",
+      packTitle: (t) => `${t}: every way each question was asked`,
+      packLede: "One mock paper in the real question order with every way each question was asked in the November papers 2016–2025, a tick-per-mark memo, and the official information sheet. Print it or work from the screen.",
+      packExam: "Mock exam (PDF)", packMemo: "Memo (PDF)", packSheet: "Information sheet (PDF)",
       mockRule: (t) => `Mock examination — ${t}`,
       sit: (t) => `Sit ${t}`,
       mockLede: (t) => `A fresh paper is assembled from the question bank using the real ${t} mark weighting. Answer everything on paper — memos stay sealed until you finish. Then you mark yourself, and the app records it.`,
@@ -211,6 +215,10 @@
       session: (n) => `hierdie sessie: ${n}`,
       unfinished: (n, d) => `Jy het 'n onvoltooide proefeksamen (${n} vrae, begin op ${d}).`,
       resume: "Gaan voort", discard: "Gooi weg",
+      packRule: "Drukbare pakket",
+      packTitle: (t) => `${t}: elke manier waarop elke vraag gevra is`,
+      packLede: "Een proefvraestel in die regte vraagvolgorde met elke manier waarop elke vraag in die November-vraestelle van 2016–2025 gevra is, 'n memo met 'n regmerkie per punt, en die amptelike inligtingsblad. Druk dit of werk van die skerm af. (Die pakket is in Engels.)",
+      packExam: "Proefvraestel (PDF)", packMemo: "Memo (PDF)", packSheet: "Inligtingsblad (PDF)",
       mockRule: (t) => `Proefeksamen — ${t}`,
       sit: (t) => `Skryf ${t}`,
       mockLede: (t) => `'n Nuwe vraestel word uit die vraebank saamgestel volgens die regte puntetoekenning van ${t}. Beantwoord alles op papier — die memo's bly verseël totdat jy klaar is. Dan sien jy jouself na, en jou punte word gestoor.`,
@@ -612,7 +620,18 @@
       <div class="card"><p>${L.unfinished(sess.qids.length, new Date(sess.started).toLocaleString(locale()))}</p>
       <div class="btnrow"><a class="btn btn--red" href="#/exam/${p}/run">${L.resume}</a>
       <button class="btn btn--quiet" id="discard">${L.discard}</button></div></div>` : "";
+    const pack = `packs/p${p}`;
     setView(`
+      <section class="card pack-card">
+        <p class="exam-rule">${L.packRule}</p>
+        <h2 class="pack-card__title">${L.packTitle(info.title)}</h2>
+        <p class="site-foot__fine">${L.packLede}</p>
+        <div class="btnrow">
+          <a class="btn btn--red" href="${pack}-mock-exam.pdf" target="_blank" rel="noopener">${L.packExam}</a>
+          <a class="btn" href="${pack}-mock-memo.pdf" target="_blank" rel="noopener">${L.packMemo}</a>
+          <a class="btn btn--quiet" href="${pack}-information-sheet.pdf" target="_blank" rel="noopener">${L.packSheet}</a>
+        </div>
+      </section>
       <p class="exam-rule">${L.mockRule(info.title)}</p>
       <h1 class="display">${L.sit(info.title)}</h1>
       <p class="lede">${L.mockLede(info.title)}</p>
